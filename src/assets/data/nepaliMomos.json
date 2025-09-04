@@ -1,0 +1,1679 @@
+{
+  "logo": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6c72a030-88e9-4ff2-802a-706e3c8f1fde_45425848-16f5-4bf6-bd0a-774aae6582b0_nepali-momos-2%20-%20unscreen%20%281%29.gif",
+  "brandName": "Nepali Momos Brampton",
+  "address": "90 Eastern Ave #28, Brampton, ON L6W 1X9",
+  "phone": "+1 905-874-4141",
+  "email": "Nepalimomos@outlook.com",
+  "type": "template10881",
+  "template": {
+    "navbar": "template10881",
+    "footer": "FooterCenterGridLogoMenuContact"
+  },
+  "social": {
+    "twitter": "",
+    "fb": "",
+    "insta": "",
+    "yelp": "https://www.yelp.com/biz/nepali-momos-brampton",
+    "review": "https://g.co/kgs/oMZu91o",
+    "onlinelink": "",
+    "google": "https://www.google.com/search?q=Nepali+Momos+Brampton+90+Est+ave%2Cunit+no+28+%2C+Brampton%2C+ON+L6W1X9&rlz=1C1CHBF_enIN1083IN1083&oq=Nepali+Momos+Brampton+90+Est+ave%2Cunit+no+28+%2C+Brampton%2C+ON++L6W1X9&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzIzMmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    "hrefAddress": "https://maps.app.goo.gl/ZCEefMDZARuW4bW76",
+    "hrefPhone": "tel:+1 905-874-4141",
+    "hrefEmail": "mailto:Nepalimomos@outlook.com",
+    "contactNumberOfWholesale": "+1 (416) 897-5123",
+    "hrefContactNumberOfWholesale": "tel:+1 (416) 897-5123"
+  },
+  "css": {
+    "contacDetailsScss": "display: grid; gap: 10px;    margin-top: 20px;",
+    "footerBrandlogoScss": "color: #ffffff; font-family: 'Crimson Text', Georgia, serif; font-size: 18px; font-weight: 500; line-height: 1.2; text-align: center; letter-spacing: 2px !important; text-transform: capitalize; margin: 0px;",
+    "footerBrandQuoteCss": "color: #ffffff; font-family: 'Crimson Text', Georgia, serif; font-size: 16px; font-weight: 500; line-height: 1.5; text-align: center; letter-spacing: 2px !important; text-transform: capitalize; margin: 0px;",
+    "logoWidth": "display: none;",
+    "columnScss": "display: none;",
+    "footerCss": "background-color: #161616 !important; border-top: 4px solid #e82b30;",
+    "footerClosingLiner": "background-color: #161616 !important;",
+    "closingFooterText": "color: #a9a9a9; font-family: 'Crimson Text', Georgia, serif;",
+    "footerText": "display: flex !important; font-family: 'Crimson Text', Georgia, serif; color: #fff !important; align-items: center !important; justify-content: center !important; text-align: center !important; text-decoration: none !important; font-size: 16px !important; line-height: 26px !important; letter-spacing: 2px !important; text-transform: capitalize;v",
+    "headerCss": "",
+    "navvCss": "background-color: rgb(35, 35, 35); padding:0px;",
+    "anchorCss": "color: rgb(230, 28, 24); border-color: rgb(230, 28, 24);",
+    "navcolor": "color: rgb(230, 28, 24); border-color: rgb(230, 28, 24);",
+    "block": "display: block;",
+    "subCss": "color: rgb(230, 28, 24);",
+    "background": "margin-top: 50px;",
+    "color": "color: rgb(230, 28, 24); font-size: 20px; font-family: 'Caveat', cursive;",
+    "footerBg": "background-color: #232323; color: #ffffff; gap:5px;",
+    "borderColor": "border-bottom: 1px dashed #2c6656;",
+    "colorBlack": "",
+    "transparentBg": "",
+    "imgstyle": "width: 60%;object-fit: contain;padding: 5px;",
+    "externalBtn": "color: rgb(230, 28, 24); border: 3px solid rgb(230, 28, 24) !important;",
+    "onlineBtn": "color: white; border: 2px solid white;",
+    "onlineBtn2": "border: 2px solid #232323;color: #E61C18;",
+    "logo": "width: 100px;",
+    "navbar": "background-color: #fff;",
+    "icon": "color: #000; background: #000;",
+    "navbarTextColor": "color: #000; text-transform: capitalize; font-size: 16px; text-align: center; font-weight: 400; letter-spacing: 2px; padding: 10px;",
+    "navbarButton": "background-color: #ED353D; color: #fff; border: 1px solid #ED353D; padding: 8px 20px; border-radius: 8px; font-size: 16px;"
+  },
+  "slider": {
+    "bottom": [
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f0b091ab-810d-4e75-87f6-29350abe0033.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f0b091ab-810d-4e75-87f6-29350abe0033.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/820f5a96-246c-4807-b52b-66e792b55bef.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/820f5a96-246c-4807-b52b-66e792b55bef.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c5c3488c-9a08-4d4c-b195-487bb578f46e.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c5c3488c-9a08-4d4c-b195-487bb578f46e.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/84a561ad-9380-4af7-b5b4-4642e05a6e27.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/84a561ad-9380-4af7-b5b4-4642e05a6e27.jpg"
+      }
+    ],
+    "cateringPdf": [
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/85275b1c-f094-4ef0-af6c-8587293d8bf8_CATERING%20MENU%20%281%29_page-0001.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/85275b1c-f094-4ef0-af6c-8587293d8bf8_CATERING%20MENU%20%281%29_page-0001.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9c77411c-9fe8-49f6-aa02-9b43ff8d20ae_CATERING%20MENU%20%281%29_page-0002.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9c77411c-9fe8-49f6-aa02-9b43ff8d20ae_CATERING%20MENU%20%281%29_page-0002.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c46846ee-4859-4545-8e02-1b7d8a4a0491_CATERING%20MENU%20%281%29_page-0003.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c46846ee-4859-4545-8e02-1b7d8a4a0491_CATERING%20MENU%20%281%29_page-0003.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/85b23f21-3bc5-4d37-9b1a-aa409445443a_CATERING%20MENU%20%281%29_page-0004.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/85b23f21-3bc5-4d37-9b1a-aa409445443a_CATERING%20MENU%20%281%29_page-0004.jpg"
+      }
+    ],
+    "menuPdf": [
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3d24673c-772a-4a6b-8eea-61db920cb75f_1.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3d24673c-772a-4a6b-8eea-61db920cb75f_1.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2e9fc9fe-cafa-4d17-9f58-62b479fbfa7b_2.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2e9fc9fe-cafa-4d17-9f58-62b479fbfa7b_2.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7d19ce3f-a184-4c57-97d1-c140e91edd48_3.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7d19ce3f-a184-4c57-97d1-c140e91edd48_3.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3edd82e7-8df9-46da-aaea-df18c16088c9_4.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3edd82e7-8df9-46da-aaea-df18c16088c9_4.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9304b83c-2b65-41c1-95e8-5674de7ab0ca_5.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9304b83c-2b65-41c1-95e8-5674de7ab0ca_5.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cdb482a6-91de-4f89-b9eb-679841b5ee11_6.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cdb482a6-91de-4f89-b9eb-679841b5ee11_6.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f3b4676f-4193-443d-b537-0dc1cd56dcd4_7.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f3b4676f-4193-443d-b537-0dc1cd56dcd4_7.jpg"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/994bb922-6ce8-495a-97ee-5724a338bb37_8.jpg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/994bb922-6ce8-495a-97ee-5724a338bb37_8.jpg"
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "text": "Home",
+        "link": "/home-two",
+        "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/41a923e1-c4b7-4a91-9a7f-f85045f1168a_Home.png",
+        "type": "internal"
+      },
+      {
+        "text": "Menu",
+        "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/092dee59-beb5-4f4f-9c19-939fea505e2c_Menu.png",
+        "link": "/menutwo/all",
+        "type": "internal"
+      },
+      {
+        "text": "OurStory",
+        "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/41a923e1-c4b7-4a91-9a7f-f85045f1168a_Home.png",
+        "link": "/stories",
+        "type": "internal"
+      },
+      {
+        "text": "Catering",
+        "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6f438765-6a7a-4dd7-8e8c-c3e68d0d652c_Catering.png",
+        "link": "/menu/all",
+        "type": "internal"
+      },
+      {
+        "text": "Grab & Go Momos",
+        "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e844c353-7aa1-4338-81ec-2679b89ba7ed_Whole%20sale.png",
+        "link": "/about-us",
+        "type": "internal"
+      }
+    ]
+  },
+  "gallery": [
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2a6180e8-6647-4851-b085-476f31515969_91.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/33990d6b-9944-40b0-993a-5716afeef754_92.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d20256d1-5807-422b-8e17-2d9c03571cb2_94.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3596e921-adb9-4dda-8824-813fdc12575c_95.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7883f678-018b-4933-9177-18af941085b9_96.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/de974b3b-76dc-40ae-8352-49481e5d9eaa_97.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/93f72cf0-9dae-42e0-ac27-8b917d573c74_98.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0f4b4b64-028f-4e24-b9e4-56d8f6eb96f3_99.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3153c484-e0da-495a-90aa-9063ebb9ab6d_100.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/104be07d-8b01-4950-8093-06a6846768fc_101.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/372b94e3-47c3-4864-ad18-a54e7108cf73_102.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1c213b04-16f2-4c1e-94f7-e40a44e47fa9_103.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/643b780d-ad08-4321-afb1-81b361e9a8fc_193.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/98671b50-19d6-4ae3-ab8b-853fe134736d_197.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7e75e979-3c4a-445c-82bb-564e50caf898_198.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dd83aedd-ce3e-4b36-af32-dcbb5dd61ed0_194.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/85877f03-bec0-4b1c-b5ac-9448296f50f1_195.jpg",
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/81c6af91-2c73-46e9-89de-26501c1dc957_196.jpg"
+  ],
+  "hero": {
+    "dreamSection": {
+      "title": "You Dream It, We Will Cook ",
+      "subtitle": "Crafting Culinary Dreams into Reality",
+      "buttonText": "See More",
+      "categories": [
+        {
+          "name": "Platters",
+          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/321bc554-bd36-487e-97e1-19536e076f14_227006701ec89005910f47f407c15aed6f8b04e3.png",
+          "description": "Enjoy a delightful assortment of momos and sides, curated for sharing. Perfect for gatherings or when you want a little bit of everything."
+        },
+        {
+          "name": "Mains",
+          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e69e58b9-36d0-42dc-972a-508cc5ee6b81_36dc92bf9ecc7d4f46043ead5bc95be6b33f2711.png",
+          "description": "Dive into hearty and flavorful dishes crafted with authentic Nepali spices and fresh ingredients. Each main course promises a fulfilling and delicious experience."
+        },
+        {
+          "name": "Thali",
+          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7c1855fb-6c7f-4069-b8c4-3a0a799309d6_b8fedce3a766ac8b35f2ce6d754aee4e4a02467a.png",
+          "description": "Experience the richness of Nepali cuisine with our Thali—a complete feast featuring a variety of flavors on one plate, offering a balanced and wholesome meal."
+        },
+        {
+          "name": "Dessert",
+          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5285b06f-6e14-4965-9c55-0bfe7cfd0bb7_28ebf2650e304caeb593d35bf516011b844ef056.png",
+          "description": "Complete your momo journey with our delectable desserts. Each treat is crafted to provide the perfect sweet note to end your dining experience."
+        }
+      ]
+    },
+    "culinaryOfferings": {
+      "title": "Our Culinary Offerings",
+      "subtitle": "Kids Momo Meal",
+      "description": "Five delicious Momos steamed, crispy fries, a refreshing juice box, and a sweet Gulab jamun with choice of dipping sauce. The perfect kid-friendly meal.",
+      "buttonText": "View All",
+      "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/655208fc-fce7-4148-bbc9-6978c2a95591_d7df39023c2b11884db90484ee44eef7f67a7953.png"
+    },
+    "aboutus": {
+      "title": "About Us",
+      "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dffe9a5e-9843-4ce5-8fdd-909ec38400d7_c093082393a83f69e4aa90fe2194bfb140a10180.jpg",
+      "description": "Embrace the arrival of spring at Nepali Momos Brampton and immerse yourself in the beauty of our new Japanese cherry blossom-inspired decor.",
+      "secondDescription": "Capture the essence of the season and create lasting memories as you savor our delectable momos amidst this enchanting ambiance.",
+      "buttonText": "Learn More"
+    },
+    "signatureMomos": {
+      "title": "Our Signature Momos",
+      "items": [
+        {
+          "name": "Classic Momos",
+          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/16997ac0-79ad-4aeb-b695-685a4b9ab71f_f7a39d526e7c3fb3ddf660385e0dce4b66e59f13.png",
+          "description": "Authentic Darjeeling Style Momos"
+        },
+        {
+          "name": "Curry Momos",
+          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f80b0698-f340-4d9b-89c2-7f009dccdbc9_39f1939015e3686373aa93c3a5a4f0b2a5152c0b.png",
+          "description": "Momos Swimming in a Sea of Delicious Curry."
+        },
+        {
+          "name": "Soupy Affair",
+          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/88448c42-7143-49a6-ba7a-30a0deb9e7fd_0b68469dff18f0475056b498de8b8e6a5e443208.png",
+          "description": " A complete meal in itself, made with simple, pure ingredients for a truly comforting experience."
+        },
+        {
+          "name": "Fusion Momos",
+          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e30156c2-ab91-4026-b51c-2396964fc4cd_1d81cc72cc4fb5022b819ffd5cff2c727a1705e1.png",
+          "description": "Reinventing the Momo"
+        }
+      ]
+    },
+    "footerTag": "“Aslee Momos ki Dukan”",
+    "homeEventImage1": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/43537fff-2257-4aca-8132-1e241d02d4ef_1.png",
+    "homeEventImage2": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/733ec73d-5a95-4b04-bb60-301930850081_2.png",
+    "homeEventImage3": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/21fb1815-da7c-40e4-9bb7-a6438365beb8_3.png",
+    "homeEventImage4": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d7c84223-a451-4069-993b-1e03f1ab794b_4.png",
+    "homeVideo": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/14b9a588-74f9-4684-8549-b4d520d3202b_nepali%20moms%20vidoe.mp4",
+    "onlineOrdering": [
+      [
+        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1aa4c337-8b5c-4d0a-bc7b-c9685247cad5_skip.png",
+        "https://www.skipthedishes.com/nepali-momos-brampton-eastern-avenue"
+      ],
+      [
+        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b2933333-8bef-4201-8e66-f49d329a5dec_doordash.png",
+        "https://www.doordash.com/store/nepali-momos-brampton-brampton-24977152/?srsltid=AfmBOopc5NL0JYoMi9qGYLvFD1Yx3PgYLn2tTIkATj7d32pSVrliiPc-"
+      ],
+      [
+        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/51211c8d-79fb-44e7-9e53-117736298e8a_ubereats.png",
+        "https://www.ubereats.com/ca/store/nepali-momos-brampton/v5yoDDxfReulgJtee0YFZA?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjc1JTIwU3QlMjBOaWNob2xhcyUyMFN0JTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyZDRmZDQ1ODgtZmRmNy1lZTc2LWY0NjktMGNiNDI2MDNlMzEzJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0My42Njc2NzIyJTJDJTIybG9uZ2l0dWRlJTIyJTNBLTc5LjM4NjQxOTklN0Q%3D"
+      ]
+    ],
+    "ourStoryImages": [
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c4c0a4df-43f5-45cd-a3df-f6ac8f8f62fc_WhatsApp%20Image%202025-08-22%20at%2001.jpeg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c4c0a4df-43f5-45cd-a3df-f6ac8f8f62fc_WhatsApp%20Image%202025-08-22%20at%2001.jpeg",
+        "alt": "image1"
+      },
+      {
+        "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/caf0f362-77d3-4061-ac77-3e154335f775_WhatsApp%20Image%202025-08-22%20at%2001.jpeg",
+        "thumbImage": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/caf0f362-77d3-4061-ac77-3e154335f775_WhatsApp%20Image%202025-08-22%20at%2001.jpeg",
+        "alt": "image2"
+      }
+    ],
+    "ourStoryContent": [
+      "Welcome to a story you can taste—a legacy as rich as the finest gold. Our brand, Aslee Momo's Ki Dukan, is a heartfelt homage to our founder Sajeev's great-great-grandfather, a revered gold shop owner from the late 1800s in Darjeeling. The name, which means 'The Authentic Gold and Silver Shop,' is our promise to you: a testament to authenticity, value, and unmatched quality that has been passed down through our family for generations.",
+      "This profound heritage was carried forward by Sajeev’s mother, Bhanu. After marrying an Indian army officer, she made her momos famous in the Indian army messes. Her recipe was so beloved it is now a staple, served as hors d'oeuvres in messes across the region.",
+      "From this incredible legacy, Sajeev, born and bred in Darjeeling, embarked on his own mission. With the same passion that a tea planter cultivates the perfect leaf, he nurtures every single momo. He spent more than a decade working as a tea planter for a British company before coming to Canada. What began as a humble operation has blossomed into a business that doesn't just sell food—it spreads a legacy of flavor and hospitality across a continent.",
+      "Today, we are thrilled to be Canada's largest wholesale supplier of handcrafted momos. Our authentic flavors grace the menus of highly-rated restaurants from Vancouver to Halifax, proving that our Darjeeling-style momos are not just a meal, but a national sensation. This is more than a story you can taste; it's a legacy you'll fall in love with and crave again and again."
+    ],
+    "homeseotag": {
+      "title": "Nepali Momos Brampton – Authentic Nepali Cuisine | 90 Eastern Ave, Brampton",
+      "para": "Welcome to Nepali Momos Brampton! Discover handcrafted Nepali momos made with Himalayan spices at 90 Eastern Ave #28, Brampton, ON. Fresh, fast, and full of flavour!"
+    },
+    "menuseotag": {
+      "title": "Menu | Nepali Momos Brampton – Momos, Chowmein & More | 90 Eastern Ave, Brampton",
+      "para": "Check out our full menu including classic momos, chili momo, thukpa, noodles, and more at our Brampton location – 90 Eastern Ave #28. Dine in or order online now!"
+    },
+    "cateringseotag": {
+      "title": "Catering | Nepali Momos Brampton – Bulk Momos & Party Trays | Brampton",
+      "para": "Planning an event? Get authentic Nepali momo catering from our kitchen at 90 Eastern Ave #28, Brampton. Perfect for birthdays, weddings, office lunches & more."
+    },
+    "aboutseotag": {
+      "title": "About Us | Nepali Momos Brampton – Handmade Nepali Flavours in Brampton, ON",
+      "para": "Discover the story behind Nepali Momos Brampton. From our kitchen at 90 Eastern Ave #28, Brampton, ON, we bring traditional Nepali momos to your plate — handmade, flavour-packed, and rooted in heritage."
+    },
+    "eventseotag": {
+      "title": "Events & New Launches | Nepali Momos Brampton | 90 Eastern Ave, ON",
+      "para": "Stay tuned for upcoming events and new product launches at Nepali Momos Brampton. Visit us at 90 Eastern Ave #28, Brampton for exciting announcements!"
+    },
+    "wholesaleeotag": {
+      "title": "Wholesale & Retail | Nepali Momos Supplier in Brampton | Bulk Orders",
+      "para": "Looking to resell or stock Nepali momos? Visit or contact us at 90 Eastern Ave #28, Brampton for fresh, wholesale momo supply — retail packs and bulk trays available."
+    },
+    "franchiseseotag": {
+      "title": "Franchise Opportunities | Nepali Momos Brampton – Own a Taste of Nepal",
+      "para": "Bring authentic Nepali flavours to your city! Explore franchise opportunities with Nepali Momos Brampton. Visit our base at 90 Eastern Ave #28, Brampton to learn more."
+    },
+    "contactseotag": {
+      "title": "Contact Nepali Momos Brampton | Visit Us at 90 Eastern Ave, ON",
+      "para": "Got questions or want to place an order? Reach out or visit us at 90 Eastern Ave #28, Brampton, ON. We're here to serve you the best momos in the GTA."
+    },
+    "formseotag": {
+      "title": "Inquiry & Order Form | Nepali Momos Brampton – 90 Eastern Ave, Brampton",
+      "para": "Have questions or want to place a bulk order? Fill out our quick form and we’ll get back to you fast! Serving fresh momos from 90 Eastern Ave #28, Brampton, ON."
+    },
+    "galleryseotag": {
+      "title": "Gallery | Nepali Momos Brampton – View Our Dishes & Events | 90 Eastern Ave",
+      "para": "Feast your eyes on our mouthwatering momos, vibrant platters, and behind-the-scenes kitchen moments. Visit us at 90 Eastern Ave #28, Brampton, ON to try them in person!"
+    },
+    "policyseotag": {
+      "title": "About Nepali Momos Brampton | Handmade Momos in Brampton, ON",
+      "para": "Learn how our family brings the taste of Nepal to Brampton. From 90 Eastern Ave #28, we serve authentic momos crafted with care and Himalayan spices."
+    },
+    "dpdramaticFooterQuote": false,
+    "footerBrandlogo": true,
+    "footerLogo": true,
+    "internalLinks": true,
+    "contacDetails": true,
+    "socialIcons": true,
+    "homeContent": [
+      "Welcome to Nepali Momos Brampton, where every bite is a journey to the heart of the Himalayas!",
+      "Authentic Momos, Crafted with Care",
+      "Nepali Momos Brampton offers more than just a meal, it's a journey to the heart of the Himalayas. Founded by a family passionate about sharing their heritage, they serve up handcrafted momos made with the freshest ingredients.",
+      "We're not your average takeout. We're a family legacy served on a plate, a story whispered in every fold of our delectable momos. Founded by Sajeev, a former tea planter from Darjeeling, Nepali Momos Brampton is more than just a restaurant - it's a passion project come to life.",
+      "Momos weren't just a meal for Sajeev; they were a taste of home, a comforting melody from his childhood. He brought this tradition with him to Canada, sharing it with his new community. What started as a home-based operation has blossomed into a thriving business fueled by a love for momos and a desire to spread the magic of Himalayan cuisine."
+    ],
+    "highlights": [
+      "Family Legacy: Founded on a love for momos, a traditional Himalayan dish.",
+      "Handcrafted Quality: Momos are lovingly made using family recipes.",
+      "Authentic Flavors: Fresh ingredients and traditional methods deliver an explosion of taste.",
+      "Nationwide Delivery: Enjoy the taste of the Himalayas at home, anywhere in Canada."
+    ],
+    "aboutUsImg": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e56f6477-4f15-4998-ad0c-ad91194457f4_9S8A9707.jpg",
+    "aboutUsImg2": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f7bcfc30-c546-4cca-9308-4a0093c1c0a8_image1.jpeg",
+    "aboutUsImg3": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6a6343f7-3b1c-4ec9-8472-991da506a3ad_image2.jpeg",
+    "aboutUsImg4": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e42ae860-12e9-4906-a6de-78ac2baaa078_image3.jpeg",
+    "aboutUsImg5": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/590dc2f9-27d5-482c-91d2-fd20b34aa8ff_istockphoto-1169867488-170667a.webp",
+    "aboutHead": "In a restaurant wholesale way.",
+    "franchiseHead": "Franchise way",
+    "franchisePara": [
+      "Own a Piece of the Momo Craze: Nepali Momos Brampton Franchise Opportunity Nepali Momos Express",
+      "Nepali Momos Brampton, a rapidly growing Canadian company, is seeking passionate individuals to join our exciting franchise journey! We offer a unique opportunity to own your own successful business, serving up authentic and delicious momos crafted with fresh, high-quality ingredients."
+    ],
+    "launching": [
+      {
+        "heading": "Nepali Momos Express Food Truck Business Model:",
+        "para": "A Himalayan Flavor Sensation on Wheels"
+      }
+    ],
+    "partnering": [
+      "Expanding your menu with a unique, high-demand product that resonates with a growing customer base.",
+      "Guaranteed quality and consistency with every order, backed by our rigorous safety standards.",
+      "Competitive wholesale pricing and flexible solutions to suit your business needs.",
+      "Exceptional customer service and dedicated support to ensure your satisfaction."
+    ],
+    "aboutContent": [
+      "Nepali Momos Brampton: Authentic Momos, Delivered Nationally Nepali Momos Brampton, a proudly Canadian-owned and operated company, is on a mission to bring the joy of authentic, handcrafted momos to wholesalers and restaurants across the country. We started as a humble passion project, but fueled by a love for traditional recipes and unwavering quality standards, we've grown into a trusted supplier with a national reach."
+    ],
+    "aboutpoints": [
+      {
+        "heading": "Unmatched Authenticity:",
+        "para": "Our momos are meticulously crafted using time-honoured recipes, featuring fresh, high-quality ingredients sourced locally whenever possible. We offer a variety of fillings, catering to diverse palates and dietary preferences."
+      },
+      {
+        "heading": "Large-Scale Production:",
+        "para": "With a state of-the-art facility and a commitment to efficiency, We are capable of producing 350,000 momos per day. This ensures consistent availability and timely deliveries to meet your bulk needs. Unwavering Food Safety: We prioritise the safety of our products, adhering to the strictest Food Safety Certification standards and Good Manufacturing Practices (GMP). This guarantees consistent quality and peace of mind for you and your customers."
+      },
+      {
+        "heading": "Convenience and Flexibility:",
+        "para": "Our blast-frozen momos are designed to maintain their optimal taste and texture, offering extended shelf life and allowing for convenient storage and portion control. We also offer customizable packaging solutions to cater to your specific requirements."
+      },
+      {
+        "heading": "National Distribution Network:",
+        "para": "We've established a robust network across Canada, ensuring efficient and reliable delivery to your preferred location, from Halifax to Vancouver."
+      }
+    ],
+    "bgVideo": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8f6ac27d-f8d4-4363-8834-7090032e703a_video.mp4",
+    "bgVideo1": "../../assets/pics/NepaliMomos/gif.mp4",
+    "videobanner": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ef846a89-fbaf-4b19-8a56-2dad672a1d1c_WhatsApp%20Video%202025-03-17%20at%208.mp4",
+    "backgroundImg": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c5c3488c-9a08-4d4c-b195-487bb578f46e.jpg",
+    "leftImg": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/92fbee79-8a9d-4303-a5e2-4428e4255279_slide01-01.png",
+    "rightImg": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c20feced-e509-43f6-84ac-e0718b3fe69e_slide01-06.png",
+    "bottomImg": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0a27b514-6bbf-4c77-ac2d-2bbe89c88243_slide01-11.png",
+    "heading": "Nepali Momo’s Brampton is the leading wholesale momo’s supplier in Canada. We offer the best quality of momo’s at the best wholesale prices. All our momo’s have a unique Himalayan taste that will transform you on a Himalayan journey with food.",
+    "heading1": "Nepali Momo’s Brampton is the leading wholesale momo’s supplier in Canada. We offer the best quality of momo’s at the best wholesale prices. All our momo’s have a unique Himalayan taste that will transform you on a Himalayan journey with food.",
+    "heading2": "Keep it in the freezer and enjoy it anytime. Nepali Momos Brampton momos are just awesome. We have many varieties of momos. 50 pieces in one packet with Nepali Momos Famous sauce. Get a taste of our mouth-watering momos! Handmade with love and bursting with flavours that'll leave you craving for more. The secret? We only use fresh ingredients and imported spices crafted by skilled cooks. Trust us, we've got the experience. Experience the spirit of Himalayan hospitality in our Flagship Outlet. We prides itself on providing rich Asian culinary traditions and recipes that are passed on for generations.",
+    "subheading": "",
+    "popup": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b83bfd92-c7df-47c6-b57a-86393a43006f_KOTTU%20KORNER.png",
+    "reviews": [
+      {
+        "text": "This is the closest you can get to real, authentic and fresh momos. We are momo connoisseurs and our overall experience was nothing but fantastic. Great staff atmosphere, food and price. We are repeat customers for a good reason. Definitely recommend it!",
+        "name": "- Sudeep"
+      },
+      {
+        "text": "Nepali Momos delivers authentic, juicy momos that steal the show! The Indian Hakka Chinese, like chili chicken, tastes better than your average spot. The Himalayan Buddhist ambience brings a serene, unique vibe. The staff is friendly and attentive, enhancing the meal. It’s a must-try for momo and Hakka fans!",
+        "name": "- K S"
+      },
+      {
+        "text": "Such a delicious and authentic nepali momos. Too good! And they were fresh and handmade. This restaurant should be a top choice for anyone craving a true momos experience. Highly recommended!.",
+        "name": "- Divya Shah"
+      }
+    ],
+    "aboutTitle": "Himalayan hospitality",
+    "homeAboutContent": [
+      "We are more than a restaurant; we are at the heart of a culinary revolution. At our flagship factory outlet, you'll find the true essence of Himalayan hospitality. As Canada’s largest wholesale supplier of handcrafted momos, we are proudly Canadian-owned and Ontario Made certified.",
+      "Our minimalist interiors reflect the simplicity of our Darjeeling-style momos, which are crafted from time-honored recipes. Their authentic flavor has become a national sensation, gracing menus from Vancouver to Halifax.",
+      "This is a story you can taste—a legacy you’ll fall in love with and crave again and again."
+    ],
+    "video": [
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1c1366da-2c19-4467-beb7-0f5304b60ed0_VID-20240228-WA0029.mp4",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/38a1c1de-9696-40f6-a947-579854298200_VID-20240228-WA0030.mp4",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/91ba8a54-5d96-4adb-ae8a-82e92b49a85d_VID-20240228-WA0031.mp4",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/60960e6f-81c4-4730-b51a-b7caac394757_VID-20240228-WA0032.mp4"
+    ],
+    "cta": [
+      {
+        "text": "",
+        "link": ""
+      }
+    ],
+    "paras": [
+      {
+        "title": "Proven Brand with Strong Growth:",
+        "content": "Nepali Momos Brampton is experiencing explosive growth, boasting a loyal and expanding customer base."
+      },
+      {
+        "title": "Timeless Traditional Recipe:",
+        "content": "We remain true to the Himalayan momo tradition, offering a variety of fillings and vegetarian options to cater to all palates."
+      },
+      {
+        "title": "Large-Scale Production:",
+        "content": "Our state-of-the-art facility allows us to produce a staggering 350,000 momos per day, ensuring consistent product availability and timely deliveries to support your franchise."
+      },
+      {
+        "title": "Comprehensive Support:",
+        "content": "We provide extensive training, a detailed operations manual, and ongoing support to help you launch and manage your franchise successfully."
+      },
+      {
+        "title": "Demonstrated Profitability:",
+        "content": "Our proven business model has a track record of success, offering franchisees the potential for high profit margins."
+      }
+    ],
+    "bullets": [
+      {
+        "title": "Exclusive Territory:",
+        "content": "Develop your business and build a loyal customer base within your designated territory."
+      },
+      {
+        "title": "Established Brand Recognition:",
+        "content": "Leverage our strong brand reputation for a smoother launch and customer recognition."
+      },
+      {
+        "title": "High-Quality Products:",
+        "content": "Benefit from our reliable supply chain and consistent product quality."
+      },
+      {
+        "title": "Ongoing Marketing Support:",
+        "content": "Access our marketing resources and guidance to attract and retain customers."
+      },
+      {
+        "title": "Franchise Network Support:",
+        "content": "Join a network of fellow franchisees for peer-to-peer learning and best practice sharing."
+      }
+    ],
+    "bulletHeading": [
+      {
+        "title": "Ready to embark on your own culinary success story?",
+        "content": "Contact our franchise development team today to learn more about available franchise opportunities in your region. Let's bring the taste of Nepal to Canada, together!"
+      }
+    ],
+    "bulletpara": [
+      {
+        "title": "Nepali Momos Brampton:",
+        "content": "Cultivating a World-Class Brand Identity"
+      },
+      {
+        "title": "Elevating the Narrative:",
+        "content": "Nepali Momos Brampton has established itself as a leader in the Canadian momo scene. Now, the brand is poised to ascend to world-class status."
+      },
+      {
+        "title": "To achieve this, a strategic approach to branding is crucial, focusing on:",
+        "content": ""
+      },
+      {
+        "title": "Refining the Core Values:",
+        "content": ""
+      },
+      {
+        "title": "Authenticity:",
+        "content": "Maintaining the unparalleled authenticity of Himalayan momos, using premium ingredients and preserving time-honored recipes."
+      },
+      {
+        "title": "Quality:",
+        "content": "Unwavering commitment to excellence, adhering to the strictest food safety regulations and employing state-of-the-art production processes."
+      },
+      {
+        "title": "Innovation:",
+        "content": "Continuously exploring new culinary avenues while staying true to the heart of momos, catering to evolving palettes and dietary preferences."
+      },
+      {
+        "title": "Hospitality:",
+        "content": "Embracing the spirit of Himalayan warmth, fostering a welcoming environment for customers and fostering genuine connections."
+      }
+    ],
+    "brandVoice": [
+      "Sophisticated yet approachable: Conveying elegance and expertise while remaining accessible and inviting to a global audience.",
+      "Storytelling and cultural appreciation: Sharing the rich history and cultural significance of momos, captivating customers and fostering understanding.",
+      "Passionate and confident: Demonstrating genuine enthusiasm and unwavering belief in the quality and unique value proposition of Nepali Momos Brampton."
+    ],
+    "visualIdentity": [
+      "Logo: Refine the current logo to exude a sophisticated and global appeal. Consider incorporating Veridium red as a primary color, paired with elegant secondary colors.",
+      "magery: Utilize high-quality, professional photographs and videos showcasing the preparation process, the vibrant colors and textures of the momos, and the inviting atmosphere of your restaurants or franchise locations.",
+      "Packaging: Design premium packaging that elevates the product presentation and reflects the brand's world-class aspirations.",
+      "1.Implementing a Strategic Marketing Approach:",
+      "2.Targeted campaigns: Develop marketing strategies specific to intemational markets, highlighting the unique cultural experience and premium quality of Nepali Momos Brampton.",
+      "3.Partnership opportunities: Partner with renowned chefs, food critics, and travel influencers to reach new audiences and gain global recognition.",
+      "Participation in international food festivals and events: Showcase Nepali Momos Brampton on the world stage, competing and connecting with other culinary leaders."
+    ],
+    "mindset": [
+      "Invest in employee training and development to ensure exceptional customer sewice that reflects the brand's global aspirations.",
+      "Implement stringent quality control measures throughout the entire production and distribution chain."
+    ],
+    "stratigies": [
+      "Showcase awards and recognitions received to reinforce the brand's global standing.",
+      "By embracing these strategies, Nepali Momos Brampton can cultivate a sophisticated, world-class brand identity. This will not only solidify its position as a leader in the momo market, but also pave the way for global expansion and continued success."
+    ],
+    "launchingsoon": [
+      "Nepali Momos Express Food Truck Business Model: A Himalayan Flavor Sensation on Wheels.",
+      "Hit the Road with Deliciousness: The open road, the aroma of exotic spices, and the satisfaction of serving up culinary delights - owning a food truck specializing in Nepali Momos offers a unique and exciting entrepreneurial opportunity. However, as with any small business, it demands dedication, strategic planning, and a generous dose of passion!",
+      "Beyond the initial sizzle lies a diverse menu of essential ingredients:",
+      "Unique Culinary Niche: Differentiate yourself with authentic Nepali momos, handcrafted with fresh ingredients and infused with the vibrant flavors of the Himalayas.",
+      "Captivating Branding: Develop a vibrant and memorable brand identity that reflects the cultural hentage of your food and entices customers.",
+      "Compliance is Key: Navigate a maze of local regulations, health codes, and employee training to ensure legal and ethical operations.",
+      "Mobile Mastery: Meticulous truck maintenance, efficient breakdown management, and securing necessary permits are crucial for smooth operation.",
+      "Marketing Mix: Attract customers with creative marketing campaigns, efficient sales processes, and maintaining optimal profit margins While this may seem like a complex recipe, with the right combination of passion, preparation, and a sprinkle of Himalayan ingenuity, your Nepali Momos Express food truck can become a culinary sensation on wheels."
+    ],
+    "events": [
+      "Sourcing: Secure reliable and cost-effective suppliers for fresh ingredients like vegetables, meats, and spices, ensuring consistent quality and maintaining healthy profit margins.",
+      "Menu Optimization: Regularly analyze customer preferences and adjust your menu to offer a variety of flavorful momos that cater to diverse dietary needs and preferences.",
+      "Building Loyalty: Foster customer loyalty through engaging social media interaction, loyalty programs, and exceptional service, creating a community around your unique culinary experience."
+    ],
+    "comingsoon": "Owning a Nepali Momos Express food truck is not just about serving delicious food; it's about sharing a cultural journey and creating lasting memories for your customers. With the right blend of ingredients, hard work, and a dash of entrepreneurial spirit, your food truck can become a recipe for success, one delicious momo at a time.",
+    "tophead": "We're proud to be Certified Ontario Made. This means our products are made right here in Ontario, supporting our local economy and ensuring the quality you can trust."
+  },
+  "story": {
+    "heading": "Our story",
+    "subheading": "LOVE FOR FOOD",
+    "content": "Welcome to Nepali Momos Brampton, where the heart of Nepal's culinary heritage comes to life in every delicious bite. Nestled in the heart of Brampton, our restaurant is a vibrant celebration of authentic Nepali flavors and the art of crafting mouthwatering momos. With a commitment to using the finest ingredients and traditional recipes passed down through generations, we take pride in delivering an unforgettable dining experience. Our skilled chefs meticulously prepare each momo, ensuring a perfect blend of spices and textures that transport you to the bustling streets of Nepal. At Nepali Momos Brampton, we believe in creating not just a meal, but a moment to savor the rich tapestry of Nepali cuisine. Join us for a culinary journey that embraces the essence of Nepali culture and hospitality, as we invite you to share in the joy of our handcrafted momos and authentic dishes.",
+    "gallery": [
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5dcbb9c2-9d6a-44be-baf4-95e1605af791.jpg",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2292eda3-77f7-4182-8e84-9420a953b70c.jpg",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1feb3a45-f3e2-474d-b9ff-aa1524ac483f.jpg",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1ffd9fc5-77c7-4e72-800a-0b39a4ad2efb.jpg",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c280ebef-9046-4429-8cd4-5e1e229ec636.jpg",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a869aedd-446e-4260-83cc-b57e8d6af886.jpg",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f6883cc8-9fd0-4d5b-a3aa-40bc9589c8dd.jpg",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/edaa67db-5af6-4c48-acd8-0dec3c1c8c88.jpg"
+    ]
+  },
+  "menuImages": [
+    {
+      "imageName": "Pop.jpeg",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6d87a9ad-934a-484d-9aec-210504712880_image-20250828-10165.jpeg"
+    },
+    {
+      "imageName": "Water.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f8d21aa5-3e9f-4507-af04-ddfe330c28d7_image-20250828-101928.png"
+    },
+    {
+      "imageName": "Afgani Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/4c48f093-e1c6-4cda-abb1-bf1c8ad81beb_Afgani%20Momos.png"
+    },
+    {
+      "imageName": "Butter M Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0c036d62-2a23-4ddf-9be6-b82dcfe995be_Butter%20M%20Momos.png"
+    },
+    {
+      "imageName": "Chai Samosa.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cf679390-18d6-4fc9-b17d-25fcd99624b0_Chai%20Samosa.png"
+    },
+    {
+      "imageName": "Chicken Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/acdea194-73f7-480e-8734-eae2fd07366e_Chicken%20Momos.png"
+    },
+    {
+      "imageName": "Chilli Chicken Dry\/Gravy.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/915c0f2f-3849-4603-9d53-6653f3a98ff4_Chilli%20Chicken%20Dry_Gravy.png"
+    },
+    {
+      "imageName": "Chilli Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e3ecec21-f2be-4c2a-b904-a19e7abba6fe_Chilli%20Momos.png"
+    },
+    {
+      "imageName": "Chilli Paneer Dry_Gravy.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a656910e-6ad4-4b66-9efd-26e493431621_Chilli%20Paneer%20Dry_Gravy.png"
+    },
+    {
+      "imageName": "Classic Clear Soup(Non Veg).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/392c2d7f-a856-4c99-b681-9a7b8879a299_Classic%20Clear%20Soup%20Non%20Veg.png"
+    },
+    {
+      "imageName": "Classic Clear Soup(Veg).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/38983b56-3b11-475a-8716-79d243ae2f30_Classic%20Clear%20Soup%20Veg.png"
+    },
+    {
+      "imageName": "Curry-Licious Platter.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/befcddad-2899-4938-8ccb-8121710efcbe_Curry-Licious%20Platter.png"
+    },
+    {
+      "imageName": "Dar jeeling Tea.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d690fef6-0af7-4a29-89e0-deb146fb14d6_Dar%20jeeling%20Tea.png"
+    },
+    {
+      "imageName": "Desi Chowmein.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/02f84839-7971-423e-b75b-2c0eb6d10217_Desi%20Chowmein.png"
+    },
+    {
+      "imageName": "Dilli Alle Noodles Spring rolls(2pcs).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f7f60083-2f74-4a40-bd71-d09928fe85a4_Dilli%20Alle%20Noodles%20Spring%20rolls.png"
+    },
+    {
+      "imageName": "Extra Chutney.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/24e07d73-e789-4bf2-bfac-e11f1ef799e8_Extra%20Chutney.png"
+    },
+    {
+      "imageName": "Family Platter.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e5be802e-7709-4931-8dea-933109c422ab_Family%20Platter.png"
+    },
+    {
+      "imageName": "Fiji Water.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/03aa5b6e-5906-4177-9601-21f5edfe8cb0_Fiji%20Water.png"
+    },
+    {
+      "imageName": "Fried Rice.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/461e5a7d-12c6-4ada-85fd-0cdc23eb3bcc_Fried%20Ric.png"
+    },
+    {
+      "imageName": "\"Gulabo\" The Gulab Jamun \nA classic Indian dessert..png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cad80747-9dbe-448d-96a2-268965d27a89_Gulab%20jamun.png"
+    },
+    {
+      "imageName": "Honey Chilli Fries(regular).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8bea3d34-1b28-413d-8ae5-aa334daf5099_Honey%20Chilli%20Fries.png"
+    },
+    {
+      "imageName": "Jhol Momo!.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9445734f-6f2b-4190-8139-249b5986421b_Jhol%20Momo%21.png"
+    },
+    {
+      "imageName": "Kurkure Momo Burgers.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/702888e7-3e79-4234-ba8a-0c69cc6b415d_Kurkure%20Momo%20Burgers.png"
+    },
+    {
+      "imageName": "Kurkure Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fb5c0c57-ad7f-4370-b251-3bfb4dca9d56_Kurkure%20Momos.png"
+    },
+    {
+      "imageName": "Malai Paneer Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e9741a2b-65ea-4f20-9702-ecd137529911_Malai%20Paneer%20Momos.png"
+    },
+    {
+      "imageName": "Manchurian.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/45567e5d-5c35-4584-a155-8a3587f3fb14_Manchurian.png"
+    },
+    {
+      "imageName": "Masala Chai.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2db17eb6-cef3-4e53-ad7c-f3233d8dced7_Masala%20Chai.png"
+    },
+    {
+      "imageName": "Momo-Licious Platter.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/592ab1ec-4ce2-4933-a8d1-c0d2a552d8ff_Momo-Licious%20Platter.png"
+    },
+    {
+      "imageName": "Paneer Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3720efee-b792-4a73-8f0a-6a54114744de_Paneer%20Momos.png"
+    },
+    {
+      "imageName": "Pop.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d1bbf7b5-d850-44a9-9d69-d4cab16f71a0_Pop.png"
+    },
+    {
+      "imageName": "Premium momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/11c8a462-3557-45e3-aa04-83cae5e63cb2_Premium%20momos.png"
+    },
+    {
+      "imageName": "Red Bull.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2a9fad08-83bc-47c0-bd65-27e679922c5f_Red%20Bull.png"
+    },
+    {
+      "imageName": "Signature Thali Desi Chinese.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0fc6f06d-acf5-400b-aef4-f5ecff153c72_Signature%20Thali%20Desi%20Chinese.png"
+    },
+    {
+      "imageName": "Tandoori Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a8866c22-7b4e-42fc-aade-aa28f4fb3924_Tandoori%20Momos.png"
+    },
+    {
+      "imageName": "Thai Coconut soup(Non Veg).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c65c27a4-460b-4112-b21e-ca7d8652c23b_Thai%20Coconut%20soup%20Non%20Veg.png"
+    },
+    {
+      "imageName": "Thai Coconut soup(Veg).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/20b5c08a-dc1a-4c84-a440-c7334f0ac8c1_Thai%20Coconut%20soup%20Veg.png"
+    },
+    {
+      "imageName": "Thai Mango Salad.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/609cef65-960c-4b7e-86e2-77fc709af67e_Thai%20Mango%20Salad.png"
+    },
+    {
+      "imageName": "Thai Red Curry Soup Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2ce8414c-78c3-445b-8c23-72040de11abd_Thai%20Red%20Curry%20Soup%20Momos.png"
+    },
+    {
+      "imageName": "Thupka.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/368abbcb-97f3-4e15-a0d4-558c74da63af_Thupka.png"
+    },
+    {
+      "imageName": "Veggi Spring rolls(6pcs).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c8612c67-54df-45b4-813d-d1d70628cd41_Veggi%20Spring%20rolls.png"
+    },
+    {
+      "imageName": "Veggie Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fd759c99-879b-4a6d-8e04-56b714d8bec9_Veggie%20Momos.png"
+    },
+    {
+      "imageName": "Water.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/56f88c9e-cfdd-4594-851a-c0060398222a_Water.png"
+    },
+    {
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3ba32983-8d3d-4bbd-ab51-c6e98b0a5f1b_image-20250823-100230.png",
+      "imageName": "(Option B).png"
+    },
+    {
+      "imageName": "(Option A).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a4c5da86-cc3c-404d-b972-f0ff19fed2f1_image-20250823-100312.png"
+    },
+    {
+      "imageName": "Kids Momo Meal.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c6faa4db-7034-479b-900d-cb8fb6204aa9_image-20250823-100420.png"
+    },
+    {
+      "imageName": "Mutton Momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d5012e3a-9f11-4462-81eb-ef4ed83b6de5_mutton%20momo.jpg"
+    },
+    {
+      "imageName": "Ckn.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/596c6e1d-c99d-4303-bb12-58f9ec79d974_chicken%20momos.png"
+    },
+    {
+      "imageName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5ebf251d-bf84-4e00-8aa2-4c6d24960c8b_CHICKEN_TOFU%20SATAY%20SKEWERS.png"
+    },
+    {
+      "imageName": "CHILLI CHK/ PANEER DRY/GRAVY (Salmon).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fc11ca79-01f7-4b78-b382-ba440c88bceb_CHILLI%20CHK_%20PANEER%20DRY_GRAVY%20%28Salmon%29.png"
+    },
+    {
+      "imageName": "CHILLI CHK/ PANEER DRY/GRAVY (Tilipia).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/768e28f8-fae6-41f4-b4a5-8d54399e28d2_CHILLI%20CHK_%20PANEER%20DRY_GRAVY%20%28Tilipia%29.png"
+    },
+    {
+      "imageName": "curry momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d6cb5798-b40f-4521-aabb-942e62b1ead1_curry%20momos.png"
+    },
+    {
+      "imageName": "DESI CHOWMIEN.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b9d1face-680d-4bd6-b0a0-ab89163a7bec_DESI%20CHOWMIEN.png"
+    },
+    {
+      "imageName": "FRIED RICE.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/87194ebc-2112-4fd6-8309-f19a3d714b59_FRIED%20RICE.png"
+    },
+    {
+      "imageName": "EXOTIC FRUITS TRAY.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e420cb28-9f8c-409e-ac21-15609a012ca8_fruits%20tray.png"
+    },
+    {
+      "imageName": "GOBI MANCHURIAN.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2bb2cb66-6fd4-4a50-a20b-7fd5d3496ab3_GOBI%20MANCHURIAN.png"
+    },
+    {
+      "imageName": "Malai Paneer.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3e955957-6b85-4ac4-ac75-5de7783f4e4c_malai%20paneer%20momos.png"
+    },
+    {
+      "imageName": "MANCHURIAN DRY/GRAVY (Ckn).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6258fcae-1b1a-4ed4-af0b-bf971270688e_MANCHURIAN%20DRY_GRAVY%20%28Ckn%29.png"
+    },
+    {
+      "imageName": "MANCHURIAN DRY/GRAVY (Veg).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6258fcae-1b1a-4ed4-af0b-bf971270688e_MANCHURIAN%20DRY_GRAVY%20%28Ckn%29.png"
+    },
+    {
+      "imageName": "Paneer.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/364fbd0a-6455-4bca-83a0-0d18aa439cb1_paneer%20%20momos.png"
+    },
+    {
+      "imageName": "tandoori momos.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cb8fcacd-4d1b-4b81-ad55-436029baa2b8_tandoori%20momos.png"
+    },
+    {
+      "imageName": "THAI MANGO SALAD (50 pcs).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9d573fe6-0deb-4d60-9330-b9ad6b1c0539_Thai%20mango%20salad.png"
+    },
+    {
+      "imageName": "Veggi.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c7833b4f-eca4-4347-89d9-a9200bcef145_veg%20momos.png"
+    },
+    {
+      "imageName": "VEGGI SPRING ROLLS (50 pcs).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c3fa9d4d-d570-43a2-9708-28665dfc0851_Veg%20spring%20rolls.png"
+    }
+  ],
+  "reservation": {
+    "heading": "Visit us for A Royal Dining Experience",
+    "subheading": "AMBIANCE TO COMPLEMENT THE ROYAL MEAL",
+    "content": ""
+  },
+  "openingTimes": [
+    [
+      "Monday",
+      "Closed"
+    ],
+    [
+      "Tuesday",
+      "12 PM – 10 PM"
+    ],
+    [
+      "Wednesday",
+      "12 PM – 10 PM"
+    ],
+    [
+      "Thursday",
+      "12 PM – 10 PM"
+    ],
+    [
+      "Friday",
+      "12 PM – 10 PM"
+    ],
+    [
+      "Saturday",
+      "12 PM – 10 PM"
+    ],
+    [
+      "Sunday",
+      "12 PM – 10 PM"
+    ]
+  ],
+  "menu": [
+    {
+      "backgroundImg": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9c824b92-fc33-4056-b12c-086c5088660c.jpg",
+      "heading": "Delicious Cuisine",
+      "subheading": "DISCOVER OUR MENU",
+      "menu": [
+        {
+          "superCategory": [
+            {
+              "category": [
+                {
+                  "categoryName": "All",
+                  "routeName": "all",
+                  "searchTerm": "all",
+                  "items": []
+                },
+                {
+                  "categoryName": "Soups",
+                  "items": [
+                    {
+                      "itemName": "Classic Clear Soup(Veg)",
+                      "itemDescription": "This ClearSoup infused with aromatic herbs recipe is so healthy and has been in our family for generations.",
+                      "itemPrice": "4.50",
+                      "quantity": 1
+                    },
+                    {
+                      "itemName": "Classic Clear Soup(Non Veg)",
+                      "itemDescription": "This ClearSoup infused with aromatic herbs recipe is so healthy and has been in our family for generations.",
+                      "itemPrice": "5.50",
+                      "quantity": 1
+                    },
+                    {
+                      "itemName": "Thai Coconut soup(Veg)",
+                      "quantity": 1,
+                      "itemDescription": "Authentic Thai red curry broth, a fragrant blend of lemongrass, galangal, caraway leaves, and other aromatic herbs.",
+                      "itemPrice": "5.00"
+                    },
+                    {
+                      "itemName": "Thai Coconut soup(Non Veg)",
+                      "quantity": 1,
+                      "itemDescription": "Authentic Thai red curry broth, a fragrant blend of lemongrass, galangal, caraway leaves, and other aromatic herbs.",
+                      "itemPrice": "6.00"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Combo Deals",
+                  "items": [
+                    {
+                      "itemName": "Chai Samosa",
+                      "quantity": 1,
+                      "itemDescription": "Warm, spiced chai complements the crispy, flavorful samosas for a truly satisfying treat.",
+                      "itemPrice": "3.75"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Mini Meal 2 Go",
+                  "items": [
+                    {
+                      "itemName": "(Option A)",
+                      "quantity": 1,
+                      "itemPrice": "9.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "BEST VALUE Momo, Chill Paneer, Chowmein or Fried Rice and Soup",
+                              "price": 0.00
+                            },
+                            {
+                              "name": "Pop or Tea For",
+                              "price": 1.00
+                            },
+                            {
+                              "name": "Available in Veg or Chicken",
+                              "price": 0.00
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "(Option B)",
+                      "quantity": 1,
+                      "itemPrice": "9.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Momo Veggi Spring Rolls Mango, Salad And Soup ",
+                              "price": 0.00
+                            },
+                            {
+                              "name": "Pop or Tea For",
+                              "price": 1.00
+                            },
+                            {
+                              "name": "Available in Veg or Chicken",
+                              "price": 0.00
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Starters",
+                  "categoryDescription": "Hand-rolled, Tempura-fried, Delhi-style noodle spring rolls.",
+                  "items": [
+                    {
+                      "itemName": "Dilli Alle Noodles Spring rolls(2pcs)",
+                      "quantity": 1,
+                      "itemPrice": "6.00",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "2pcs",
+                              "price": 6.00
+                            },
+                            {
+                              "name": "6pcs",
+                              "price": 15.00
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Veggi Spring rolls(6pcs)",
+                      "quantity": 1,
+                      "itemDescription": "Perfect appetizer: Crispy, hand-rolled, tempura veg spring rolls.",
+                      "itemPrice": "12.00"
+                    },
+                    {
+                      "itemName": "Thai Mango Salad",
+                      "quantity": 1,
+                      "itemDescription": "Our best-seller for a reason: Sweet, tangy, and refreshing Thai Mango Salad.",
+                      "itemPrice": "10.00"
+                    },
+                    {
+                      "itemName": "Kurkure Momo Burgers",
+                      "quantity": 1,
+                      "itemDescription": "Our Kurkure Momos Burger features crispy, Kurkure-coated momos nestled in a soft bun with your favorite toppings and Fries",
+                      "itemPrice": "6.99"
+                    },
+                    {
+                      "itemName": "Honey Chilli Fries(regular)",
+                      "quantity": 1,
+                      "itemDescription": "Crispy, sweet, and spicy. Honey Chilli Fries done right. One of our best Sellers",
+                      "itemPrice": "5.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Regular",
+                              "price": 5.99
+                            },
+                            {
+                              "name": "Large",
+                              "price": 9.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Classic Momos",
+                  "categoryDescription": "Authentic Dar jeeling Style Momos",
+                  "items": [
+                    {
+                      "itemName": "Veggie Momos",
+                      "quantity": 1,
+                      "itemDescription": "Filled with fresh cabbage, carrots, and a blend of aromatic Himalayan herbs and salts, each momo is hand-Folded to perfection.",
+                      "itemPrice": "13.00"
+                    },
+                    {
+                      "itemName": "Chicken Momos",
+                      "quantity": 1,
+                      "itemDescription": "Can't resist these: Juicy chicken momos, a must-try at Nepali Momos Brampton. Hand Folded Filled with tender chicken onions and herbs",
+                      "itemPrice": "13.00"
+                    },
+                    {
+                      "itemName": "Mutton Momos",
+                      "quantity": 1,
+                      "itemDescription": "Tender and juicy Mutton Momos filled with fresh baby goat meat and traditional spices. A rich, flavorful experience in every handcrafted dumpling..",
+                      "itemPrice": "18.00"
+                    },
+                    {
+                      "itemName": "Paneer Momos",
+                      "quantity": 1,
+                      "itemDescription": "Hand-crafted Paneer Momos: Creamy, herb-infused delight.",
+                      "itemPrice": "15.00"
+                    },
+                    {
+                      "itemName": "Malai Paneer Momos",
+                      "quantity": 1,
+                      "itemDescription": "Our hand-crafted Malai Paneer Momos, filled with creamy paneer, cashews, aromatic herbs, and savory seasonings.",
+                      "itemPrice": "16.00"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Soupy Affair",
+                  "items": [
+                    {
+                      "itemName": "Thupka",
+                      "quantity": 1,
+                      "itemDescription": "A complete meal in itself, made with simple, pure ingredients for a truly comforting experience.",
+                      "itemPrice": "14.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken Thukpa",
+                              "price": 14.99
+                            },
+                            {
+                              "name": "Veggi Thupka",
+                              "price": 13.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Jhol Momo!",
+                      "quantity": 1,
+                      "itemDescription": "Steaming hot dumplings served with a flavorful, tangy Jhol infused with nutty flavors and a hint of Schezuan pepper for an extra kick for a truly authentic taste of Nepal.",
+                      "itemPrice": "16.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken\/Veg ",
+                              "price": 16.99
+                            },
+                            {
+                              "name": "nPaneer",
+                              "price": 18.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Thai Red Curry Soup Momos",
+                      "quantity": 1,
+                      "itemDescription": "Tender momos simmered in a rich and aromatic coconut milk based red curry broth, infused with lemongrass, galangal, caraway leaves, and other fragrant Thai herbs. It's soul food at its best.",
+                      "itemPrice": "16.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken\/Veg",
+                              "price": 16.99
+                            },
+                            {
+                              "name": "Paneer",
+                              "price": 18.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Fusion Momos",
+                  "categoryDescription": "Reinventing the Momo.",
+                  "items": [
+                    {
+                      "itemName": "Tandoori Momos",
+                      "quantity": 1,
+                      "itemDescription": "Experience the smoky char and juicy tenderness of our best-selling Tandoori Momos. These flavorful dumplings are marinated in a blend of aromatic spices and then cooked to perfection.",
+                      "itemPrice": "16.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken\/Veg",
+                              "price": 16.99
+                            },
+                            {
+                              "name": "Paneer",
+                              "price": 18.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Kurkure Momos",
+                      "quantity": 1,
+                      "itemDescription": "Get ready for a flavor explosion! Our Kurkure Momos feature a tempura-style coating fried to crispy perfection, drizzled with smoky chipotle sauce, and finished with a fiery dusting of peri-peri.",
+                      "itemPrice": "16.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken\/Veg",
+                              "price": 16.99
+                            },
+                            {
+                              "name": "Paneer",
+                              "price": 18.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Platters",
+                  "items": [
+                    {
+                      "itemName": "Momo-Licious Platter",
+                      "quantity": 1,
+                      "itemDescription": "Can't decide? The Momo-licious Platter has it all! Four delicious Momo styles served with soup.4 pcs of each delicate Steamed Momos, Savory Pan-fried, Fiery Chilli Momos, Smoky Tandoori, and Ultra-Crispy Kurkure Fried.It's a Momo lover's dream!",
+                      "itemPrice": "26.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg",
+                              "price": 26.99
+                            },
+                            {
+                              "name": "ckn",
+                              "price": 26.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Curry-Licious Platter",
+                      "quantity": 1,
+                      "itemDescription": "Momos Tossed in our famed Afagani, Butter masala and Chilli Curries with plain steamed Momos, 5 pcs each served with our soup,20 pcs altogether.",
+                      "itemPrice": "26.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg",
+                              "price": 26.99
+                            },
+                            {
+                              "name": "ckn",
+                              "price": 26.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Premium momos",
+                      "quantity": 1,
+                      "itemDescription": "Experience the delight of our premium Momos. Handcrafted and generously filled, made fresh to order for ultimate flavor. Indulge in plump, handcrafted premium Momos! Almost double the filling, made fresh to order, and filled with flavors you fancy. 6 pcs served with 3 Dipping sauces and a Classic Clear soup,a soulful meal indeed.",
+                      "itemPrice": "13.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg\/Ckn",
+                              "price": 13.99
+                            },
+                            {
+                              "name": "Paneer",
+                              "price": 26.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Family Platter",
+                      "quantity": 1,
+                      "itemDescription": "Family Feast: Delicious Food, Amazing Value! Get your family togetherfor a feast they won't forget! Choose between Momolicious or Currylicious Platter, plus Manchurian (Veg or Chicken), Desi Chowmein Veg or Desi Fried Rice Vegand 4 POP. All at one great price!",
+                      "itemPrice": "47.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg",
+                              "price": 47.99
+                            },
+                            {
+                              "name": "ckn",
+                              "price": 47.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Mains",
+                  "items": [
+                    {
+                      "itemName": "Chilli Chicken Dry\/Gravy",
+                      "quantity": 1,
+                      "itemDescription": "Crispy fried chicken tossed in a fiery chilli garlic sauce.",
+                      "itemPrice": "13.99"
+                    },
+                    {
+                      "itemName": "Manchurian",
+                      "quantity": 1,
+                      "itemDescription": "Crispy fried balls in a tangy, sweet, and spicy Manchurian sauce.",
+                      "itemPrice": "15.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "ckn",
+                              "price": 15.99
+                            },
+                            {
+                              "name": "Veg",
+                              "price": 13.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Desi Chowmein",
+                      "quantity": 1,
+                      "itemDescription": "A delicious combination of stir-fried noodles, fresh vegetables (and tender chicken), and a flavorful blend of spices and sauces.",
+                      "itemPrice": "14.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "ckn",
+                              "price": 14.99
+                            },
+                            {
+                              "name": "Veg",
+                              "price": 12.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Fried Rice",
+                      "quantity": 1,
+                      "itemDescription": "Fluffy rice, fresh veggies (and chicken), aromatic spices, and savory sauces. A crowd-pleaser.",
+                      "itemPrice": "14.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "ckn",
+                              "price": 14.99
+                            },
+                            {
+                              "name": "Veg",
+                              "price": 12.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Thali",
+                  "categoryDescription": "8 Iteams (Chicken\/Veg) Our Signature Desi Chinese Thali offers a diverse array of dishes showcasing the best of both cuisines.",
+                  "items": [
+                    {
+                      "itemName": "Signature Thali Desi Chinese",
+                      "quantity": 1,
+                      "itemDescription": "Chowmien, Fried Rice, Thai Mango Salad, Veg/Chicken Manchurian, Chilli Paneer/Chicken Chilli, 1 Spring Roll, 1 Veg/ Ckn Momo, Clear Soup, Hot Gulabo The Gulabjamun",
+                      "itemPrice": "13.99"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Kids Momo Meal",
+                  "items": [
+                    {
+                      "itemName": "Kids Momo Meal",
+                      "quantity": 1,
+                      "itemDescription": "Five delicious Momos steamed, crispy fries, a refreshing juice box, and a sweet Gulab jamun with choice of dipping sauce. The perfect kid-friendly meal.",
+                      "itemPrice": "10.99"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Dessert",
+                  "items": [
+                    {
+                      "itemName": "\"Gulabo\" The Gulab Jamun \nA classic Indian dessert.",
+                      "quantity": 1,
+                      "itemDescription": "Soft, melt-in-your-mouth milk balls soaked in a fragrant rose-flavored syrup, served hot and sprinkled with coconut shavings and pistachios. A truly decadent Indian dessert.",
+                      "itemPrice": "5.99"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Beverage",
+                  "items": [
+                    {
+                      "itemName": "Masala Chai",
+                      "quantity": 1,
+                      "itemDescription": "A fragrant blend of black tea, aromatic spices like cardamom, cinnamon, and ginger,and creamy milk, creating a warm and comforting beverage that's perfect for any time of day.",
+                      "itemPrice": "2.75"
+                    },
+                    {
+                      "itemName": "Dar jeeling Tea",
+                      "quantity": 1,
+                      "itemDescription": "\"Champagne of Teas,\" this delicate and aromatic tea boasts a unique muscatel flavor and a bright, uplifting character. Grown in the misty hills of Darjeeling, India, it's a truly exquisite experience.",
+                      "itemPrice": "2.75"
+                    },
+                    {
+                      "itemName": "Pop",
+                      "quantity": 1,
+                      "itemPrice": "1.50"
+                    },
+                    {
+                      "itemName": "Water",
+                      "quantity": 1,
+                      "itemPrice": "1.50"
+                    },
+                    {
+                      "itemName": "Fiji Water",
+                      "quantity": 1,
+                      "itemPrice": "2.50"
+                    },
+                    {
+                      "itemName": "Red Bull",
+                      "quantity": 1,
+                      "itemPrice": "4.50"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "menu2": [
+        {
+          "superCategory": [
+            {
+              "category": [
+                {
+                  "categoryName": "All",
+                  "routeName": "all",
+                  "searchTerm": "all",
+                  "items": [
+                    {
+                      "itemName": "THAI MANGO SALAD (50 pcs)",
+                      "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
+                      "quantity": 1,
+                      "itemPrice": "35.00"
+                    },
+                    {
+                      "itemName": "VEGGI SPRING ROLLS (50 pcs)",
+                      "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
+                      "quantity": 1,
+                      "itemPrice": "35.00"
+                    },
+                    {
+                      "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
+                      "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
+                      "quantity": 1,
+                      "itemPrice": "65.00"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "STARTER",
+                  "items": [
+                    {
+                      "itemName": "THAI MANGO SALAD (50 pcs)",
+                      "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
+                      "quantity": 1,
+                      "itemPrice": "35.00"
+                    },
+                    {
+                      "itemName": "VEGGI SPRING ROLLS (50 pcs)",
+                      "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
+                      "quantity": 1,
+                      "itemPrice": "35.00"
+                    },
+                    {
+                      "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
+                      "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
+                      "quantity": 1,
+                      "itemPrice": "65.00"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "MAINS",
+                  "items": [
+                    {
+                      "itemName": "CHILLI CHK/ PANEER DRY/GRAVY (Tilipia)",
+                      "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
+                      "quantity": 1,
+                      "itemPrice": "65.00"
+                    },
+                    {
+                      "itemName": "CHILLI CHK/ PANEER DRY/GRAVY (Salmon)",
+                      "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
+                      "quantity": 1,
+                      "itemPrice": "75.00"
+                    },
+                    {
+                      "itemName": "GOBI MANCHURIAN",
+                      "itemDescription": "Crispy fried cauliflower florets tossed in a tangy, sweet, and spicy Manchurian sauce. A vegetarian Indo-Chinese classic.",
+                      "quantity": 1,
+                      "itemPrice": "45.00"
+                    },
+                    {
+                      "itemName": "MANCHURIAN DRY/GRAVY (Veg)",
+                      "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
+                      "quantity": 1,
+                      "itemPrice": "45.00"
+                    },
+                    {
+                      "itemName": "MANCHURIAN DRY/GRAVY (Ckn)",
+                      "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
+                      "quantity": 1,
+                      "itemPrice": "55"
+                    },
+                    {
+                      "itemName": "FRIED RICE",
+                      "itemDescription": "Fluffy rice stir-fried with a medley of fresh vegetables (and tender chicken/egg/shrimp if you choose), aromatic spices, and savory sauces. A true crosed-pleaser.",
+                      "quantity": 1,
+                      "itemPrice": "40.00"
+                    },
+                    {
+                      "itemName": "DESI CHOWMIEN",
+                      "itemDescription": "Popular Indo-Chinese noodles stir-fried with a medley of vegetables (and chicken), aromatic spices, and a flavorful Desi-inspired sauce. A true comfort food classic.",
+                      "quantity": 1,
+                      "itemPrice": "45.00"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "RETAIL MOMOS",
+                  "categoryDescription": "Brampton's favorite Momos, now in your freezer! Our famous chutney is the cherry on top.Get your Nepali Momo fix anytime! Our frozen Momos are the perfect solution for busy Momo lovers. Simply take them home, prepare them quickly, and enjoy the authentic taste of Brampton's best, complete with our signature chutneys.",
+                  "items": [
+                    {
+                      "itemName": "Veggi",
+                      "quantity": 1,
+                      "itemPrice": "45",
+                      "itemDescription": "50 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Ckn",
+                      "quantity": 1,
+                      "itemPrice": "50",
+                      "itemDescription": "50 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Paneer",
+                      "quantity": 1,
+                      "itemPrice": "55",
+                      "itemDescription": "50 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Malai Paneer",
+                      "quantity": 1,
+                      "itemPrice": "60",
+                      "itemDescription": "50 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Veggi",
+                      "quantity": 1,
+                      "itemPrice": "15.00",
+                      "itemDescription": "15 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Ckn",
+                      "quantity": 1,
+                      "itemPrice": "15.00",
+                      "itemDescription": "15 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Paneer",
+                      "quantity": 1,
+                      "itemPrice": "16.00",
+                      "itemDescription": "15 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Malai Paneer",
+                      "quantity": 1,
+                      "itemPrice": "18.00",
+                      "itemDescription": "15 PCS RETAIL BAGS"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "MOMOS",
+                  "categoryDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 5o PCS STEAMED",
+                  "items": [
+                    {
+                      "itemName": "Veggi",
+                      "itemDescription": "Add 5 for Fried",
+                      "quantity": 1,
+                      "itemPrice": "40.00"
+                    },
+                    {
+                      "itemName": "Ckn",
+                      "itemDescription": "Add 5 for Fried",
+                      "quantity": 1,
+                      "itemPrice": "45.00"
+                    },
+                    {
+                      "itemName": "Paneer",
+                      "itemDescription": "Add 5 for Fried",
+                      "quantity": 1,
+                      "itemPrice": "50.00"
+                    },
+                    {
+                      "itemName": "Malai Paneer",
+                      "itemDescription": "Add 5 for Fried",
+                      "quantity": 1,
+                      "itemPrice": "55.00"
+                    },
+                    {
+                      "itemName": "TANDOORI MOMOS",
+                      "itemDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 50 ADD $10.00 TANDOORI MOMOS",
+                      "quantity": 1,
+                      "itemPrice": "60.00"
+                    },
+                    {
+                      "itemName": "CURRY MOMOS",
+                      "itemDescription": "A DELICIOUS ASSORTMENT OF TENDER MOMOS TOSSED IN THREE FLAVORFUL CURRIES, CHILLI, AFGHANI, AND BUTTER MASALA, PERFECT FOR SHARING WITH FRIENDS ANDFAMILY. 50 PCS ADD $10.00",
+                      "quantity": 1,
+                      "itemPrice": "60.00"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "EXOTIC FRUITS TRAY",
+                  "items": [
+                    {
+                      "itemName": "EXOTIC FRUITS TRAY",
+                      "itemDescription": "A VIBRANT DISPLAY OF NATURE'S FINEST FRUITS, INCLUDING PASSION FRUIT, MANGO, BANANA, DRAGON FRUIT, LYCHEE. STAR FRUIT, GRAPES, MELONS. WATERMELON, PINEAPPLE. AND FRESH COCONUT. A REFRESHING AND HEALTHY TREAT FOR ANY OCCASION.",
+                      "quantity": 1,
+                      "itemPrice": "60.00"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

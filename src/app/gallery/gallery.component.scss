@@ -1,0 +1,220 @@
+main {
+    padding-top: 100px; // Account for fixed navbar
+
+    .gallery-banner {
+        background: url("https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0199cde1-3ef3-46bf-8cea-5d687a266eb8_1017cd7cd527cf27500dd4debc9c5846843b55d4.png"), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+        position: relative;
+
+        .banner-overlay {
+            padding: 0 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+
+            h1 {
+                font-family: 'Abril Fatface', serif;
+                font-size: 4rem;
+                font-weight: 400;
+                margin: 0;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+                color: white;
+            }
+        }
+    }
+
+    .gallery-section {
+        padding: 60px 0;
+        background-color: #ffffff;
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            gap: 15px;
+            grid-template-areas: 
+                "large large large large large large medium1 medium1 medium1 medium2 medium2 medium2"
+                "large large large large large large medium1 medium1 medium1 medium2 medium2 medium2"
+                "small1 small1 small1 small2 small2 small2 medium-wide medium-wide medium-wide medium-wide medium-wide medium-wide"
+                "medium3 medium3 medium3 medium3 small3 small3 small4 small4 small4 small4 small4 small4";
+
+            .gallery-item {
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+                }
+
+                &.large {
+                    grid-area: large;
+                }
+
+                &.medium:nth-of-type(2) {
+                    grid-area: medium1;
+                }
+
+                &.medium:nth-of-type(3) {
+                    grid-area: medium2;
+                }
+
+                &.small:nth-of-type(4) {
+                    grid-area: small1;
+                }
+
+                &.small:nth-of-type(5) {
+                    grid-area: small2;
+                }
+
+                &.medium-wide {
+                    grid-area: medium-wide;
+                }
+
+                &.medium:nth-of-type(7) {
+                    grid-area: medium3;
+                }
+
+                &.small:nth-of-type(8) {
+                    grid-area: small3;
+                }
+
+                &.small:nth-of-type(9) {
+                    grid-area: small4;
+                }
+
+                .gallery-image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover .gallery-image {
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+    main {
+        .gallery-banner {
+            height: 300px;
+
+            .banner-overlay {
+                padding: 0 30px;
+
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .gallery-section {
+            .gallery-grid {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(6, 180px);
+                grid-template-areas: 
+                    "large large large large large large"
+                    "large large large large large large"
+                    "medium1 medium1 medium1 medium2 medium2 medium2"
+                    "small1 small1 small2 small2 small3 small3"
+                    "medium-wide medium-wide medium-wide medium-wide medium-wide medium-wide"
+                    "medium3 medium3 medium3 small4 small4 small4";
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 80px;
+
+        .gallery-banner {
+            height: 250px;
+
+            .banner-overlay {
+                padding: 0 20px;
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .gallery-section {
+            padding: 40px 0;
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(9, 150px);
+                gap: 15px;
+                grid-template-areas: 
+                    "large large"
+                    "large large"
+                    "medium1 medium2"
+                    "small1 small2"
+                    "medium-wide medium-wide"
+                    "medium3 small3"
+                    "small4 small4"
+                    "small4 small4"
+                    "small4 small4";
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        .gallery-banner {
+            height: 200px;
+
+            .banner-overlay {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .gallery-section {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(9, 200px);
+                grid-template-areas: 
+                    "large"
+                    "medium1"
+                    "medium2"
+                    "small1"
+                    "small2"
+                    "medium-wide"
+                    "medium3"
+                    "small3"
+                    "small4";
+            }
+        }
+    }
+}

@@ -1,0 +1,360 @@
+// SCSS Variables for better maintainability
+$navbar-bg-color: #ffffff;
+$navbar-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$navbar-z-index: 1000;
+$primary-color: #e04652;
+$text-color: #3F443E;
+$text-hover-color: #e04652;
+$transition-duration: 0.3s;
+$transition-easing: ease;
+
+// Font fallback stack for better performance and reliability
+$primary-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
+$secondary-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+.navbar {
+    background-color: $navbar-bg-color;
+    box-shadow: $navbar-shadow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $navbar-z-index;
+    padding: 0;
+    
+    // Performance optimization: Enable hardware acceleration
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    position: relative;
+    gap: 30px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &.left-links {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    &.right-links {
+        flex: 1;
+        justify-content: flex-start;
+    }
+}
+
+.nav-link {
+    // Typography improvements with fallback fonts
+    font-family: $primary-font-stack;
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 16px); // Responsive font size
+    line-height: 1.4; // Better readability
+    letter-spacing: 0.02em; // Improved character spacing
+    
+    // Visual styling
+    text-decoration: none;
+    color: $text-color;
+    
+    // Layout and positioning
+    position: relative;
+    display: inline-block; // Better for pseudo-element positioning
+    
+    // Performance optimizations
+    transition: color $transition-duration $transition-easing,
+                transform $transition-duration $transition-easing;
+    will-change: color, transform; // Optimize for animations
+    
+    // Accessibility improvements
+    outline-offset: 2px;
+    
+    &:hover {
+        color: $text-hover-color;
+        transform: translateY(-1px); // Subtle lift effect
+    }
+    
+    &:focus {
+        // outline: 2px solid $primary-color;
+        outline-offset: 2px;
+    }
+
+    &.active {
+        color: $primary-color;
+        font-weight: 700; // Slightly bolder for active state
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: $primary-color;
+            border-radius: 1px; // Softer edges
+            transform: scaleX(1);
+            transition: transform $transition-duration $transition-easing;
+        }
+    }
+    
+    // Error handling: Fallback for when custom fonts fail to load
+    @supports not (font-family: $secondary-font-stack) {
+        font-family: Arial, sans-serif;
+    }
+}
+
+.navbar-logo {
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // z-index: 10;
+
+    a {
+        display: block;
+        // Accessibility improvement
+        &:focus {
+            // outline: 2px solid $primary-color;
+            outline-offset: 2px;
+            border-radius: 50%;
+        }
+    }
+
+    .logo-image {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        
+        // Performance optimization
+        transition: transform $transition-duration $transition-easing;
+        will-change: transform;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+        
+        // Handle image loading errors
+        &:not([src]),
+        &[src=""],
+        &[src="#"] {
+            &::before {
+                content: "LOGO";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .icons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        img {
+            width: 40px;
+            object-fit: contain;
+        }
+    }
+}
+
+.skip-btn {
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e55a2b;
+    }
+}
+
+.uber-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #333333;
+    }
+
+    .uber-icon {
+        font-size: 18px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+
+    span {
+        width: 25px;
+        height: 3px;
+        background-color: #666666;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.mobile-nav-link {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &.active {
+        color: #e04652;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+// Responsive Design with improved breakpoints
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-logo {
+        position: static;
+        transform: none;
+
+        .logo-image {
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .action-buttons {
+        gap: 10px;
+    }
+
+    .skip-btn {
+        padding: 6px 12px;
+        font-size: clamp(10px, 2vw, 12px); // Responsive font size
+    }
+
+    .uber-btn {
+        width: 35px;
+        height: 35px;
+
+        .uber-icon {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 8px 10px;
+    }
+
+    .navbar-logo .logo-image {
+        height: 50px;
+        width: 50px;
+    }
+
+    .skip-btn {
+        display: none;
+    }
+}
+
+// High contrast mode support for accessibility
+@media (prefers-contrast: high) {
+    .nav-link {
+        color: #000000;
+        
+        &:hover,
+        &.active {
+            color: #000000;
+            background-color: #ffff00;
+            padding: 2px 4px;
+        }
+    }
+}
+
+// Reduced motion support for accessibility
+@media (prefers-reduced-motion: reduce) {
+    .nav-link,
+    .navbar-logo .logo-image {
+        transition: none;
+    }
+    
+    .nav-link:hover {
+        transform: none;
+    }
+}
+
+// Add space for fixed navbar
+:host {
+    margin-bottom: 100px;
+}

@@ -1,0 +1,435 @@
+// SCSS Variables for consistency
+$footer-bg-color: #ffffff;
+$footer-text-color: #41433e;
+$footer-heading-color: #41433e;
+$primary-color: #e04652;
+$border-color: #e0e0e0;
+$social-icon-bg: #41433e;
+$social-icon-hover: #e04652;
+$transition-duration: 0.3s;
+$transition-easing: ease;
+
+// Font stacks as requested
+$aberlo-font-stack: "Aberlo", "Georgia", "Times New Roman", serif;
+$environment-regular-font-stack: "Environment Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
+
+.footer {
+  background-color: $footer-bg-color;
+  padding: 0;
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 0;
+    border-top: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+    }
+  }
+}
+
+// Quick Navigation Section
+.quick-navigation {
+  .section-title {
+    font-family: $aberlo-font-stack; // Using Aberlo font
+    font-size: 18px;
+    font-weight: 700;
+    color: $footer-heading-color;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin-bottom: 15px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    .nav-link {
+      font-family: $environment-regular-font-stack; // Using Environment Regular font
+      font-size: 14px;
+      color: $footer-text-color;
+      text-decoration: none;
+      transition: all $transition-duration $transition-easing;
+      display: inline-block;
+      position: relative;
+      font-weight: 400;
+      
+      &:hover {
+        color: $primary-color;
+        font-weight: 600;
+      }
+      
+      &:focus {
+        outline-offset: 2px;
+      }
+    }
+  }
+}
+
+// Center Section
+.center-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+  .logo-container {
+    margin-bottom: 30px;
+    
+    .footer-logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform $transition-duration $transition-easing;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+      
+      // Error handling for broken images
+      &:not([src]),
+      &[src=""],
+      &[src="#"] {
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &::before {
+          content: "LOGO";
+          color: white;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    
+    .social-link {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: $social-icon-bg;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all $transition-duration $transition-easing;
+      font-size: 18px;
+      
+      &:hover {
+        background-color: $social-icon-hover;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      
+      &:focus {
+        outline: 2px solid $primary-color;
+        outline-offset: 2px;
+      }
+      
+      // Specific social media colors on hover
+      &[aria-label="Facebook"]:hover {
+        background-color: #1877f2;
+      }
+      
+      &[aria-label="Instagram"]:hover {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      }
+      
+      &[aria-label="WhatsApp"]:hover {
+        background-color: #25d366;
+      }
+      
+      &[aria-label="Telegram"]:hover {
+        background-color: #0088cc;
+      }
+    }
+  }
+  
+  .newsletter-section {
+    width: 100%;
+    max-width: 400px;
+    
+    .newsletter-title {
+      font-family: $abril-fatface-font-stack; // Using Abril Fatface font
+      font-size: 18px;
+      font-weight: 400;
+      color: $footer-heading-color;
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+    
+    .newsletter-form {
+      .input-group {
+        display: flex;
+        border: 2px solid $border-color;
+        border-radius: 25px;
+        overflow: hidden;
+        transition: border-color $transition-duration $transition-easing;
+        
+        &:focus-within {
+          border-color: $primary-color;
+        }
+        
+        .newsletter-input {
+          flex: 1;
+          padding: 12px 20px;
+          border: none;
+          outline: none;
+          font-family: $environment-regular-font-stack; // Using Environment Regular font
+          font-size: 14px;
+          background-color: white;
+          
+          &::placeholder {
+            color: #999;
+          }
+          
+          &:focus {
+            background-color: #fafafa;
+          }
+        }
+        
+        .newsletter-submit {
+          background-color: $primary-color;
+          border: none;
+          padding: 12px 20px;
+          color: white;
+          cursor: pointer;
+          transition: all $transition-duration $transition-easing;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 50px;
+          
+          &:hover:not(:disabled) {
+            background-color: darken($primary-color, 10%);
+            transform: scale(1.05);
+          }
+          
+          &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+          }
+          
+          &:focus {
+            outline: 2px solid $primary-color;
+            outline-offset: 2px;
+          }
+          
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+      
+      .error-message {
+        color: #dc3545;
+        font-size: 12px;
+        margin-top: 8px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// Quick Contact Section
+.quick-contact {
+  .section-title {
+    font-family: $aberlo-font-stack; // Using Aberlo font
+    font-size: 18px;
+    font-weight: 700;
+    color: $footer-heading-color;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
+  }
+  
+  .contact-list {
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      
+      .contact-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $social-icon-bg;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        font-size: 16px;
+        transition: all $transition-duration $transition-easing;
+        
+        &:hover {
+          background-color: $primary-color;
+          transform: scale(1.1);
+        }
+      }
+      
+      .contact-label {
+        font-family: $environment-regular-font-stack; // Using Environment Regular font
+        font-size: 14px;
+        color: $footer-text-color;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Footer Bottom
+.footer-bottom {
+  border-top: 1px solid $border-color;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: darken($footer-bg-color, 2%);
+  
+  .footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    
+    .copyright {
+      font-family: $abril-fatface-font-stack; // Using Abril Fatface font for copyright
+      font-size: 14px;
+      color: $footer-text-color;
+      margin: 0;
+      font-weight: 400;
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 0;
+    
+    .footer-container {
+      padding: 0 15px;
+    }
+  }
+  
+  .center-section {
+    .logo-container .footer-logo {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .social-media {
+      gap: 12px;
+      
+      .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  .quick-contact .contact-list .contact-item {
+    justify-content: center;
+    
+    .contact-icon {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    .footer-container {
+      gap: 30px;
+    }
+  }
+  
+  .center-section {
+    .newsletter-section {
+      max-width: 100%;
+      
+      .newsletter-form .input-group {
+        .newsletter-input {
+          padding: 10px 15px;
+          font-size: 13px;
+        }
+        
+        .newsletter-submit {
+          padding: 10px 15px;
+          min-width: 45px;
+        }
+      }
+    }
+  }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .footer {
+    background-color: white;
+    border-top-color: #000;
+  }
+  
+  .nav-link,
+  .contact-label {
+    color: #000;
+    
+    &:hover {
+      background-color: #ffff00;
+      color: #000;
+    }
+  }
+  
+  .social-link {
+    background-color: #000;
+    border: 2px solid #000;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .nav-link,
+  .social-link,
+  .footer-logo,
+  .newsletter-submit,
+  .contact-icon {
+    transition: none;
+  }
+  
+  .nav-link:hover,
+  .social-link:hover {
+    transform: none;
+  }
+}
