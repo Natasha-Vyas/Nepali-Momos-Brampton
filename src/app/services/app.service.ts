@@ -17,7 +17,7 @@ export class AppService {
         // Initialize with default data
         this.data = nepaliMomosData;
         this.website = 'nepalimomosbrampton.com';
-        this.formCode = 'Vmn05XNC';
+        this.formCode = 'B7DJ0Vf9R';
     }
 
     getData(website: any) {
@@ -70,6 +70,28 @@ export class AppService {
         let requestBody = {
             ...data,
             type: 'Catering Inquiry'
+        };
+        return this.http.post(
+            `https://submit-form.com/${this.formCode}`,
+            requestBody
+        );
+    }
+
+    checkoutSubmission(data: any): Observable<any> {
+        let requestBody = {
+            ...data,
+            type: 'Checkout Order'
+        };
+        return this.http.post(
+            `https://submit-form.com/${this.formCode}`,
+            requestBody
+        );
+    }
+
+    newsletterSubscription(email: string): Observable<any> {
+        let requestBody = {
+            email: email,
+            type: 'Newsletter Subscription'
         };
         return this.http.post(
             `https://submit-form.com/${this.formCode}`,

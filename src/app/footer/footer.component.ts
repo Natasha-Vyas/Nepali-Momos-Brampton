@@ -16,6 +16,7 @@ export class FooterComponent implements OnInit {
   address: any = '';
   phone: any = '';
   email: any = '';
+  isSubmitting: boolean = false;
 
   constructor(private appService: AppService) { }
 
@@ -36,16 +37,21 @@ export class FooterComponent implements OnInit {
 
   onNewsletterSubmit(): void {
     if (this.newsletterEmail && this.isValidEmail(this.newsletterEmail)) {
-      // Handle newsletter subscription
-      console.log('Newsletter subscription for:', this.newsletterEmail);
-      // You can add your newsletter subscription logic here
-      // For example, call a service to subscribe the user
-      
-      // Reset the form after successful submission
-      this.newsletterEmail = '';
-      
-      // Show success message (you can implement a toast service)
-      alert('Thank you for subscribing to our newsletter!');
+      this.isSubmitting = true;
+
+      // Submit using AppService which handles Formspark integration
+      this.appService.newsletterSubscription(this.newsletterEmail).subscribe({
+        next: (response) => {
+          alert('Thank you for subscribing to our newsletter!');
+          this.newsletterEmail = '';
+          this.isSubmitting = false;
+        },
+        error: (error) => {
+          console.error('Error submitting newsletter subscription:', error);
+          alert('There was an error subscribing to the newsletter. Please try again.');
+          this.isSubmitting = false;
+        }
+      });
     }
   }
 

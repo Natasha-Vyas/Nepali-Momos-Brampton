@@ -1,0 +1,327 @@
+// =============================================================================
+// CHECKOUT COMPONENT - Nepali Momos Restaurant
+// =============================================================================
+
+@import '../../styles/variables';
+
+// Component-specific styles using shared mixins
+main {
+  font-family: $font-primary;
+  padding-top: 0rem;
+  margin-top: 5rem;
+  
+  @include respond-to(sm) {
+    margin-top: 3rem;
+  }
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.38)),
+              url("https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2b2965bf-f96c-46a1-ba5e-56d2f6784c82_Banner%20images%20for%20website.jpg");
+  display: flex;
+  padding: 10%;
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  align-items: center;
+  
+  div {
+    text-align: center;
+  }
+  
+  h1 {
+    @include heading-style(7xl);
+    color: get-color(light);
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: get-font-weight(black);
+  }
+  
+  @include respond-to(sm) {
+    min-height: 40vh;
+    padding: 10% 15%;
+    
+    h1 {
+      font-size: get-font-size(5xl);
+    }
+  }
+}
+
+.checkout-section {
+  padding: get-spacing(20) 10%;
+  background-color: get-color(gray-100);
+  min-height: 70vh;
+  
+  @include respond-to(sm) {
+    padding: get-spacing(10) 5%;
+  }
+}
+
+.checkout-container {
+  @include container;
+  @include card-base;
+  padding: get-spacing(15);
+  border-radius: get-radius(lg);
+  box-shadow: get-shadow(lg);
+  
+  h2 {
+    @include heading-style(3xl);
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0 0 get-spacing(12) 0;
+    letter-spacing: 1px;
+  }
+  
+  @include respond-to(sm) {
+    padding: get-spacing(10) get-spacing(8);
+    
+    h2 {
+      font-size: get-font-size(2xl);
+      margin-bottom: get-spacing(10);
+    }
+  }
+  
+  @include respond-to(xs) {
+    padding: get-spacing(8) get-spacing(5);
+    
+    h2 {
+      font-size: get-font-size(xl);
+    }
+  }
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: get-spacing(6);
+  margin-bottom: get-spacing(8);
+  
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: get-spacing(5);
+  }
+}
+
+.form-group {
+  position: relative;
+  
+  &.full-width {
+    grid-column: 1 / -1;
+  }
+  
+  input {
+    @include form-input;
+    border-radius: get-radius(md);
+    font-size: get-font-size(base);
+    font-weight: get-font-weight(medium);
+    background-color: get-color(light);
+    border: 1px solid get-color(gray-400);
+    
+    &:focus {
+      border-color: get-color(secondary);
+      box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    &::placeholder {
+      color: get-color(gray-600);
+      font-weight: get-font-weight(regular);
+    }
+    
+    &[type="date"]::-webkit-calendar-picker-indicator,
+    &[type="time"]::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+      filter: invert(0.5);
+    }
+  }
+}
+
+.mandatory-message {
+  text-align: center;
+  color: get-color(danger);
+  font-size: get-font-size(base);
+  font-weight: get-font-weight(semibold);
+  margin: get-spacing(5) 0 get-spacing(10) 0;
+  font-family: $font-primary;
+}
+
+.checkout-btn {
+  @include button-primary;
+  transition: get-transition(base);
+  letter-spacing: 2px;
+  box-shadow: get-shadow(md);
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+  padding: get-spacing(2) get-spacing(5);
+  border-radius: get-radius(sm);
+  font-weight: get-font-weight(bold);
+  color: get-color(light);
+  background: #e04652;;
+  width: fit-content;
+  margin: auto;
+  display: block;
+  
+  &:disabled {
+    background: rgba(70, 67, 67, 0.72);
+    cursor: not-allowed !important;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.6s;
+  }
+  
+  &:hover::before {
+    left: 100%;
+  }
+  
+  &:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: get-shadow(xl);
+  }
+  
+  &:active:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: get-shadow(md);
+  }
+}
+
+// Order Summary Styles
+.order-summary {
+  margin-top: get-spacing(10);
+  padding: get-spacing(8);
+  background: get-color(gray-100);
+  border-radius: get-radius(md);
+  border: 1px solid get-color(gray-400);
+  
+  h3 {
+    @include heading-style(2xl);
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 get-spacing(5) 0;
+  }
+  
+  @include respond-to(sm) {
+    padding: get-spacing(5);
+    
+    h3 {
+      font-size: get-font-size(xl);
+    }
+  }
+  
+  @include respond-to(xs) {
+    padding: get-spacing(4);
+  }
+}
+
+.cart-items {
+  margin-bottom: get-spacing(5);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: get-spacing(2) 0;
+  border-bottom: 1px solid get-color(gray-400);
+  font-family: $font-primary;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  @include respond-to(xs) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: get-spacing(1);
+  }
+}
+
+.item-name {
+  flex: 1;
+  font-weight: get-font-weight(medium);
+  color: get-color(secondary);
+}
+
+.item-quantity {
+  margin: 0 get-spacing(4);
+  color: get-color(gray-700);
+  font-size: get-font-size(sm);
+  
+  @include respond-to(xs) {
+    margin: 0;
+  }
+}
+
+.item-total {
+  font-weight: get-font-weight(semibold);
+  color: get-color(secondary);
+}
+
+.order-totals {
+  border-top: 2px solid get-color(secondary);
+  padding-top: get-spacing(4);
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: get-spacing(2);
+  font-family: $font-primary;
+  font-size: get-font-size(base);
+  
+  &.final-total {
+    font-weight: get-font-weight(bold);
+    font-size: get-font-size(lg);
+    color: get-color(secondary);
+    border-top: 1px solid get-color(secondary);
+    padding-top: get-spacing(2);
+    margin-top: get-spacing(2);
+  }
+}
+
+// Empty Cart Styles
+.empty-cart {
+  text-align: center;
+  padding: get-spacing(10) get-spacing(5);
+  color: get-color(gray-700);
+  
+  p {
+    @include body-text(lg);
+    margin-bottom: get-spacing(8);
+  }
+}
+
+.back-btn {
+  @include button-primary;
+  transition: get-transition(base);
+  font-family: $font-primary !important;
+  letter-spacing: 2px;
+  box-shadow: get-shadow(md);
+  position: relative;
+  overflow: hidden;
+  font-size: get-font-size(sm);
+  text-transform: capitalize;
+  padding: get-spacing(2) get-spacing(5);
+  border-radius: get-radius(sm);
+  font-weight: get-font-weight(bold);
+  color: get-color(light);
+  background: get-color(secondary);
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: get-shadow(xl);
+    background: get-color(dark);
+  }
+}

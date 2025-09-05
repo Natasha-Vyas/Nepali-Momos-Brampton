@@ -46,8 +46,9 @@
               email
               #emailInput="ngModel"
             >
-            <button type="submit" class="newsletter-submit" [disabled]="!newsletterForm.valid">
-              <i class="fas fa-arrow-right"></i>
+            <button type="submit" class="newsletter-submit" [disabled]="!newsletterForm.valid || isSubmitting">
+              <i class="fas fa-arrow-right" *ngIf="!isSubmitting"></i>
+              <i class="fas fa-spinner fa-spin" *ngIf="isSubmitting"></i>
             </button>
           </div>
           <div class="error-message" *ngIf="emailInput.invalid && emailInput.touched">

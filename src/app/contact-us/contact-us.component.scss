@@ -1,0 +1,254 @@
+// =============================================================================
+// CONTACT-US COMPONENT - Nepali Momos Restaurant
+// =============================================================================
+
+@import '../../styles/variables';
+
+// Component-specific styles using shared mixins
+.contact-us-container {
+  font-family: $font-primary;
+  background-color: get-color(gray-100);
+  min-height: 100vh;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  margin-top: 5rem;
+
+  button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 25px;
+    background-color: #e04652;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+
+    &:hover {
+      font-weight: 600;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  h1 {
+    font-family: "Abril Fatface", serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #41433E;
+    margin: 0 0 30px;
+  }
+
+  h2 {
+    font-family: "Abril Fatface", serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: #41433E;
+    margin: 0 0 30px;
+  }
+
+  h3 {
+    font-family: "Abril Fatface", serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #41433E;
+    margin: 0 0 15px;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #41433E;
+    line-height: 1.6;
+  }
+
+  @include respond-to(sm) {
+    margin-top: 3rem;
+  }
+}
+
+.contact-header {
+  text-align: center;
+  padding: get-spacing(20) get-spacing(5) get-spacing(15);
+  background: get-color(light);
+
+  h1 {
+    letter-spacing: -1px;
+  }
+
+  p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @include respond-to(sm) {
+    padding: get-spacing(15) get-spacing(5) get-spacing(10);
+
+    h1 {
+      font-size: get-font-size(5xl);
+    }
+
+    p {
+      font-size: get-font-size(sm);
+    }
+  }
+
+  @include respond-to(xs) {
+    padding: get-spacing(10) get-spacing(4) get-spacing(8);
+
+    h1 {
+      font-size: get-font-size(3xl);
+    }
+  }
+}
+
+.contact-form-section {
+  background: get-color(light);
+  padding: 0 get-spacing(5) get-spacing(20);
+
+  @include respond-to(sm) {
+    padding: 0 get-spacing(4) get-spacing(15);
+  }
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  @include card-base;
+  padding: get-spacing(10);
+
+  @include respond-to(sm) {
+    padding: get-spacing(8) get-spacing(5);
+  }
+
+  @include respond-to(xs) {
+    padding: get-spacing(6) get-spacing(4);
+  }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: get-spacing(5);
+  margin-bottom: get-spacing(5);
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.form-group {
+  margin-bottom: get-spacing(5);
+
+  &.full-width {
+    grid-column: 1 / -1;
+  }
+
+  label {
+    @include form-label;
+    font-size: 20px;
+  }
+
+  input,
+  textarea {
+    @include form-input;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  @include respond-to(xs) {
+    margin-bottom: get-spacing(4);
+
+    input,
+    textarea {
+      padding: get-spacing(2) get-spacing(3);
+      font-size: get-font-size(xs);
+    }
+  }
+}
+
+.send-btn {
+  @include button-primary;
+  width: 100%;
+  padding: get-spacing(4) get-spacing(8);
+  font-size: get-font-size(base);
+  border-radius: get-radius(xl);
+  margin-top: get-spacing(2);
+  text-transform: capitalize;
+
+  @include respond-to(xs) {
+    padding: get-spacing(3) get-spacing(7);
+    font-size: get-font-size(sm);
+  }
+}
+
+.contact-info-section {
+  background: get-color(gray-100);
+  padding: get-spacing(15) get-spacing(5);
+
+  @include respond-to(sm) {
+    padding: get-spacing(10) get-spacing(4);
+  }
+}
+
+.contact-info-container {
+  @include container(1000px);
+  @include grid-responsive(250px);
+  text-align: center;
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: get-spacing(8);
+  }
+}
+
+.info-item {
+  h3 {
+    margin-bottom: get-spacing(4);
+  }
+
+  p {
+    margin: get-spacing(1) 0;
+
+    &.phone-number {
+      color: get-color(primary);
+      font-weight: get-font-weight(semibold);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+
+    label {
+      font-size: 16px !important;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../services/app.service';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-gallery',
@@ -11,10 +12,11 @@ export class GalleryComponent implements OnInit {
   social: any = {};
   gallery: any = {};
 
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService, private seoService: SeoService) { }
 
   ngOnInit(): void {
     this.loadData();
+    this.seoService.updateSeoTags('gallery');
   }
 
   private loadData(): void {

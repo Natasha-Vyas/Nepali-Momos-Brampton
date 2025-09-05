@@ -1,1 +1,92 @@
-<p>contact-us works!</p>
+<section class="contact-us-container">
+  <main>
+    <!-- Header Section -->
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
+      <div class="form-container">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your name"
+                [(ngModel)]="formData.name"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter email address"
+                [(ngModel)]="formData.email"
+                required>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="subject">Subject</label>
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              placeholder="Write a subject"
+              [(ngModel)]="formData.subject"
+              required>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="6"
+              placeholder="Write your message"
+              [(ngModel)]="formData.message"
+              required></textarea>
+          </div>
+
+          <button 
+            type="submit" 
+            class="send-btn"
+            [disabled]="isSubmitting">
+            {{ isSubmitting ? 'Sending...' : 'Send' }}
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="contact-info-section">
+      <div class="contact-info-container">
+        <div class="info-item">
+          <h3>Call Us:</h3>
+          <p class="phone-number">+1 905-874-4141</p>
+        </div>
+
+        <div class="info-item">
+          <h3>Hours:</h3>
+          <p>Mon-Fri: 11am - 8pm</p>
+          <p>Sat, Sun: 9am - 10pm</p>
+        </div>
+
+        <div class="info-item">
+          <h3>Our Location:</h3>
+          <p>90 Eastern Ave #28</p>
+          <p>Brampton, ON L6W 1X9</p>
+          <p>Canada</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>

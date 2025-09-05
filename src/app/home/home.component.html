@@ -3,7 +3,7 @@
         <div class="hero-content">
             <h1>Experience the Taste of Authentic Nepali Momos</h1>
             <p>Delight in every bite amidst our new Japanese cherry blossom-inspired decor.</p>
-            <button routerLink="/contact-us" class="cta-button">Order Now</button>
+            <button routerLink="/menu" class="cta-button">Order Now</button>
         </div>
     </section>
 
@@ -19,7 +19,7 @@
                     <div class="momo-content">
                         <h3 class="momo-name">{{ item.name }}</h3>
                         <p class="momo-description">{{ item.description }}</p>
-                        <button class="order-btn">Order Now</button>
+                        <button class="order-btn" routerLink="/menu">Order Now</button>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                     <h2 class="about-title">{{ hero.aboutus.title }}</h2>
                     <p class="about-description">{{ hero.aboutus.description }}</p>
                     <p class="about-second-description">{{ hero.aboutus.secondDescription }}</p>
-                    <button class="learn-more-btn">{{ hero.aboutus.buttonText }}</button>
+                    <button class="learn-more-btn" routerLink="/about-us">{{ hero.aboutus.buttonText }}</button>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                     <h2 class="offerings-title">{{ hero.culinaryOfferings.title }}</h2>
                     <h3 class="offerings-subtitle">{{ hero.culinaryOfferings.subtitle }}</h3>
                     <p class="offerings-description">{{ hero.culinaryOfferings.description }}</p>
-                    <button class="view-all-btn">{{ hero.culinaryOfferings.buttonText }}</button>
+                    <button class="view-all-btn" routerLink="/catering">{{ hero.culinaryOfferings.buttonText }}</button>
                 </div>
                 <div class="offerings-image">
                     <img [src]="hero.culinaryOfferings.image" [alt]="hero.culinaryOfferings.title">
@@ -81,7 +81,38 @@
                 </div>
             </div>
             <div class="dream-footer">
-                <button class="see-more-btn">{{ hero.dreamSection.buttonText }}</button>
+                <button class="see-more-btn" routerLink="/menu">{{ hero.dreamSection.buttonText }}</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="reviews-wrapper">
+        <div class="container">
+            <h2 class="reviews-title">What people<br>say about me</h2>
+
+            <div class="reviews-container" (mouseenter)="pauseAutoSlide()" (mouseleave)="resumeAutoSlide()">
+                <div class="review-card" *ngFor="let review of visibleReviews">
+                    <div class="review-header">
+                        <img class="avatar" [src]="review.profile_photo_url" alt="User Photo"
+                            (error)="onImgError($event)" />
+                        <div class="reviewer-info">
+                            <div class="author">- {{ review.author_name }}</div>
+                            <div class="stars">
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">{{ review.text }}</p>
+                </div>
+            </div>
+
+            <!-- <a [href]="social.google" target="_blank" class="google-reviews">
+                View more reviews
+            </a> -->
+
+            <div *ngIf="visibleReviews.length === 0" class="no-reviews">
+                <p>No English reviews available at the moment.</p>
             </div>
         </div>
     </section>

@@ -1,1 +1,155 @@
-<p>menu works!</p>
+<section class="menu-full-page">
+  <main>
+    <!-- Header Section -->
+    <div class="menu-header">
+      <h1>Our Menu</h1>
+      <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.
+      </p>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="category-tabs">
+      <button *ngFor="let category of categories2; let i = index" class="category-tab"
+        [class.active]="selectedCategory === i" (click)="selectCategory(i, category.categoryName)">
+        {{category.categoryName}}
+      </button>
+    </div>
+
+    <!-- Menu Items Grid -->
+    <div class="menu-container">
+      <div *ngFor="let category of categories2; let categoryIndex = index" class="category-section"
+        [style.display]="selectedCategory === categoryIndex ? 'block' : 'none'">
+
+        <div class="menu-grid" *ngIf="category.items.length > 0">
+          <div *ngFor="let item of category.items" class="menu-item-card">
+            <div class="item-image">
+              <img [src]="getItemImage(item.itemName)" [alt]="item.itemName" />
+            </div>
+
+            <div class="item-content">
+              <h3 class="item-title">{{item.itemName}}</h3>
+              <p class="item-description" *ngIf="item.itemDescription">{{item.itemDescription}}</p>
+              <div class="item-price">${{item.itemPrice}}</div>
+
+              <!-- Non-customizable items -->
+              <div *ngIf="!item.customization" class="item-controls">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus" (click)="updateQuantity(item.itemName, -1)">-</button>
+                  <input disabled type="text" [value]="getQuantity(item.itemName)" class="quantity-input" />
+                  <button class="quantity-btn plus" (click)="updateQuantity(item.itemName, 1)">+</button>
+                </div>
+                <button class="order-btn" [disabled]="isAddToCartDisabled(item.itemName)" (click)="addToCart(item)">
+                  Add to Cart
+                </button>
+              </div>
+
+              <!-- Customizable items -->
+              <div *ngIf="item.customization" class="item-controls">
+                <button class="order-btn" (click)="openCustomizationModal(item)">
+                  Add Item
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delivery Apps Section -->
+    <div class="delivery-apps-section">
+      <div class="delivery-apps-container">
+        <div class="delivery-apps-content">
+          <h2>You can order through apps</h2>
+          <div class="apps-grid">
+            <div class="app-card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/11/Uber-Eats-Logo.png" alt="Uber Eats" />
+            </div>
+            <div class="app-card">
+              <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1aa4c337-8b5c-4d0a-bc7b-c9685247cad5_skip.png" alt="Grubhub" />
+            </div>
+            <!-- <div class="app-card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/11/Postmates-Logo.png" alt="Postmates" />
+            </div> -->
+            <div class="app-card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/11/DoorDash-Logo.png" alt="DoorDash" />
+            </div>
+            <!-- <div class="app-card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/09/Foodpanda-Logo.png" alt="foodpanda" />
+            </div> -->
+            <!-- <div class="app-card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/09/Deliveroo-Logo.png" alt="deliveroo" />
+            </div> -->
+            <!-- <div class="app-card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/09/Instacart-Logo.png" alt="Instacart" />
+            </div>
+            <div class="app-card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/09/Just-Eat-Logo.png" alt="Just Eat" />
+            </div>
+            <div class="app-card">
+              <img src="https://logos-world.net/wp-content/uploads/2020/09/DiDi-Food-Logo.png" alt="DiDi Food" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Customization Modal -->
+  <div class="custom-model-main" [class.model-open]="showModal" *ngIf="showModal">
+    <div class="custom-model-inner">
+      <div class="close-btn" (click)="closeCustomizationModal()">&times;</div>
+      <div class="custom-model-wrap">
+        <div class="pop-up-content-wrap">
+          <div class="content">
+            <h3 style="font-family: 'Crimson Text', Georgia, serif;">{{currentModalItem?.itemName}}</h3>
+            <p style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+              {{currentModalItem?.itemDescription}}</p>
+          </div>
+
+          <div class="customization" id="customization-options">
+            <div *ngFor="let custGroup of currentModalItem?.customization; let groupIndex = index"
+              class="inner-content-div">
+              <div class="title-div">
+                <h4 style="font-family: 'Crimson Text', Georgia, serif;">
+                  {{custGroup.custName}}
+                  <span
+                    style="font-family: 'League Spartan', arial, helvetica, sans-serif;">({{custGroup.custDescription}})</span>
+                </h4>
+                <span [class]="custGroup.required === 'true' ? 'Required' : 'Optional'">
+                  {{custGroup.required === 'true' ? 'Required' : 'Optional'}}
+                </span>
+              </div>
+
+              <!-- Customization options -->
+              <div *ngFor="let option of custGroup.cust; let optionIndex = index" class="label-div">
+                <label style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+                  <input type="radio" [name]="'customization-' + groupIndex" [value]="optionIndex"
+                    (change)="updateCustomizationSelection(groupIndex, optionIndex, option)" />
+                  <span>{{option.name}}</span>
+                  <span style="font-weight: 600;">${{option.price.toFixed(2)}}</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-message">
+            <label style="font-family: 'Crimson Text', Georgia, serif;">Notes :</label>
+            <input type="text" #customNotes placeholder="e.g., no onions"
+              style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+          </div>
+
+          <div class="utility">
+            <p style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+              Total Price: ${{getModalTotalPrice().toFixed(2)}}
+            </p>
+            <button (click)="addCustomizedItemToCart(customNotes.value)"
+              style="color: white; border-radius: 8px; padding: 10px 25px; cursor: pointer !important; font-weight: 600; font-size: 20px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden;">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-overlay" (click)="closeCustomizationModal()"></div>
+  </div>
+</section>
