@@ -69,7 +69,8 @@ main {
   h2 {
     @include heading-style(3xl);
     text-align: center;
-    font-weight: get-font-weight(bold);
+    font-weight: 400;
+    font-size: 50px;
     margin: 0 0 get-spacing(12) 0;
     letter-spacing: 1px;
   }
@@ -150,18 +151,16 @@ main {
 .checkout-btn {
   @include button-primary;
   transition: get-transition(base);
-  font-family: $font-primary !important;
   letter-spacing: 2px;
   box-shadow: get-shadow(md);
   position: relative;
   overflow: hidden;
-  font-size: get-font-size(sm);
   text-transform: capitalize;
   padding: get-spacing(2) get-spacing(5);
   border-radius: get-radius(sm);
   font-weight: get-font-weight(bold);
   color: get-color(light);
-  background: get-color(dark);
+  background: #e04652;;
   width: fit-content;
   margin: auto;
   display: block;
@@ -207,8 +206,9 @@ main {
   
   h3 {
     @include heading-style(2xl);
-    font-weight: get-font-weight(bold);
+    font-weight: 400;
     text-align: center;
+    font-size: 50px;
     margin: 0 0 get-spacing(5) 0;
   }
   
