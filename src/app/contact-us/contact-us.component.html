@@ -3,12 +3,22 @@
     <!-- Header Section -->
     <div class="contact-header">
       <h1>Contact Us</h1>
-      <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+      <p>We consider all the drivers of change gives you the components <br />you need to change to create a truly happens.</p>
     </div>
 
     <!-- Contact Form Section -->
     <div class="contact-form-section">
       <div class="form-container">
+        <!-- Error Message -->
+        <div class="alert alert-error" *ngIf="errorMessage">
+          {{ errorMessage }}
+        </div>
+        
+        <!-- Success Message -->
+        <div class="alert alert-success" *ngIf="successMessage">
+          {{ successMessage }}
+        </div>
+        
         <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
           <div class="form-row">
             <div class="form-group">

@@ -140,10 +140,11 @@ export class MenuComponent implements OnInit {
 
   // Update cart count
   updateCartCount(): void {
-    const totalItems = this.cart.reduce((sum, item) => sum + item.itemQuantity, 0);
+    // Count unique items, not total quantity
+    const uniqueItemCount = this.cart.length;
     // Dispatch custom event for other components
     window.dispatchEvent(new CustomEvent('cartUpdated', {
-      detail: { count: totalItems }
+      detail: { count: uniqueItemCount }
     }));
   }
 
@@ -197,8 +198,6 @@ export class MenuComponent implements OnInit {
       
       // Reset quantity
       this.itemQuantities[item.itemName] = 0;
-      
-      alert(`${item.itemName} added to cart!`);
     }
   }
 
@@ -251,7 +250,6 @@ export class MenuComponent implements OnInit {
     
     for (let i = 0; i < this.currentModalItem.customization.length; i++) {
       if (this.currentModalItem.customization[i].required === 'true' && !this.selectedCustomizations[i]) {
-        alert('Please select all required options.');
         return;
       }
     }
@@ -285,7 +283,6 @@ export class MenuComponent implements OnInit {
     this.saveCart();
     this.updateCartCount();
 
-    alert(`${this.currentModalItem.itemName} added to cart!`);
     this.closeCustomizationModal();
   }
 

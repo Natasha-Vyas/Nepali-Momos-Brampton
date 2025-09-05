@@ -124,10 +124,11 @@ export class CateringComponent implements OnInit {
 
   // Update cart count
   updateCartCount(): void {
-    const totalItems = this.cart.reduce((sum, item) => sum + item.itemQuantity, 0);
+    // Count unique items, not total quantity
+    const uniqueItemCount = this.cart.length;
     // Dispatch custom event for other components
     window.dispatchEvent(new CustomEvent('cartUpdated', {
-      detail: { count: totalItems }
+      detail: { count: uniqueItemCount }
     }));
   }
 
@@ -181,8 +182,6 @@ export class CateringComponent implements OnInit {
       
       // Reset quantity
       this.itemQuantities[item.itemName] = 0;
-      
-      alert(`${item.itemName} added to cart!`);
     }
   }
 

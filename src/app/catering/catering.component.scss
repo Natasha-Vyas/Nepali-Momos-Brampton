@@ -88,9 +88,8 @@ main {
   }
 
   p {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    font-size: 24px;
   }
 
   @include respond-to(sm) {
@@ -148,7 +147,6 @@ main {
   @include respond-to(sm) {
     padding: 0 get-spacing(4) get-spacing(8);
     overflow-x: auto;
-    justify-content: flex-start;
     -webkit-overflow-scrolling: touch;
 
     &::-webkit-scrollbar {
@@ -202,12 +200,16 @@ main {
 }
 
 .menu-grid {
-  @include grid-responsive(280px);
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 30px;
+  justify-content: center;
   padding: 0;
 
   @include respond-to(md) {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, 350px);
     gap: get-spacing(6);
+    justify-content: center;
   }
 
   @include respond-to(sm) {
@@ -220,6 +222,11 @@ main {
   @include card-base;
   @include card-hover;
   overflow: hidden;
+  width: 350px;
+
+  @include respond-to(sm) {
+    width: 100%;
+  }
 
   .item-image {
     width: 100%;
