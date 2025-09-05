@@ -296,6 +296,7 @@ main {
 
       @include respond-to(sm) {
         gap: get-spacing(4);
+        flex-direction: unset;
 
         .quantity-controls {
           align-self: flex-start;
