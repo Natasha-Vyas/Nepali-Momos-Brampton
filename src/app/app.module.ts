@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { GalleryComponent } from './gallery/gallery.component';
     FooterComponent,
     ContactUsComponent,
     AboutUsComponent,
-    GalleryComponent
+    GalleryComponent,
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

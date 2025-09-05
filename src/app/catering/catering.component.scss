@@ -1,0 +1,429 @@
+// =============================================================================
+// CATERING COMPONENT - Nepali Momos Restaurant
+// =============================================================================
+
+@import '../../styles/variables';
+
+// Component-specific styles using shared mixins
+main {
+  font-family: $font-primary;
+  padding: 0;
+  margin: 0;
+  background-color: get-color(gray-100);
+  min-height: 100vh;
+  margin-top: 5rem;
+
+  button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 25px;
+    background-color: #e04652;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+
+    &:hover {
+      font-weight: 600;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  h1 {
+    font-family: "Abril Fatface", serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #41433E;
+    margin: 0 0 30px;
+  }
+
+  h2 {
+    font-family: "Abril Fatface", serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: #41433E;
+    margin: 0 0 30px;
+  }
+
+  h3 {
+    font-family: "Abril Fatface", serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #41433E;
+    margin: 0 0 15px;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #41433E;
+    line-height: 1.6;
+  }
+
+  @include respond-to(sm) {
+    margin-top: 3rem;
+  }
+}
+
+.menu-header {
+  text-align: center;
+  padding: get-spacing(20) get-spacing(5) get-spacing(15);
+  background: get-color(light);
+
+  h1 {
+  }
+
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+
+  @include respond-to(sm) {
+    padding: get-spacing(15) get-spacing(5) get-spacing(10);
+
+    h1 {
+      font-size: get-font-size(5xl);
+    }
+
+    p {
+      font-size: get-font-size(sm);
+    }
+  }
+
+  @include respond-to(xs) {
+    padding: get-spacing(10) get-spacing(4) get-spacing(8);
+
+    h1 {
+      font-size: get-font-size(3xl);
+    }
+  }
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  background: get-color(light);
+  padding: 0 get-spacing(5) get-spacing(10);
+  flex-wrap: wrap;
+
+  .category-tab {
+    background: transparent;
+    padding: get-spacing(3) get-spacing(6);
+    font-size: get-font-size(base);
+    font-weight: get-font-weight(medium);
+    color: get-color(gray-700);
+    border-radius: get-radius(xl);
+    margin: get-spacing(1);
+    text-transform: none;
+    letter-spacing: normal;
+
+    &:hover {
+      color: get-color(secondary);
+      background-color: get-color(gray-200);
+    }
+
+    &.active {
+      background-color: #e04652;
+      color: get-color(light);
+      font-weight: get-font-weight(semibold);
+    }
+  }
+
+  @include respond-to(sm) {
+    padding: 0 get-spacing(4) get-spacing(8);
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category-tab {
+      flex-shrink: 0;
+      padding: get-spacing(2) get-spacing(5);
+      font-size: get-font-size(sm);
+    }
+  }
+}
+
+.menu-container {
+  @include container;
+  @include section-padding;
+
+  @include respond-to(sm) {
+    padding: get-spacing(8) get-spacing(4) get-spacing(15);
+  }
+
+  @include respond-to(xs) {
+    padding: get-spacing(4) get-spacing(3) get-spacing(12);
+  }
+}
+
+.category-section {
+  width: 100%;
+}
+
+.category-info {
+  text-align: center;
+  margin-bottom: get-spacing(10);
+
+  .category-description {
+    @include body-text(base);
+    color: get-color(gray-700);
+    max-width: 800px;
+    margin: 0 auto;
+
+    @include respond-to(sm) {
+      font-size: get-font-size(sm);
+      padding: 0 get-spacing(2);
+    }
+  }
+
+  @include respond-to(sm) {
+    margin-bottom: get-spacing(8);
+  }
+}
+
+.menu-grid {
+  @include grid-responsive(280px);
+  padding: 0;
+
+  @include respond-to(md) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: get-spacing(6);
+  }
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: get-spacing(5);
+  }
+}
+
+.menu-item-card {
+  @include card-base;
+  @include card-hover;
+  overflow: hidden;
+
+  .item-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: get-transition(base);
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+    @include respond-to(xs) {
+      height: 180px;
+    }
+  }
+
+  .item-content {
+    padding: get-spacing(6);
+
+    .item-title {
+      margin-bottom: get-spacing(2);
+      line-height: 1.3;
+
+      @include respond-to(xs) {
+        font-size: get-font-size(lg);
+      }
+    }
+
+    .item-description {
+      margin-bottom: get-spacing(4);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      @include respond-to(xs) {
+        font-size: get-font-size(xs);
+      }
+    }
+
+    .item-price {
+      @include body-text(lg, bold);
+      color: get-color(secondary);
+      margin-bottom: get-spacing(5);
+
+      @include respond-to(xs) {
+        font-size: get-font-size(base);
+      }
+    }
+
+    .item-controls {
+      display: flex;
+      align-items: center;
+      gap: get-spacing(3);
+
+      .quantity-controls {
+        @include quantity-controls;
+      }
+
+      .order-btn {
+        @include button-outline;
+        flex: 1;
+        padding: get-spacing(2) get-spacing(5);
+        font-size: get-font-size(sm);
+        text-transform: unset;
+      }
+
+      @include respond-to(sm) {
+        gap: get-spacing(4);
+
+        .quantity-controls {
+          align-self: flex-start;
+        }
+
+        .order-btn {
+          width: 100%;
+        }
+      }
+    }
+
+    @include respond-to(sm) {
+      padding: get-spacing(5);
+    }
+
+    @include respond-to(xs) {
+      padding: get-spacing(4);
+    }
+  }
+}
+
+// Delivery Apps Section
+.delivery-apps-section {
+  background: get-color(gray-100);
+  padding: get-spacing(20) get-spacing(5);
+
+  @include respond-to(sm) {
+    padding: get-spacing(15) get-spacing(4);
+  }
+}
+
+.delivery-apps-container {
+  @include container;
+}
+
+.delivery-apps-content {
+  display: flex;
+  align-items: center;
+  gap: get-spacing(15);
+
+  h2 {
+    @include heading-style(6xl);
+    flex: 0 0 auto;
+    max-width: 300px;
+    line-height: 1.2;
+  }
+
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: get-spacing(5);
+    flex: 1;
+  }
+
+  .app-card {
+    @include card-base;
+    @include hover-lift;
+    padding: get-spacing(5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+
+    img {
+      max-width: 120px;
+      max-height: 40px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  @include respond-to(md) {
+    flex-direction: column;
+    gap: get-spacing(10);
+    text-align: center;
+
+    h2 {
+      max-width: none;
+      font-size: get-font-size(5xl);
+    }
+
+    .apps-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: get-spacing(4);
+    }
+  }
+
+  @include respond-to(sm) {
+    gap: get-spacing(8);
+
+    h2 {
+      font-size: get-font-size(4xl);
+    }
+
+    .apps-grid {
+      gap: get-spacing(3);
+    }
+
+    .app-card {
+      padding: get-spacing(4);
+      min-height: 60px;
+
+      img {
+        max-width: 100px;
+        max-height: 30px;
+      }
+    }
+  }
+
+  @include respond-to(xs) {
+    h2 {
+      font-size: get-font-size(3xl);
+    }
+
+    .apps-grid {
+      grid-template-columns: 1fr;
+      gap: get-spacing(2);
+    }
+
+    .app-card {
+      padding: get-spacing(3);
+      min-height: 50px;
+
+      img {
+        max-width: 80px;
+        max-height: 25px;
+      }
+    }
+  }
+}

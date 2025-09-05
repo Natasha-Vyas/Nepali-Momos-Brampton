@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+/* =============================================================================
+   GLOBAL STYLES - Nepali Momos Restaurant
+   ============================================================================= */
+
+// Import shared variables and components
+@import 'styles/variables';
+@import 'styles/components';
+
+// Global reset and base styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary;
+  line-height: 1.6;
+  color: get-color(secondary);
+  background-color: get-color(light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Global cursor style for template
+.template10881 {
+  cursor: url('https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/949433e5-70c8-4b03-b5b5-2e13855d4ec3_Frame%2017.png'), auto !important;
+}
+
+// Remove default button styles
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+// Remove default input styles
+input, textarea, select {
+  font: inherit;
+  margin: 0;
+}
+
+// Remove default list styles
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Remove default link styles
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Image responsive by default
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Focus styles for accessibility
+:focus {
+  outline-offset: 2px;
+}
+
+// Selection styles
+::selection {
+  background-color: get-color(primary-light);
+  color: get-color(secondary);
+}
+
+::-moz-selection {
+  background-color: get-color(primary-light);
+  color: get-color(secondary);
+}
+
+// Scrollbar styles
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: get-color(gray-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background: get-color(gray-500);
+  border-radius: get-radius(sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: get-color(gray-600);
+}

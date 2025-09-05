@@ -1,0 +1,384 @@
+// =============================================================================
+// VARIABLES & MIXINS - Nepali Momos Restaurant
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+$font-primary: "Poppins", arial, helvetica, sans-serif;
+$font-heading: "Abril Fatface", Georgia, serif;
+
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  black: 900
+);
+
+$font-sizes: (
+  xs: 12px,
+  sm: 14px,
+  base: 16px,
+  lg: 18px,
+  xl: 20px,
+  2xl: 24px,
+  3xl: 28px,
+  4xl: 32px,
+  5xl: 36px,
+  6xl: 48px,
+  7xl: 50px
+);
+
+// -----------------------------------------------------------------------------
+// Colors
+// -----------------------------------------------------------------------------
+$colors: (
+  primary: #ff6b6b,
+  primary-hover: #ff5252,
+  primary-light: rgba(255, 107, 107, 0.1),
+  secondary: #333,
+  dark: #000,
+  light: #fff,
+  gray-100: #f8f9fa,
+  gray-200: #f5f5f5,
+  gray-300: #f0f0f0,
+  gray-400: #e9ecef,
+  gray-500: #e0e0e0,
+  gray-600: #999,
+  gray-700: #666,
+  gray-800: #333,
+  gray-900: #000,
+  success: #28a745,
+  danger: #ff4757,
+  danger-hover: #ff3742,
+  warning: #ffc107,
+  info: #17a2b8
+);
+
+// -----------------------------------------------------------------------------
+// Spacing
+// -----------------------------------------------------------------------------
+$spacing: (
+  0: 0,
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px,
+  6: 24px,
+  7: 28px,
+  8: 32px,
+  10: 40px,
+  12: 48px,
+  15: 60px,
+  20: 80px,
+  24: 96px,
+  32: 128px
+);
+
+// -----------------------------------------------------------------------------
+// Breakpoints
+// -----------------------------------------------------------------------------
+$breakpoints: (
+  xs: 480px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1200px,
+  xl: 1400px
+);
+
+// -----------------------------------------------------------------------------
+// Shadows
+// -----------------------------------------------------------------------------
+$shadows: (
+  sm: 0 2px 4px rgba(0, 0, 0, 0.1),
+  base: 0 4px 20px rgba(0, 0, 0, 0.08),
+  md: 0 8px 30px rgba(0, 0, 0, 0.12),
+  lg: 0 8px 32px rgba(0, 0, 0, 0.1),
+  xl: 0 12px 35px rgba(44, 62, 80, 0.4)
+);
+
+// -----------------------------------------------------------------------------
+// Border Radius
+// -----------------------------------------------------------------------------
+$border-radius: (
+  sm: 6px,
+  base: 8px,
+  md: 12px,
+  lg: 16px,
+  xl: 20px,
+  2xl: 24px,
+  full: 50%
+);
+
+// -----------------------------------------------------------------------------
+// Transitions
+// -----------------------------------------------------------------------------
+$transitions: (
+  fast: 0.2s ease,
+  base: 0.3s ease,
+  slow: 0.5s ease
+);
+
+// -----------------------------------------------------------------------------
+// Helper Functions
+// -----------------------------------------------------------------------------
+@function get-color($name) {
+  @return map-get($colors, $name);
+}
+
+@function get-spacing($name) {
+  @return map-get($spacing, $name);
+}
+
+@function get-font-size($name) {
+  @return map-get($font-sizes, $name);
+}
+
+@function get-font-weight($name) {
+  @return map-get($font-weights, $name);
+}
+
+@function get-shadow($name) {
+  @return map-get($shadows, $name);
+}
+
+@function get-radius($name) {
+  @return map-get($border-radius, $name);
+}
+
+@function get-transition($name) {
+  @return map-get($transitions, $name);
+}
+
+// -----------------------------------------------------------------------------
+// Mixins
+// -----------------------------------------------------------------------------
+
+// Typography Mixins
+@mixin heading-style($size: 3xl) {
+  font-family: $font-heading;
+  font-size: get-font-size($size);
+  font-weight: get-font-weight(regular);
+  color: get-color(secondary);
+  line-height: 1.2;
+  margin: 0;
+}
+
+@mixin body-text($size: base, $weight: regular) {
+  font-family: $font-primary;
+  font-size: get-font-size($size);
+  font-weight: get-font-weight($weight);
+  line-height: 1.6;
+  margin: 0;
+}
+
+// Button Mixins
+@mixin button-base {
+  font-family: $font-primary;
+  border: none;
+  border-radius: get-radius(sm);
+  cursor: pointer;
+  transition: get-transition(base);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: get-font-weight(semibold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+@mixin button-primary {
+  @include button-base;
+  background: get-color(primary);
+  color: get-color(light);
+  
+  &:hover:not(:disabled) {
+    background: get-color(primary-hover);
+    transform: translateY(-2px);
+    box-shadow: get-shadow(md);
+  }
+  
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+}
+
+@mixin button-outline {
+  @include button-base;
+  background: transparent;
+  border: 1px solid get-color(primary);
+  color: get-color(primary);
+  
+  &:hover:not(:disabled) {
+    background: get-color(primary);
+    color: get-color(light);
+    transform: translateY(-1px);
+  }
+}
+
+@mixin button-dark {
+  @include button-base;
+  background: get-color(dark);
+  color: get-color(light);
+  
+  &:hover:not(:disabled) {
+    background: get-color(secondary);
+    transform: translateY(-2px);
+    box-shadow: get-shadow(md);
+  }
+}
+
+// Card Mixins
+@mixin card-base {
+  background: get-color(light);
+  border-radius: get-radius(md);
+  box-shadow: get-shadow(base);
+  border: 1px solid get-color(gray-300);
+  transition: get-transition(base);
+}
+
+@mixin card-hover {
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: get-shadow(md);
+  }
+}
+
+// Form Mixins
+@mixin form-input {
+  width: 100%;
+  padding: get-spacing(3) get-spacing(4);
+  border: 1px solid get-color(gray-500);
+  border-radius: get-radius(base);
+  font-family: $font-primary;
+  font-size: get-font-size(sm);
+  background: get-color(gray-100);
+  transition: get-transition(base);
+  box-sizing: border-box;
+  
+  &:focus {
+    outline: none;
+    border-color: get-color(primary);
+    background: get-color(light);
+    box-shadow: 0 0 0 3px get-color(primary-light);
+  }
+  
+  &::placeholder {
+    color: get-color(gray-600);
+    font-weight: get-font-weight(regular);
+  }
+}
+
+@mixin form-label {
+  @include body-text(sm, semibold);
+  color: get-color(secondary);
+  display: block;
+  margin-bottom: get-spacing(2);
+}
+
+// Layout Mixins
+@mixin container($max-width: 1200px) {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 get-spacing(5);
+}
+
+@mixin section-padding {
+  padding: get-spacing(20) get-spacing(5);
+}
+
+@mixin grid-responsive($min-width: 280px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: get-spacing(8);
+}
+
+// Quantity Controls Mixin
+@mixin quantity-controls {
+  display: flex;
+  align-items: center;
+  border: 1px solid get-color(gray-500);
+  border-radius: get-radius(sm);
+  overflow: hidden;
+  background: get-color(light);
+  
+  .quantity-btn {
+    background: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: get-font-size(base);
+    font-weight: get-font-weight(semibold);
+    color: get-color(gray-700);
+    transition: get-transition(fast);
+    
+    &:hover {
+      background-color: get-color(gray-200);
+      color: get-color(secondary);
+    }
+    
+    &.minus {
+      border-right: 1px solid get-color(gray-500);
+    }
+    
+    &.plus {
+      border-left: 1px solid get-color(gray-500);
+    }
+  }
+  
+  .quantity-input {
+    border: none;
+    width: 40px;
+    height: 32px;
+    text-align: center;
+    font-size: get-font-size(sm);
+    font-weight: get-font-weight(semibold);
+    background: transparent;
+    color: get-color(secondary);
+  }
+}
+
+// Responsive Mixins
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}";
+  }
+}
+
+// Animation Mixins
+@mixin hover-lift {
+  transition: get-transition(base);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: get-shadow(md);
+  }
+}
+
+@mixin fade-in {
+  opacity: 0;
+  animation: fadeIn get-transition(base) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,593 @@
+// =============================================================================
+// SHARED COMPONENTS - Nepali Momos Restaurant
+// =============================================================================
+
+@import 'variables';
+
+// -----------------------------------------------------------------------------
+// Page Layout Components
+// -----------------------------------------------------------------------------
+
+.page-main {
+  font-family: $font-primary;
+  padding: 0;
+  margin: 0;
+  background-color: get-color(gray-100);
+  min-height: 100vh;
+  margin-top: 5rem;
+  
+  @include respond-to(sm) {
+    margin-top: 3rem;
+  }
+}
+
+.page-header {
+  text-align: center;
+  padding: get-spacing(20) get-spacing(5) get-spacing(15);
+  background: get-color(light);
+  
+  h1 {
+    @include heading-style(6xl);
+    margin-bottom: get-spacing(5);
+    letter-spacing: -1px;
+  }
+  
+  p {
+    @include body-text(base);
+    color: get-color(gray-700);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  @include respond-to(sm) {
+    padding: get-spacing(15) get-spacing(5) get-spacing(10);
+    
+    h1 {
+      font-size: get-font-size(5xl);
+    }
+    
+    p {
+      font-size: get-font-size(sm);
+    }
+  }
+  
+  @include respond-to(xs) {
+    padding: get-spacing(10) get-spacing(4) get-spacing(8);
+    
+    h1 {
+      font-size: get-font-size(3xl);
+    }
+  }
+}
+
+.page-container {
+  @include container;
+  @include section-padding;
+  
+  @include respond-to(sm) {
+    padding: get-spacing(8) get-spacing(4) get-spacing(15);
+  }
+  
+  @include respond-to(xs) {
+    padding: get-spacing(4) get-spacing(3) get-spacing(12);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Category Tabs Component
+// -----------------------------------------------------------------------------
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  background: get-color(light);
+  padding: 0 get-spacing(5) get-spacing(10);
+  flex-wrap: wrap;
+  
+  .category-tab {
+    @include button-base;
+    background: transparent;
+    padding: get-spacing(3) get-spacing(6);
+    font-size: get-font-size(base);
+    font-weight: get-font-weight(medium);
+    color: get-color(gray-700);
+    border-radius: get-radius(xl);
+    margin: get-spacing(1);
+    text-transform: none;
+    letter-spacing: normal;
+    
+    &:hover {
+      color: get-color(secondary);
+      background-color: get-color(gray-200);
+    }
+    
+    &.active {
+      background-color: get-color(primary);
+      color: get-color(light);
+      font-weight: get-font-weight(semibold);
+    }
+  }
+  
+  @include respond-to(sm) {
+    padding: 0 get-spacing(4) get-spacing(8);
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .category-tab {
+      flex-shrink: 0;
+      padding: get-spacing(2) get-spacing(5);
+      font-size: get-font-size(sm);
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Menu Grid Component
+// -----------------------------------------------------------------------------
+
+.menu-grid {
+  @include grid-responsive(280px);
+  padding: 0;
+  
+  @include respond-to(md) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: get-spacing(6);
+  }
+  
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: get-spacing(5);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Menu Item Card Component
+// -----------------------------------------------------------------------------
+
+.menu-item-card {
+  @include card-base;
+  @include card-hover;
+  overflow: hidden;
+  
+  .item-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: get-transition(base);
+    }
+    
+    &:hover img {
+      transform: scale(1.05);
+    }
+    
+    @include respond-to(xs) {
+      height: 180px;
+    }
+  }
+  
+  .item-content {
+    padding: get-spacing(6);
+    
+    .item-title {
+      @include heading-style(xl);
+      margin-bottom: get-spacing(2);
+      line-height: 1.3;
+      
+      @include respond-to(xs) {
+        font-size: get-font-size(lg);
+      }
+    }
+    
+    .item-description {
+      @include body-text(sm);
+      color: get-color(gray-700);
+      margin-bottom: get-spacing(4);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      
+      @include respond-to(xs) {
+        font-size: get-font-size(xs);
+      }
+    }
+    
+    .item-price {
+      @include body-text(lg, bold);
+      color: get-color(secondary);
+      margin-bottom: get-spacing(5);
+      
+      @include respond-to(xs) {
+        font-size: get-font-size(base);
+      }
+    }
+    
+    .item-controls {
+      display: flex;
+      align-items: center;
+      gap: get-spacing(3);
+      
+      .quantity-controls {
+        @include quantity-controls;
+      }
+      
+      .order-btn {
+        @include button-outline;
+        flex: 1;
+        padding: get-spacing(2) get-spacing(5);
+        font-size: get-font-size(sm);
+      }
+      
+      @include respond-to(sm) {
+        flex-direction: column;
+        gap: get-spacing(4);
+        
+        .quantity-controls {
+          align-self: flex-start;
+        }
+        
+        .order-btn {
+          width: 100%;
+        }
+      }
+    }
+    
+    @include respond-to(sm) {
+      padding: get-spacing(5);
+    }
+    
+    @include respond-to(xs) {
+      padding: get-spacing(4);
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Form Components
+// -----------------------------------------------------------------------------
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  @include card-base;
+  padding: get-spacing(10);
+  
+  @include respond-to(sm) {
+    padding: get-spacing(8) get-spacing(5);
+  }
+  
+  @include respond-to(xs) {
+    padding: get-spacing(6) get-spacing(4);
+  }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: get-spacing(5);
+  margin-bottom: get-spacing(5);
+  
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.form-group {
+  margin-bottom: get-spacing(5);
+  
+  &.full-width {
+    grid-column: 1 / -1;
+  }
+  
+  label {
+    @include form-label;
+  }
+  
+  input,
+  textarea {
+    @include form-input;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  @include respond-to(xs) {
+    margin-bottom: get-spacing(4);
+    
+    input,
+    textarea {
+      padding: get-spacing(2) get-spacing(3);
+      font-size: get-font-size(xs);
+    }
+  }
+}
+
+.form-submit-btn {
+  @include button-primary;
+  width: 100%;
+  padding: get-spacing(4) get-spacing(8);
+  font-size: get-font-size(base);
+  border-radius: get-radius(xl);
+  margin-top: get-spacing(2);
+  
+  @include respond-to(xs) {
+    padding: get-spacing(3) get-spacing(7);
+    font-size: get-font-size(sm);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Contact Info Component
+// -----------------------------------------------------------------------------
+
+.contact-info-section {
+  background: get-color(gray-100);
+  padding: get-spacing(15) get-spacing(5);
+  
+  @include respond-to(sm) {
+    padding: get-spacing(10) get-spacing(4);
+  }
+}
+
+.contact-info-container {
+  @include container(1000px);
+  @include grid-responsive(250px);
+  text-align: center;
+  
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: get-spacing(8);
+  }
+}
+
+.info-item {
+  h3 {
+    @include heading-style(lg);
+    margin-bottom: get-spacing(4);
+  }
+  
+  p {
+    @include body-text(sm);
+    color: get-color(gray-700);
+    margin: get-spacing(1) 0;
+    
+    &.phone-number {
+      color: get-color(primary);
+      font-weight: get-font-weight(semibold);
+      font-size: get-font-size(base);
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Banner Component
+// -----------------------------------------------------------------------------
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.38)),
+              url("https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2b2965bf-f96c-46a1-ba5e-56d2f6784c82_Banner%20images%20for%20website.jpg");
+  display: flex;
+  padding: 10%;
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  align-items: center;
+  
+  div {
+    text-align: center;
+  }
+  
+  h1 {
+    @include heading-style(7xl);
+    color: get-color(light);
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: get-font-weight(black);
+  }
+  
+  @include respond-to(sm) {
+    min-height: 40vh;
+    padding: 10% 15%;
+    
+    h1 {
+      font-size: get-font-size(5xl);
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Section Title Component
+// -----------------------------------------------------------------------------
+
+.section-title {
+  @include heading-style(3xl);
+  font-weight: get-font-weight(bold);
+  margin: 0 0 get-spacing(8) 0;
+  color: get-color(dark);
+  padding-bottom: get-spacing(2);
+  
+  @include respond-to(sm) {
+    font-size: get-font-size(2xl);
+  }
+  
+  @include respond-to(xs) {
+    font-size: get-font-size(xl);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Delivery Apps Component
+// -----------------------------------------------------------------------------
+
+.delivery-apps-section {
+  background: get-color(gray-100);
+  padding: get-spacing(20) get-spacing(5);
+  
+  @include respond-to(sm) {
+    padding: get-spacing(15) get-spacing(4);
+  }
+}
+
+.delivery-apps-container {
+  @include container;
+}
+
+.delivery-apps-content {
+  display: flex;
+  align-items: center;
+  gap: get-spacing(15);
+  
+  h2 {
+    @include heading-style(6xl);
+    flex: 0 0 auto;
+    max-width: 300px;
+    line-height: 1.2;
+  }
+  
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: get-spacing(5);
+    flex: 1;
+  }
+  
+  .app-card {
+    @include card-base;
+    @include hover-lift;
+    padding: get-spacing(5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    
+    img {
+      max-width: 120px;
+      max-height: 40px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  
+  @include respond-to(md) {
+    flex-direction: column;
+    gap: get-spacing(10);
+    text-align: center;
+    
+    h2 {
+      max-width: none;
+      font-size: get-font-size(5xl);
+    }
+    
+    .apps-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: get-spacing(4);
+    }
+  }
+  
+  @include respond-to(sm) {
+    gap: get-spacing(8);
+    
+    h2 {
+      font-size: get-font-size(4xl);
+    }
+    
+    .apps-grid {
+      gap: get-spacing(3);
+    }
+    
+    .app-card {
+      padding: get-spacing(4);
+      min-height: 60px;
+      
+      img {
+        max-width: 100px;
+        max-height: 30px;
+      }
+    }
+  }
+  
+  @include respond-to(xs) {
+    h2 {
+      font-size: get-font-size(3xl);
+    }
+    
+    .apps-grid {
+      grid-template-columns: 1fr;
+      gap: get-spacing(2);
+    }
+    
+    .app-card {
+      padding: get-spacing(3);
+      min-height: 50px;
+      
+      img {
+        max-width: 80px;
+        max-height: 25px;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Utility Classes
+// -----------------------------------------------------------------------------
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: get-spacing(1); }
+.mb-2 { margin-bottom: get-spacing(2); }
+.mb-3 { margin-bottom: get-spacing(3); }
+.mb-4 { margin-bottom: get-spacing(4); }
+.mb-5 { margin-bottom: get-spacing(5); }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: get-spacing(1); }
+.mt-2 { margin-top: get-spacing(2); }
+.mt-3 { margin-top: get-spacing(3); }
+.mt-4 { margin-top: get-spacing(4); }
+.mt-5 { margin-top: get-spacing(5); }
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

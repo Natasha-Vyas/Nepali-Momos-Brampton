@@ -1,0 +1,173 @@
+<section class="template10881">
+  <main>
+    <div class="banner">
+      <div>
+        <h1>Checkout</h1>
+      </div>
+    </div>
+
+    <div class="checkout-section">
+      <div class="checkout-container">
+        <h2>Contact Information</h2>
+        
+        <form (ngSubmit)="onSubmit()" #checkoutForm="ngForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                placeholder="FirstName" 
+                [(ngModel)]="formData.firstName"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                placeholder="LastName" 
+                [(ngModel)]="formData.lastName"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="Phone" 
+                [(ngModel)]="formData.phone"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Email" 
+                [(ngModel)]="formData.email"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="date" 
+                id="date" 
+                name="date" 
+                placeholder="dd-mm-yyyy" 
+                [(ngModel)]="formData.date"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="time" 
+                id="time" 
+                name="time" 
+                [(ngModel)]="formData.time"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="text" 
+                id="address" 
+                name="address" 
+                placeholder="Address" 
+                [(ngModel)]="formData.address"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="text" 
+                id="city" 
+                name="city" 
+                placeholder="City" 
+                [(ngModel)]="formData.city"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="text" 
+                id="state" 
+                name="state" 
+                placeholder="State" 
+                [(ngModel)]="formData.state"
+                required>
+            </div>
+            
+            <div class="form-group">
+              <input 
+                type="text" 
+                id="country" 
+                name="country" 
+                placeholder="Country" 
+                [(ngModel)]="formData.country"
+                required>
+            </div>
+            
+            <div class="form-group full-width">
+              <input 
+                type="text" 
+                id="pincode" 
+                name="pincode" 
+                placeholder="Pincode" 
+                [(ngModel)]="formData.pincode"
+                required>
+            </div>
+          </div>
+
+          <div class="mandatory-message">
+            *All fields are mandatory!
+          </div>
+
+          <button 
+            type="submit" 
+            class="checkout-btn"
+            [disabled]="isSubmitting">
+            {{ isSubmitting ? 'Processing...' : 'Checkout!' }}
+          </button>
+        </form>
+
+        <!-- Order Summary Section -->
+        <div class="order-summary" *ngIf="cartItems.length > 0">
+          <h3>Order Summary</h3>
+          <div class="cart-items">
+            <div class="cart-item" *ngFor="let item of cartItems">
+              <span class="item-name">{{ item.name }}</span>
+              <span class="item-quantity">x{{ item.quantity }}</span>
+              <span class="item-total">${{ item.total.toFixed(2) }}</span>
+            </div>
+          </div>
+          <div class="order-totals">
+            <div class="total-row">
+              <span>Subtotal:</span>
+              <span>${{ subtotal.toFixed(2) }}</span>
+            </div>
+            <div class="total-row">
+              <span>Tax (5%):</span>
+              <span>${{ tax.toFixed(2) }}</span>
+            </div>
+            <div class="total-row final-total">
+              <span>Total:</span>
+              <span>${{ total.toFixed(2) }}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Empty Cart Message -->
+        <div class="empty-cart" *ngIf="cartItems.length === 0">
+          <p>Your cart is empty. Please add items before checkout.</p>
+          <button class="back-btn" (click)="goToMenu()">
+            Explore Menu
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>

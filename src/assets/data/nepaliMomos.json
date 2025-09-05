@@ -865,813 +865,790 @@
       "12 PM – 10 PM"
     ]
   ],
-  "menu": [
+  "Menu": [
     {
-      "backgroundImg": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9c824b92-fc33-4056-b12c-086c5088660c.jpg",
-      "heading": "Delicious Cuisine",
-      "subheading": "DISCOVER OUR MENU",
-      "menu": [
+      "categoryName": "All",
+      "routeName": "all",
+      "searchTerm": "all",
+      "items": []
+    },
+    {
+      "categoryName": "Soups",
+      "items": [
         {
-          "superCategory": [
+          "itemName": "Classic Clear Soup(Veg)",
+          "itemDescription": "This ClearSoup infused with aromatic herbs recipe is so healthy and has been in our family for generations.",
+          "itemPrice": "4.50",
+          "quantity": 1
+        },
+        {
+          "itemName": "Classic Clear Soup(Non Veg)",
+          "itemDescription": "This ClearSoup infused with aromatic herbs recipe is so healthy and has been in our family for generations.",
+          "itemPrice": "5.50",
+          "quantity": 1
+        },
+        {
+          "itemName": "Thai Coconut soup(Veg)",
+          "quantity": 1,
+          "itemDescription": "Authentic Thai red curry broth, a fragrant blend of lemongrass, galangal, caraway leaves, and other aromatic herbs.",
+          "itemPrice": "5.00"
+        },
+        {
+          "itemName": "Thai Coconut soup(Non Veg)",
+          "quantity": 1,
+          "itemDescription": "Authentic Thai red curry broth, a fragrant blend of lemongrass, galangal, caraway leaves, and other aromatic herbs.",
+          "itemPrice": "6.00"
+        }
+      ]
+    },
+    {
+      "categoryName": "Combo Deals",
+      "items": [
+        {
+          "itemName": "Chai Samosa",
+          "quantity": 1,
+          "itemDescription": "Warm, spiced chai complements the crispy, flavorful samosas for a truly satisfying treat.",
+          "itemPrice": "3.75"
+        }
+      ]
+    },
+    {
+      "categoryName": "Mini Meal 2 Go",
+      "items": [
+        {
+          "itemName": "(Option A)",
+          "quantity": 1,
+          "itemPrice": "9.99",
+          "customization": [
             {
-              "category": [
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
                 {
-                  "categoryName": "All",
-                  "routeName": "all",
-                  "searchTerm": "all",
-                  "items": []
+                  "name": "BEST VALUE Momo, Chill Paneer, Chowmein or Fried Rice and Soup",
+                  "price": 0.00
                 },
                 {
-                  "categoryName": "Soups",
-                  "items": [
-                    {
-                      "itemName": "Classic Clear Soup(Veg)",
-                      "itemDescription": "This ClearSoup infused with aromatic herbs recipe is so healthy and has been in our family for generations.",
-                      "itemPrice": "4.50",
-                      "quantity": 1
-                    },
-                    {
-                      "itemName": "Classic Clear Soup(Non Veg)",
-                      "itemDescription": "This ClearSoup infused with aromatic herbs recipe is so healthy and has been in our family for generations.",
-                      "itemPrice": "5.50",
-                      "quantity": 1
-                    },
-                    {
-                      "itemName": "Thai Coconut soup(Veg)",
-                      "quantity": 1,
-                      "itemDescription": "Authentic Thai red curry broth, a fragrant blend of lemongrass, galangal, caraway leaves, and other aromatic herbs.",
-                      "itemPrice": "5.00"
-                    },
-                    {
-                      "itemName": "Thai Coconut soup(Non Veg)",
-                      "quantity": 1,
-                      "itemDescription": "Authentic Thai red curry broth, a fragrant blend of lemongrass, galangal, caraway leaves, and other aromatic herbs.",
-                      "itemPrice": "6.00"
-                    }
-                  ]
+                  "name": "Pop or Tea For",
+                  "price": 1.00
                 },
                 {
-                  "categoryName": "Combo Deals",
-                  "items": [
-                    {
-                      "itemName": "Chai Samosa",
-                      "quantity": 1,
-                      "itemDescription": "Warm, spiced chai complements the crispy, flavorful samosas for a truly satisfying treat.",
-                      "itemPrice": "3.75"
-                    }
-                  ]
+                  "name": "Available in Veg or Chicken",
+                  "price": 0.00
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "(Option B)",
+          "quantity": 1,
+          "itemPrice": "9.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Momo Veggi Spring Rolls Mango, Salad And Soup ",
+                  "price": 0.00
                 },
                 {
-                  "categoryName": "Mini Meal 2 Go",
-                  "items": [
-                    {
-                      "itemName": "(Option A)",
-                      "quantity": 1,
-                      "itemPrice": "9.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "BEST VALUE Momo, Chill Paneer, Chowmein or Fried Rice and Soup",
-                              "price": 0.00
-                            },
-                            {
-                              "name": "Pop or Tea For",
-                              "price": 1.00
-                            },
-                            {
-                              "name": "Available in Veg or Chicken",
-                              "price": 0.00
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "(Option B)",
-                      "quantity": 1,
-                      "itemPrice": "9.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Momo Veggi Spring Rolls Mango, Salad And Soup ",
-                              "price": 0.00
-                            },
-                            {
-                              "name": "Pop or Tea For",
-                              "price": 1.00
-                            },
-                            {
-                              "name": "Available in Veg or Chicken",
-                              "price": 0.00
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  "name": "Pop or Tea For",
+                  "price": 1.00
                 },
                 {
-                  "categoryName": "Starters",
-                  "categoryDescription": "Hand-rolled, Tempura-fried, Delhi-style noodle spring rolls.",
-                  "items": [
-                    {
-                      "itemName": "Dilli Alle Noodles Spring rolls(2pcs)",
-                      "quantity": 1,
-                      "itemPrice": "6.00",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "2pcs",
-                              "price": 6.00
-                            },
-                            {
-                              "name": "6pcs",
-                              "price": 15.00
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Veggi Spring rolls(6pcs)",
-                      "quantity": 1,
-                      "itemDescription": "Perfect appetizer: Crispy, hand-rolled, tempura veg spring rolls.",
-                      "itemPrice": "12.00"
-                    },
-                    {
-                      "itemName": "Thai Mango Salad",
-                      "quantity": 1,
-                      "itemDescription": "Our best-seller for a reason: Sweet, tangy, and refreshing Thai Mango Salad.",
-                      "itemPrice": "10.00"
-                    },
-                    {
-                      "itemName": "Kurkure Momo Burgers",
-                      "quantity": 1,
-                      "itemDescription": "Our Kurkure Momos Burger features crispy, Kurkure-coated momos nestled in a soft bun with your favorite toppings and Fries",
-                      "itemPrice": "6.99"
-                    },
-                    {
-                      "itemName": "Honey Chilli Fries(regular)",
-                      "quantity": 1,
-                      "itemDescription": "Crispy, sweet, and spicy. Honey Chilli Fries done right. One of our best Sellers",
-                      "itemPrice": "5.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Regular",
-                              "price": 5.99
-                            },
-                            {
-                              "name": "Large",
-                              "price": 9.99
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Classic Momos",
-                  "categoryDescription": "Authentic Dar jeeling Style Momos",
-                  "items": [
-                    {
-                      "itemName": "Veggie Momos",
-                      "quantity": 1,
-                      "itemDescription": "Filled with fresh cabbage, carrots, and a blend of aromatic Himalayan herbs and salts, each momo is hand-Folded to perfection.",
-                      "itemPrice": "13.00"
-                    },
-                    {
-                      "itemName": "Chicken Momos",
-                      "quantity": 1,
-                      "itemDescription": "Can't resist these: Juicy chicken momos, a must-try at Nepali Momos Brampton. Hand Folded Filled with tender chicken onions and herbs",
-                      "itemPrice": "13.00"
-                    },
-                    {
-                      "itemName": "Mutton Momos",
-                      "quantity": 1,
-                      "itemDescription": "Tender and juicy Mutton Momos filled with fresh baby goat meat and traditional spices. A rich, flavorful experience in every handcrafted dumpling..",
-                      "itemPrice": "18.00"
-                    },
-                    {
-                      "itemName": "Paneer Momos",
-                      "quantity": 1,
-                      "itemDescription": "Hand-crafted Paneer Momos: Creamy, herb-infused delight.",
-                      "itemPrice": "15.00"
-                    },
-                    {
-                      "itemName": "Malai Paneer Momos",
-                      "quantity": 1,
-                      "itemDescription": "Our hand-crafted Malai Paneer Momos, filled with creamy paneer, cashews, aromatic herbs, and savory seasonings.",
-                      "itemPrice": "16.00"
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Soupy Affair",
-                  "items": [
-                    {
-                      "itemName": "Thupka",
-                      "quantity": 1,
-                      "itemDescription": "A complete meal in itself, made with simple, pure ingredients for a truly comforting experience.",
-                      "itemPrice": "14.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Chicken Thukpa",
-                              "price": 14.99
-                            },
-                            {
-                              "name": "Veggi Thupka",
-                              "price": 13.99
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Jhol Momo!",
-                      "quantity": 1,
-                      "itemDescription": "Steaming hot dumplings served with a flavorful, tangy Jhol infused with nutty flavors and a hint of Schezuan pepper for an extra kick for a truly authentic taste of Nepal.",
-                      "itemPrice": "16.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Chicken\/Veg ",
-                              "price": 16.99
-                            },
-                            {
-                              "name": "nPaneer",
-                              "price": 18.99
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Thai Red Curry Soup Momos",
-                      "quantity": 1,
-                      "itemDescription": "Tender momos simmered in a rich and aromatic coconut milk based red curry broth, infused with lemongrass, galangal, caraway leaves, and other fragrant Thai herbs. It's soul food at its best.",
-                      "itemPrice": "16.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Chicken\/Veg",
-                              "price": 16.99
-                            },
-                            {
-                              "name": "Paneer",
-                              "price": 18.99
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Fusion Momos",
-                  "categoryDescription": "Reinventing the Momo.",
-                  "items": [
-                    {
-                      "itemName": "Tandoori Momos",
-                      "quantity": 1,
-                      "itemDescription": "Experience the smoky char and juicy tenderness of our best-selling Tandoori Momos. These flavorful dumplings are marinated in a blend of aromatic spices and then cooked to perfection.",
-                      "itemPrice": "16.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Chicken\/Veg",
-                              "price": 16.99
-                            },
-                            {
-                              "name": "Paneer",
-                              "price": 18.99
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Kurkure Momos",
-                      "quantity": 1,
-                      "itemDescription": "Get ready for a flavor explosion! Our Kurkure Momos feature a tempura-style coating fried to crispy perfection, drizzled with smoky chipotle sauce, and finished with a fiery dusting of peri-peri.",
-                      "itemPrice": "16.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Chicken\/Veg",
-                              "price": 16.99
-                            },
-                            {
-                              "name": "Paneer",
-                              "price": 18.99
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Platters",
-                  "items": [
-                    {
-                      "itemName": "Momo-Licious Platter",
-                      "quantity": 1,
-                      "itemDescription": "Can't decide? The Momo-licious Platter has it all! Four delicious Momo styles served with soup.4 pcs of each delicate Steamed Momos, Savory Pan-fried, Fiery Chilli Momos, Smoky Tandoori, and Ultra-Crispy Kurkure Fried.It's a Momo lover's dream!",
-                      "itemPrice": "26.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Veg",
-                              "price": 26.99
-                            },
-                            {
-                              "name": "ckn",
-                              "price": 26.99
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Curry-Licious Platter",
-                      "quantity": 1,
-                      "itemDescription": "Momos Tossed in our famed Afagani, Butter masala and Chilli Curries with plain steamed Momos, 5 pcs each served with our soup,20 pcs altogether.",
-                      "itemPrice": "26.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Veg",
-                              "price": 26.99
-                            },
-                            {
-                              "name": "ckn",
-                              "price": 26.99
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Premium momos",
-                      "quantity": 1,
-                      "itemDescription": "Experience the delight of our premium Momos. Handcrafted and generously filled, made fresh to order for ultimate flavor. Indulge in plump, handcrafted premium Momos! Almost double the filling, made fresh to order, and filled with flavors you fancy. 6 pcs served with 3 Dipping sauces and a Classic Clear soup,a soulful meal indeed.",
-                      "itemPrice": "13.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Veg\/Ckn",
-                              "price": 13.99
-                            },
-                            {
-                              "name": "Paneer",
-                              "price": 26.99
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Family Platter",
-                      "quantity": 1,
-                      "itemDescription": "Family Feast: Delicious Food, Amazing Value! Get your family togetherfor a feast they won't forget! Choose between Momolicious or Currylicious Platter, plus Manchurian (Veg or Chicken), Desi Chowmein Veg or Desi Fried Rice Vegand 4 POP. All at one great price!",
-                      "itemPrice": "47.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "Veg",
-                              "price": 47.99
-                            },
-                            {
-                              "name": "ckn",
-                              "price": 47.99
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Mains",
-                  "items": [
-                    {
-                      "itemName": "Chilli Chicken Dry\/Gravy",
-                      "quantity": 1,
-                      "itemDescription": "Crispy fried chicken tossed in a fiery chilli garlic sauce.",
-                      "itemPrice": "13.99"
-                    },
-                    {
-                      "itemName": "Manchurian",
-                      "quantity": 1,
-                      "itemDescription": "Crispy fried balls in a tangy, sweet, and spicy Manchurian sauce.",
-                      "itemPrice": "15.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "ckn",
-                              "price": 15.99
-                            },
-                            {
-                              "name": "Veg",
-                              "price": 13.99
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Desi Chowmein",
-                      "quantity": 1,
-                      "itemDescription": "A delicious combination of stir-fried noodles, fresh vegetables (and tender chicken), and a flavorful blend of spices and sauces.",
-                      "itemPrice": "14.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "ckn",
-                              "price": 14.99
-                            },
-                            {
-                              "name": "Veg",
-                              "price": 12.99
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "itemName": "Fried Rice",
-                      "quantity": 1,
-                      "itemDescription": "Fluffy rice, fresh veggies (and chicken), aromatic spices, and savory sauces. A crowd-pleaser.",
-                      "itemPrice": "14.99",
-                      "customization": [
-                        {
-                          "custName": "Select Option",
-                          "custDescription": "Choose your option",
-                          "required": "true",
-                          "cust": [
-                            {
-                              "name": "ckn",
-                              "price": 14.99
-                            },
-                            {
-                              "name": "Veg",
-                              "price": 12.99
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Thali",
-                  "categoryDescription": "8 Iteams (Chicken\/Veg) Our Signature Desi Chinese Thali offers a diverse array of dishes showcasing the best of both cuisines.",
-                  "items": [
-                    {
-                      "itemName": "Signature Thali Desi Chinese",
-                      "quantity": 1,
-                      "itemDescription": "Chowmien, Fried Rice, Thai Mango Salad, Veg/Chicken Manchurian, Chilli Paneer/Chicken Chilli, 1 Spring Roll, 1 Veg/ Ckn Momo, Clear Soup, Hot Gulabo The Gulabjamun",
-                      "itemPrice": "13.99"
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Kids Momo Meal",
-                  "items": [
-                    {
-                      "itemName": "Kids Momo Meal",
-                      "quantity": 1,
-                      "itemDescription": "Five delicious Momos steamed, crispy fries, a refreshing juice box, and a sweet Gulab jamun with choice of dipping sauce. The perfect kid-friendly meal.",
-                      "itemPrice": "10.99"
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Dessert",
-                  "items": [
-                    {
-                      "itemName": "\"Gulabo\" The Gulab Jamun \nA classic Indian dessert.",
-                      "quantity": 1,
-                      "itemDescription": "Soft, melt-in-your-mouth milk balls soaked in a fragrant rose-flavored syrup, served hot and sprinkled with coconut shavings and pistachios. A truly decadent Indian dessert.",
-                      "itemPrice": "5.99"
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "Beverage",
-                  "items": [
-                    {
-                      "itemName": "Masala Chai",
-                      "quantity": 1,
-                      "itemDescription": "A fragrant blend of black tea, aromatic spices like cardamom, cinnamon, and ginger,and creamy milk, creating a warm and comforting beverage that's perfect for any time of day.",
-                      "itemPrice": "2.75"
-                    },
-                    {
-                      "itemName": "Dar jeeling Tea",
-                      "quantity": 1,
-                      "itemDescription": "\"Champagne of Teas,\" this delicate and aromatic tea boasts a unique muscatel flavor and a bright, uplifting character. Grown in the misty hills of Darjeeling, India, it's a truly exquisite experience.",
-                      "itemPrice": "2.75"
-                    },
-                    {
-                      "itemName": "Pop",
-                      "quantity": 1,
-                      "itemPrice": "1.50"
-                    },
-                    {
-                      "itemName": "Water",
-                      "quantity": 1,
-                      "itemPrice": "1.50"
-                    },
-                    {
-                      "itemName": "Fiji Water",
-                      "quantity": 1,
-                      "itemPrice": "2.50"
-                    },
-                    {
-                      "itemName": "Red Bull",
-                      "quantity": 1,
-                      "itemPrice": "4.50"
-                    }
-                  ]
+                  "name": "Available in Veg or Chicken",
+                  "price": 0.00
                 }
               ]
             }
           ]
         }
-      ],
-      "menu2": [
+      ]
+    },
+    {
+      "categoryName": "Starters",
+      "categoryDescription": "Hand-rolled, Tempura-fried, Delhi-style noodle spring rolls.",
+      "items": [
         {
-          "superCategory": [
+          "itemName": "Dilli Alle Noodles Spring rolls(2pcs)",
+          "quantity": 1,
+          "itemPrice": "6.00",
+          "customization": [
             {
-              "category": [
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
                 {
-                  "categoryName": "All",
-                  "routeName": "all",
-                  "searchTerm": "all",
-                  "items": [
-                    {
-                      "itemName": "THAI MANGO SALAD (50 pcs)",
-                      "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
-                      "quantity": 1,
-                      "itemPrice": "35.00"
-                    },
-                    {
-                      "itemName": "VEGGI SPRING ROLLS (50 pcs)",
-                      "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
-                      "quantity": 1,
-                      "itemPrice": "35.00"
-                    },
-                    {
-                      "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
-                      "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
-                      "quantity": 1,
-                      "itemPrice": "65.00"
-                    }
-                  ]
+                  "name": "2pcs",
+                  "price": 6.00
                 },
                 {
-                  "categoryName": "STARTER",
-                  "items": [
-                    {
-                      "itemName": "THAI MANGO SALAD (50 pcs)",
-                      "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
-                      "quantity": 1,
-                      "itemPrice": "35.00"
-                    },
-                    {
-                      "itemName": "VEGGI SPRING ROLLS (50 pcs)",
-                      "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
-                      "quantity": 1,
-                      "itemPrice": "35.00"
-                    },
-                    {
-                      "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
-                      "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
-                      "quantity": 1,
-                      "itemPrice": "65.00"
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "MAINS",
-                  "items": [
-                    {
-                      "itemName": "CHILLI CHK/ PANEER DRY/GRAVY (Tilipia)",
-                      "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
-                      "quantity": 1,
-                      "itemPrice": "65.00"
-                    },
-                    {
-                      "itemName": "CHILLI CHK/ PANEER DRY/GRAVY (Salmon)",
-                      "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
-                      "quantity": 1,
-                      "itemPrice": "75.00"
-                    },
-                    {
-                      "itemName": "GOBI MANCHURIAN",
-                      "itemDescription": "Crispy fried cauliflower florets tossed in a tangy, sweet, and spicy Manchurian sauce. A vegetarian Indo-Chinese classic.",
-                      "quantity": 1,
-                      "itemPrice": "45.00"
-                    },
-                    {
-                      "itemName": "MANCHURIAN DRY/GRAVY (Veg)",
-                      "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
-                      "quantity": 1,
-                      "itemPrice": "45.00"
-                    },
-                    {
-                      "itemName": "MANCHURIAN DRY/GRAVY (Ckn)",
-                      "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
-                      "quantity": 1,
-                      "itemPrice": "55"
-                    },
-                    {
-                      "itemName": "FRIED RICE",
-                      "itemDescription": "Fluffy rice stir-fried with a medley of fresh vegetables (and tender chicken/egg/shrimp if you choose), aromatic spices, and savory sauces. A true crosed-pleaser.",
-                      "quantity": 1,
-                      "itemPrice": "40.00"
-                    },
-                    {
-                      "itemName": "DESI CHOWMIEN",
-                      "itemDescription": "Popular Indo-Chinese noodles stir-fried with a medley of vegetables (and chicken), aromatic spices, and a flavorful Desi-inspired sauce. A true comfort food classic.",
-                      "quantity": 1,
-                      "itemPrice": "45.00"
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "RETAIL MOMOS",
-                  "categoryDescription": "Brampton's favorite Momos, now in your freezer! Our famous chutney is the cherry on top.Get your Nepali Momo fix anytime! Our frozen Momos are the perfect solution for busy Momo lovers. Simply take them home, prepare them quickly, and enjoy the authentic taste of Brampton's best, complete with our signature chutneys.",
-                  "items": [
-                    {
-                      "itemName": "Veggi",
-                      "quantity": 1,
-                      "itemPrice": "45",
-                      "itemDescription": "50 PCS RETAIL BAGS"
-                    },
-                    {
-                      "itemName": "Ckn",
-                      "quantity": 1,
-                      "itemPrice": "50",
-                      "itemDescription": "50 PCS RETAIL BAGS"
-                    },
-                    {
-                      "itemName": "Paneer",
-                      "quantity": 1,
-                      "itemPrice": "55",
-                      "itemDescription": "50 PCS RETAIL BAGS"
-                    },
-                    {
-                      "itemName": "Malai Paneer",
-                      "quantity": 1,
-                      "itemPrice": "60",
-                      "itemDescription": "50 PCS RETAIL BAGS"
-                    },
-                    {
-                      "itemName": "Veggi",
-                      "quantity": 1,
-                      "itemPrice": "15.00",
-                      "itemDescription": "15 PCS RETAIL BAGS"
-                    },
-                    {
-                      "itemName": "Ckn",
-                      "quantity": 1,
-                      "itemPrice": "15.00",
-                      "itemDescription": "15 PCS RETAIL BAGS"
-                    },
-                    {
-                      "itemName": "Paneer",
-                      "quantity": 1,
-                      "itemPrice": "16.00",
-                      "itemDescription": "15 PCS RETAIL BAGS"
-                    },
-                    {
-                      "itemName": "Malai Paneer",
-                      "quantity": 1,
-                      "itemPrice": "18.00",
-                      "itemDescription": "15 PCS RETAIL BAGS"
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "MOMOS",
-                  "categoryDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 5o PCS STEAMED",
-                  "items": [
-                    {
-                      "itemName": "Veggi",
-                      "itemDescription": "Add 5 for Fried",
-                      "quantity": 1,
-                      "itemPrice": "40.00"
-                    },
-                    {
-                      "itemName": "Ckn",
-                      "itemDescription": "Add 5 for Fried",
-                      "quantity": 1,
-                      "itemPrice": "45.00"
-                    },
-                    {
-                      "itemName": "Paneer",
-                      "itemDescription": "Add 5 for Fried",
-                      "quantity": 1,
-                      "itemPrice": "50.00"
-                    },
-                    {
-                      "itemName": "Malai Paneer",
-                      "itemDescription": "Add 5 for Fried",
-                      "quantity": 1,
-                      "itemPrice": "55.00"
-                    },
-                    {
-                      "itemName": "TANDOORI MOMOS",
-                      "itemDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 50 ADD $10.00 TANDOORI MOMOS",
-                      "quantity": 1,
-                      "itemPrice": "60.00"
-                    },
-                    {
-                      "itemName": "CURRY MOMOS",
-                      "itemDescription": "A DELICIOUS ASSORTMENT OF TENDER MOMOS TOSSED IN THREE FLAVORFUL CURRIES, CHILLI, AFGHANI, AND BUTTER MASALA, PERFECT FOR SHARING WITH FRIENDS ANDFAMILY. 50 PCS ADD $10.00",
-                      "quantity": 1,
-                      "itemPrice": "60.00"
-                    }
-                  ]
-                },
-                {
-                  "categoryName": "EXOTIC FRUITS TRAY",
-                  "items": [
-                    {
-                      "itemName": "EXOTIC FRUITS TRAY",
-                      "itemDescription": "A VIBRANT DISPLAY OF NATURE'S FINEST FRUITS, INCLUDING PASSION FRUIT, MANGO, BANANA, DRAGON FRUIT, LYCHEE. STAR FRUIT, GRAPES, MELONS. WATERMELON, PINEAPPLE. AND FRESH COCONUT. A REFRESHING AND HEALTHY TREAT FOR ANY OCCASION.",
-                      "quantity": 1,
-                      "itemPrice": "60.00"
-                    }
-                  ]
+                  "name": "6pcs",
+                  "price": 15.00
                 }
               ]
             }
           ]
+        },
+        {
+          "itemName": "Veggi Spring rolls(6pcs)",
+          "quantity": 1,
+          "itemDescription": "Perfect appetizer: Crispy, hand-rolled, tempura veg spring rolls.",
+          "itemPrice": "12.00"
+        },
+        {
+          "itemName": "Thai Mango Salad",
+          "quantity": 1,
+          "itemDescription": "Our best-seller for a reason: Sweet, tangy, and refreshing Thai Mango Salad.",
+          "itemPrice": "10.00"
+        },
+        {
+          "itemName": "Kurkure Momo Burgers",
+          "quantity": 1,
+          "itemDescription": "Our Kurkure Momos Burger features crispy, Kurkure-coated momos nestled in a soft bun with your favorite toppings and Fries",
+          "itemPrice": "6.99"
+        },
+        {
+          "itemName": "Honey Chilli Fries(regular)",
+          "quantity": 1,
+          "itemDescription": "Crispy, sweet, and spicy. Honey Chilli Fries done right. One of our best Sellers",
+          "itemPrice": "5.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Regular",
+                  "price": 5.99
+                },
+                {
+                  "name": "Large",
+                  "price": 9.99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Classic Momos",
+      "categoryDescription": "Authentic Dar jeeling Style Momos",
+      "items": [
+        {
+          "itemName": "Veggie Momos",
+          "quantity": 1,
+          "itemDescription": "Filled with fresh cabbage, carrots, and a blend of aromatic Himalayan herbs and salts, each momo is hand-Folded to perfection.",
+          "itemPrice": "13.00"
+        },
+        {
+          "itemName": "Chicken Momos",
+          "quantity": 1,
+          "itemDescription": "Can't resist these: Juicy chicken momos, a must-try at Nepali Momos Brampton. Hand Folded Filled with tender chicken onions and herbs",
+          "itemPrice": "13.00"
+        },
+        {
+          "itemName": "Mutton Momos",
+          "quantity": 1,
+          "itemDescription": "Tender and juicy Mutton Momos filled with fresh baby goat meat and traditional spices. A rich, flavorful experience in every handcrafted dumpling..",
+          "itemPrice": "18.00"
+        },
+        {
+          "itemName": "Paneer Momos",
+          "quantity": 1,
+          "itemDescription": "Hand-crafted Paneer Momos: Creamy, herb-infused delight.",
+          "itemPrice": "15.00"
+        },
+        {
+          "itemName": "Malai Paneer Momos",
+          "quantity": 1,
+          "itemDescription": "Our hand-crafted Malai Paneer Momos, filled with creamy paneer, cashews, aromatic herbs, and savory seasonings.",
+          "itemPrice": "16.00"
+        }
+      ]
+    },
+    {
+      "categoryName": "Soupy Affair",
+      "items": [
+        {
+          "itemName": "Thupka",
+          "quantity": 1,
+          "itemDescription": "A complete meal in itself, made with simple, pure ingredients for a truly comforting experience.",
+          "itemPrice": "14.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chicken Thukpa",
+                  "price": 14.99
+                },
+                {
+                  "name": "Veggi Thupka",
+                  "price": 13.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "Jhol Momo!",
+          "quantity": 1,
+          "itemDescription": "Steaming hot dumplings served with a flavorful, tangy Jhol infused with nutty flavors and a hint of Schezuan pepper for an extra kick for a truly authentic taste of Nepal.",
+          "itemPrice": "16.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chicken\/Veg ",
+                  "price": 16.99
+                },
+                {
+                  "name": "nPaneer",
+                  "price": 18.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "Thai Red Curry Soup Momos",
+          "quantity": 1,
+          "itemDescription": "Tender momos simmered in a rich and aromatic coconut milk based red curry broth, infused with lemongrass, galangal, caraway leaves, and other fragrant Thai herbs. It's soul food at its best.",
+          "itemPrice": "16.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chicken\/Veg",
+                  "price": 16.99
+                },
+                {
+                  "name": "Paneer",
+                  "price": 18.99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Fusion Momos",
+      "categoryDescription": "Reinventing the Momo.",
+      "items": [
+        {
+          "itemName": "Tandoori Momos",
+          "quantity": 1,
+          "itemDescription": "Experience the smoky char and juicy tenderness of our best-selling Tandoori Momos. These flavorful dumplings are marinated in a blend of aromatic spices and then cooked to perfection.",
+          "itemPrice": "16.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chicken\/Veg",
+                  "price": 16.99
+                },
+                {
+                  "name": "Paneer",
+                  "price": 18.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "Kurkure Momos",
+          "quantity": 1,
+          "itemDescription": "Get ready for a flavor explosion! Our Kurkure Momos feature a tempura-style coating fried to crispy perfection, drizzled with smoky chipotle sauce, and finished with a fiery dusting of peri-peri.",
+          "itemPrice": "16.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chicken\/Veg",
+                  "price": 16.99
+                },
+                {
+                  "name": "Paneer",
+                  "price": 18.99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Platters",
+      "items": [
+        {
+          "itemName": "Momo-Licious Platter",
+          "quantity": 1,
+          "itemDescription": "Can't decide? The Momo-licious Platter has it all! Four delicious Momo styles served with soup.4 pcs of each delicate Steamed Momos, Savory Pan-fried, Fiery Chilli Momos, Smoky Tandoori, and Ultra-Crispy Kurkure Fried.It's a Momo lover's dream!",
+          "itemPrice": "26.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 26.99
+                },
+                {
+                  "name": "ckn",
+                  "price": 26.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "Curry-Licious Platter",
+          "quantity": 1,
+          "itemDescription": "Momos Tossed in our famed Afagani, Butter masala and Chilli Curries with plain steamed Momos, 5 pcs each served with our soup,20 pcs altogether.",
+          "itemPrice": "26.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 26.99
+                },
+                {
+                  "name": "ckn",
+                  "price": 26.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "Premium momos",
+          "quantity": 1,
+          "itemDescription": "Experience the delight of our premium Momos. Handcrafted and generously filled, made fresh to order for ultimate flavor. Indulge in plump, handcrafted premium Momos! Almost double the filling, made fresh to order, and filled with flavors you fancy. 6 pcs served with 3 Dipping sauces and a Classic Clear soup,a soulful meal indeed.",
+          "itemPrice": "13.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg\/Ckn",
+                  "price": 13.99
+                },
+                {
+                  "name": "Paneer",
+                  "price": 26.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "Family Platter",
+          "quantity": 1,
+          "itemDescription": "Family Feast: Delicious Food, Amazing Value! Get your family togetherfor a feast they won't forget! Choose between Momolicious or Currylicious Platter, plus Manchurian (Veg or Chicken), Desi Chowmein Veg or Desi Fried Rice Vegand 4 POP. All at one great price!",
+          "itemPrice": "47.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 47.99
+                },
+                {
+                  "name": "ckn",
+                  "price": 47.99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Mains",
+      "items": [
+        {
+          "itemName": "Chilli Chicken Dry\/Gravy",
+          "quantity": 1,
+          "itemDescription": "Crispy fried chicken tossed in a fiery chilli garlic sauce.",
+          "itemPrice": "13.99"
+        },
+        {
+          "itemName": "Manchurian",
+          "quantity": 1,
+          "itemDescription": "Crispy fried balls in a tangy, sweet, and spicy Manchurian sauce.",
+          "itemPrice": "15.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "ckn",
+                  "price": 15.99
+                },
+                {
+                  "name": "Veg",
+                  "price": 13.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "Desi Chowmein",
+          "quantity": 1,
+          "itemDescription": "A delicious combination of stir-fried noodles, fresh vegetables (and tender chicken), and a flavorful blend of spices and sauces.",
+          "itemPrice": "14.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "ckn",
+                  "price": 14.99
+                },
+                {
+                  "name": "Veg",
+                  "price": 12.99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "itemName": "Fried Rice",
+          "quantity": 1,
+          "itemDescription": "Fluffy rice, fresh veggies (and chicken), aromatic spices, and savory sauces. A crowd-pleaser.",
+          "itemPrice": "14.99",
+          "customization": [
+            {
+              "custName": "Select Option",
+              "custDescription": "Choose your option",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "ckn",
+                  "price": 14.99
+                },
+                {
+                  "name": "Veg",
+                  "price": 12.99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Thali",
+      "categoryDescription": "8 Iteams (Chicken\/Veg) Our Signature Desi Chinese Thali offers a diverse array of dishes showcasing the best of both cuisines.",
+      "items": [
+        {
+          "itemName": "Signature Thali Desi Chinese",
+          "quantity": 1,
+          "itemDescription": "Chowmien, Fried Rice, Thai Mango Salad, Veg/Chicken Manchurian, Chilli Paneer/Chicken Chilli, 1 Spring Roll, 1 Veg/ Ckn Momo, Clear Soup, Hot Gulabo The Gulabjamun",
+          "itemPrice": "13.99"
+        }
+      ]
+    },
+    {
+      "categoryName": "Kids Momo Meal",
+      "items": [
+        {
+          "itemName": "Kids Momo Meal",
+          "quantity": 1,
+          "itemDescription": "Five delicious Momos steamed, crispy fries, a refreshing juice box, and a sweet Gulab jamun with choice of dipping sauce. The perfect kid-friendly meal.",
+          "itemPrice": "10.99"
+        }
+      ]
+    },
+    {
+      "categoryName": "Dessert",
+      "items": [
+        {
+          "itemName": "\"Gulabo\" The Gulab Jamun \nA classic Indian dessert.",
+          "quantity": 1,
+          "itemDescription": "Soft, melt-in-your-mouth milk balls soaked in a fragrant rose-flavored syrup, served hot and sprinkled with coconut shavings and pistachios. A truly decadent Indian dessert.",
+          "itemPrice": "5.99"
+        }
+      ]
+    },
+    {
+      "categoryName": "Beverage",
+      "items": [
+        {
+          "itemName": "Masala Chai",
+          "quantity": 1,
+          "itemDescription": "A fragrant blend of black tea, aromatic spices like cardamom, cinnamon, and ginger,and creamy milk, creating a warm and comforting beverage that's perfect for any time of day.",
+          "itemPrice": "2.75"
+        },
+        {
+          "itemName": "Dar jeeling Tea",
+          "quantity": 1,
+          "itemDescription": "\"Champagne of Teas,\" this delicate and aromatic tea boasts a unique muscatel flavor and a bright, uplifting character. Grown in the misty hills of Darjeeling, India, it's a truly exquisite experience.",
+          "itemPrice": "2.75"
+        },
+        {
+          "itemName": "Pop",
+          "quantity": 1,
+          "itemPrice": "1.50"
+        },
+        {
+          "itemName": "Water",
+          "quantity": 1,
+          "itemPrice": "1.50"
+        },
+        {
+          "itemName": "Fiji Water",
+          "quantity": 1,
+          "itemPrice": "2.50"
+        },
+        {
+          "itemName": "Red Bull",
+          "quantity": 1,
+          "itemPrice": "4.50"
+        }
+      ]
+    }
+  ],
+  "cateringMenu": [
+    {
+      "categoryName": "All",
+      "routeName": "all",
+      "searchTerm": "all",
+      "items": [
+        {
+          "itemName": "THAI MANGO SALAD (50 pcs)",
+          "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
+          "quantity": 1,
+          "itemPrice": "35.00"
+        },
+        {
+          "itemName": "VEGGI SPRING ROLLS (50 pcs)",
+          "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
+          "quantity": 1,
+          "itemPrice": "35.00"
+        },
+        {
+          "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
+          "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
+          "quantity": 1,
+          "itemPrice": "65.00"
+        }
+      ]
+    },
+    {
+      "categoryName": "STARTER",
+      "items": [
+        {
+          "itemName": "THAI MANGO SALAD (50 pcs)",
+          "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
+          "quantity": 1,
+          "itemPrice": "35.00"
+        },
+        {
+          "itemName": "VEGGI SPRING ROLLS (50 pcs)",
+          "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
+          "quantity": 1,
+          "itemPrice": "35.00"
+        },
+        {
+          "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
+          "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
+          "quantity": 1,
+          "itemPrice": "65.00"
+        }
+      ]
+    },
+    {
+      "categoryName": "MAINS",
+      "items": [
+        {
+          "itemName": "CHILLI CHK/ PANEER DRY/GRAVY (Tilipia)",
+          "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
+          "quantity": 1,
+          "itemPrice": "65.00"
+        },
+        {
+          "itemName": "CHILLI CHK/ PANEER DRY/GRAVY (Salmon)",
+          "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
+          "quantity": 1,
+          "itemPrice": "75.00"
+        },
+        {
+          "itemName": "GOBI MANCHURIAN",
+          "itemDescription": "Crispy fried cauliflower florets tossed in a tangy, sweet, and spicy Manchurian sauce. A vegetarian Indo-Chinese classic.",
+          "quantity": 1,
+          "itemPrice": "45.00"
+        },
+        {
+          "itemName": "MANCHURIAN DRY/GRAVY (Veg)",
+          "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
+          "quantity": 1,
+          "itemPrice": "45.00"
+        },
+        {
+          "itemName": "MANCHURIAN DRY/GRAVY (Ckn)",
+          "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
+          "quantity": 1,
+          "itemPrice": "55"
+        },
+        {
+          "itemName": "FRIED RICE",
+          "itemDescription": "Fluffy rice stir-fried with a medley of fresh vegetables (and tender chicken/egg/shrimp if you choose), aromatic spices, and savory sauces. A true crosed-pleaser.",
+          "quantity": 1,
+          "itemPrice": "40.00"
+        },
+        {
+          "itemName": "DESI CHOWMIEN",
+          "itemDescription": "Popular Indo-Chinese noodles stir-fried with a medley of vegetables (and chicken), aromatic spices, and a flavorful Desi-inspired sauce. A true comfort food classic.",
+          "quantity": 1,
+          "itemPrice": "45.00"
+        }
+      ]
+    },
+    {
+      "categoryName": "RETAIL MOMOS",
+      "categoryDescription": "Brampton's favorite Momos, now in your freezer! Our famous chutney is the cherry on top.Get your Nepali Momo fix anytime! Our frozen Momos are the perfect solution for busy Momo lovers. Simply take them home, prepare them quickly, and enjoy the authentic taste of Brampton's best, complete with our signature chutneys.",
+      "items": [
+        {
+          "itemName": "Veggi",
+          "quantity": 1,
+          "itemPrice": "45",
+          "itemDescription": "50 PCS RETAIL BAGS"
+        },
+        {
+          "itemName": "Ckn",
+          "quantity": 1,
+          "itemPrice": "50",
+          "itemDescription": "50 PCS RETAIL BAGS"
+        },
+        {
+          "itemName": "Paneer",
+          "quantity": 1,
+          "itemPrice": "55",
+          "itemDescription": "50 PCS RETAIL BAGS"
+        },
+        {
+          "itemName": "Malai Paneer",
+          "quantity": 1,
+          "itemPrice": "60",
+          "itemDescription": "50 PCS RETAIL BAGS"
+        },
+        {
+          "itemName": "Veggi",
+          "quantity": 1,
+          "itemPrice": "15.00",
+          "itemDescription": "15 PCS RETAIL BAGS"
+        },
+        {
+          "itemName": "Ckn",
+          "quantity": 1,
+          "itemPrice": "15.00",
+          "itemDescription": "15 PCS RETAIL BAGS"
+        },
+        {
+          "itemName": "Paneer",
+          "quantity": 1,
+          "itemPrice": "16.00",
+          "itemDescription": "15 PCS RETAIL BAGS"
+        },
+        {
+          "itemName": "Malai Paneer",
+          "quantity": 1,
+          "itemPrice": "18.00",
+          "itemDescription": "15 PCS RETAIL BAGS"
+        }
+      ]
+    },
+    {
+      "categoryName": "MOMOS",
+      "categoryDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 5o PCS STEAMED",
+      "items": [
+        {
+          "itemName": "Veggi",
+          "itemDescription": "Add 5 for Fried",
+          "quantity": 1,
+          "itemPrice": "40.00"
+        },
+        {
+          "itemName": "Ckn",
+          "itemDescription": "Add 5 for Fried",
+          "quantity": 1,
+          "itemPrice": "45.00"
+        },
+        {
+          "itemName": "Paneer",
+          "itemDescription": "Add 5 for Fried",
+          "quantity": 1,
+          "itemPrice": "50.00"
+        },
+        {
+          "itemName": "Malai Paneer",
+          "itemDescription": "Add 5 for Fried",
+          "quantity": 1,
+          "itemPrice": "55.00"
+        },
+        {
+          "itemName": "TANDOORI MOMOS",
+          "itemDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 50 ADD $10.00 TANDOORI MOMOS",
+          "quantity": 1,
+          "itemPrice": "60.00"
+        },
+        {
+          "itemName": "CURRY MOMOS",
+          "itemDescription": "A DELICIOUS ASSORTMENT OF TENDER MOMOS TOSSED IN THREE FLAVORFUL CURRIES, CHILLI, AFGHANI, AND BUTTER MASALA, PERFECT FOR SHARING WITH FRIENDS ANDFAMILY. 50 PCS ADD $10.00",
+          "quantity": 1,
+          "itemPrice": "60.00"
+        }
+      ]
+    },
+    {
+      "categoryName": "EXOTIC FRUITS TRAY",
+      "items": [
+        {
+          "itemName": "EXOTIC FRUITS TRAY",
+          "itemDescription": "A VIBRANT DISPLAY OF NATURE'S FINEST FRUITS, INCLUDING PASSION FRUIT, MANGO, BANANA, DRAGON FRUIT, LYCHEE. STAR FRUIT, GRAPES, MELONS. WATERMELON, PINEAPPLE. AND FRESH COCONUT. A REFRESHING AND HEALTHY TREAT FOR ANY OCCASION.",
+          "quantity": 1,
+          "itemPrice": "60.00"
         }
       ]
     }

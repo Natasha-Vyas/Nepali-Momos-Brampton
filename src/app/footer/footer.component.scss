@@ -10,8 +10,8 @@ $transition-duration: 0.3s;
 $transition-easing: ease;
 
 // Font stacks as requested
-$aberlo-font-stack: "Aberlo", "Georgia", "Times New Roman", serif;
-$environment-regular-font-stack: "Environment Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$aberlo-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
+$environment-regular-font-stack: 'Poppins', sans-serif;
 $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
 
 .footer {
@@ -38,10 +38,14 @@ $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
 
 // Quick Navigation Section
 .quick-navigation {
+  @media (max-width: 768px) {
+    order: 2; // Move to second position on mobile
+  }
+  
   .section-title {
     font-family: $aberlo-font-stack; // Using Aberlo font
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 400;
     color: $footer-heading-color;
     margin-bottom: 25px;
     letter-spacing: 0.02em;
@@ -62,7 +66,7 @@ $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
     
     .nav-link {
       font-family: $environment-regular-font-stack; // Using Environment Regular font
-      font-size: 14px;
+      font-size: 20px;
       color: $footer-text-color;
       text-decoration: none;
       transition: all $transition-duration $transition-easing;
@@ -88,6 +92,10 @@ $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  
+  @media (max-width: 768px) {
+    order: 1; // Move to first position on mobile
+  }
   
   .logo-container {
     margin-bottom: 30px;
@@ -176,7 +184,7 @@ $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
     
     .newsletter-title {
       font-family: $abril-fatface-font-stack; // Using Abril Fatface font
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 400;
       color: $footer-heading-color;
       margin-bottom: 20px;
@@ -258,10 +266,14 @@ $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
 
 // Quick Contact Section
 .quick-contact {
+  @media (max-width: 768px) {
+    order: 3; // Move to third position on mobile
+  }
+  
   .section-title {
     font-family: $aberlo-font-stack; // Using Aberlo font
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 400;
     color: $footer-heading-color;
     margin-bottom: 25px;
     letter-spacing: 0.02em;
@@ -302,7 +314,7 @@ $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
       
       .contact-label {
         font-family: $environment-regular-font-stack; // Using Environment Regular font
-        font-size: 14px;
+        font-size: 20px;
         color: $footer-text-color;
         font-weight: 400;
       }
@@ -315,7 +327,7 @@ $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
   border-top: 1px solid $border-color;
   margin-top: 50px;
   padding: 20px 0;
-  background-color: darken($footer-bg-color, 2%);
+  background-color: $footer-text-color;
   
   .footer-bottom-container {
     max-width: 1200px;
@@ -326,7 +338,7 @@ $abril-fatface-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
     .copyright {
       font-family: $abril-fatface-font-stack; // Using Abril Fatface font for copyright
       font-size: 14px;
-      color: $footer-text-color;
+      color: $footer-bg-color;
       margin: 0;
       font-weight: 400;
     }

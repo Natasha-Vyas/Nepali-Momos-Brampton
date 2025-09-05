@@ -1,0 +1,327 @@
+main {
+
+    // About Us Section
+    .about-us-section {
+        padding: 80px 0;
+        background-color: #ffffff;
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .about-image {
+            flex: 0 0 400px;
+
+            img {
+                width: 400px;
+                height: 500px;
+                border-radius: 200px;
+                object-fit: cover;
+                object-position: top;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .about-text {
+            flex: 1;
+
+            .about-title {
+                font-family: 'Abril Fatface', serif;
+                font-size: 3rem;
+                font-weight: 400;
+                color: #333;
+                margin-bottom: 30px;
+            }
+
+            .about-description {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.1rem;
+                color: #666;
+                line-height: 1.8;
+                margin-bottom: 20px;
+            }
+
+            .about-second-description {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.1rem;
+                color: #666;
+                line-height: 1.8;
+                margin-bottom: 40px;
+            }
+
+            .learn-more-btn {
+                font-family: 'Poppins', sans-serif;
+                background-color: #e74c3c;
+                color: white;
+                border: none;
+                padding: 8px 25px;
+                border-radius: 8px;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: #c0392b;
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+                }
+            }
+        }
+    }
+
+    // Culinary Offerings Section
+    .culinary-offerings-section {
+        background-color: #ffffff;
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .offerings-content {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            padding: 5rem 0;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        .offerings-text {
+            flex: 1;
+
+            .offerings-title {
+                font-family: 'Abril Fatface', serif;
+                font-size: 3rem;
+                font-weight: 400;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            .offerings-subtitle {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            .offerings-description {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.1rem;
+                color: #666;
+                line-height: 1.8;
+                margin-bottom: 40px;
+            }
+
+            .view-all-btn {
+                font-family: 'Poppins', sans-serif;
+                background-color: #e74c3c;
+                color: white;
+                border: none;
+                padding: 8px 25px;
+                border-radius: 8px;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: #c0392b;
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+                }
+            }
+        }
+
+        .offerings-image {
+            flex: 0 0 400px;
+
+            img {
+                width: 400px;
+                height: 300px;
+                border-radius: 15px;
+                object-fit: cover;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+    main {
+
+        .about-us-section {
+            .about-content {
+                gap: 50px;
+            }
+
+            .about-image {
+                flex: 0 0 300px;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            .about-text {
+                .about-title {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .culinary-offerings-section {
+            .offerings-content {
+                gap: 50px;
+            }
+
+            .offerings-image {
+                flex: 0 0 300px;
+
+                img {
+                    width: 300px;
+                    height: 225px;
+                }
+            }
+
+            .offerings-text {
+                .offerings-title {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+                .about-us-section {
+            padding: 60px 0;
+
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .about-image {
+                flex: none;
+                align-self: center;
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+
+            .about-text {
+                .about-title {
+                    font-size: 2rem;
+                }
+
+                .about-description,
+                .about-second-description {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .culinary-offerings-section {
+            padding: 60px 0;
+
+            .offerings-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .offerings-image {
+                flex: none;
+                align-self: center;
+
+                img {
+                    width: 300px;
+                    height: 225px;
+                }
+            }
+
+            .offerings-text {
+                .offerings-title {
+                    font-size: 2rem;
+                }
+
+                .offerings-subtitle {
+                    font-size: 1.3rem;
+                }
+
+                .offerings-description {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+
+        .about-us-section {
+            padding: 40px 0;
+
+            .about-image img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .about-text {
+                .about-title {
+                    font-size: 1.8rem;
+                }
+
+                .learn-more-btn {
+                    padding: 12px 28px;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .culinary-offerings-section {
+            padding: 40px 0;
+
+            .offerings-image img {
+                width: 250px;
+                height: 188px;
+            }
+
+            .offerings-text {
+                .offerings-title {
+                    font-size: 1.8rem;
+                }
+
+                .offerings-subtitle {
+                    font-size: 1.2rem;
+                }
+
+                .view-all-btn {
+                    padding: 12px 28px;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

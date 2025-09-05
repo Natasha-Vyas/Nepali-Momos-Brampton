@@ -1,0 +1,182 @@
+// =============================================================================
+// CONTACT-US COMPONENT - Nepali Momos Restaurant
+// =============================================================================
+
+@import '../../styles/variables';
+
+// Component-specific styles using shared mixins
+.contact-us-container {
+  font-family: $font-primary;
+  background-color: get-color(gray-100);
+  min-height: 100vh;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  margin-top: 5rem;
+  
+  @include respond-to(sm) {
+    margin-top: 3rem;
+  }
+}
+
+.contact-header {
+  text-align: center;
+  padding: get-spacing(20) get-spacing(5) get-spacing(15);
+  background: get-color(light);
+  
+  h1 {
+    @include heading-style(6xl);
+    margin-bottom: get-spacing(5);
+    letter-spacing: -1px;
+  }
+  
+  p {
+    @include body-text(base);
+    color: get-color(gray-700);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  @include respond-to(sm) {
+    padding: get-spacing(15) get-spacing(5) get-spacing(10);
+    
+    h1 {
+      font-size: get-font-size(5xl);
+    }
+    
+    p {
+      font-size: get-font-size(sm);
+    }
+  }
+  
+  @include respond-to(xs) {
+    padding: get-spacing(10) get-spacing(4) get-spacing(8);
+    
+    h1 {
+      font-size: get-font-size(3xl);
+    }
+  }
+}
+
+.contact-form-section {
+  background: get-color(light);
+  padding: 0 get-spacing(5) get-spacing(20);
+  
+  @include respond-to(sm) {
+    padding: 0 get-spacing(4) get-spacing(15);
+  }
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  @include card-base;
+  padding: get-spacing(10);
+  
+  @include respond-to(sm) {
+    padding: get-spacing(8) get-spacing(5);
+  }
+  
+  @include respond-to(xs) {
+    padding: get-spacing(6) get-spacing(4);
+  }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: get-spacing(5);
+  margin-bottom: get-spacing(5);
+  
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.form-group {
+  margin-bottom: get-spacing(5);
+  
+  &.full-width {
+    grid-column: 1 / -1;
+  }
+  
+  label {
+    @include form-label;
+  }
+  
+  input,
+  textarea {
+    @include form-input;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  @include respond-to(xs) {
+    margin-bottom: get-spacing(4);
+    
+    input,
+    textarea {
+      padding: get-spacing(2) get-spacing(3);
+      font-size: get-font-size(xs);
+    }
+  }
+}
+
+.send-btn {
+  @include button-primary;
+  width: 100%;
+  padding: get-spacing(4) get-spacing(8);
+  font-size: get-font-size(base);
+  border-radius: get-radius(xl);
+  margin-top: get-spacing(2);
+  
+  @include respond-to(xs) {
+    padding: get-spacing(3) get-spacing(7);
+    font-size: get-font-size(sm);
+  }
+}
+
+.contact-info-section {
+  background: get-color(gray-100);
+  padding: get-spacing(15) get-spacing(5);
+  
+  @include respond-to(sm) {
+    padding: get-spacing(10) get-spacing(4);
+  }
+}
+
+.contact-info-container {
+  @include container(1000px);
+  @include grid-responsive(250px);
+  text-align: center;
+  
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+    gap: get-spacing(8);
+  }
+}
+
+.info-item {
+  h3 {
+    @include heading-style(lg);
+    margin-bottom: get-spacing(4);
+  }
+  
+  p {
+    @include body-text(sm);
+    color: get-color(gray-700);
+    margin: get-spacing(1) 0;
+    
+    &.phone-number {
+      color: get-color(primary);
+      font-weight: get-font-weight(semibold);
+      font-size: get-font-size(base);
+    }
+  }
+}

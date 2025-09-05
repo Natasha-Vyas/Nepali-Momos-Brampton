@@ -1,1 +1,34 @@
-<p>about-us works!</p>
+<main>
+    <!-- About Us Section -->
+    <section class="about-us-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img [src]="hero.aboutus.image" [alt]="hero.aboutus.title">
+                </div>
+                <div class="about-text">
+                    <h2 class="about-title">{{ hero.aboutus.title }}</h2>
+                    <p class="about-description">{{ hero.aboutus.description }}</p>
+                    <p class="about-second-description">{{ hero.aboutus.secondDescription }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culinary Offerings Section -->
+    <section class="culinary-offerings-section">
+        <div class="container">
+            <div class="offerings-content">
+                <div class="offerings-text">
+                    <h2 class="offerings-title">{{ hero.culinaryOfferings.title }}</h2>
+                    <h3 class="offerings-subtitle">{{ hero.culinaryOfferings.subtitle }}</h3>
+                    <p class="offerings-description">{{ hero.culinaryOfferings.description }}</p>
+                    <button class="view-all-btn">{{ hero.culinaryOfferings.buttonText }}</button>
+                </div>
+                <div class="offerings-image">
+                    <img [src]="hero.culinaryOfferings.image" [alt]="hero.culinaryOfferings.title">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

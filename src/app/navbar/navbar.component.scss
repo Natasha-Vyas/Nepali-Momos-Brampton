@@ -12,6 +12,9 @@ $transition-easing: ease;
 $primary-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
 $secondary-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
+:focus {
+    outline: none;
+}
 .navbar {
     background-color: $navbar-bg-color;
     box-shadow: $navbar-shadow;
@@ -58,7 +61,7 @@ $secondary-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "H
     // Typography improvements with fallback fonts
     font-family: $primary-font-stack;
     font-weight: 400;
-    font-size: clamp(14px, 2vw, 16px); // Responsive font size
+    font-size: 20px; // Responsive font size
     line-height: 1.4; // Better readability
     letter-spacing: 0.02em; // Improved character spacing
     
@@ -81,11 +84,6 @@ $secondary-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "H
     &:hover {
         color: $text-hover-color;
         transform: translateY(-1px); // Subtle lift effect
-    }
-    
-    &:focus {
-        // outline: 2px solid $primary-color;
-        outline-offset: 2px;
     }
 
     &.active {
@@ -120,12 +118,6 @@ $secondary-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "H
 
     a {
         display: block;
-        // Accessibility improvement
-        &:focus {
-            // outline: 2px solid $primary-color;
-            outline-offset: 2px;
-            border-radius: 50%;
-        }
     }
 
     .logo-image {
