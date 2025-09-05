@@ -1,9 +1,71 @@
 main {
 
+    button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 8px 25px;
+        background-color: #e04652;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+
+        &:hover {
+            font-weight: 600;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    h1 {
+        font-family: "Abril Fatface", serif;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #41433E;
+        margin: 0 0 30px;
+    }
+
+    h2 {
+        font-family: "Abril Fatface", serif;
+        font-size: 50px;
+        font-weight: 400;
+        text-align: center;
+        color: #41433E;
+        margin: 0 0 30px;
+    }
+
+    h3 {
+        font-family: "Abril Fatface", serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #41433E;
+        margin: 0 0 15px;
+    }
+
+    p {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #41433E;
+        line-height: 1.6;
+    }
+
     // About Us Section
     .about-us-section {
         padding: 80px 0;
         background-color: #ffffff;
+        margin-top: 100px;
 
         .container {
             max-width: 1200px;
@@ -34,48 +96,14 @@ main {
             flex: 1;
 
             .about-title {
-                font-family: 'Abril Fatface', serif;
-                font-size: 3rem;
-                font-weight: 400;
-                color: #333;
-                margin-bottom: 30px;
+                text-align: left;
             }
 
-            .about-description {
-                font-family: 'Poppins', sans-serif;
-                font-size: 1.1rem;
-                color: #666;
-                line-height: 1.8;
-                margin-bottom: 20px;
-            }
+            .about-description {}
 
-            .about-second-description {
-                font-family: 'Poppins', sans-serif;
-                font-size: 1.1rem;
-                color: #666;
-                line-height: 1.8;
-                margin-bottom: 40px;
-            }
+            .about-second-description {}
 
-            .learn-more-btn {
-                font-family: 'Poppins', sans-serif;
-                background-color: #e74c3c;
-                color: white;
-                border: none;
-                padding: 8px 25px;
-                border-radius: 8px;
-                font-size: 1rem;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                letter-spacing: 1px;
-
-                &:hover {
-                    background-color: #c0392b;
-                    transform: translateY(-2px);
-                    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
-                }
-            }
+            .learn-more-btn {}
         }
     }
 
@@ -93,57 +121,27 @@ main {
             display: flex;
             align-items: center;
             gap: 80px;
-            padding: 5rem 0;
+            padding: 5rem 0 3rem;
             border-top: 1px solid #000;
-            border-bottom: 1px solid #000;
         }
 
         .offerings-text {
             flex: 1;
 
             .offerings-title {
-                font-family: 'Abril Fatface', serif;
-                font-size: 3rem;
-                font-weight: 400;
-                color: #333;
-                margin-bottom: 20px;
+                text-align: left;
             }
 
             .offerings-subtitle {
                 font-family: 'Poppins', sans-serif;
-                font-size: 1.5rem;
+                font-size: 24px;
                 font-weight: 600;
-                color: #333;
                 margin-bottom: 20px;
             }
 
-            .offerings-description {
-                font-family: 'Poppins', sans-serif;
-                font-size: 1.1rem;
-                color: #666;
-                line-height: 1.8;
-                margin-bottom: 40px;
-            }
+            .offerings-description {}
 
-            .view-all-btn {
-                font-family: 'Poppins', sans-serif;
-                background-color: #e74c3c;
-                color: white;
-                border: none;
-                padding: 8px 25px;
-                border-radius: 8px;
-                font-size: 1rem;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                letter-spacing: 1px;
-
-                &:hover {
-                    background-color: #c0392b;
-                    transform: translateY(-2px);
-                    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
-                }
-            }
+            .view-all-btn {}
         }
 
         .offerings-image {
@@ -210,7 +208,7 @@ main {
 
 @media (max-width: 768px) {
     main {
-                .about-us-section {
+        .about-us-section {
             padding: 60px 0;
 
             .about-content {
@@ -283,6 +281,11 @@ main {
         .about-us-section {
             padding: 40px 0;
 
+            p {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+
             .about-image img {
                 width: 200px;
                 height: 200px;
@@ -291,6 +294,7 @@ main {
             .about-text {
                 .about-title {
                     font-size: 1.8rem;
+                    text-align: center;
                 }
 
                 .learn-more-btn {
@@ -304,22 +308,25 @@ main {
             padding: 40px 0;
 
             .offerings-image img {
-                width: 250px;
+                width: 100%;
                 height: 188px;
             }
 
             .offerings-text {
                 .offerings-title {
                     font-size: 1.8rem;
+                    text-align: center;
                 }
 
                 .offerings-subtitle {
                     font-size: 1.2rem;
+                    text-align: center;
                 }
 
                 .view-all-btn {
                     padding: 12px 28px;
                     font-size: 0.9rem;
+                    text-align: center;
                 }
             }
         }

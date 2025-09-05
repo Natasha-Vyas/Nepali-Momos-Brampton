@@ -459,12 +459,12 @@ main {
   }
 
   button {
-    @include button-dark;
+    background: #e04652;
     width: 50%;
     padding: get-spacing(2);
 
     &:disabled {
-      background: rgba(234, 52, 55, 0.66);
+      background: #e04652;
       border: none;
       cursor: not-allowed;
     }
