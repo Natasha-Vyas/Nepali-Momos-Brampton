@@ -130,11 +130,12 @@ export class CartComponent implements OnInit {
 
   // Update cart count in header
   updateCartCount(): void {
-    const totalItems = this.cart.reduce((sum, item) => sum + item.itemQuantity, 0);
+    // Count unique items, not total quantity
+    const uniqueItemCount = this.cart.length;
     
     // Dispatch custom event for other components
-    window.dispatchEvent(new CustomEvent('cartUpdated', { 
-      detail: { count: totalItems } 
+    window.dispatchEvent(new CustomEvent('cartUpdated', {
+      detail: { count: uniqueItemCount }
     }));
   }
 

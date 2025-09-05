@@ -179,6 +179,7 @@
     padding: get-spacing(1);
     gap: get-spacing(1);
     border: 1px solid get-color(gray-400);
+    margin: auto;
 
     .cart-quantity-btn {
       cursor: pointer !important;

@@ -18,6 +18,8 @@ export class ContactUsComponent implements OnInit {
   };
 
   isSubmitting: boolean = false;
+  errorMessage: string = '';
+  successMessage: string = '';
 
   constructor(private appService: AppService, private seoService: SeoService) { }
 
@@ -26,8 +28,12 @@ export class ContactUsComponent implements OnInit {
   }
 
   onSubmit(): void {
+    // Clear previous messages
+    this.errorMessage = '';
+    this.successMessage = '';
+
     if (!this.isFormValid()) {
-      alert('Please fill in all required fields.');
+      this.errorMessage = 'Please fill in all required fields.';
       return;
     }
 
@@ -36,13 +42,13 @@ export class ContactUsComponent implements OnInit {
     // Submit using AppService which handles Formspark integration
     this.appService.contactUsSubmission(this.formData).subscribe({
       next: (response) => {
-        alert('Thank you for your message! We will get back to you soon.');
+        this.successMessage = 'Thank you for your message! We will get back to you soon.';
         this.resetForm();
         this.isSubmitting = false;
       },
       error: (error) => {
         console.error('Error submitting form:', error);
-        alert('There was an error sending your message. Please try again.');
+        this.errorMessage = 'There was an error sending your message. Please try again.';
         this.isSubmitting = false;
       }
     });
@@ -59,5 +65,8 @@ export class ContactUsComponent implements OnInit {
       subject: '',
       message: ''
     };
+    // Clear messages when form is reset
+    this.errorMessage = '';
+    this.successMessage = '';
   }
 }

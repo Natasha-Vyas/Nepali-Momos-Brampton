@@ -124,6 +124,9 @@ main {
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid #41433E;
+            position: relative;
+            display: flex;
+            flex-direction: column;
 
             .momo-image {
                 width: 100%;
@@ -139,26 +142,40 @@ main {
             }
 
             .momo-content {
-                padding: 25px 20px;
+                padding: 25px 20px 70px;
                 text-align: center;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
 
                 .momo-name {
+                    margin: 0;
                 }
 
                 .momo-description {
                     margin-bottom: 25px;
                     min-height: 60px;
+                    font-size: 16px;
+                    flex: 1;
                 }
 
                 .order-btn {
                     background: transparent;
-                    border: 1px solid #ED353D;
+                    border: 1px solid #e04652;
                     color: #41433e;
                     cursor: pointer;
                     transition: all 0.3s ease;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    width: 150px;
+                    font-size: 16px;
+                    transform: translateX(-50%);
 
                     &:hover {
-                        transform: translateY(-2px);
+                        transform: translateX(-50%) translateY(-2px);
+                        background-color: #e04652;
+                        color: #ffffff;
                     }
                 }
             }
@@ -302,6 +319,7 @@ main {
 
                 .dream-card-description {
                     margin: 0;
+                    text-align: center;
                 }
             }
 
@@ -891,7 +909,7 @@ main {
             padding: 60px 0;
 
             .reviews-title {
-                font-size: 2.5rem;
+                font-size: 1.8rem;
                 margin-bottom: 40px;
             }
 
