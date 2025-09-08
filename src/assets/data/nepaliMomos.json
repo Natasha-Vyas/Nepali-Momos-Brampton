@@ -578,14 +578,6 @@
   },
   "menuImages": [
     {
-      "imageName": "Pop.jpeg",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6d87a9ad-934a-484d-9aec-210504712880_image-20250828-10165.jpeg"
-    },
-    {
-      "imageName": "Water.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f8d21aa5-3e9f-4507-af04-ddfe330c28d7_image-20250828-101928.png"
-    },
-    {
       "imageName": "Afgani Momos.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/4c48f093-e1c6-4cda-abb1-bf1c8ad81beb_Afgani%20Momos.png"
     },
@@ -695,7 +687,7 @@
     },
     {
       "imageName": "Pop.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d1bbf7b5-d850-44a9-9d69-d4cab16f71a0_Pop.png"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/34bf85da-faba-46d5-a6da-98decbd7b69b_image-20250828-101655+%281%29.png"
     },
     {
       "imageName": "Premium momos.png",
@@ -743,7 +735,7 @@
     },
     {
       "imageName": "Water.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/56f88c9e-cfdd-4594-851a-c0060398222a_Water.png"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ca02d163-0d2e-405b-9d6a-b56ba8581afe_3e4839bf-7732-4938-9443-56fe810ff952.jpg"
     },
     {
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3ba32983-8d3d-4bbd-ab51-c6e98b0a5f1b_image-20250823-100230.png",
