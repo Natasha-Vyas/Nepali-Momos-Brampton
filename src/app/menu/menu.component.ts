@@ -3,6 +3,7 @@ import { SeoService } from '../services/seo.service';
 import { AppService } from '../services/app.service';
 
 interface MenuItem {
+icon: any;
   itemName: string;
   itemDescription?: string;
   itemPrice: string;
