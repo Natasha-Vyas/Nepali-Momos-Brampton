@@ -190,12 +190,7 @@
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/92b28bce-3f04-480e-92f2-1d50b8f694ff_VID-20250906-WA0007.mp4",
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d3cecbc1-f192-4d38-9316-d920dd1b8be9_VID-20250906-WA0008.mp4",
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0121c38f-7439-41d0-8923-26543eb5f296_IMG-20250513-WA0010.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c2bcad80-67b7-4595-a0c6-f08dbc8d9ac3_IMG-20250822-WA0000.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8bb30858-c407-4dab-9bc4-daeebb49c7c9_IMG-20250822-WA0007.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/769dbfa6-db69-44a1-89af-ef3e57a9f0a1_IMG-20250823-WA0000.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0a4e56d5-7196-4c7c-93dc-cd304fef4b04_IMG-20250823-WA0003.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fb36d3de-0979-4e8f-a67b-59ad1cfc707d_IMG-20250824-WA0007.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a02b12b1-89a1-418c-88aa-571e685207c8_IMG-20250827-WA0004.jpg"
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c2bcad80-67b7-4595-a0c6-f08dbc8d9ac3_IMG-20250822-WA0000.jpg"
   ],
   "hero": {
     "dreamSection": {
@@ -421,18 +416,31 @@
     "heading2": "Keep it in the freezer and enjoy it anytime. Nepali Momos Brampton momos are just awesome. We have many varieties of momos. 50 pieces in one packet with Nepali Momos Famous sauce. Get a taste of our mouth-watering momos! Handmade with love and bursting with flavours that'll leave you craving for more. The secret? We only use fresh ingredients and imported spices crafted by skilled cooks. Trust us, we've got the experience. Experience the spirit of Himalayan hospitality in our Flagship Outlet. We prides itself on providing rich Asian culinary traditions and recipes that are passed on for generations.",
     "subheading": "",
     "popup": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b83bfd92-c7df-47c6-b57a-86393a43006f_KOTTU%20KORNER.png",
-    "reviews": [
+    "StaticReviews": [
       {
-        "text": "This is the closest you can get to real, authentic and fresh momos. We are momo connoisseurs and our overall experience was nothing but fantastic. Great staff atmosphere, food and price. We are repeat customers for a good reason. Definitely recommend it!",
-        "name": "- Sudeep"
+        "text": "Tried steam chicken momos and these were till date the best chicken momos in Canada... they serve with what I believe was lemon coriander which was super delicious Highly recommended",
+        "name": "- Abhishek Soni",
+        "image": ""
       },
       {
-        "text": "Nepali Momos delivers authentic, juicy momos that steal the show! The Indian Hakka Chinese, like chili chicken, tastes better than your average spot. The Himalayan Buddhist ambience brings a serene, unique vibe. The staff is friendly and attentive, enhancing the meal. It’s a must-try for momo and Hakka fans!",
-        "name": "- K S"
+        "text": "Just amazing! While currently my favourite item is the Curry Masala Momos, I haven't been disappointed with any of their options. Interior decor is very tasteful and original with a lovely staff ready to take care of you.",
+        "name": "- Bobb D. Builda",
+        "image": ""
       },
       {
-        "text": "Such a delicious and authentic nepali momos. Too good! And they were fresh and handmade. This restaurant should be a top choice for anyone craving a true momos experience. Highly recommended!.",
-        "name": "- Divya Shah"
+        "text": "Good momos, very good preparation, excellent service. The soup they gave with momos was delicious. Slightly higher on the garlic side. Definitely coming again to try other things in the menu.",
+        "name": "- Varun Sharma",
+        "image": ""
+      },
+      {
+        "text": "We were craving for some authentic momos and some Chinese food and we landed on this restaurant. Best momos we have tried so far in GTA !! Super delicious and mouthwatering They have a huge variety of options and trust me each one is worth it !! Everything is freshly made Personally I loved their kurkure momos ..fried rice and chilly Panner was a hit as well momos literally stole the show!! Mango salad was a delight as it was so refreshing. If you are craving for some delicious momos then this is your place",
+        "name": "- ishi gahlaut",
+        "image": ""
+      },
+      {
+        "text": "Absolutely love this place! Tried their butter masala momos many times & they are always the best!! The tandoori momos are amazing too. Their noodle spring rolls are really unique - and they even come with a fresh mango salad that goes so well with them. Great food every single time 🌟",
+        "name": "- Akruti Patel",
+        "image": ""
       }
     ],
     "aboutTitle": "Himalayan hospitality",
@@ -607,7 +615,7 @@
     },
     {
       "imageName": "Chicken Momos.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/acdea194-73f7-480e-8734-eae2fd07366e_Chicken%20Momos.png"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fd28821c-34b8-4010-b3b3-8095d77e70e5_048a2d44-5ef8-466d-8719-4f500cd83fd1.jpg"
     },
     {
       "imageName": "Chilli Chicken Dry\/Gravy.png",
@@ -683,7 +691,7 @@
     },
     {
       "imageName": "Malai Paneer Momos.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e9741a2b-65ea-4f20-9702-ecd137529911_Malai%20Paneer%20Momos.png"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d55751cc-ecae-47fa-a00d-33d6e4b8001a_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg"
     },
     {
       "imageName": "Manchurian.png",
@@ -767,7 +775,7 @@
     },
     {
       "imageName": "Mutton Momos.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d5012e3a-9f11-4462-81eb-ef4ed83b6de5_mutton%20momo.jpg"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/052e2320-3241-4dc1-9fe6-a28f783c9da9_a280e622-05d9-470c-8e3e-0dbde027d253.jpg"
     },
     {
       "imageName": "Chicken Momos.png",
@@ -807,7 +815,7 @@
     },
     {
       "imageName": "Malai Paneer Momos.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3e955957-6b85-4ac4-ac75-5de7783f4e4c_malai%20paneer%20momos.png"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d55751cc-ecae-47fa-a00d-33d6e4b8001a_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg"
     },
     {
       "imageName": "Manchurian Dry/Gravy (Chicken).png",
@@ -1085,7 +1093,7 @@
           "quantity": 1,
           "itemDescription": "Juicy dumplings filled with minced chicken and aromatic spices.",
           "itemPrice": "13.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e62a1048-4066-430c-9277-bd9400df0c02_19+%282%29.png"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fd28821c-34b8-4010-b3b3-8095d77e70e5_048a2d44-5ef8-466d-8719-4f500cd83fd1.jpg"
         },
         {
           "itemName": "Mutton Momos",
@@ -1105,7 +1113,7 @@
           "quantity": 1,
           "itemDescription": "Creamy paneer-stuffed momos with a rich, mildly spiced filling.",
           "itemPrice": "16.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/4f905402-5be4-4ce8-8251-ffc879b6bb8f_7e8365cf-ab58-4d45-add2-b98ef7c9b53d%20%281%29.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d55751cc-ecae-47fa-a00d-33d6e4b8001a_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg"
         }
       ]
     },
