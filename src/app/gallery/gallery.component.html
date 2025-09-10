@@ -7,50 +7,60 @@
     </section>
 
     <!-- Gallery Grid Section -->
+    <!-- Gallery Grid Section -->
     <section class="gallery-section">
         <div class="container">
             <div class="gallery-grid">
-                <!-- Large featured image -->
-                <div class="gallery-item large" *ngIf="gallery && gallery.length > 0">
-                    <img [src]="gallery[0]" [alt]="'Gallery image 1'" class="gallery-image">
-                </div>
-
-                <!-- Medium images -->
-                <div class="gallery-item medium" *ngIf="gallery && gallery.length > 1">
-                    <img [src]="gallery[1]" [alt]="'Gallery image 2'" class="gallery-image">
-                </div>
-
-                <div class="gallery-item medium" *ngIf="gallery && gallery.length > 2">
-                    <img [src]="gallery[2]" [alt]="'Gallery image 3'" class="gallery-image">
-                </div>
-
-                <!-- Small images -->
-                <div class="gallery-item small" *ngIf="gallery && gallery.length > 3">
-                    <img [src]="gallery[3]" [alt]="'Gallery image 4'" class="gallery-image">
-                </div>
-
-                <div class="gallery-item small" *ngIf="gallery && gallery.length > 4">
-                    <img [src]="gallery[4]" [alt]="'Gallery image 5'" class="gallery-image">
-                </div>
-
-                <!-- Additional medium image -->
-                <div class="gallery-item medium-wide" *ngIf="gallery && gallery.length > 5">
-                    <img [src]="gallery[5]" [alt]="'Gallery image 6'" class="gallery-image">
-                </div>
-
-                <!-- Bottom row images -->
-                <div class="gallery-item medium" *ngIf="gallery && gallery.length > 6">
-                    <img [src]="gallery[6]" [alt]="'Gallery image 7'" class="gallery-image">
-                </div>
-
-                <div class="gallery-item small" *ngIf="gallery && gallery.length > 7">
-                    <img [src]="gallery[7]" [alt]="'Gallery image 8'" class="gallery-image">
-                </div>
-
-                <div class="gallery-item small" *ngIf="gallery && gallery.length > 8">
-                    <img [src]="gallery[8]" [alt]="'Gallery image 9'" class="gallery-image">
+                <div *ngFor="let item of gallery; let i = index" class="gallery-item">
+                    <ng-container *ngIf="item.type === 'image'">
+                        <img [src]="item.src" [alt]="'Gallery image ' + (i + 1)" class="gallery-image" loading="lazy" (click)="openModal(i)">
+                    </ng-container>
+                    <ng-container *ngIf="item.type === 'video'">
+                        <video #video [src]="item.src" class="gallery-video" preload="metadata" muted loop playsinline (click)="openModal(i)" (loadedmetadata)="onVideoLoaded(video)">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-controls" (click)="$event.stopPropagation()">
+                            <button class="video-control-btn" (click)="togglePlay(video)" [title]="video.paused ? 'Play' : 'Pause'">
+                                <span *ngIf="video.paused">▶</span>
+                                <span *ngIf="!video.paused">⏸</span>
+                            </button>
+                            <button class="video-control-btn" (click)="toggleMute(video, i)" [title]="getVideoMuteState(i) ? 'Unmute' : 'Mute'">
+                                <span *ngIf="getVideoMuteState(i)">🔇</span>
+                                <span *ngIf="!getVideoMuteState(i)">🔊</span>
+                            </button>
+                        </div>
+                    </ng-container>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal for viewing images/videos -->
+    <div class="modal-overlay" *ngIf="isModalOpen" (click)="closeModal()">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+            <button class="modal-close" (click)="closeModal()">&times;</button>
+            
+            <!-- Navigation arrows -->
+            <button class="modal-nav prev" (click)="previousItem()" *ngIf="gallery.length > 1">&#8249;</button>
+            <button class="modal-nav next" (click)="nextItem()" *ngIf="gallery.length > 1">&#8250;</button>
+            
+            <!-- Content display -->
+            <div class="modal-media" *ngIf="currentModalIndex >= 0">
+                <ng-container *ngIf="gallery[currentModalIndex]?.type === 'image'">
+                    <img [src]="gallery[currentModalIndex].src" [alt]="'Gallery image ' + (currentModalIndex + 1)" class="modal-image">
+                </ng-container>
+                <ng-container *ngIf="gallery[currentModalIndex]?.type === 'video'">
+                    <video [src]="gallery[currentModalIndex].src" class="modal-video" controls muted loop playsinline>
+                        Your browser does not support the video tag.
+                    </video>
+                </ng-container>
+            </div>
+            
+            <!-- Counter -->
+            <div class="modal-counter" *ngIf="gallery.length > 1">
+                {{ currentModalIndex + 1 }} / {{ gallery.length }}
+            </div>
+        </div>
+    </div>
+
 </main>

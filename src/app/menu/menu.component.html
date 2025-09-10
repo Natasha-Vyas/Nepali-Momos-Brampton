@@ -3,8 +3,7 @@
     <!-- Header Section -->
     <div class="menu-header">
       <h1>Our Menu</h1>
-      <p>We consider all the drivers of change gives you the components <br />you need to change to create a truly happens.
-      </p>
+      <p>Bringing authentic taste to your table</p>
     </div>
 
     <!-- Category Tabs -->
@@ -23,7 +22,8 @@
         <div class="menu-grid" *ngIf="category.items.length > 0">
           <div *ngFor="let item of category.items" class="menu-item-card">
             <div class="item-image">
-              <img [src]="getItemImage(item.itemName)" [alt]="item.itemName" />
+              <img *ngIf="item.icon" [src]="item.icon" [alt]="item.itemName" />
+              <!-- <img [src]="getItemImage(item.itemName)" [alt]="item.itemName" /> -->
             </div>
 
             <div class="item-content">
