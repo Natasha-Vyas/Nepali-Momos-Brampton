@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppService } from '../services/app.service';
 import { SeoService } from '../services/seo.service';
@@ -21,7 +21,7 @@ interface Review {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   hero: any = {};
   social: any = {};
   brandName: any = '';
@@ -42,6 +42,7 @@ export class HomeComponent implements OnInit {
   public reviews: Review[] = [];
   private autoSlideApiInterval: any;
   visibleStart: number = 0;
+  isMobile: boolean = false;
 
   constructor(
     private appService: AppService,
@@ -57,88 +58,21 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.loadData();
     this.seoService.updateSeoTags('home');
+    this.checkScreenSize();
+    
     // Show image popup after a short delay
     setTimeout(() => {
       this.imagePopupOpen = true;
     }, 1000);
 
-    // Try to fetch reviews from API, fallback to static data
-    const url = 'https://caterzhub-backend.vercel.app/places/google-places/reviews';
-    this.http.get<any>(url).subscribe({
-      next: (res) => {
-        const apiReviews = (res.result?.reviews || []).filter(
-          (review: any) => review.language === 'en'
-        );
-        if (apiReviews.length > 0) {
-          this.reviews = apiReviews;
-        } else {
-          this.loadFallbackReviews();
-        }
-        if (this.reviews.length > 0) {
-          this.startAutoApiSlide();
-        }
-      },
-      error: (err) => {
-        console.error('Error fetching reviews, using fallback data:', err);
-        this.loadFallbackReviews();
-        if (this.reviews.length > 0) {
-          this.startAutoApiSlide();
-        }
-      }
+    // Listen for window resize events
+    window.addEventListener('resize', () => {
+      this.checkScreenSize();
     });
   }
 
-  private loadFallbackReviews(): void {
-    // Use static review data from the service as fallback
-    const heroData = this.appService.getContentData('hero') || {};
-    const staticReviews = heroData.reviews || [];
-    
-    if (staticReviews.length > 0) {
-      this.reviews = staticReviews.map((review: any) => ({
-        author_name: review.name.replace('- ', ''),
-        author_url: '',
-        language: 'en',
-        profile_photo_url: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a2a553a4-ba1f-4c01-89d7-f28df5c39293_person.jpg',
-        rating: 5,
-        relative_time_description: 'a month ago',
-        text: review.text,
-        time: Date.now()
-      }));
-    } else {
-      // Create some default reviews if no data is available
-      this.reviews = [
-        {
-          author_name: 'Sudeep',
-          author_url: '',
-          language: 'en',
-          profile_photo_url: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a2a553a4-ba1f-4c01-89d7-f28df5c39293_person.jpg',
-          rating: 5,
-          relative_time_description: 'a month ago',
-          text: 'This is the closest you can get to real, authentic and fresh momos. We are momo connoisseurs and our overall experience was nothing but fantastic. Great staff atmosphere, food and price. We are repeat customers for a good reason. Definitely recommend it!',
-          time: Date.now()
-        },
-        {
-          author_name: 'K S',
-          author_url: '',
-          language: 'en',
-          profile_photo_url: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a2a553a4-ba1f-4c01-89d7-f28df5c39293_person.jpg',
-          rating: 5,
-          relative_time_description: 'a month ago',
-          text: 'Nepali Momos delivers authentic, juicy momos that steal the show! The Indian Hakka Chinese, like chili chicken, tastes better than your average spot. The Himalayan Buddhist ambience brings a serene, unique vibe. The staff is friendly and attentive, enhancing the meal. It\'s a must-try for momo and Hakka fans!',
-          time: Date.now()
-        },
-        {
-          author_name: 'Divya Shah',
-          author_url: '',
-          language: 'en',
-          profile_photo_url: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a2a553a4-ba1f-4c01-89d7-f28df5c39293_person.jpg',
-          rating: 5,
-          relative_time_description: 'a month ago',
-          text: 'Such a delicious and authentic nepali momos. Too good! And they were fresh and handmade. This restaurant should be a top choice for anyone craving a true momos experience. Highly recommended!',
-          time: Date.now()
-        }
-      ];
-    }
+  private checkScreenSize(): void {
+    this.isMobile = window.innerWidth <= 768;
   }
 
   private loadData(): void {
@@ -165,6 +99,19 @@ export class HomeComponent implements OnInit {
 
     // Load dream section data - fix the path
     this.dreamSection = this.hero.dreamSection || {};
+
+    // Load static reviews and add default image if not present
+    if (this.hero.reviews) {
+      this.hero.StaticReviews = this.hero.reviews.map((review: any) => ({
+        ...review,
+        image: review.image || 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a2a553a4-ba1f-4c01-89d7-f28df5c39293_person.jpg'
+      }));
+      
+      // Start auto slide after reviews are loaded
+      setTimeout(() => {
+        this.startAutoApiSlide();
+      }, 100);
+    }
 
     // Initialize slider for ng-image-slider
     if (this.sliderImage?.home) {
@@ -238,8 +185,16 @@ export class HomeComponent implements OnInit {
 
   startAutoApiSlide() {
     this.autoSlideApiInterval = setInterval(() => {
-      if (!this.reviews || this.reviews.length === 0) return;
-      this.visibleStart = (this.visibleStart + 1) % this.reviews.length;
+      if (!this.hero.StaticReviews || this.hero.StaticReviews.length === 0) return;
+      
+      if (this.isMobile) {
+        // Mobile: slide by 1
+        this.visibleStart = (this.visibleStart + 1) % this.hero.StaticReviews.length;
+      } else {
+        // Desktop: slide by 3 (or 1 if less than 3 reviews)
+        const slideBy = this.hero.StaticReviews.length >= 3 ? 3 : 1;
+        this.visibleStart = (this.visibleStart + slideBy) % this.hero.StaticReviews.length;
+      }
     }, 3000);
   }
 
@@ -252,21 +207,31 @@ export class HomeComponent implements OnInit {
   }
 
 
-  get visibleReviews(): Review[] {
-    // First filter only 5-star reviews
-    const fiveStarReviews = this.reviews.filter(r => r.rating === 5);
-    const total = fiveStarReviews.length;
+  get visibleReviews(): any[] {
+    if (!this.hero.StaticReviews || this.hero.StaticReviews.length === 0) return [];
 
-    if (total === 0) return [];
-
-    const reviewsToShow: Review[] = [];
-
-    for (let i = 0; i < 3; i++) {
-      const index = (this.visibleStart + i) % total;
-      reviewsToShow.push(fiveStarReviews[index]);
+    const total = this.hero.StaticReviews.length;
+    const reviewsToShow: any[] = [];
+    
+    if (this.isMobile) {
+      // Mobile: show 1 review
+      const index = this.visibleStart % total;
+      reviewsToShow.push(this.hero.StaticReviews[index]);
+    } else {
+      // Desktop: show 3 reviews
+      for (let i = 0; i < 3; i++) {
+        const index = (this.visibleStart + i) % total;
+        reviewsToShow.push(this.hero.StaticReviews[index]);
+      }
     }
 
     return reviewsToShow;
+  }
+
+  ngOnDestroy(): void {
+    if (this.autoSlideApiInterval) {
+      clearInterval(this.autoSlideApiInterval);
+    }
   }
 
   onImgError(event: any) {
