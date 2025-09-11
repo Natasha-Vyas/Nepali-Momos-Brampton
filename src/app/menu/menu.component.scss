@@ -427,8 +427,8 @@ main {
     display: flex;
     align-items: center;
     gap: get-spacing(2);
-    width: 50%;
-    justify-content: space-between;
+    // width: 50%;
+    // justify-content: space-between;
 
     input {
       cursor: pointer !important;
