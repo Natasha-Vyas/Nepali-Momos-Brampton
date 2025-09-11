@@ -939,6 +939,7 @@
           "quantity": 1,
           "itemDescription": "A quick meal with momos, chili paneer, chowmein or fried rice, and a warm soup.",
           "itemPrice": "9.99",
+          "custPrice": "9.99 - 10.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/bfb30b2d-6251-44c6-87b3-1b2727f5c25b_12.png",
           "customization": [
             {
@@ -967,6 +968,7 @@
           "quantity": 1,
           "itemDescription": "A Thai-inspired meal featuring coconut soup, momos, veggie spring rolls, and mango salad.",
           "itemPrice": "9.99",
+          "custPrice": "9.99 - 10.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/12e1dacb-64a8-4779-8a29-87bb891c1e52_13+%283%29.png",
           "customization": [
             {
@@ -1000,7 +1002,8 @@
           "itemName": "Dilli Alle Noodles Spring rolls",
           "quantity": 1,
           "itemDescription": "Crunchy spring rolls packed with noodles and flavorful seasoning.",
-          "itemPrice": "6.00",
+          "itemPrice": "0.00",
+          "custPrice": "6.00 - 15.00",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3be8e429-7279-45fd-b5b5-c07c2cc0407f_Veg%20Spring%20Roll.jpg",
           "customization": [
             {
@@ -1049,7 +1052,8 @@
           "itemName": "Honey Chilli Fries",
           "quantity": 1,
           "itemDescription": "Crispy fries tossed in a sweet and spicy honey chili glaze.",
-          "itemPrice": "5.99",
+          "itemPrice": "0.00",
+          "custPrice": "5.99 - 9.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d9e8268a-5d09-498e-bd17-a89788216bba_1235adce-fd19-4355-af9c-c889f948d7ee.jpg",
           "customization": [
             {
@@ -1123,7 +1127,8 @@
           "itemName": "Thupka",
           "quantity": 1,
           "itemDescription": "A comforting noodle soup with vegetables in a fragrant broth.",
-          "itemPrice": "14.99",
+          "itemPrice": "0.00",
+          "custPrice": "13.99 - 14.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/915db626-9c66-48d8-b763-d7ec96ebbc8f_24+%281%29.png",
           "customization": [
             {
@@ -1151,7 +1156,8 @@
           "itemName": "Jhol Momo",
           "quantity": 1,
           "itemDescription": "Momos served in a spicy and tangy Nepali-style broth.",
-          "itemPrice": "16.99",
+          "itemPrice": "0.00",
+          "custPrice": "16.99 - 18.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/64cc5d81-30a9-4ebc-87d8-69fc1983e81d_25.png",
           "customization": [
             {
@@ -1179,7 +1185,8 @@
           "itemName": "Thai Red Curry Soup Momos",
           "quantity": 1,
           "itemDescription": "Momos drenched in a creamy, spiced Thai red curry soup.",
-          "itemPrice": "16.99",
+          "itemPrice": "0.00",
+          "custPrice": "16.99 - 18.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/bf5c0284-51d1-46a5-96ef-4d128b6cb2c7_26+%281%29.png",
           "customization": [
             {
@@ -1214,7 +1221,8 @@
           "quantity": 1,
           "itemDescription": "Char-grilled momos infused with smoky tandoori spices.",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/68b8b728-875d-441f-b226-f33ea612e086_27.png",
-          "itemPrice": "16.99",
+          "itemPrice": "0.00",
+          "custPrice": "16.99 - 18.99",
           "customization": [
             {
               "custName": "Select Option",
@@ -1241,7 +1249,8 @@
           "itemName": "Kurkure Momos",
           "quantity": 1,
           "itemDescription": "Crispy deep-fried momos with a crunchy outer layer.",
-          "itemPrice": "16.99",
+          "itemPrice": "0.00",
+          "custPrice": "16.99 - 18.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f37c41c6-c192-43c6-844b-088c0c99da72_b8788762-b78d-4b26-946c-b9fb73602beb.jpg",
           "customization": [
             {
@@ -1274,7 +1283,8 @@
           "itemName": "Momo-Licious Platter",
           "quantity": 1,
           "itemDescription": "A sampler platter of steamed, pan-fried, chili, tandoori, and crispy kurkure momos with soup.",
-          "itemPrice": "26.99",
+          "itemPrice": "0.00",
+          "custPrice": "26.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7046d42b-15d5-450d-8d9b-7a2b67736ee8_Adobe%20Express%20-%20file%20%287%29.jpg",
           "customization": [
             {
@@ -1298,7 +1308,8 @@
           "itemName": "Curry-Licious Platter",
           "quantity": 1,
           "itemDescription": "A mix of momos tossed in Afghani, butter masala, and chili curries, served with soup.",
-          "itemPrice": "26.99",
+          "itemPrice": "0.00",
+          "custPrice": "26.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dde071b1-b64c-4097-b88e-0a6ada61d537_Adobe%20Express%20-%20file%20%281%29.jpg",
           "customization": [
             {
@@ -1322,7 +1333,8 @@
           "itemName": "Premium momos",
           "quantity": 1,
           "itemDescription": "Experience the delight of our premium Momos. Handcrafted and generously filled, made fresh to order for ultimate flavor. Indulge in plump, handcrafted premium Momos! Almost double the filling, made fresh to order, and filled with flavors you fancy. 6 pcs served with 3 Dipping sauces and a Classic Clear soup,a soulful meal indeed.",
-          "itemPrice": "13.99",
+          "itemPrice": "0.00",
+          "custPrice": "13.99 - 26.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8f8e46f0-36c7-45b0-baa1-d30eccec775b_31.png",
           "customization": [
             {
@@ -1350,7 +1362,8 @@
           "itemName": "Family Platter",
           "quantity": 1,
           "itemDescription": "A grand feast featuring a selection of momos, curries, fried rice, and sides.",
-          "itemPrice": "47.99",
+          "itemPrice": "0.00",
+          "custPrice": "47.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c00cb127-ca9b-48c4-91fa-abe59dafabbd_593c39be-7dd2-44e9-b43b-4fdb42f19c65.jpg",
           "customization": [
             {
@@ -1393,7 +1406,8 @@
           "itemName": "Manchurian",
           "quantity": 1,
           "itemDescription": "Crispy vegetable balls coated in a tangy and spicy Manchurian sauce.",
-          "itemPrice": "15.99",
+          "itemPrice": "0.00",
+          "custPrice": "13.99 - 15.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/803bdac1-e2c3-452b-87b5-e03bc5961031_4c8eed4d-b88f-48c6-bd64-0960bc97ccbf.jpg",
           "customization": [
             {
@@ -1421,7 +1435,8 @@
           "itemName": "Desi Chowmein",
           "quantity": 1,
           "itemDescription": "Stir-fried noodles tossed with crunchy vegetables and Indian-Chinese flavors.",
-          "itemPrice": "14.99",
+          "itemPrice": "0.00",
+          "custPrice": "12.99 - 14.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/437b2727-5317-4a10-a201-89a0f04ce5ef_a2cf85e4-4262-4074-b281-62f790b8f0ca.jpg",
           "customization": [
             {
@@ -1449,7 +1464,8 @@
           "itemName": "Fried Rice",
           "quantity": 1,
           "itemDescription": "Fragrant fried rice with fresh veggies and a hint of soy sauce.",
-          "itemPrice": "14.99",
+          "itemPrice": "0.00",
+          "custPrice": "12.99 - 14.99",
           "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a4e02334-05b2-430d-a1b4-c2718541c95d_1861a52d-0833-4dd1-9f2b-a708f3f6dc37.jpg",
           "customization": [
             {
@@ -1527,7 +1543,7 @@
           "quantity": 1,
           "itemDescription": "A fragrant and delicate tea sourced from the Darjeeling hills.",
           "itemPrice": "2.75",
-          "icon": ""
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/25d19489-14f1-4e11-89ea-e2d27f9ce233_image-20250911-130811.png"
         },
         {
           "itemName": "Pop",
@@ -1548,14 +1564,14 @@
           "quantity": 1,
           "itemDescription": "Premium artesian water with a smooth and crisp taste.",
           "itemPrice": "2.50",
-          "icon": ""
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/4f888d34-e68e-41af-82e9-553cadd03673_image-20250911-130949.png"
         },
         {
           "itemName": "Red Bull",
           "quantity": 1,
           "itemDescription": "A high-energy drink to keep you refreshed and alert.",
           "itemPrice": "4.50",
-          "icon": ""
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dab09145-0457-4c3f-a705-b492b2084873_image-20250911-130613.png"
         }
       ]
     }

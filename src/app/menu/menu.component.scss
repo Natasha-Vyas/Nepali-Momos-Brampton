@@ -457,19 +457,90 @@ main {
 }
 
 .custom-model-wrap .utility {
-  display: flex;
-  justify-content: space-between;
-  gap: get-spacing(5);
   padding: get-spacing(1);
-  align-items: center;
 
+  // Desktop layout - single row
+  .utility-row-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: get-spacing(4);
+
+    .total-price {
+      @include body-text(base, semibold);
+      margin: 0;
+      flex: 0 0 auto;
+    }
+
+    .quantity-controls {
+      @include quantity-controls;
+      flex: 0 0 auto;
+    }
+
+    .add-to-cart-btn {
+      @include button-primary;
+      flex: 0 0 auto;
+      min-width: 120px;
+      padding: get-spacing(2) get-spacing(4);
+      font-size: get-font-size(sm);
+      text-transform: none;
+      letter-spacing: normal;
+    }
+  }
+
+  // Mobile layout - stacked
+  .utility-row-mobile {
+    display: none;
+    flex-direction: column;
+    gap: get-spacing(3);
+
+    .total-price {
+      @include body-text(base, semibold);
+      margin: 0;
+      text-align: center;
+    }
+
+    .controls-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: get-spacing(3);
+
+      .quantity-controls {
+        @include quantity-controls;
+        flex: 0 0 auto;
+      }
+
+      .add-to-cart-btn {
+        @include button-primary;
+        flex: 1;
+        min-width: 120px;
+        padding: get-spacing(2) get-spacing(4);
+        font-size: get-font-size(sm);
+        text-transform: none;
+        letter-spacing: normal;
+      }
+    }
+  }
+
+  // Responsive behavior
+  @include respond-to(sm) {
+    .utility-row-desktop {
+      display: none;
+    }
+
+    .utility-row-mobile {
+      display: flex;
+    }
+  }
+
+  // Legacy support for existing p and button elements (fallback)
   p {
     @include body-text(base, semibold);
   }
 
   button {
     background: #e04652;
-    width: 50%;
     padding: get-spacing(2);
 
     &:disabled {
