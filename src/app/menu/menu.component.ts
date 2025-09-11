@@ -3,6 +3,7 @@ import { SeoService } from '../services/seo.service';
 import { AppService } from '../services/app.service';
 
 interface MenuItem {
+custPrice: any;
 icon: any;
   itemName: string;
   itemDescription?: string;
@@ -54,6 +55,7 @@ export class MenuComponent implements OnInit {
   selectedCustomizations: any = {};
   showModal: boolean = false;
   itemQuantities: { [key: string]: number } = {};
+  modalQuantity: number = 1;
 
   // Logo
   logo: string = "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/18efe2f4-d3d3-4f46-8772-d36bc989688c_addLogo.png";
@@ -210,6 +212,7 @@ export class MenuComponent implements OnInit {
 
     this.currentModalItem = item;
     this.selectedCustomizations = {};
+    this.modalQuantity = 1;
     this.showModal = true;
   }
 
@@ -218,6 +221,7 @@ export class MenuComponent implements OnInit {
     this.showModal = false;
     this.currentModalItem = null;
     this.selectedCustomizations = {};
+    this.modalQuantity = 1;
   }
 
   // Update customization selection
@@ -228,18 +232,29 @@ export class MenuComponent implements OnInit {
     };
   }
 
+  // Update modal quantity
+  updateModalQuantity(change: number): void {
+    this.modalQuantity = Math.max(1, this.modalQuantity + change);
+  }
+
+  // Get modal quantity
+  getModalQuantity(): number {
+    return this.modalQuantity;
+  }
+
   // Get modal total price
   getModalTotalPrice(): number {
     if (!this.currentModalItem) return 0;
 
-    let totalPrice = parseFloat(this.currentModalItem.itemPrice);
+    let basePrice = parseFloat(this.currentModalItem.itemPrice);
     
     // Add customization prices
     Object.values(this.selectedCustomizations).forEach((selection: any) => {
-      totalPrice += selection.option.price;
+      basePrice += selection.option.price;
     });
 
-    return totalPrice;
+    // Multiply by quantity
+    return basePrice * this.modalQuantity;
   }
 
   // Add customized item to cart
@@ -272,8 +287,8 @@ export class MenuComponent implements OnInit {
     // Create cart item
     const cartItem: CartItem = {
       itemName: this.currentModalItem.itemName,
-      itemPrice: totalPrice.toFixed(2),
-      itemQuantity: 1,
+      itemPrice: (totalPrice / this.modalQuantity).toFixed(2), // Store unit price
+      itemQuantity: this.modalQuantity,
       itemIcon: this.getItemImage(this.currentModalItem.itemName),
       customization: customizationText.trim(),
       isCustomized: true

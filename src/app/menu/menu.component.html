@@ -29,7 +29,8 @@
             <div class="item-content">
               <h3 class="item-title">{{item.itemName}}</h3>
               <p class="item-description" *ngIf="item.itemDescription">{{item.itemDescription}}</p>
-              <div class="item-price">${{item.itemPrice}}</div>
+              <div *ngIf="!item.customization" class="item-price">${{item.itemPrice}}</div>
+              <div *ngIf="item.customization" class="item-price">${{item.custPrice}}</div>
 
               <!-- Non-customizable items -->
               <div *ngIf="!item.customization" class="item-controls">
@@ -141,13 +142,39 @@
           </div>
 
           <div class="utility">
-            <p style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
-              Total Price: ${{getModalTotalPrice().toFixed(2)}}
-            </p>
-            <button (click)="addCustomizedItemToCart(customNotes.value)"
-              style="color: white; border-radius: 8px; padding: 8px 20px; cursor: pointer !important; font-weight: 400; font-size: 16px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden; width: fit-content;">
-              Add to Cart
-            </button>
+            <div class="utility-row-desktop">
+              <p class="total-price" style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+                Total Price: ${{getModalTotalPrice().toFixed(2)}}
+              </p>
+              <div class="quantity-controls">
+                <button class="quantity-btn minus" (click)="updateModalQuantity(-1)">-</button>
+                <input disabled type="text" [value]="getModalQuantity()" class="quantity-input" />
+                <button class="quantity-btn plus" (click)="updateModalQuantity(1)">+</button>
+              </div>
+              <button (click)="addCustomizedItemToCart(customNotes.value)"
+                class="add-to-cart-btn"
+                style="color: white; border-radius: 8px; padding: 8px 20px; cursor: pointer !important; font-weight: 400; font-size: 16px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden; width: fit-content;">
+                Add to Cart
+              </button>
+            </div>
+            
+            <div class="utility-row-mobile">
+              <p class="total-price" style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+                Total Price: ${{getModalTotalPrice().toFixed(2)}}
+              </p>
+              <div class="controls-row">
+                <div class="quantity-controls">
+                  <button class="quantity-btn minus" (click)="updateModalQuantity(-1)">-</button>
+                  <input disabled type="text" [value]="getModalQuantity()" class="quantity-input" />
+                  <button class="quantity-btn plus" (click)="updateModalQuantity(1)">+</button>
+                </div>
+                <button (click)="addCustomizedItemToCart(customNotes.value)"
+                  class="add-to-cart-btn"
+                  style="color: white; border-radius: 8px; padding: 8px 20px; cursor: pointer !important; font-weight: 400; font-size: 16px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden; width: fit-content;">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
