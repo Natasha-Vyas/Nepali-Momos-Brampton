@@ -188,9 +188,7 @@
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d3e0ce54-5f83-45e0-b421-3bfe53e77efa_VID-20250906-WA0005.mp4",
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5b552736-5bbd-4a2f-8445-6c2a649a1f13_VID-20250906-WA0006.mp4",
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/92b28bce-3f04-480e-92f2-1d50b8f694ff_VID-20250906-WA0007.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d3cecbc1-f192-4d38-9316-d920dd1b8be9_VID-20250906-WA0008.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0121c38f-7439-41d0-8923-26543eb5f296_IMG-20250513-WA0010.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c2bcad80-67b7-4595-a0c6-f08dbc8d9ac3_IMG-20250822-WA0000.jpg"
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d3cecbc1-f192-4d38-9316-d920dd1b8be9_VID-20250906-WA0008.mp4"
   ],
   "hero": {
     "dreamSection": {
@@ -229,7 +227,7 @@
     },
     "aboutus": {
       "title": "About Us",
-      "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/caf0f362-77d3-4061-ac77-3e154335f775_WhatsApp%20Image%202025-08-22%20at%2001.jpeg",
+      "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d2ecaa9d-6e15-4baa-aa8e-ebf3622ce763_WhatsApp%20Image%202025-09-11%20at%2012.jpeg",
       "description": "Embrace the arrival of spring at Nepali Momos Brampton and immerse yourself in the beauty of our new Japanese cherry blossom-inspired decor.",
       "secondDescription": "Capture the essence of the season and create lasting memories as you savor our delectable momos amidst this enchanting ambiance.",
       "buttonText": "Learn More"
@@ -1099,7 +1097,8 @@
           "itemName": "Mutton Momos",
           "quantity": 1,
           "itemDescription": "Tender and juicy Mutton Momos filled with fresh baby goat meat and traditional spices. A rich, flavorful experience in every handcrafted dumpling..",
-          "itemPrice": "18.00"
+          "itemPrice": "18.00",
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/052e2320-3241-4dc1-9fe6-a28f783c9da9_a280e622-05d9-470c-8e3e-0dbde027d253.jpg"
         },
         {
           "itemName": "Paneer Momos",
@@ -1659,7 +1658,6 @@
     },
     {
       "categoryName": "GRAB N GO MOMOS",
-      "categoryDescription": "Brampton's favorite Momos, now in your freezer! Our famous chutney is the cherry on top.Get your Nepali Momo fix anytime! Our frozen Momos are the perfect solution for busy Momo lovers. Simply take them home, prepare them quickly, and enjoy the authentic taste of Brampton's best, complete with our signature chutneys.",
       "items": [
         {
           "itemName": "Veg Momos",
@@ -1713,7 +1711,6 @@
     },
     {
       "categoryName": "MOMOS",
-      "categoryDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 5o PCS STEAMED",
       "items": [
         {
           "itemName": "Veg Momos",

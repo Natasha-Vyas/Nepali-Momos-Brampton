@@ -46,7 +46,7 @@
               <!-- Customizable items -->
               <div *ngIf="item.customization" class="item-controls">
                 <button class="order-btn" (click)="openCustomizationModal(item)">
-                  Add Item
+                  Add to Cart
                 </button>
               </div>
             </div>
@@ -126,6 +126,8 @@
                   <input type="radio" [name]="'customization-' + groupIndex" [value]="optionIndex"
                     (change)="updateCustomizationSelection(groupIndex, optionIndex, option)" />
                   <span>{{option.name}}</span>
+                </label>
+                <label style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
                   <span style="font-weight: 600;">${{option.price.toFixed(2)}}</span>
                 </label>
               </div>
