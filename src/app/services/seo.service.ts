@@ -29,7 +29,7 @@ export class SeoService {
     },
     gallery: {
       title: "Momo Gallery | Authentic Darjeeling Momos in Canada",
-      description: "Explore the Aslee Momo's Ki Dukan gallery—authentic handcrafted Darjeeling-style momos made with tradition and passion. A visual taste of Canada’s favorite momos."
+      description: "Explore the Nepali Momos Aslee Momos Ki Dukan gallery—authentic handcrafted Darjeeling-style momos made with tradition and passion. A visual taste of Canada’s favorite momos."
     },
     contact: {
       title: "Contact Nepali Momos Brampton – We'd Love to Hear From You!",
