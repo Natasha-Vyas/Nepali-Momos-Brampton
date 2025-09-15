@@ -1080,6 +1080,33 @@
       ]
     },
     {
+      "categoryName": "Curry Momos",
+      "categoryDescription": "Momos Swimming in a Sea of Delicious Curry.",
+      "items": [
+        {
+          "itemName": "Chilli Momos",
+          "quantity": 1,
+          "itemDescription": "",
+          "itemPrice": "3.00",
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f61a7d37-c381-4ef1-831e-47dfbcda42cc_1e860c40-7646-4047-8ac1-a6a7e66f88a6.jpg"
+        },
+        {
+          "itemName": "Afgani Momos",
+          "quantity": 1,
+          "itemDescription": "",
+          "itemPrice": "3.00",
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/576e7094-6020-4310-8a08-b140d9dfd650_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg"
+        },
+        {
+          "itemName": "Butter M Momos",
+          "quantity": 1,
+          "itemDescription": "",
+          "itemPrice": "3.00",
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/021966e5-24de-4d4a-87fc-fbcb72b37fa5_9bc0ddd8-07a0-4873-823f-7e978c9886d8.jpg"
+        }
+      ]
+    },
+    {
       "categoryName": "Classic Momos",
       "categoryDescription": "Authentic Dar jeeling Style Momos",
       "items": [
