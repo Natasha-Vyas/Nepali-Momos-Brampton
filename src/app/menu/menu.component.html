@@ -29,8 +29,11 @@
             <div class="item-content">
               <h3 class="item-title">{{item.itemName}}</h3>
               <p class="item-description" *ngIf="item.itemDescription">{{item.itemDescription}}</p>
-              <div *ngIf="!item.customization" class="item-price">${{item.itemPrice}}</div>
-              <div *ngIf="item.customization" class="item-price">${{item.custPrice}}</div>
+              <!-- <div *ngIf="!item.customization" class="item-price">${{item.itemPrice}}</div> -->
+              <div class="item-price">
+                ${{ item.customization ? (item.custPrice || item.itemPrice) : item.itemPrice }}
+              </div>
+
 
               <!-- Non-customizable items -->
               <div *ngIf="!item.customization" class="item-controls">
@@ -66,7 +69,9 @@
               <img src="https://logos-world.net/wp-content/uploads/2020/11/Uber-Eats-Logo.png" alt="Uber Eats" />
             </div>
             <div class="app-card">
-              <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1aa4c337-8b5c-4d0a-bc7b-c9685247cad5_skip.png" alt="Grubhub" />
+              <img
+                src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1aa4c337-8b5c-4d0a-bc7b-c9685247cad5_skip.png"
+                alt="Grubhub" />
             </div>
             <!-- <div class="app-card">
               <img src="https://logos-world.net/wp-content/uploads/2020/11/Postmates-Logo.png" alt="Postmates" />
@@ -74,21 +79,7 @@
             <div class="app-card">
               <img src="https://logos-world.net/wp-content/uploads/2020/11/DoorDash-Logo.png" alt="DoorDash" />
             </div>
-            <!-- <div class="app-card">
-              <img src="https://logos-world.net/wp-content/uploads/2020/09/Foodpanda-Logo.png" alt="foodpanda" />
-            </div> -->
-            <!-- <div class="app-card">
-              <img src="https://logos-world.net/wp-content/uploads/2020/09/Deliveroo-Logo.png" alt="deliveroo" />
-            </div> -->
-            <!-- <div class="app-card">
-              <img src="https://logos-world.net/wp-content/uploads/2020/09/Instacart-Logo.png" alt="Instacart" />
-            </div>
-            <div class="app-card">
-              <img src="https://logos-world.net/wp-content/uploads/2020/09/Just-Eat-Logo.png" alt="Just Eat" />
-            </div>
-            <div class="app-card">
-              <img src="https://logos-world.net/wp-content/uploads/2020/09/DiDi-Food-Logo.png" alt="DiDi Food" />
-            </div> -->
+
           </div>
         </div>
       </div>
@@ -121,17 +112,39 @@
                 </span>
               </div>
 
-              <!-- Customization options -->
-              <div *ngFor="let option of custGroup.cust; let optionIndex = index" class="label-div">
-                <label style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
-                  <input type="radio" [name]="'customization-' + groupIndex" [value]="optionIndex"
-                    (change)="updateCustomizationSelection(groupIndex, optionIndex, option)" />
-                  <span>{{option.name}}</span>
-                </label>
-                <label style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
-                  <span style="font-weight: 600;">${{option.price.toFixed(2)}}</span>
-                </label>
-              </div>
+              <!-- Customization options (single for required, multi for optional) -->
+              <!-- SINGLE choice (radio) when required="true" -->
+              <ng-container *ngIf="custGroup.required === 'true'; else multiBlock">
+                <div *ngFor="let option of custGroup.cust; let optionIndex = index" class="label-div">
+                  <label style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+                    <input type="radio" [name]="'customization-' + groupIndex"
+                      [checked]="isRadioSelected(groupIndex, optionIndex)"
+                      (change)="updateCustomizationSelection(groupIndex, optionIndex, option, false)" />
+
+                    <span>{{option.name}}</span>
+                  </label>
+                  <label style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+                    <span style="font-weight: 600;">${{option.price.toFixed(2)}}</span>
+                  </label>
+                </div>
+              </ng-container>
+
+              <!-- MULTI choice (checkbox) when required="false" -->
+              <ng-template #multiBlock>
+                <div *ngFor="let option of custGroup.cust; let optionIndex = index" class="label-div">
+                  <label style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+
+                    <input type="checkbox" [checked]="isOptionSelected(groupIndex, optionIndex)"
+                      (change)="updateCustomizationSelection(groupIndex, optionIndex, option, true)" />
+
+                    <span>{{option.name}}</span>
+                  </label>
+                  <label style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
+                    <span style="font-weight: 600;">${{option.price.toFixed(2)}}</span>
+                  </label>
+                </div>
+              </ng-template>
+
             </div>
           </div>
 
@@ -151,13 +164,12 @@
                 <input disabled type="text" [value]="getModalQuantity()" class="quantity-input" />
                 <button class="quantity-btn plus" (click)="updateModalQuantity(1)">+</button>
               </div>
-              <button (click)="addCustomizedItemToCart(customNotes.value)"
-                class="add-to-cart-btn"
+              <button (click)="addCustomizedItemToCart(customNotes.value)" class="add-to-cart-btn"
                 style="color: white; border-radius: 8px; padding: 8px 20px; cursor: pointer !important; font-weight: 400; font-size: 16px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden; width: fit-content;">
                 Add to Cart
               </button>
             </div>
-            
+
             <div class="utility-row-mobile">
               <p class="total-price" style="font-family: 'League Spartan', arial, helvetica, sans-serif;">
                 Total Price: ${{getModalTotalPrice().toFixed(2)}}
@@ -168,8 +180,7 @@
                   <input disabled type="text" [value]="getModalQuantity()" class="quantity-input" />
                   <button class="quantity-btn plus" (click)="updateModalQuantity(1)">+</button>
                 </div>
-                <button (click)="addCustomizedItemToCart(customNotes.value)"
-                  class="add-to-cart-btn"
+                <button (click)="addCustomizedItemToCart(customNotes.value)" class="add-to-cart-btn"
                   style="color: white; border-radius: 8px; padding: 8px 20px; cursor: pointer !important; font-weight: 400; font-size: 16px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden; width: fit-content;">
                   Add to Cart
                 </button>

@@ -1,0 +1,13 @@
+<main>
+    <section class="success-wrapper">
+        <div class="card">
+            <div class="icon">✓</div>
+            <h1>Your order was placed successfully!</h1>
+            <p *ngIf="orderId">Order ID: <strong>{{ orderId }}</strong></p>
+            <p *ngIf="total">Order Total: <strong>${{ total }}</strong></p>
+            <p>You’ll receive an email confirmation shortly.</p>
+
+            <button class="home-btn" (click)="goHome()">Go to Home</button>
+        </div>
+    </section>
+</main>
