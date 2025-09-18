@@ -1,0 +1,43 @@
+main {
+    margin-top: 7rem;
+
+    .success-wrapper {
+        display: grid;
+        place-items: center;
+        min-height: 60vh;
+        padding: 5rem;
+    }
+
+    .card {
+        max-width: 560px;
+        width: 100%;
+        background: #fff;
+        border-radius: 18px;
+        padding: 32px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+        text-align: center;
+    }
+
+    .icon {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin: 0 auto 16px;
+        background: #e8f7ed;
+        color: #1a9b50;
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    .home-btn {
+        margin-top: 20px;
+        padding: 12px 22px;
+        border-radius: 10px;
+        border: 0;
+        background: #111827;
+        color: #fff;
+        cursor: pointer;
+    }
+}

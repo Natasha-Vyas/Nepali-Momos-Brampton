@@ -5,10 +5,11 @@ import { SeoService } from '../services/seo.service';
 
 interface CartItem {
   itemName: string;
-  itemPrice: number;
+  itemPrice: number | string;
   itemQuantity: number;
-  itemCustomizations?: string[];
-  itemImage?: string;
+  customization?: string;
+  itemIcon?: string;
+  isCustomized?: boolean;
 }
 
 interface FormattedCartItem {
@@ -16,6 +17,7 @@ interface FormattedCartItem {
   price: number;
   quantity: number;
   total: number;
+  customization?: string;
 }
 
 @Component({
@@ -24,7 +26,8 @@ interface FormattedCartItem {
   styleUrls: ['./checkout.component.scss']
 })
 export class CheckoutComponent implements OnInit {
-  
+  errorMessage: string = '';
+
   // Form data
   formData = {
     firstName: '',
@@ -58,40 +61,38 @@ export class CheckoutComponent implements OnInit {
     // Get cart data from localStorage
     const cartData = localStorage.getItem('cart');
     console.log('Raw cart data:', cartData);
-    
+
     const cart: CartItem[] = cartData ? JSON.parse(cartData) : [];
     console.log('Parsed cart:', cart);
-    
+
     // Calculate subtotal and format cart items
     let subtotal = 0;
     const formattedCart: FormattedCartItem[] = cart.map((item: CartItem) => {
-      console.log('Processing item:', item);
-      
-      // Handle different possible property names
       const name = item.itemName || 'Unknown Item';
-      const price = parseFloat(String(item.itemPrice || 0));
-      const quantity = parseInt(String(item.itemQuantity || 1));
+      const price = parseFloat(String(item.itemPrice ?? 0));
+      const quantity = parseInt(String(item.itemQuantity ?? 1), 10);
       const itemTotal = price * quantity;
-      
+
       subtotal += itemTotal;
-      
+
       return {
-        name: name,
-        price: price,
-        quantity: quantity,
-        total: itemTotal
+        name,
+        price,
+        quantity,
+        total: itemTotal,
+        customization: item.customization || undefined   // <-- keep the text
       };
     });
-    
+
     // Calculate 5% tax
     const tax = subtotal * 0.05;
     const total = subtotal + tax;
-    
+
     console.log('Formatted cart:', formattedCart);
     console.log('Subtotal:', subtotal);
     console.log('Tax (5%):', tax);
     console.log('Total with tax:', total);
-    
+
     // Update component properties
     this.cartItems = formattedCart;
     this.subtotal = subtotal;
@@ -100,16 +101,17 @@ export class CheckoutComponent implements OnInit {
   }
 
   onSubmit(): void {
+    this.errorMessage = '';
     if (!this.isFormValid()) {
-      alert('Please fill in all required fields.');
+      this.errorMessage = 'Please fill in all required fields.';
       return;
     }
 
     this.isSubmitting = true;
 
-    // Prepare checkout data for submission
     const checkoutData = {
       ...this.formData,
+      // keep the detailed items INCLUDING customization
       cartItems: JSON.stringify(this.cartItems),
       subtotal: this.subtotal.toFixed(2),
       tax: this.tax.toFixed(2),
@@ -117,23 +119,17 @@ export class CheckoutComponent implements OnInit {
       orderDate: new Date().toISOString()
     };
 
-    // Submit using AppService
     this.appService.checkoutSubmission(checkoutData).subscribe({
-      next: (response) => {
-        // Clear the cart from localStorage
+      next: () => {
         localStorage.removeItem('cart');
-        
-        // Dispatch cart update event
         window.dispatchEvent(new CustomEvent('cartUpdated'));
-        
-        alert('Order placed successfully! You will receive a confirmation email shortly.');
-        this.router.navigate(['/']);
         this.isSubmitting = false;
+        this.router.navigate(['/success']);
       },
       error: (error) => {
         console.error('Error submitting checkout form:', error);
-        alert('There was an error submitting your order. Please try again.');
         this.isSubmitting = false;
+        this.errorMessage = 'There was an error submitting your order. Please try again.';
       }
     });
   }

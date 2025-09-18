@@ -3,7 +3,7 @@
   "brandName": "Nepali Momos Brampton",
   "address": "90 Eastern Ave #28, Brampton, ON L6W 1X9",
   "phone": "+1 905-874-4141",
-  "email": "Nepalimomos@outlook.com",
+  "email": "abubakar.sidik@gkcfoods.com",
   "type": "template10881",
   "template": {
     "navbar": "template10881",
@@ -19,7 +19,7 @@
     "google": "https://www.google.com/search?q=Nepali+Momos+Brampton+90+Est+ave%2Cunit+no+28+%2C+Brampton%2C+ON+L6W1X9&rlz=1C1CHBF_enIN1083IN1083&oq=Nepali+Momos+Brampton+90+Est+ave%2Cunit+no+28+%2C+Brampton%2C+ON++L6W1X9&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzIzMmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8",
     "hrefAddress": "https://maps.app.goo.gl/ZCEefMDZARuW4bW76",
     "hrefPhone": "tel:+1 905-874-4141",
-    "hrefEmail": "mailto:Nepalimomos@outlook.com",
+    "hrefEmail": "mailto:abubakar.sidik@gkcfoods.com",
     "contactNumberOfWholesale": "+1 (416) 897-5123",
     "hrefContactNumberOfWholesale": "tel:+1 (416) 897-5123"
   },
@@ -894,28 +894,112 @@
           "itemDescription": "A light and comforting clear broth with fresh vegetables and mild seasoning.",
           "itemPrice": "4.50",
           "quantity": 1,
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ab9d5295-4a37-4ffd-9fce-48b598a84dd3_8f0afcf6-20ff-4446-9afd-5743c7e9b664.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ab9d5295-4a37-4ffd-9fce-48b598a84dd3_8f0afcf6-20ff-4446-9afd-5743c7e9b664.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Classic Clear Soup Chicken",
           "itemDescription": "A soothing clear broth with tender chicken and aromatic spices.",
           "itemPrice": "5.50",
           "quantity": 1,
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ab9d5295-4a37-4ffd-9fce-48b598a84dd3_8f0afcf6-20ff-4446-9afd-5743c7e9b664.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ab9d5295-4a37-4ffd-9fce-48b598a84dd3_8f0afcf6-20ff-4446-9afd-5743c7e9b664.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Thai Coconut Soup (Veg)",
           "quantity": 1,
           "itemDescription": "A creamy, aromatic Thai soup with coconut milk, lemongrass, and fresh vegetables.",
           "itemPrice": "5.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/11c734cf-f877-4c63-974a-7922882a9527_70b3d164-dfe0-4c5d-bc6f-4d5384ae026c.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/11c734cf-f877-4c63-974a-7922882a9527_70b3d164-dfe0-4c5d-bc6f-4d5384ae026c.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Thai Coconut Soup (Chicken)",
           "quantity": 1,
           "itemDescription": "A rich coconut-based Thai soup with tender chicken, infused with lemongrass and herbs.",
           "itemPrice": "6.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/11c734cf-f877-4c63-974a-7922882a9527_70b3d164-dfe0-4c5d-bc6f-4d5384ae026c.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/11c734cf-f877-4c63-974a-7922882a9527_70b3d164-dfe0-4c5d-bc6f-4d5384ae026c.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -927,7 +1011,47 @@
           "quantity": 1,
           "itemDescription": "Crispy samosas served with a hot cup of spiced masala chai.",
           "itemPrice": "3.75",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/29500c5a-346f-4718-aa45-df48ab12614c_Adobe%20Express%20-%20file.png"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/29500c5a-346f-4718-aa45-df48ab12614c_Adobe%20Express%20-%20file.png",
+          "customization": [
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Classic Red Chutney",
+                  "price": 0.00
+                },
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                },
+                {
+                  "name": "Pop",
+                  "price": 1.00
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -960,6 +1084,104 @@
                   "price": 0.00
                 }
               ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Classic Red Chutney",
+                  "price": 0.00
+                },
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose your Main course",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chowmein",
+                  "price": 0.00
+                },
+                {
+                  "name": "Fried Rice",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Your Choices",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Noodles",
+                  "price": 0.00
+                },
+                {
+                  "name": "Fried Rice",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Your Choice 2",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Manchurian",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chilly",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Mini meal combo offer",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 1.00
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 1.00
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                },
+                {
+                  "name": "Pop",
+                  "price": 1.00
+                }
+              ]
             }
           ]
         },
@@ -977,7 +1199,7 @@
               "required": "true",
               "cust": [
                 {
-                  "name": "Momo Veggi Spring Rolls Mango, Salad And Soup ",
+                  "name": "Momo Veggi Spring Rolls Mango, Salad And Soup",
                   "price": 0.00
                 },
                 {
@@ -987,6 +1209,78 @@
                 {
                   "name": "Available in Veg or Chicken",
                   "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Classic Red Chutney",
+                  "price": 0.00
+                },
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Mini meal combo offer",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 1.00
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 1.00
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                },
+                {
+                  "name": "Pop",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
                 }
               ]
             }
@@ -1039,14 +1333,78 @@
           "quantity": 1,
           "itemDescription": "A refreshing Thai-style mango salad with a tangy and slightly spicy dressing.",
           "itemPrice": "10.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cfd620f9-a5b4-49aa-8fd0-ebff9444b3db_3666a2b2-84f5-45b2-834b-8d143efffc07.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cfd620f9-a5b4-49aa-8fd0-ebff9444b3db_3666a2b2-84f5-45b2-834b-8d143efffc07.jpg",
+          "customization": [
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Kurkure Momo Burgers",
           "quantity": 1,
           "itemDescription": "A crispy, deep-fried momo patty served in a soft burger bun with flavorful sauces.",
           "itemPrice": "6.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/95f19bc5-97b2-4da8-a574-11b50db4dd13_92b16e4e-59b9-476c-801a-ef20a2a660c1.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/95f19bc5-97b2-4da8-a574-11b50db4dd13_92b16e4e-59b9-476c-801a-ef20a2a660c1.jpg",
+          "customization": [
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Honey Chilli Fries",
@@ -1072,6 +1430,36 @@
                   "price": 9.99,
                   "description": "A larger portion of golden fries coated in a bold honey chili sauce.",
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d9e8268a-5d09-498e-bd17-a89788216bba_1235adce-fd19-4355-af9c-c889f948d7ee.jpg"
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
                 }
               ]
             }
@@ -1115,14 +1503,192 @@
           "quantity": 1,
           "itemDescription": "Soft, steamed dumplings filled with a flavorful vegetable mixture.",
           "itemPrice": "13.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/92530213-6820-4eda-b35e-a66a5482e55d_19+%281%29.png"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/92530213-6820-4eda-b35e-a66a5482e55d_19+%281%29.png",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose Curry Types",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chilly Curry",
+                  "price": 3.00
+                },
+                {
+                  "name": "Butter Masala Curry",
+                  "price": 3.00
+                },
+                {
+                  "name": "Afghani Curry",
+                  "price": 3.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Chicken Momos",
           "quantity": 1,
           "itemDescription": "Juicy dumplings filled with minced chicken and aromatic spices.",
           "itemPrice": "13.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fd28821c-34b8-4010-b3b3-8095d77e70e5_048a2d44-5ef8-466d-8719-4f500cd83fd1.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fd28821c-34b8-4010-b3b3-8095d77e70e5_048a2d44-5ef8-466d-8719-4f500cd83fd1.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose Curry Types",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chilly Curry",
+                  "price": 3.00
+                },
+                {
+                  "name": "Butter Masala Curry",
+                  "price": 3.00
+                },
+                {
+                  "name": "Afghani Curry",
+                  "price": 3.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Mutton Momos",
@@ -1136,14 +1702,192 @@
           "quantity": 1,
           "itemDescription": "Steamed dumplings stuffed with spiced paneer and herbs.",
           "itemPrice": "15.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/71d461df-18c3-4a34-9668-294a36e9f519_7e8365cf-ab58-4d45-add2-b98ef7c9b53d.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/71d461df-18c3-4a34-9668-294a36e9f519_7e8365cf-ab58-4d45-add2-b98ef7c9b53d.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose Curry Types",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chilly Curry",
+                  "price": 3.00
+                },
+                {
+                  "name": "Butter Masala Curry",
+                  "price": 3.00
+                },
+                {
+                  "name": "Afghani Curry",
+                  "price": 3.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Malai Paneer Momos",
           "quantity": 1,
           "itemDescription": "Creamy paneer-stuffed momos with a rich, mildly spiced filling.",
           "itemPrice": "16.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d55751cc-ecae-47fa-a00d-33d6e4b8001a_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d55751cc-ecae-47fa-a00d-33d6e4b8001a_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose Curry Types",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Chilly Curry",
+                  "price": 3.00
+                },
+                {
+                  "name": "Butter Masala Curry",
+                  "price": 3.00
+                },
+                {
+                  "name": "Afghani Curry",
+                  "price": 3.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1176,6 +1920,55 @@
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/915db626-9c66-48d8-b763-d7ec96ebbc8f_24+%281%29.png"
                 }
               ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
             }
           ]
         },
@@ -1193,7 +1986,7 @@
               "required": "true",
               "cust": [
                 {
-                  "name": "Chicken/Veg ",
+                  "name": "Chicken/Veg",
                   "price": 16.99,
                   "description": "Momos served in a spicy and tangy Nepali-style broth.",
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/64cc5d81-30a9-4ebc-87d8-69fc1983e81d_25.png"
@@ -1203,6 +1996,70 @@
                   "price": 18.99,
                   "description": "Paneer-filled momos submerged in a flavorful Nepali-style soup.",
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/64cc5d81-30a9-4ebc-87d8-69fc1983e81d_25.png"
+                }
+              ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
                 }
               ]
             }
@@ -1232,6 +2089,70 @@
                   "price": 18.99,
                   "description": "Paneer-stuffed momos paired with a bold Thai red curry broth.",
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/bf5c0284-51d1-46a5-96ef-4d128b6cb2c7_26+%281%29.png"
+                }
+              ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
                 }
               ]
             }
@@ -1269,6 +2190,51 @@
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/68b8b728-875d-441f-b226-f33ea612e086_27.png"
                 }
               ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
             }
           ]
         },
@@ -1296,6 +2262,51 @@
                   "price": 18.99,
                   "description": "Paneer-filled momos coated in a crunchy batter and fried to perfection.",
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f37c41c6-c192-43c6-844b-088c0c99da72_b8788762-b78d-4b26-946c-b9fb73602beb.jpg"
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
                 }
               ]
             }
@@ -1328,6 +2339,89 @@
                   "price": 26.99
                 }
               ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
             }
           ]
         },
@@ -1351,6 +2445,89 @@
                 {
                   "name": "Chicken",
                   "price": 26.99
+                }
+              ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
                 }
               ]
             }
@@ -1382,6 +2559,89 @@
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8f8e46f0-36c7-45b0-baa1-d30eccec775b_31.png"
                 }
               ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
             }
           ]
         },
@@ -1407,6 +2667,89 @@
                   "price": 47.99
                 }
               ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
             }
           ]
         }
@@ -1420,14 +2763,146 @@
           "quantity": 1,
           "itemDescription": "Paneer cubes sautéed in a bold, spicy chili sauce, available dry or with gravy.",
           "itemPrice": "13.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e1f2acb6-d057-4ce9-97ae-244039431c6a_34.png"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e1f2acb6-d057-4ce9-97ae-244039431c6a_34.png",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Style",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Dry",
+                  "price": 0.00
+                },
+                {
+                  "name": "Gravy",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Chilli Chicken (Dry/Gravy)",
           "quantity": 1,
           "itemDescription": "Stir-fried chicken tossed in a spicy chili sauce, available dry or with gravy.",
           "itemPrice": "13.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/76af39a6-9bd1-4674-8a26-e52fdf49480c_192427d0-5904-41c6-b925-81a3318234ee.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/76af39a6-9bd1-4674-8a26-e52fdf49480c_192427d0-5904-41c6-b925-81a3318234ee.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Style",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Dry",
+                  "price": 0.00
+                },
+                {
+                  "name": "Gravy",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         },
         {
           "itemName": "Manchurian",
@@ -1453,6 +2928,44 @@
                   "price": 13.99,
                   "description": "Crispy vegetable balls coated in a tangy and spicy Manchurian sauce.",
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/803bdac1-e2c3-452b-87b5-e03bc5961031_4c8eed4d-b88f-48c6-bd64-0960bc97ccbf.jpg"
+                }
+              ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
                 }
               ]
             }
@@ -1484,6 +2997,44 @@
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/437b2727-5317-4a10-a201-89a0f04ce5ef_a2cf85e4-4262-4074-b281-62f790b8f0ca.jpg"
                 }
               ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
             }
           ]
         },
@@ -1503,7 +3054,7 @@
                 {
                   "name": "Chicken",
                   "price": 14.99,
-                  "description": "A classic Indo-Chinese fried rice with tender chicken pieces.",
+                  "description": "Savory fried rice stir-fried with seasoned chicken and crunchy vegetables.",
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a4e02334-05b2-430d-a1b4-c2718541c95d_1861a52d-0833-4dd1-9f2b-a708f3f6dc37.jpg"
                 },
                 {
@@ -1511,6 +3062,44 @@
                   "price": 12.99,
                   "description": "Fragrant fried rice with fresh veggies and a hint of soy sauce.",
                   "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a4e02334-05b2-430d-a1b4-c2718541c95d_1861a52d-0833-4dd1-9f2b-a708f3f6dc37.jpg"
+                }
+              ]
+            },
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
                 }
               ]
             }
@@ -1527,7 +3116,92 @@
           "quantity": 1,
           "itemDescription": "A grand thali featuring chowmein, fried rice, Manchurian, spring roll, momos, and gulab jamun.",
           "itemPrice": "13.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dcaa8505-10d3-4c6b-b89c-c448de406849_19f5e058-21f4-47c1-aa23-1c71f8df39a7.jpg"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dcaa8505-10d3-4c6b-b89c-c448de406849_19f5e058-21f4-47c1-aa23-1c71f8df39a7.jpg",
+          "customization": [
+            {
+              "custName": "Spice levels",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Mild",
+                  "price": 0.00
+                },
+                {
+                  "name": "Medium",
+                  "price": 0.00
+                },
+                {
+                  "name": "Hot",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Choose a Preparation.",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Steam",
+                  "price": 0.00
+                },
+                {
+                  "name": "Pan fried",
+                  "price": 2.00
+                },
+                {
+                  "name": "Deep fried",
+                  "price": 1.00
+                }
+              ]
+            },
+            {
+              "custName": "Choose Protein",
+              "custDescription": "Choose 1",
+              "required": "true",
+              "cust": [
+                {
+                  "name": "Veg",
+                  "price": 0.00
+                },
+                {
+                  "name": "Chicken",
+                  "price": 0.00
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1539,7 +3213,39 @@
           "quantity": 1,
           "itemDescription": "A kid-friendly combo featuring momos, fries, and a mild dipping sauce.",
           "itemPrice": "10.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b530b90b-7a94-490d-be36-9c4251359296_40.png"
+          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b530b90b-7a94-490d-be36-9c4251359296_40.png",
+          "customization": [
+            {
+              "custName": "Add a Chutney",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Creamy Peanut Chutney",
+                  "price": 0.50
+                }
+              ]
+            },
+            {
+              "custName": "Add a Beverage",
+              "custDescription": "Add-ons (choose any)",
+              "required": "false",
+              "cust": [
+                {
+                  "name": "Masala Chai",
+                  "price": 2.75
+                },
+                {
+                  "name": "Darjeeling Tea",
+                  "price": 2.75
+                },
+                {
+                  "name": "Red Bull",
+                  "price": 2.50
+                }
+              ]
+            }
+          ]
         }
       ]
     },

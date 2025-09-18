@@ -3,8 +3,8 @@ import { SeoService } from '../services/seo.service';
 import { AppService } from '../services/app.service';
 
 interface MenuItem {
-custPrice: any;
-icon: any;
+  custPrice: any;
+  icon: any;
   itemName: string;
   itemDescription?: string;
   itemPrice: string;
@@ -14,7 +14,7 @@ icon: any;
 
 interface MenuCategory {
   categoryName: string;
-  routeName: string;
+  routeName?: string;
   searchTerm?: string;
   categoryDescription?: string;
   items: MenuItem[];
@@ -52,7 +52,12 @@ export class MenuComponent implements OnInit {
   cart: CartItem[] = [];
   selectedCategory: number = 0;
   currentModalItem: any = null;
-  selectedCustomizations: any = {};
+  selectedCustomizations: {
+    [groupIndex: number]: {
+      type: 'single' | 'multi';
+      selections: { optionIndex: number; option: CustomizationOption }[];
+    }
+  } = {};
   showModal: boolean = false;
   itemQuantities: { [key: string]: number } = {};
   modalQuantity: number = 1;
@@ -65,10 +70,13 @@ export class MenuComponent implements OnInit {
 
   // Menu data - loaded from JSON
   categories2: MenuCategory[] = [];
+  isMultiGroup(group: CustomizationGroup): boolean {
+    return group.required !== 'true';
+  }
 
   constructor(
     private seoService: SeoService,
-        private appService: AppService
+    private appService: AppService
 
   ) { }
 
@@ -80,14 +88,29 @@ export class MenuComponent implements OnInit {
     this.populateAllCategory();
   }
 
+
+  // Checkbox: is this option currently selected in a multi group?
+  isOptionSelected(groupIndex: number, optionIndex: number): boolean {
+    const bucket = this.selectedCustomizations[groupIndex];
+    if (!bucket || !bucket.selections) return false;
+    return bucket.selections.some(s => s.optionIndex === optionIndex);
+  }
+
+  // Radio: is this option the selected one in a single group?
+  isRadioSelected(groupIndex: number, optionIndex: number): boolean {
+    const bucket = this.selectedCustomizations[groupIndex];
+    if (!bucket || !bucket.selections || bucket.selections.length === 0) return false;
+    return bucket.selections[0].optionIndex === optionIndex;
+  }
+
   private loadData(): void {
     // Load menu data from JSON - note the capital 'M' in 'Menu'
     this.categories2 = this.appService.getContentData('Menu') || [];
-    
+
     // Load menu images from JSON
     const menuImagesData = this.appService.getContentData('menuImages') || [];
     this.menuImages = {};
-    
+
     // Convert menuImages array to object mapping
     menuImagesData.forEach((imageItem: any) => {
       if (imageItem.imageName && imageItem.icon) {
@@ -96,7 +119,7 @@ export class MenuComponent implements OnInit {
         this.menuImages[itemName] = imageItem.icon;
       }
     });
-    
+
     // If no data is loaded, initialize with empty array
     if (!this.categories2 || this.categories2.length === 0) {
       this.categories2 = [];
@@ -108,14 +131,14 @@ export class MenuComponent implements OnInit {
     if (!this.categories2 || this.categories2.length === 0) {
       return;
     }
-    
+
     const allItems: MenuItem[] = [];
     this.categories2.forEach(category => {
       if (category.categoryName !== 'All' && category.items) {
         allItems.push(...category.items);
       }
     });
-    
+
     // Find the "All" category and populate it
     const allCategory = this.categories2.find(cat => cat.categoryName === 'All');
     if (allCategory) {
@@ -187,7 +210,7 @@ export class MenuComponent implements OnInit {
 
       // Check if item already exists in cart
       const existingItemIndex = this.cart.findIndex(cartItem => cartItem.itemName === newItem.itemName);
-      
+
       if (existingItemIndex !== -1) {
         // Item exists, update quantity
         this.cart[existingItemIndex].itemQuantity += quantity;
@@ -195,10 +218,10 @@ export class MenuComponent implements OnInit {
         // New item, add to cart
         this.cart.push(newItem);
       }
-      
+
       this.saveCart();
       this.updateCartCount();
-      
+
       // Reset quantity
       this.itemQuantities[item.itemName] = 0;
     }
@@ -206,15 +229,22 @@ export class MenuComponent implements OnInit {
 
   // Open customization modal
   openCustomizationModal(item: MenuItem): void {
-    if (!item.customization || !Array.isArray(item.customization)) {
-      return;
-    }
+    if (!item.customization || !Array.isArray(item.customization)) return;
 
     this.currentModalItem = item;
     this.selectedCustomizations = {};
+
+    item.customization.forEach((g: CustomizationGroup, idx: number) => {
+      this.selectedCustomizations[idx] = {
+        type: this.isMultiGroup(g) ? 'multi' : 'single',
+        selections: []
+      };
+    });
+
     this.modalQuantity = 1;
     this.showModal = true;
   }
+
 
   // Close customization modal
   closeCustomizationModal(): void {
@@ -225,11 +255,24 @@ export class MenuComponent implements OnInit {
   }
 
   // Update customization selection
-  updateCustomizationSelection(groupIndex: number, optionIndex: number, option: CustomizationOption): void {
-    this.selectedCustomizations[groupIndex] = {
-      optionIndex: optionIndex,
-      option: option
-    };
+  updateCustomizationSelection(
+    groupIndex: number,
+    optionIndex: number,
+    option: CustomizationOption,
+    isMulti: boolean
+  ): void {
+    const bucket = this.selectedCustomizations[groupIndex];
+    if (!bucket) return;
+
+    if (isMulti) {
+      // toggle checkbox
+      const i = bucket.selections.findIndex(s => s.optionIndex === optionIndex);
+      if (i >= 0) bucket.selections.splice(i, 1);
+      else bucket.selections.push({ optionIndex, option });
+    } else {
+      // single choice (radio)
+      bucket.selections = [{ optionIndex, option }];
+    }
   }
 
   // Update modal quantity
@@ -245,60 +288,50 @@ export class MenuComponent implements OnInit {
   // Get modal total price
   getModalTotalPrice(): number {
     if (!this.currentModalItem) return 0;
-
-    let basePrice = parseFloat(this.currentModalItem.itemPrice);
-    
-    // Add customization prices
-    Object.values(this.selectedCustomizations).forEach((selection: any) => {
-      basePrice += selection.option.price;
+    const base = parseFloat(this.currentModalItem.itemPrice || '0') || 0;
+    let unit = base;
+    Object.values(this.selectedCustomizations).forEach((bucket: any) => {
+      bucket.selections.forEach((sel: any) => unit += sel.option.price);
     });
-
-    // Multiply by quantity
-    return basePrice * this.modalQuantity;
+    return unit * this.modalQuantity;
   }
+
 
   // Add customized item to cart
   addCustomizedItemToCart(notes: string = ''): void {
     if (!this.currentModalItem) return;
 
-    // Check if all required customizations are selected
-    const requiredGroups = this.currentModalItem.customization.filter((group: any) => group.required === 'true');
-    
-    for (let i = 0; i < this.currentModalItem.customization.length; i++) {
-      if (this.currentModalItem.customization[i].required === 'true' && !this.selectedCustomizations[i]) {
-        return;
+    // every required group must have at least one selection
+    for (let gi = 0; gi < this.currentModalItem.customization.length; gi++) {
+      const group = this.currentModalItem.customization[gi];
+      if (group.required === 'true') {
+        const bucket = this.selectedCustomizations[gi];
+        if (!bucket || bucket.selections.length === 0) return;
       }
     }
 
-    // Calculate total price
-    let totalPrice = this.getModalTotalPrice();
+    const totalPrice = this.getModalTotalPrice();
+
     let customizationText = '';
-    
-    Object.entries(this.selectedCustomizations).forEach(([groupIndex, selection]: [string, any]) => {
-      const groupName = this.currentModalItem.customization[parseInt(groupIndex)].custName;
-      customizationText += `${groupName}: ${selection.option.name}; `;
+    Object.entries(this.selectedCustomizations).forEach(([gi, bucket]: any) => {
+      const groupName = this.currentModalItem.customization[+gi].custName;
+      const names = bucket.selections.map((s: any) => s.option.name).join(', ');
+      if (names) customizationText += `${groupName}: ${names}; `;
     });
+    if (notes) customizationText += `Notes: ${notes}`;
 
-    // Add notes
-    if (notes) {
-      customizationText += `Notes: ${notes}`;
-    }
-
-    // Create cart item
     const cartItem: CartItem = {
       itemName: this.currentModalItem.itemName,
-      itemPrice: (totalPrice / this.modalQuantity).toFixed(2), // Store unit price
+      itemPrice: (totalPrice / this.modalQuantity).toFixed(2), // unit price
       itemQuantity: this.modalQuantity,
       itemIcon: this.getItemImage(this.currentModalItem.itemName),
       customization: customizationText.trim(),
       isCustomized: true
     };
 
-    // Add to cart
     this.cart.push(cartItem);
     this.saveCart();
     this.updateCartCount();
-
     this.closeCustomizationModal();
   }
 

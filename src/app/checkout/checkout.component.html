@@ -9,115 +9,55 @@
     <div class="checkout-section">
       <div class="checkout-container">
         <h2>Contact Information</h2>
-        
+
         <form (ngSubmit)="onSubmit()" #checkoutForm="ngForm">
           <div class="form-grid">
             <div class="form-group">
-              <input 
-                type="text" 
-                id="firstName" 
-                name="firstName" 
-                placeholder="FirstName" 
-                [(ngModel)]="formData.firstName"
-                required>
+              <input type="text" id="firstName" name="firstName" placeholder="FirstName"
+                [(ngModel)]="formData.firstName" required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="text" 
-                id="lastName" 
-                name="lastName" 
-                placeholder="LastName" 
-                [(ngModel)]="formData.lastName"
+              <input type="text" id="lastName" name="lastName" placeholder="LastName" [(ngModel)]="formData.lastName"
                 required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="tel" 
-                id="phone" 
-                name="phone" 
-                placeholder="Phone" 
-                [(ngModel)]="formData.phone"
-                required>
+              <input type="tel" id="phone" name="phone" placeholder="Phone" [(ngModel)]="formData.phone" required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                placeholder="Email" 
-                [(ngModel)]="formData.email"
-                required>
+              <input type="email" id="email" name="email" placeholder="Email" [(ngModel)]="formData.email" required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="date" 
-                id="date" 
-                name="date" 
-                placeholder="dd-mm-yyyy" 
-                [(ngModel)]="formData.date"
-                required>
+              <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" [(ngModel)]="formData.date" required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="time" 
-                id="time" 
-                name="time" 
-                [(ngModel)]="formData.time"
-                required>
+              <input type="time" id="time" name="time" [(ngModel)]="formData.time" required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="text" 
-                id="address" 
-                name="address" 
-                placeholder="Address" 
-                [(ngModel)]="formData.address"
+              <input type="text" id="address" name="address" placeholder="Address" [(ngModel)]="formData.address"
                 required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="text" 
-                id="city" 
-                name="city" 
-                placeholder="City" 
-                [(ngModel)]="formData.city"
-                required>
+              <input type="text" id="city" name="city" placeholder="City" [(ngModel)]="formData.city" required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="text" 
-                id="state" 
-                name="state" 
-                placeholder="State" 
-                [(ngModel)]="formData.state"
-                required>
+              <input type="text" id="state" name="state" placeholder="State" [(ngModel)]="formData.state" required>
             </div>
-            
+
             <div class="form-group">
-              <input 
-                type="text" 
-                id="country" 
-                name="country" 
-                placeholder="Country" 
-                [(ngModel)]="formData.country"
+              <input type="text" id="country" name="country" placeholder="Country" [(ngModel)]="formData.country"
                 required>
             </div>
-            
+
             <div class="form-group full-width">
-              <input 
-                type="text" 
-                id="pincode" 
-                name="pincode" 
-                placeholder="Pincode" 
-                [(ngModel)]="formData.pincode"
+              <input type="text" id="pincode" name="pincode" placeholder="Pincode" [(ngModel)]="formData.pincode"
                 required>
             </div>
           </div>
@@ -126,10 +66,7 @@
             *All fields are mandatory!
           </div>
 
-          <button 
-            type="submit" 
-            class="checkout-btn"
-            [disabled]="isSubmitting">
+          <button type="submit" class="checkout-btn" [disabled]="isSubmitting">
             {{ isSubmitting ? 'Processing...' : 'Checkout!' }}
           </button>
         </form>
@@ -139,10 +76,17 @@
           <h3>Order Summary</h3>
           <div class="cart-items">
             <div class="cart-item" *ngFor="let item of cartItems">
-              <span class="item-name">{{ item.name }}</span>
-              <span class="item-quantity">x{{ item.quantity }}</span>
-              <span class="item-total">${{ item.total.toFixed(2) }}</span>
+              <div class="item-row">
+                <span class="item-name">{{ item.name }}</span>
+                <span class="item-quantity">x{{ item.quantity }}</span>
+                <span class="item-total">${{ item.total.toFixed(2) }}</span>
+              </div>
+              <div class="item-customization" *ngIf="item.customization"
+                style="color:#6b7280; font-size:0.92rem; margin-top:2px;">
+                {{ item.customization }}
+              </div>
             </div>
+
           </div>
           <div class="order-totals">
             <div class="total-row">
