@@ -119,19 +119,19 @@ $secondary-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "H
         }
     }
 
-    &.active {
-        color: $primary-color;
-        font-weight: 700;
+    // &.active {
+    //     color: $primary-color;
+    //     font-weight: 700;
 
-        img {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    //     img {
+    //         opacity: 1;
+    //         transform: translateY(0);
+    //     }
 
-        &::after {
-            transform: scaleX(1);
-        }
-    }
+    //     &::after {
+    //         transform: scaleX(1);
+    //     }
+    // }
 
     @supports not (font-family: $secondary-font-stack) {
         font-family: Arial, sans-serif;
@@ -359,33 +359,33 @@ $secondary-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "H
     }
 
     // Active state
-    &.active {
-        color: #e04652;
-        font-weight: 600;
+    // &.active {
+    //     color: #e04652;
+    //     font-weight: 600;
 
-        img {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    //     img {
+    //         opacity: 1;
+    //         transform: translateY(0);
+    //     }
 
-        &::after {
-            transform: scaleX(1);
-        }
-    }
+    //     &::after {
+    //         transform: scaleX(1);
+    //     }
+    // }
 
     // Underline effect (animated)
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 5px;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background-color: #e04652;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease;
-    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     bottom: 5px;
+    //     left: 0;
+    //     right: 0;
+    //     height: 2px;
+    //     background-color: #e04652;
+    //     transform: scaleX(0);
+    //     transform-origin: left;
+    //     transition: transform 0.3s ease;
+    // }
 
     // Remove border from last item
     &:last-child {
