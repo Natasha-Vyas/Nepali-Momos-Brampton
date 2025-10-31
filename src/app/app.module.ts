@@ -16,6 +16,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { SuccessComponent } from './success/success.component';
+import { HomeTwoComponent } from './home-two/home-two.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SuccessComponent } from './success/success.component';
     GalleryComponent,
     CartComponent,
     CheckoutComponent,
-    SuccessComponent
+    SuccessComponent,
+    HomeTwoComponent
   ],
   imports: [
     BrowserModule,

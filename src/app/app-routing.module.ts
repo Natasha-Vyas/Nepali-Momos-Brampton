@@ -9,10 +9,12 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { SuccessComponent } from './success/success.component';
+import { HomeTwoComponent } from './home-two/home-two.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home-two', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'home-two', component: HomeTwoComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'catering', component: CateringComponent },
   { path: 'cart', component: CartComponent },
@@ -21,6 +23,7 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'success', component: SuccessComponent },
+  { path: '**', redirectTo: '/home-two', pathMatch: 'full' }
 ];
 
 @NgModule({
