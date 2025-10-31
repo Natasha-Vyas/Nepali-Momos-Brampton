@@ -1,0 +1,45 @@
+<main>
+    <!-- Header Section -->
+    <div class="menu-header">
+      <h1>Savor the Steaming, <br />Spicy Momos (Dumplings) Santa Swears By<br />—Now in Year Two!</h1>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-us-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-slider">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
+                            <div class="slide" *ngFor="let image of images; let i = index">
+                                <img [src]="image" [alt]="'Slide ' + (i + 1)">
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation arrows -->
+                        <button class="slider-nav prev" (click)="prevSlide()" *ngIf="images.length > 1">
+                            <span>‹</span>
+                        </button>
+                        <button class="slider-nav next" (click)="nextSlide()" *ngIf="images.length > 1">
+                            <span>›</span>
+                        </button>
+                        
+                        <!-- Dots indicator -->
+                        <div class="slider-dots" *ngIf="images.length > 1">
+                            <button
+                                class="dot"
+                                *ngFor="let image of images; let i = index"
+                                [class.active]="i === currentSlide"
+                                (click)="goToSlide(i)">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-description">The people have spoken, and we've answered the call! Following a blockbuster debut, the most talked-about snack is officially making its highly-anticipated return to The Distillery Winter Village. Prepare once again for a moment of pure culinary magic: authentic Nepali Momos (dumplings). Each one is a tender, savory bite, served piping hot to chase away the chill.</p>
+                    <p class="about-second-description">Doused in our bold, tangy Achar sauce, they offer a rich, exotic flavor that simply can't be beat. It’s an open secret that Santa has ditched his milk and cookies for a platter of these, and demand is only growing! Make a beeline for the legendary taste when the market opens on November 13, 2025, and find out why everyone is coming back for more!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

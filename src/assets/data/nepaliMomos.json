@@ -191,6 +191,15 @@
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d3cecbc1-f192-4d38-9316-d920dd1b8be9_VID-20250906-WA0008.mp4"
   ],
   "hero": {
+    "homeTwo": {
+      "images": [
+        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/77a1d0f4-df15-4d87-a345-e65e434da16b_WhatsApp%20Image%202025-10-23%20at%2008.jpeg",
+        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/581925da-6d3b-4bdd-a18c-03502ded3824_WhatsApp%20Image%202025-10-23%20at%2008.jpeg",
+        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0670782a-bbec-4e26-84c3-0ea082c54d6c_WhatsApp%20Image%202025-10-23%20at%2008.jpeg"
+      ],
+      "head": "Savor the Steaming, Spicy Momos (Dumplings) Santa Swears By—Now in Year Two!",
+      "desc": "The people have spoken, and we've answered the call! Following a blockbuster debut, the most talked-about snack is officially making its highly-anticipated return to The Distillery Winter Village. Prepare once again for a moment of pure culinary magic: authentic Nepali Momos (dumplings). Each one is a tender, savory bite, served piping hot to chase away the chill. Doused in our bold, tangy Achar sauce, they offer a rich, exotic flavor that simply can't be beat. It’s an open secret that Santa has ditched his milk and cookies for a platter of these, and demand is only growing! Make a beeline for the legendary taste when the market opens on November 13, 2025, and find out why everyone is coming back for more!"
+    },
     "dreamSection": {
       "title": "You Dream It, We Will Cook ",
       "subtitle": "Crafting Culinary Dreams into Reality",
