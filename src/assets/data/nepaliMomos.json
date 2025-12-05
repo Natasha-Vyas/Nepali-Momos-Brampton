@@ -2,7 +2,7 @@
   "logo": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6c72a030-88e9-4ff2-802a-706e3c8f1fde_45425848-16f5-4bf6-bd0a-774aae6582b0_nepali-momos-2%20-%20unscreen%20%281%29.gif",
   "brandName": "Nepali Momos Brampton",
   "address": "90 Eastern Ave #28, Brampton, ON L6W 1X9",
-  "phone": "+1 905-874-4141",
+  "contact": "+1 905-874-4141",
   "email": "Nepalimomos@outlook.com",
   "type": "template10881",
   "template": {
@@ -17,7 +17,6 @@
     "review": "https://g.co/kgs/oMZu91o",
     "onlinelink": "",
     "google": "https://www.google.com/search?q=Nepali+Momos+Brampton+90+Est+ave%2Cunit+no+28+%2C+Brampton%2C+ON+L6W1X9&rlz=1C1CHBF_enIN1083IN1083&oq=Nepali+Momos+Brampton+90+Est+ave%2Cunit+no+28+%2C+Brampton%2C+ON++L6W1X9&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzIzMmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8",
-    "hrefAddress": "https://maps.app.goo.gl/ZCEefMDZARuW4bW76",
     "hrefPhone": "tel:+1 905-874-4141",
     "hrefEmail": "mailto:Nepalimomos@outlook.com",
     "contactNumberOfWholesale": "+1 (416) 897-5123",
@@ -154,6 +153,12 @@
         "type": "internal"
       },
       {
+        "text": "Wholesale",
+        "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6f438765-6a7a-4dd7-8e8c-c3e68d0d652c_Catering.png",
+        "link": "/wholesale",
+        "type": "internal"
+      },
+      {
         "text": "Grab & Go Momos",
         "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e844c353-7aa1-4338-81ec-2679b89ba7ed_Whole%20sale.png",
         "link": "/about-us",
@@ -179,93 +184,13 @@
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7e75e979-3c4a-445c-82bb-564e50caf898_198.jpg",
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dd83aedd-ce3e-4b36-af32-dcbb5dd61ed0_194.jpg",
     "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/85877f03-bec0-4b1c-b5ac-9448296f50f1_195.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/81c6af91-2c73-46e9-89de-26501c1dc957_196.jpg",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/45671adb-c133-4b18-bcc7-77318a8846eb_VID-20250906-WA0000.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fdc35626-9f41-40d6-8d9c-848d796939d8_VID-20250906-WA0001.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2d0bf0ee-a8e9-4219-9c79-da3286f20728_VID-20250906-WA0002.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/179e82fa-28c2-4466-a372-11cef9ba9d9e_VID-20250906-WA0003.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2d7e1091-8e97-4562-8166-81e570ce9082_VID-20250906-WA0004.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d3e0ce54-5f83-45e0-b421-3bfe53e77efa_VID-20250906-WA0005.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5b552736-5bbd-4a2f-8445-6c2a649a1f13_VID-20250906-WA0006.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/92b28bce-3f04-480e-92f2-1d50b8f694ff_VID-20250906-WA0007.mp4",
-    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d3cecbc1-f192-4d38-9316-d920dd1b8be9_VID-20250906-WA0008.mp4"
+    "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/81c6af91-2c73-46e9-89de-26501c1dc957_196.jpg"
   ],
   "hero": {
-    "homeTwo": {
-      "images": [
-        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/77a1d0f4-df15-4d87-a345-e65e434da16b_WhatsApp%20Image%202025-10-23%20at%2008.jpeg",
-        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/581925da-6d3b-4bdd-a18c-03502ded3824_WhatsApp%20Image%202025-10-23%20at%2008.jpeg",
-        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0670782a-bbec-4e26-84c3-0ea082c54d6c_WhatsApp%20Image%202025-10-23%20at%2008.jpeg"
-      ],
-      "head": "Savor the Steaming, Spicy Momos (Dumplings) Santa Swears By—Now in Year Two!",
-      "desc": "The people have spoken, and we've answered the call! Following a blockbuster debut, the most talked-about snack is officially making its highly-anticipated return to The Distillery Winter Village. Prepare once again for a moment of pure culinary magic: authentic Nepali Momos (dumplings). Each one is a tender, savory bite, served piping hot to chase away the chill. Doused in our bold, tangy Achar sauce, they offer a rich, exotic flavor that simply can't be beat. It’s an open secret that Santa has ditched his milk and cookies for a platter of these, and demand is only growing! Make a beeline for the legendary taste when the market opens on November 13, 2025, and find out why everyone is coming back for more!"
-    },
-    "dreamSection": {
-      "title": "You Dream It, We Will Cook ",
-      "subtitle": "Crafting Culinary Dreams into Reality",
-      "buttonText": "See More",
-      "categories": [
-        {
-          "name": "Platters",
-          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c00cb127-ca9b-48c4-91fa-abe59dafabbd_593c39be-7dd2-44e9-b43b-4fdb42f19c65.jpg",
-          "description": "Enjoy a delightful assortment of momos and sides, curated for sharing. Perfect for gatherings or when you want a little bit of everything."
-        },
-        {
-          "name": "Mains",
-          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/76af39a6-9bd1-4674-8a26-e52fdf49480c_192427d0-5904-41c6-b925-81a3318234ee.jpg",
-          "description": "Dive into hearty and flavorful dishes crafted with authentic Nepali spices and fresh ingredients. Each main course promises a fulfilling and delicious experience."
-        },
-        {
-          "name": "Thali",
-          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dcaa8505-10d3-4c6b-b89c-c448de406849_19f5e058-21f4-47c1-aa23-1c71f8df39a7.jpg",
-          "description": "Experience the richness of Nepali cuisine with our Thali—a complete feast featuring a variety of flavors on one plate, offering a balanced and wholesome meal."
-        },
-        {
-          "name": "Dessert",
-          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fbe8c769-c235-4c94-9bbd-2ebadd404150_Gulab%20Jamun.jpg",
-          "description": "Complete your momo journey with our delectable desserts. Each treat is crafted to provide the perfect sweet note to end your dining experience."
-        }
-      ]
-    },
-    "culinaryOfferings": {
-      "title": "Our Culinary Offerings",
-      "subtitle": "Kids Momo Meal",
-      "description": "Five delicious Momos steamed, crispy fries, a refreshing juice box, and a sweet Gulab jamun with choice of dipping sauce. The perfect kid-friendly meal.",
-      "buttonText": "View All",
-      "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b530b90b-7a94-490d-be36-9c4251359296_40.png"
-    },
-    "aboutus": {
-      "title": "About Us",
-      "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d2ecaa9d-6e15-4baa-aa8e-ebf3622ce763_WhatsApp%20Image%202025-09-11%20at%2012.jpeg",
-      "description": "Embrace the arrival of spring at Nepali Momos Brampton and immerse yourself in the beauty of our new Japanese cherry blossom-inspired decor.",
-      "secondDescription": "Capture the essence of the season and create lasting memories as you savor our delectable momos amidst this enchanting ambiance.",
-      "buttonText": "Learn More"
-    },
-    "signatureMomos": {
-      "title": "Our Signature Momos",
-      "items": [
-        {
-          "name": "Classic Momos",
-          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/71d461df-18c3-4a34-9668-294a36e9f519_7e8365cf-ab58-4d45-add2-b98ef7c9b53d.jpg",
-          "description": "Authentic Darjeeling Style Momos"
-        },
-        {
-          "name": "Curry Momos",
-          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d6cb5798-b40f-4521-aabb-942e62b1ead1_curry%20momos.png",
-          "description": "Momos Swimming in a Sea of Delicious Curry."
-        },
-        {
-          "name": "Soupy Affair",
-          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8a847e79-7939-4436-9c83-012ea0ed902f_915db626-9c66-48d8-b763-d7ec96ebbc8f_24%2B%281%29.png",
-          "description": " A complete meal in itself, made with simple, pure ingredients for a truly comforting experience."
-        },
-        {
-          "name": "Fusion Momos",
-          "image": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f37c41c6-c192-43c6-844b-088c0c99da72_b8788762-b78d-4b26-946c-b9fb73602beb.jpg",
-          "description": "Reinventing the Momo"
-        }
-      ]
-    },
+    "homeImages": [
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/77a1d0f4-df15-4d87-a345-e65e434da16b_WhatsApp%20Image%202025-10-23%20at%2008.jpeg",
+      "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/581925da-6d3b-4bdd-a18c-03502ded3824_WhatsApp%20Image%202025-10-23%20at%2008.jpeg"
+    ],
     "footerTag": "“Aslee Momos ki Dukan”",
     "homeEventImage1": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/43537fff-2257-4aca-8132-1e241d02d4ef_1.png",
     "homeEventImage2": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/733ec73d-5a95-4b04-bb60-301930850081_2.png",
@@ -299,7 +224,7 @@
       }
     ],
     "ourStoryContent": [
-      "Welcome to a story you can taste—a legacy as rich as the finest gold. Our brand, Nepali Momos Aslee Momos Ki Dukan, is a heartfelt homage to our founder Sajeev's great-great-grandfather, a revered gold shop owner from the late 1800s in Darjeeling. The name, which means 'The Authentic Gold and Silver Shop,' is our promise to you: a testament to authenticity, value, and unmatched quality that has been passed down through our family for generations.",
+      "Welcome to a story you can taste—a legacy as rich as the finest gold. Our brand, Aslee Momo's Ki Dukan, is a heartfelt homage to our founder Sajeev's great-great-grandfather, a revered gold shop owner from the late 1800s in Darjeeling. The name, which means 'The Authentic Gold and Silver Shop,' is our promise to you: a testament to authenticity, value, and unmatched quality that has been passed down through our family for generations.",
       "This profound heritage was carried forward by Sajeev’s mother, Bhanu. After marrying an Indian army officer, she made her momos famous in the Indian army messes. Her recipe was so beloved it is now a staple, served as hors d'oeuvres in messes across the region.",
       "From this incredible legacy, Sajeev, born and bred in Darjeeling, embarked on his own mission. With the same passion that a tea planter cultivates the perfect leaf, he nurtures every single momo. He spent more than a decade working as a tea planter for a British company before coming to Canada. What began as a humble operation has blossomed into a business that doesn't just sell food—it spreads a legacy of flavor and hospitality across a continent.",
       "Today, we are thrilled to be Canada's largest wholesale supplier of handcrafted momos. Our authentic flavors grace the menus of highly-rated restaurants from Vancouver to Halifax, proving that our Darjeeling-style momos are not just a meal, but a national sensation. This is more than a story you can taste; it's a legacy you'll fall in love with and crave again and again."
@@ -423,31 +348,18 @@
     "heading2": "Keep it in the freezer and enjoy it anytime. Nepali Momos Brampton momos are just awesome. We have many varieties of momos. 50 pieces in one packet with Nepali Momos Famous sauce. Get a taste of our mouth-watering momos! Handmade with love and bursting with flavours that'll leave you craving for more. The secret? We only use fresh ingredients and imported spices crafted by skilled cooks. Trust us, we've got the experience. Experience the spirit of Himalayan hospitality in our Flagship Outlet. We prides itself on providing rich Asian culinary traditions and recipes that are passed on for generations.",
     "subheading": "",
     "popup": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b83bfd92-c7df-47c6-b57a-86393a43006f_KOTTU%20KORNER.png",
-    "StaticReviews": [
+    "reviews": [
       {
-        "text": "We had an amazing experience here. The food and freshness was top notch. The coconut soup we tried - amazing.",
-        "name": "- Reetika Malhotra",
-        "image": "https://lh3.googleusercontent.com/a-/ALV-UjVOyOvjmc1fPJOnvw6AZGdo88ckgvV5y1165IP_gk-YALctFLI=w90-h90-p-rp-mo-ba3-br100"
+        "text": "This is the closest you can get to real, authentic and fresh momos. We are momo connoisseurs and our overall experience was nothing but fantastic. Great staff atmosphere, food and price. We are repeat customers for a good reason. Definitely recommend it!",
+        "name": "- Sudeep"
       },
       {
-        "text": "This place is a GEM💎!! It's authentic. Price value for quantity is 10/10. Would definitely visit Again. Vegetarian momo platter is a must try👍",
-        "name": "- Karan Kumar",
-        "image": "https://lh3.googleusercontent.com/a-/ALV-UjXy0P2UHxrJ5uiNRgh9BP9h_esQ9B5l8hprtKK5Pn4gym1dE2Q=w90-h90-p-rp-mo-ba3-br100"
+        "text": "Nepali Momos delivers authentic, juicy momos that steal the show! The Indian Hakka Chinese, like chili chicken, tastes better than your average spot. The Himalayan Buddhist ambience brings a serene, unique vibe. The staff is friendly and attentive, enhancing the meal. It’s a must-try for momo and Hakka fans!",
+        "name": "- K S"
       },
       {
-        "text": "Amazing! Amazing! Amazing! What great food. The excellent food is matched by excellence in Service by the staff and the ambience of this place. It's not too big but very welcoming and warm feeling all around. The food: This is undoubtedly the BEST momos I ever had in Toronto. Prices are reasonable and taste of the food is very authentic. Went there to try just Chicken Steam Momos, ended up savoring 2 portions and packing one BIG platter for Home.",
-        "name": "- Nilesh Rawat",
-        "image": "https://lh3.googleusercontent.com/a-/ALV-UjXAOWGCUc99TI4AOolYE5W8aaXd50SIqfM9P6SIVCFEg91IRDAUxg=w90-h90-p-rp-mo-ba4-br100"
-      },
-      {
-        "text": "We were craving for some authentic momos and some Chinese food and we landed on this restaurant. Best momos we have tried so far in GTA !! Super delicious and mouthwatering They have a huge variety of options and trust me each one is worth it !! Everything is freshly made Personally I loved their kurkure momos ..fried rice and chilly Panner was a hit as well momos literally stole the show!! Mango salad was a delight as it was so refreshing. If you are craving for some delicious momos then this is your place",
-        "name": "- ishi gahlaut",
-        "image": "https://lh3.googleusercontent.com/a-/ALV-UjWPBaI52_2QpgOSIy0uqzHjyviAQwvlHdx6cAcPAVvL61TDMDWT=w90-h90-p-rp-mo-ba4-br100"
-      },
-      {
-        "text": "Absolutely love this place! Tried their butter masala momos many times & they are always the best!! The tandoori momos are amazing too. Their noodle spring rolls are really unique - and they even come with a fresh mango salad that goes so well with them. Great food every single time 🌟",
-        "name": "- Akruti Patel",
-        "image": "https://lh3.googleusercontent.com/a/ACg8ocKV3gDxkft2bLhWeHxNaLGTKFmfq7fv7mLITdWOHb6wSHC_E8I=w90-h90-p-rp-mo-ba3-br100"
+        "text": "Such a delicious and authentic nepali momos. Too good! And they were fresh and handmade. This restaurant should be a top choice for anyone craving a true momos experience. Highly recommended!.",
+        "name": "- Divya Shah"
       }
     ],
     "aboutTitle": "Himalayan hospitality",
@@ -609,6 +521,14 @@
   },
   "menuImages": [
     {
+      "imageName": "Pop.jpeg",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6d87a9ad-934a-484d-9aec-210504712880_image-20250828-10165.jpeg"
+    },
+    {
+      "imageName": "Water.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f8d21aa5-3e9f-4507-af04-ddfe330c28d7_image-20250828-101928.png"
+    },
+    {
       "imageName": "Afgani Momos.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/4c48f093-e1c6-4cda-abb1-bf1c8ad81beb_Afgani%20Momos.png"
     },
@@ -622,7 +542,7 @@
     },
     {
       "imageName": "Chicken Momos.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fd28821c-34b8-4010-b3b3-8095d77e70e5_048a2d44-5ef8-466d-8719-4f500cd83fd1.jpg"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/acdea194-73f7-480e-8734-eae2fd07366e_Chicken%20Momos.png"
     },
     {
       "imageName": "Chilli Chicken Dry\/Gravy.png",
@@ -686,11 +606,11 @@
     },
     {
       "imageName": "Jhol Momo!.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9445734f-6f2b-4190-8139-249b5986421b_Jhol%20Momo%21.png"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ae381299-56f7-40b7-b2f0-2820cdc87b22_image-20251113-090516.png"
     },
     {
       "imageName": "Kurkure Momo Burgers.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/702888e7-3e79-4234-ba8a-0c69cc6b415d_Kurkure%20Momo%20Burgers.png"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/42c43546-9135-4c36-94ce-009118135794_1h.png"
     },
     {
       "imageName": "Kurkure Momos.png",
@@ -698,7 +618,7 @@
     },
     {
       "imageName": "Malai Paneer Momos.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d55751cc-ecae-47fa-a00d-33d6e4b8001a_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e9741a2b-65ea-4f20-9702-ecd137529911_Malai%20Paneer%20Momos.png"
     },
     {
       "imageName": "Manchurian.png",
@@ -718,7 +638,7 @@
     },
     {
       "imageName": "Pop.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/34bf85da-faba-46d5-a6da-98decbd7b69b_image-20250828-101655+%281%29.png"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d1bbf7b5-d850-44a9-9d69-d4cab16f71a0_Pop.png"
     },
     {
       "imageName": "Premium momos.png",
@@ -766,7 +686,7 @@
     },
     {
       "imageName": "Water.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ca02d163-0d2e-405b-9d6a-b56ba8581afe_3e4839bf-7732-4938-9443-56fe810ff952.jpg"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/56f88c9e-cfdd-4594-851a-c0060398222a_Water.png"
     },
     {
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3ba32983-8d3d-4bbd-ab51-c6e98b0a5f1b_image-20250823-100230.png",
@@ -782,58 +702,58 @@
     },
     {
       "imageName": "Mutton Momos.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/052e2320-3241-4dc1-9fe6-a28f783c9da9_a280e622-05d9-470c-8e3e-0dbde027d253.jpg"
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d5012e3a-9f11-4462-81eb-ef4ed83b6de5_mutton%20momo.jpg"
     },
     {
-      "imageName": "Chicken Momos.png",
+      "imageName": "Ckn.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/596c6e1d-c99d-4303-bb12-58f9ec79d974_chicken%20momos.png"
     },
     {
-      "imageName": "Chicken/Tofu Satay Skewers (50 Pcs).png",
+      "imageName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs).png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5ebf251d-bf84-4e00-8aa2-4c6d24960c8b_CHICKEN_TOFU%20SATAY%20SKEWERS.png"
     },
     {
-      "imageName": "Chilli Chicken/ Paneer Dry/Gravy (Salmon).png",
+      "imageName": "CHILLI CHK/ PANEER DRY/GRAVY (Salmon).png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fc11ca79-01f7-4b78-b382-ba440c88bceb_CHILLI%20CHK_%20PANEER%20DRY_GRAVY%20%28Salmon%29.png"
     },
     {
-      "imageName": "Chilli Chicken/ Paneer Dry/Gravy (Tilapia).png",
+      "imageName": "CHILLI CHK/ PANEER DRY/GRAVY (Tilipia).png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/768e28f8-fae6-41f4-b4a5-8d54399e28d2_CHILLI%20CHK_%20PANEER%20DRY_GRAVY%20%28Tilipia%29.png"
     },
     {
-      "imageName": "Curry Momos.png",
+      "imageName": "curry momos.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d6cb5798-b40f-4521-aabb-942e62b1ead1_curry%20momos.png"
     },
     {
-      "imageName": "Desi Chowmien.png",
+      "imageName": "DESI CHOWMIEN.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b9d1face-680d-4bd6-b0a0-ab89163a7bec_DESI%20CHOWMIEN.png"
     },
     {
-      "imageName": "Fried Rice.png",
+      "imageName": "FRIED RICE.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/87194ebc-2112-4fd6-8309-f19a3d714b59_FRIED%20RICE.png"
     },
     {
-      "imageName": "Exotic Fruits Tray.png",
+      "imageName": "EXOTIC FRUITS TRAY.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e420cb28-9f8c-409e-ac21-15609a012ca8_fruits%20tray.png"
     },
     {
-      "imageName": "Gobi Manchurian.png",
+      "imageName": "GOBI MANCHURIAN.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2bb2cb66-6fd4-4a50-a20b-7fd5d3496ab3_GOBI%20MANCHURIAN.png"
     },
     {
-      "imageName": "Malai Paneer Momos.png",
-      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d55751cc-ecae-47fa-a00d-33d6e4b8001a_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg"
+      "imageName": "Malai Paneer.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3e955957-6b85-4ac4-ac75-5de7783f4e4c_malai%20paneer%20momos.png"
     },
     {
-      "imageName": "Manchurian Dry/Gravy (Chicken).png",
+      "imageName": "MANCHURIAN DRY/GRAVY (Ckn).png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6258fcae-1b1a-4ed4-af0b-bf971270688e_MANCHURIAN%20DRY_GRAVY%20%28Ckn%29.png"
     },
     {
-      "imageName": "Manchurian Dry/Gravy (Veg).png",
+      "imageName": "MANCHURIAN DRY/GRAVY (Veg).png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6258fcae-1b1a-4ed4-af0b-bf971270688e_MANCHURIAN%20DRY_GRAVY%20%28Ckn%29.png"
     },
     {
-      "imageName": "Paneer Momos.png",
+      "imageName": "Paneer.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/364fbd0a-6455-4bca-83a0-0d18aa439cb1_paneer%20%20momos.png"
     },
     {
@@ -841,15 +761,15 @@
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cb8fcacd-4d1b-4b81-ad55-436029baa2b8_tandoori%20momos.png"
     },
     {
-      "imageName": "Thai Mango Salad (50 Pcs).png",
+      "imageName": "THAI MANGO SALAD (50 pcs).png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9d573fe6-0deb-4d60-9330-b9ad6b1c0539_Thai%20mango%20salad.png"
     },
     {
-      "imageName": "Veg Momos.png",
+      "imageName": "Veggi.png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c7833b4f-eca4-4347-89d9-a9200bcef145_veg%20momos.png"
     },
     {
-      "imageName": "Veg Spring Rolls (50 Pcs).png",
+      "imageName": "VEGGI SPRING ROLLS (50 pcs).png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c3fa9d4d-d570-43a2-9708-28665dfc0851_Veg%20spring%20rolls.png"
     }
   ],
@@ -888,2634 +808,832 @@
       "12 PM – 10 PM"
     ]
   ],
-  "Menu": [
+  "menu": [
     {
-      "categoryName": "All",
-      "routeName": "all",
-      "searchTerm": "all",
-      "items": []
-    },
-    {
-      "categoryName": "Soups",
-      "items": [
+      "backgroundImg": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/9c824b92-fc33-4056-b12c-086c5088660c.jpg",
+      "heading": "Delicious Cuisine",
+      "subheading": "DISCOVER OUR MENU",
+      "menu": [
         {
-          "itemName": "Classic Clear Soup Veg",
-          "itemDescription": "A light and comforting clear broth with fresh vegetables and mild seasoning.",
-          "itemPrice": "4.50",
-          "quantity": 1,
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ab9d5295-4a37-4ffd-9fce-48b598a84dd3_8f0afcf6-20ff-4446-9afd-5743c7e9b664.jpg",
-          "customization": [
+          "superCategory": [
             {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
+              "category": [
                 {
-                  "name": "Mild",
-                  "price": 0.00
+                  "categoryName": "All",
+                  "routeName": "all",
+                  "searchTerm": "all",
+                  "items": []
                 },
                 {
-                  "name": "Medium",
-                  "price": 0.00
+                  "categoryName": "Soups",
+                  "items": [
+                    {
+                      "itemName": "Classic Clear Soup(Veg)",
+                      "itemDescription": "This ClearSoup infused with aromatic herbs recipe is so healthy and has been in our family for generations.",
+                      "itemPrice": "4.50",
+                      "quantity": 1
+                    },
+                    {
+                      "itemName": "Classic Clear Soup(Non Veg)",
+                      "itemDescription": "This ClearSoup infused with aromatic herbs recipe is so healthy and has been in our family for generations.",
+                      "itemPrice": "5.50",
+                      "quantity": 1
+                    },
+                    {
+                      "itemName": "Thai Coconut soup(Veg)",
+                      "quantity": 1,
+                      "itemDescription": "Authentic Thai red curry broth, a fragrant blend of lemongrass, galangal, caraway leaves, and other aromatic herbs.",
+                      "itemPrice": "5.00"
+                    },
+                    {
+                      "itemName": "Thai Coconut soup(Non Veg)",
+                      "quantity": 1,
+                      "itemDescription": "Authentic Thai red curry broth, a fragrant blend of lemongrass, galangal, caraway leaves, and other aromatic herbs.",
+                      "itemPrice": "6.00"
+                    }
+                  ]
                 },
                 {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Classic Clear Soup Chicken",
-          "itemDescription": "A soothing clear broth with tender chicken and aromatic spices.",
-          "itemPrice": "5.50",
-          "quantity": 1,
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ab9d5295-4a37-4ffd-9fce-48b598a84dd3_8f0afcf6-20ff-4446-9afd-5743c7e9b664.jpg",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
+                  "categoryName": "Combo Deals",
+                  "items": [
+                    {
+                      "itemName": "Chai Samosa",
+                      "quantity": 1,
+                      "itemDescription": "Warm, spiced chai complements the crispy, flavorful samosas for a truly satisfying treat.",
+                      "itemPrice": "3.75"
+                    }
+                  ]
                 },
                 {
-                  "name": "Medium",
-                  "price": 0.00
+                  "categoryName": "Mini Meal 2 Go",
+                  "items": [
+                    {
+                      "itemName": "(Option A)",
+                      "itemDescription": "Best Value Momo, Chill Paneer, Chowmein or Fried Rice and Soup. Available in Veg or Chicken",
+                      "quantity": 1,
+                      "itemPrice": "9.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "BEST VALUE Momo, Chill Paneer, Chowmein or Fried Rice and Soup",
+                              "price": 0.00
+                            },
+                            {
+                              "name": "Pop or Tea For",
+                              "price": 1.00
+                            },
+                            {
+                              "name": "Available in Veg or Chicken",
+                              "price": 0.00
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "(Option B)",
+                      "itemDescription": "Momo Veggi Spring Rolls Mango, Salad And Soup. Available in Veg or Chicken",
+                      "quantity": 1,
+                      "itemPrice": "9.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Momo Veggi Spring Rolls Mango, Salad And Soup ",
+                              "price": 0.00
+                            },
+                            {
+                              "name": "Pop or Tea For",
+                              "price": 1.00
+                            },
+                            {
+                              "name": "Available in Veg or Chicken",
+                              "price": 0.00
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Thai Coconut Soup (Veg)",
-          "quantity": 1,
-          "itemDescription": "A creamy, aromatic Thai soup with coconut milk, lemongrass, and fresh vegetables.",
-          "itemPrice": "5.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/11c734cf-f877-4c63-974a-7922882a9527_70b3d164-dfe0-4c5d-bc6f-4d5384ae026c.jpg",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
+                  "categoryName": "Starters",
+                  "categoryDescription": "Hand-rolled, Tempura-fried, Delhi-style noodle spring rolls.",
+                  "items": [
+                    {
+                      "itemName": "Dilli Alle Noodles Spring rolls(2pcs)",
+                      "quantity": 1,
+                      "itemPrice": "6.00",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "2pcs",
+                              "price": 6.00
+                            },
+                            {
+                              "name": "6pcs",
+                              "price": 15.00
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Veggi Spring rolls(6pcs)",
+                      "quantity": 1,
+                      "itemDescription": "Perfect appetizer: Crispy, hand-rolled, tempura veg spring rolls.",
+                      "itemPrice": "12.00"
+                    },
+                    {
+                      "itemName": "Thai Mango Salad",
+                      "quantity": 1,
+                      "itemDescription": "Our best-seller for a reason: Sweet, tangy, and refreshing Thai Mango Salad.",
+                      "itemPrice": "10.00"
+                    },
+                    {
+                      "itemName": "Kurkure Momo Burgers",
+                      "quantity": 1,
+                      "itemDescription": "Our Kurkure Momos Burger features crispy, Kurkure-coated momos nestled in a soft bun with your favorite toppings and Fries",
+                      "itemPrice": "6.99"
+                    },
+                    {
+                      "itemName": "Honey Chilli Fries(regular)",
+                      "quantity": 1,
+                      "itemDescription": "Crispy, sweet, and spicy. Honey Chilli Fries done right. One of our best Sellers",
+                      "itemPrice": "5.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Regular",
+                              "price": 5.99
+                            },
+                            {
+                              "name": "Large",
+                              "price": 9.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "name": "Medium",
-                  "price": 0.00
+                  "categoryName": "Classic Momos",
+                  "categoryDescription": "Authentic Dar jeeling Style Momos",
+                  "items": [
+                    {
+                      "itemName": "Veggie Momos",
+                      "quantity": 1,
+                      "itemDescription": "Filled with fresh cabbage, carrots, and a blend of aromatic Himalayan herbs and salts, each momo is hand-Folded to perfection.",
+                      "itemPrice": "13.00"
+                    },
+                    {
+                      "itemName": "Chicken Momos",
+                      "quantity": 1,
+                      "itemDescription": "Can't resist these: Juicy chicken momos, a must-try at Nepali Momos Brampton. Hand Folded Filled with tender chicken onions and herbs",
+                      "itemPrice": "13.00"
+                    },
+                    {
+                      "itemName": "Mutton Momos",
+                      "quantity": 1,
+                      "itemDescription": "Tender and juicy Mutton Momos filled with fresh baby goat meat and traditional spices. A rich, flavorful experience in every handcrafted dumpling..",
+                      "itemPrice": "18.00"
+                    },
+                    {
+                      "itemName": "Paneer Momos",
+                      "quantity": 1,
+                      "itemDescription": "Hand-crafted Paneer Momos: Creamy, herb-infused delight.",
+                      "itemPrice": "15.00"
+                    },
+                    {
+                      "itemName": "Malai Paneer Momos",
+                      "quantity": 1,
+                      "itemDescription": "Our hand-crafted Malai Paneer Momos, filled with creamy paneer, cashews, aromatic herbs, and savory seasonings.",
+                      "itemPrice": "16.00"
+                    }
+                  ]
                 },
                 {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Thai Coconut Soup (Chicken)",
-          "quantity": 1,
-          "itemDescription": "A rich coconut-based Thai soup with tender chicken, infused with lemongrass and herbs.",
-          "itemPrice": "6.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/11c734cf-f877-4c63-974a-7922882a9527_70b3d164-dfe0-4c5d-bc6f-4d5384ae026c.jpg",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
+                  "categoryName": "Soupy Affair",
+                  "items": [
+                    {
+                      "itemName": "Thupka",
+                      "quantity": 1,
+                      "itemDescription": "A complete meal in itself, made with simple, pure ingredients for a truly comforting experience.",
+                      "itemPrice": "14.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken Thukpa",
+                              "price": 14.99
+                            },
+                            {
+                              "name": "Veggi Thupka",
+                              "price": 13.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Jhol Momo!",
+                      "quantity": 1,
+                      "itemDescription": "Steaming hot dumplings served with a flavorful, tangy Jhol infused with nutty flavors and a hint of Schezuan pepper for an extra kick for a truly authentic taste of Nepal.",
+                      "itemPrice": "16.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken\/Veg ",
+                              "price": 16.99
+                            },
+                            {
+                              "name": "nPaneer",
+                              "price": 18.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Thai Red Curry Soup Momos",
+                      "quantity": 1,
+                      "itemDescription": "Tender momos simmered in a rich and aromatic coconut milk based red curry broth, infused with lemongrass, galangal, caraway leaves, and other fragrant Thai herbs. It's soul food at its best.",
+                      "itemPrice": "16.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken\/Veg",
+                              "price": 16.99
+                            },
+                            {
+                              "name": "Paneer",
+                              "price": 18.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "name": "Medium",
-                  "price": 0.00
+                  "categoryName": "Fusion Momos",
+                  "categoryDescription": "Reinventing the Momo.",
+                  "items": [
+                    {
+                      "itemName": "Tandoori Momos",
+                      "quantity": 1,
+                      "itemDescription": "Experience the smoky char and juicy tenderness of our best-selling Tandoori Momos. These flavorful dumplings are marinated in a blend of aromatic spices and then cooked to perfection.",
+                      "itemPrice": "16.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken\/Veg",
+                              "price": 16.99
+                            },
+                            {
+                              "name": "Paneer",
+                              "price": 18.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Kurkure Momos",
+                      "quantity": 1,
+                      "itemDescription": "Get ready for a flavor explosion! Our Kurkure Momos feature a tempura-style coating fried to crispy perfection, drizzled with smoky chipotle sauce, and finished with a fiery dusting of peri-peri.",
+                      "itemPrice": "16.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Chicken\/Veg",
+                              "price": 16.99
+                            },
+                            {
+                              "name": "Paneer",
+                              "price": 18.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "name": "Hot",
-                  "price": 0.00
+                  "categoryName": "Platters",
+                  "items": [
+                    {
+                      "itemName": "Momo-Licious Platter",
+                      "quantity": 1,
+                      "itemDescription": "Can't decide? The Momo-licious Platter has it all! Four delicious Momo styles served with soup.4 pcs of each delicate Steamed Momos, Savory Pan-fried, Fiery Chilli Momos, Smoky Tandoori, and Ultra-Crispy Kurkure Fried.It's a Momo lover's dream!",
+                      "itemPrice": "26.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg",
+                              "price": 26.99
+                            },
+                            {
+                              "name": "ckn",
+                              "price": 26.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Curry-Licious Platter",
+                      "quantity": 1,
+                      "itemDescription": "Momos Tossed in our famed Afagani, Butter masala and Chilli Curries with plain steamed Momos, 5 pcs each served with our soup,20 pcs altogether.",
+                      "itemPrice": "26.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg",
+                              "price": 26.99
+                            },
+                            {
+                              "name": "ckn",
+                              "price": 26.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Premium momos",
+                      "quantity": 1,
+                      "itemDescription": "Experience the delight of our premium Momos. Handcrafted and generously filled, made fresh to order for ultimate flavor. Indulge in plump, handcrafted premium Momos! Almost double the filling, made fresh to order, and filled with flavors you fancy. 6 pcs served with 3 Dipping sauces and a Classic Clear soup,a soulful meal indeed.",
+                      "itemPrice": "13.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg\/Ckn",
+                              "price": 13.99
+                            },
+                            {
+                              "name": "Paneer",
+                              "price": 26.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Family Platter",
+                      "quantity": 1,
+                      "itemDescription": "Family Feast: Delicious Food, Amazing Value! Get your family togetherfor a feast they won't forget! Choose between Momolicious or Currylicious Platter, plus Manchurian (Veg or Chicken), Desi Chowmein Veg or Desi Fried Rice Vegand 4 POP. All at one great price!",
+                      "itemPrice": "47.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg",
+                              "price": 47.99
+                            },
+                            {
+                              "name": "ckn",
+                              "price": 47.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Mains",
+                  "items": [
+                    {
+                      "itemName": "Chilli Chicken Dry\/Gravy",
+                      "quantity": 1,
+                      "itemDescription": "Crispy fried chicken tossed in a fiery chilli garlic sauce.",
+                      "itemPrice": "13.99"
+                    },
+                    {
+                      "itemName": "Manchurian",
+                      "quantity": 1,
+                      "itemDescription": "Crispy fried balls in a tangy, sweet, and spicy Manchurian sauce.",
+                      "itemPrice": "15.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "ckn",
+                              "price": 15.99
+                            },
+                            {
+                              "name": "Veg",
+                              "price": 13.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Desi Chowmein",
+                      "quantity": 1,
+                      "itemDescription": "A delicious combination of stir-fried noodles, fresh vegetables (and tender chicken), and a flavorful blend of spices and sauces.",
+                      "itemPrice": "14.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "ckn",
+                              "price": 14.99
+                            },
+                            {
+                              "name": "Veg",
+                              "price": 12.99
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "itemName": "Fried Rice",
+                      "quantity": 1,
+                      "itemDescription": "Fluffy rice, fresh veggies (and chicken), aromatic spices, and savory sauces. A crowd-pleaser.",
+                      "itemPrice": "14.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "ckn",
+                              "price": 14.99
+                            },
+                            {
+                              "name": "Veg",
+                              "price": 12.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Thali",
+                  "categoryDescription": "8 Iteams (Chicken\/Veg) Our Signature Desi Chinese Thali offers a diverse array of dishes showcasing the best of both cuisines.",
+                  "items": [
+                    {
+                      "itemName": "Signature Thali Desi Chinese",
+                      "quantity": 1,
+                      "itemDescription": "Chowmien, Fried Rice, Thai Mango Salad, Veg/Chicken Manchurian, Chilli Paneer/Chicken Chilli, 1 Spring Roll, 1 Veg/ Ckn Momo, Clear Soup, Hot Gulabo The Gulabjamun",
+                      "itemPrice": "13.99",
+                      "customization": [
+                        {
+                          "custName": "Select Option",
+                          "custDescription": "Choose your option",
+                          "required": "true",
+                          "cust": [
+                            {
+                              "name": "Veg Thali",
+                              "price": 13.99
+                            },
+                            {
+                              "name": "Non-Veg Thali",
+                              "price": 13.99
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Kids Momo Meal",
+                  "items": [
+                    {
+                      "itemName": "Kids Momo Meal",
+                      "quantity": 1,
+                      "itemDescription": "Five delicious Momos steamed, crispy fries, a refreshing juice box, and a sweet Gulab jamun with choice of dipping sauce. The perfect kid-friendly meal.",
+                      "itemPrice": "10.99"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Dessert",
+                  "items": [
+                    {
+                      "itemName": "\"Gulabo\" The Gulab Jamun \nA classic Indian dessert.",
+                      "quantity": 1,
+                      "itemDescription": "Soft, melt-in-your-mouth milk balls soaked in a fragrant rose-flavored syrup, served hot and sprinkled with coconut shavings and pistachios. A truly decadent Indian dessert.",
+                      "itemPrice": "5.99"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "Beverage",
+                  "items": [
+                    {
+                      "itemName": "Masala Chai",
+                      "quantity": 1,
+                      "itemDescription": "A fragrant blend of black tea, aromatic spices like cardamom, cinnamon, and ginger,and creamy milk, creating a warm and comforting beverage that's perfect for any time of day.",
+                      "itemPrice": "2.75"
+                    },
+                    {
+                      "itemName": "Dar jeeling Tea",
+                      "quantity": 1,
+                      "itemDescription": "\"Champagne of Teas,\" this delicate and aromatic tea boasts a unique muscatel flavor and a bright, uplifting character. Grown in the misty hills of Darjeeling, India, it's a truly exquisite experience.",
+                      "itemPrice": "2.75"
+                    },
+                    {
+                      "itemName": "Pop",
+                      "quantity": 1,
+                      "itemPrice": "1.50"
+                    },
+                    {
+                      "itemName": "Water",
+                      "quantity": 1,
+                      "itemPrice": "1.50"
+                    },
+                    {
+                      "itemName": "Fiji Water",
+                      "quantity": 1,
+                      "itemPrice": "2.50"
+                    },
+                    {
+                      "itemName": "Red Bull",
+                      "quantity": 1,
+                      "itemPrice": "4.50"
+                    }
+                  ]
                 }
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "categoryName": "Combo Deals",
-      "items": [
+      ],
+      "menu2": [
         {
-          "itemName": "Chai Samosa (Veg)",
-          "quantity": 1,
-          "itemDescription": "Crispy samosas served with a hot cup of spiced masala chai.",
-          "itemPrice": "3.75",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/29500c5a-346f-4718-aa45-df48ab12614c_Adobe%20Express%20-%20file.png",
-          "customization": [
+          "superCategory": [
             {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
+              "category": [
                 {
-                  "name": "Classic Red Chutney",
-                  "price": 0.00
+                  "categoryName": "All",
+                  "routeName": "all",
+                  "searchTerm": "all",
+                  "items": [
+                    {
+                      "itemName": "THAI MANGO SALAD (50 pcs)",
+                      "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
+                      "quantity": 1,
+                      "itemPrice": "35.00"
+                    },
+                    {
+                      "itemName": "VEGGI SPRING ROLLS (50 pcs)",
+                      "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
+                      "quantity": 1,
+                      "itemPrice": "35.00"
+                    },
+                    {
+                      "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
+                      "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
+                      "quantity": 1,
+                      "itemPrice": "65.00"
+                    }
+                  ]
                 },
                 {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
+                  "categoryName": "STARTER",
+                  "items": [
+                    {
+                      "itemName": "THAI MANGO SALAD (50 pcs)",
+                      "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
+                      "quantity": 1,
+                      "itemPrice": "35.00"
+                    },
+                    {
+                      "itemName": "VEGGI SPRING ROLLS (50 pcs)",
+                      "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
+                      "quantity": 1,
+                      "itemPrice": "35.00"
+                    },
+                    {
+                      "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
+                      "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
+                      "quantity": 1,
+                      "itemPrice": "65.00"
+                    }
+                  ]
                 },
                 {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
+                  "categoryName": "MAINS",
+                  "items": [
+                    {
+                      "itemName": "CHILLI CHK/ PANEER DRY/GRAVY (Tilipia)",
+                      "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
+                      "quantity": 1,
+                      "itemPrice": "65.00"
+                    },
+                    {
+                      "itemName": "CHILLI CHK/ PANEER DRY/GRAVY (Salmon)",
+                      "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
+                      "quantity": 1,
+                      "itemPrice": "75.00"
+                    },
+                    {
+                      "itemName": "GOBI MANCHURIAN",
+                      "itemDescription": "Crispy fried cauliflower florets tossed in a tangy, sweet, and spicy Manchurian sauce. A vegetarian Indo-Chinese classic.",
+                      "quantity": 1,
+                      "itemPrice": "45.00"
+                    },
+                    {
+                      "itemName": "MANCHURIAN DRY/GRAVY (Veg)",
+                      "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
+                      "quantity": 1,
+                      "itemPrice": "45.00"
+                    },
+                    {
+                      "itemName": "MANCHURIAN DRY/GRAVY (Ckn)",
+                      "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
+                      "quantity": 1,
+                      "itemPrice": "55"
+                    },
+                    {
+                      "itemName": "FRIED RICE",
+                      "itemDescription": "Fluffy rice stir-fried with a medley of fresh vegetables (and tender chicken/egg/shrimp if you choose), aromatic spices, and savory sauces. A true crosed-pleaser.",
+                      "quantity": 1,
+                      "itemPrice": "40.00"
+                    },
+                    {
+                      "itemName": "DESI CHOWMIEN",
+                      "itemDescription": "Popular Indo-Chinese noodles stir-fried with a medley of vegetables (and chicken), aromatic spices, and a flavorful Desi-inspired sauce. A true comfort food classic.",
+                      "quantity": 1,
+                      "itemPrice": "45.00"
+                    }
+                  ]
                 },
                 {
-                  "name": "Red Bull",
-                  "price": 2.50
+                  "categoryName": "RETAIL MOMOS",
+                  "categoryDescription": "Brampton's favorite Momos, now in your freezer! Our famous chutney is the cherry on top.Get your Nepali Momo fix anytime! Our frozen Momos are the perfect solution for busy Momo lovers. Simply take them home, prepare them quickly, and enjoy the authentic taste of Brampton's best, complete with our signature chutneys.",
+                  "items": [
+                    {
+                      "itemName": "Veggi",
+                      "quantity": 1,
+                      "itemPrice": "45",
+                      "itemDescription": "50 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Ckn",
+                      "quantity": 1,
+                      "itemPrice": "50",
+                      "itemDescription": "50 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Paneer",
+                      "quantity": 1,
+                      "itemPrice": "55",
+                      "itemDescription": "50 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Malai Paneer",
+                      "quantity": 1,
+                      "itemPrice": "60",
+                      "itemDescription": "50 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Veggi",
+                      "quantity": 1,
+                      "itemPrice": "15.00",
+                      "itemDescription": "15 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Ckn",
+                      "quantity": 1,
+                      "itemPrice": "15.00",
+                      "itemDescription": "15 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Paneer",
+                      "quantity": 1,
+                      "itemPrice": "16.00",
+                      "itemDescription": "15 PCS RETAIL BAGS"
+                    },
+                    {
+                      "itemName": "Malai Paneer",
+                      "quantity": 1,
+                      "itemPrice": "18.00",
+                      "itemDescription": "15 PCS RETAIL BAGS"
+                    }
+                  ]
                 },
                 {
-                  "name": "Pop",
-                  "price": 1.00
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Mini Meal 2 Go",
-      "items": [
-        {
-          "itemName": "Mini Meal 2 Go (Option A)",
-          "quantity": 1,
-          "itemDescription": "A quick meal with momos, chili paneer, chowmein or fried rice, and a warm soup.",
-          "itemPrice": "9.99",
-          "custPrice": "9.99 - 10.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/bfb30b2d-6251-44c6-87b3-1b2727f5c25b_12.png",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "BEST VALUE Momo, Chill Paneer, Chowmein or Fried Rice and Soup",
-                  "price": 0.00
+                  "categoryName": "MOMOS",
+                  "categoryDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 5o PCS STEAMED",
+                  "items": [
+                    {
+                      "itemName": "Veggi",
+                      "itemDescription": "Add 5 for Fried",
+                      "quantity": 1,
+                      "itemPrice": "40.00"
+                    },
+                    {
+                      "itemName": "Ckn",
+                      "itemDescription": "Add 5 for Fried",
+                      "quantity": 1,
+                      "itemPrice": "45.00"
+                    },
+                    {
+                      "itemName": "Paneer",
+                      "itemDescription": "Add 5 for Fried",
+                      "quantity": 1,
+                      "itemPrice": "50.00"
+                    },
+                    {
+                      "itemName": "Malai Paneer",
+                      "itemDescription": "Add 5 for Fried",
+                      "quantity": 1,
+                      "itemPrice": "55.00"
+                    },
+                    {
+                      "itemName": "TANDOORI MOMOS",
+                      "itemDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 50 ADD $10.00 TANDOORI MOMOS",
+                      "quantity": 1,
+                      "itemPrice": "60.00"
+                    },
+                    {
+                      "itemName": "CURRY MOMOS",
+                      "itemDescription": "A DELICIOUS ASSORTMENT OF TENDER MOMOS TOSSED IN THREE FLAVORFUL CURRIES, CHILLI, AFGHANI, AND BUTTER MASALA, PERFECT FOR SHARING WITH FRIENDS ANDFAMILY. 50 PCS ADD $10.00",
+                      "quantity": 1,
+                      "itemPrice": "60.00"
+                    }
+                  ]
                 },
                 {
-                  "name": "Pop or Tea For",
-                  "price": 1.00
-                },
-                {
-                  "name": "Available in Veg or Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Classic Red Chutney",
-                  "price": 0.00
-                },
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose your Main course",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chowmein",
-                  "price": 0.00
-                },
-                {
-                  "name": "Fried Rice",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Your Choices",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Noodles",
-                  "price": 0.00
-                },
-                {
-                  "name": "Fried Rice",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Your Choice 2",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Manchurian",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chilly",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Mini meal combo offer",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 1.00
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 1.00
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                },
-                {
-                  "name": "Pop",
-                  "price": 1.00
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Mini Meal 2 Go (Option B)",
-          "quantity": 1,
-          "itemDescription": "A Thai-inspired meal featuring coconut soup, momos, veggie spring rolls, and mango salad.",
-          "itemPrice": "9.99",
-          "custPrice": "9.99 - 10.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/12e1dacb-64a8-4779-8a29-87bb891c1e52_13+%283%29.png",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Momo Veggi Spring Rolls Mango, Salad And Soup",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pop or Tea For",
-                  "price": 1.00
-                },
-                {
-                  "name": "Available in Veg or Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Classic Red Chutney",
-                  "price": 0.00
-                },
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Mini meal combo offer",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 1.00
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 1.00
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                },
-                {
-                  "name": "Pop",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
+                  "categoryName": "EXOTIC FRUITS TRAY",
+                  "items": [
+                    {
+                      "itemName": "EXOTIC FRUITS TRAY",
+                      "itemDescription": "A VIBRANT DISPLAY OF NATURE'S FINEST FRUITS, INCLUDING PASSION FRUIT, MANGO, BANANA, DRAGON FRUIT, LYCHEE. STAR FRUIT, GRAPES, MELONS. WATERMELON, PINEAPPLE. AND FRESH COCONUT. A REFRESHING AND HEALTHY TREAT FOR ANY OCCASION.",
+                      "quantity": 1,
+                      "itemPrice": "60.00"
+                    }
+                  ]
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Starters",
-      "categoryDescription": "Hand-rolled, Tempura-fried, Delhi-style noodle spring rolls.",
-      "items": [
-        {
-          "itemName": "Dilli Alle Noodles Spring rolls",
-          "quantity": 1,
-          "itemDescription": "Crunchy spring rolls packed with noodles and flavorful seasoning.",
-          "itemPrice": "0.00",
-          "custPrice": "6.00 - 15.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3be8e429-7279-45fd-b5b5-c07c2cc0407f_Veg%20Spring%20Roll.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "2pcs",
-                  "price": 6.00,
-                  "description": "Crunchy spring rolls packed with noodles and flavorful seasoning.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3be8e429-7279-45fd-b5b5-c07c2cc0407f_Veg%20Spring%20Roll.jpg"
-                },
-                {
-                  "name": "6pcs",
-                  "price": 15.00,
-                  "description": "A generous portion of crispy noodle-filled spring rolls, perfect for sharing.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dd39c1d6-2ff3-4af8-b7ac-4dff88c7eb2e_da82734d-650c-495a-b805-46ce5dfe6063.jpg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Veggie Spring Rolls",
-          "quantity": 1,
-          "itemDescription": "Crispy spring rolls stuffed with a mix of fresh vegetables and aromatic spices.",
-          "itemPrice": "12.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8b4bbacb-31f3-400d-b55f-46523ab8fee3_Adobe%20Express%20-%20file%20%282%29.jpg"
-        },
-        {
-          "itemName": "Thai Mango Salad",
-          "quantity": 1,
-          "itemDescription": "A refreshing Thai-style mango salad with a tangy and slightly spicy dressing.",
-          "itemPrice": "10.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cfd620f9-a5b4-49aa-8fd0-ebff9444b3db_3666a2b2-84f5-45b2-834b-8d143efffc07.jpg",
-          "customization": [
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Kurkure Momo Burgers",
-          "quantity": 1,
-          "itemDescription": "A crispy, deep-fried momo patty served in a soft burger bun with flavorful sauces.",
-          "itemPrice": "6.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/95f19bc5-97b2-4da8-a574-11b50db4dd13_92b16e4e-59b9-476c-801a-ef20a2a660c1.jpg",
-          "customization": [
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Honey Chilli Fries",
-          "quantity": 1,
-          "itemDescription": "Crispy fries tossed in a sweet and spicy honey chili glaze.",
-          "itemPrice": "0.00",
-          "custPrice": "5.99 - 9.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d9e8268a-5d09-498e-bd17-a89788216bba_1235adce-fd19-4355-af9c-c889f948d7ee.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Regular",
-                  "price": 5.99,
-                  "description": "Crispy fries tossed in a sweet and spicy honey chili glaze.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d9e8268a-5d09-498e-bd17-a89788216bba_1235adce-fd19-4355-af9c-c889f948d7ee.jpg"
-                },
-                {
-                  "name": "Large",
-                  "price": 9.99,
-                  "description": "A larger portion of golden fries coated in a bold honey chili sauce.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d9e8268a-5d09-498e-bd17-a89788216bba_1235adce-fd19-4355-af9c-c889f948d7ee.jpg"
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Curry Momos",
-      "categoryDescription": "Momos Swimming in a Sea of Delicious Curry.",
-      "items": [
-        {
-          "itemName": "Chilli Momos",
-          "quantity": 1,
-          "itemDescription": "",
-          "itemPrice": "3.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f61a7d37-c381-4ef1-831e-47dfbcda42cc_1e860c40-7646-4047-8ac1-a6a7e66f88a6.jpg"
-        },
-        {
-          "itemName": "Afgani Momos",
-          "quantity": 1,
-          "itemDescription": "",
-          "itemPrice": "3.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/576e7094-6020-4310-8a08-b140d9dfd650_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg"
-        },
-        {
-          "itemName": "Butter M Momos",
-          "quantity": 1,
-          "itemDescription": "",
-          "itemPrice": "3.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/021966e5-24de-4d4a-87fc-fbcb72b37fa5_9bc0ddd8-07a0-4873-823f-7e978c9886d8.jpg"
-        }
-      ]
-    },
-    {
-      "categoryName": "Classic Momos",
-      "categoryDescription": "Authentic Dar jeeling Style Momos",
-      "items": [
-        {
-          "itemName": "Veggie Momos",
-          "quantity": 1,
-          "itemDescription": "Soft, steamed dumplings filled with a flavorful vegetable mixture.",
-          "itemPrice": "13.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/92530213-6820-4eda-b35e-a66a5482e55d_19+%281%29.png",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose Curry Types",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chilly Curry",
-                  "price": 3.00
-                },
-                {
-                  "name": "Butter Masala Curry",
-                  "price": 3.00
-                },
-                {
-                  "name": "Afghani Curry",
-                  "price": 3.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Chicken Momos",
-          "quantity": 1,
-          "itemDescription": "Juicy dumplings filled with minced chicken and aromatic spices.",
-          "itemPrice": "13.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fd28821c-34b8-4010-b3b3-8095d77e70e5_048a2d44-5ef8-466d-8719-4f500cd83fd1.jpg",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose Curry Types",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chilly Curry",
-                  "price": 3.00
-                },
-                {
-                  "name": "Butter Masala Curry",
-                  "price": 3.00
-                },
-                {
-                  "name": "Afghani Curry",
-                  "price": 3.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Mutton Momos",
-          "quantity": 1,
-          "itemDescription": "Tender and juicy Mutton Momos filled with fresh baby goat meat and traditional spices. A rich, flavorful experience in every handcrafted dumpling..",
-          "itemPrice": "18.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/052e2320-3241-4dc1-9fe6-a28f783c9da9_a280e622-05d9-470c-8e3e-0dbde027d253.jpg"
-        },
-        {
-          "itemName": "Paneer Momos",
-          "quantity": 1,
-          "itemDescription": "Steamed dumplings stuffed with spiced paneer and herbs.",
-          "itemPrice": "15.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/71d461df-18c3-4a34-9668-294a36e9f519_7e8365cf-ab58-4d45-add2-b98ef7c9b53d.jpg",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose Curry Types",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chilly Curry",
-                  "price": 3.00
-                },
-                {
-                  "name": "Butter Masala Curry",
-                  "price": 3.00
-                },
-                {
-                  "name": "Afghani Curry",
-                  "price": 3.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Malai Paneer Momos",
-          "quantity": 1,
-          "itemDescription": "Creamy paneer-stuffed momos with a rich, mildly spiced filling.",
-          "itemPrice": "16.00",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d55751cc-ecae-47fa-a00d-33d6e4b8001a_d873a26c-9f68-46bb-9ab8-9fd6982b46f1.jpg",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose Curry Types",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chilly Curry",
-                  "price": 3.00
-                },
-                {
-                  "name": "Butter Masala Curry",
-                  "price": 3.00
-                },
-                {
-                  "name": "Afghani Curry",
-                  "price": 3.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Soupy Affair",
-      "items": [
-        {
-          "itemName": "Thupka",
-          "quantity": 1,
-          "itemDescription": "A comforting noodle soup with vegetables in a fragrant broth.",
-          "itemPrice": "0.00",
-          "custPrice": "13.99 - 14.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/915db626-9c66-48d8-b763-d7ec96ebbc8f_24+%281%29.png",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chicken Thukpa",
-                  "price": 14.99,
-                  "description": "A hearty Tibetan noodle soup with chicken and a flavorful broth.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/915db626-9c66-48d8-b763-d7ec96ebbc8f_24+%281%29.png"
-                },
-                {
-                  "name": "Veggie Thukpa",
-                  "price": 13.99,
-                  "description": "A comforting noodle soup with vegetables in a fragrant broth.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/915db626-9c66-48d8-b763-d7ec96ebbc8f_24+%281%29.png"
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Jhol Momo",
-          "quantity": 1,
-          "itemDescription": "Momos served in a spicy and tangy Nepali-style broth.",
-          "itemPrice": "0.00",
-          "custPrice": "16.99 - 18.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/64cc5d81-30a9-4ebc-87d8-69fc1983e81d_25.png",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chicken/Veg",
-                  "price": 16.99,
-                  "description": "Momos served in a spicy and tangy Nepali-style broth.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/64cc5d81-30a9-4ebc-87d8-69fc1983e81d_25.png"
-                },
-                {
-                  "name": "Paneer",
-                  "price": 18.99,
-                  "description": "Paneer-filled momos submerged in a flavorful Nepali-style soup.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/64cc5d81-30a9-4ebc-87d8-69fc1983e81d_25.png"
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Thai Red Curry Soup Momos",
-          "quantity": 1,
-          "itemDescription": "Momos drenched in a creamy, spiced Thai red curry soup.",
-          "itemPrice": "0.00",
-          "custPrice": "16.99 - 18.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/bf5c0284-51d1-46a5-96ef-4d128b6cb2c7_26+%281%29.png",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chicken/Veg",
-                  "price": 16.99,
-                  "description": "Momos drenched in a creamy, spiced Thai red curry soup.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/bf5c0284-51d1-46a5-96ef-4d128b6cb2c7_26+%281%29.png"
-                },
-                {
-                  "name": "Paneer",
-                  "price": 18.99,
-                  "description": "Paneer-stuffed momos paired with a bold Thai red curry broth.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/bf5c0284-51d1-46a5-96ef-4d128b6cb2c7_26+%281%29.png"
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Fusion Momos",
-      "categoryDescription": "Reinventing the Momo.",
-      "items": [
-        {
-          "itemName": "Tandoori Momos",
-          "quantity": 1,
-          "itemDescription": "Char-grilled momos infused with smoky tandoori spices.",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/68b8b728-875d-441f-b226-f33ea612e086_27.png",
-          "itemPrice": "0.00",
-          "custPrice": "16.99 - 18.99",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chicken/Veg",
-                  "price": 16.99,
-                  "description": "Char-grilled momos infused with smoky tandoori spices.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/68b8b728-875d-441f-b226-f33ea612e086_27.png"
-                },
-                {
-                  "name": "Paneer",
-                  "price": 18.99,
-                  "description": "Paneer-stuffed momos roasted with aromatic tandoori seasoning.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/68b8b728-875d-441f-b226-f33ea612e086_27.png"
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Kurkure Momos",
-          "quantity": 1,
-          "itemDescription": "Crispy deep-fried momos with a crunchy outer layer.",
-          "itemPrice": "0.00",
-          "custPrice": "16.99 - 18.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f37c41c6-c192-43c6-844b-088c0c99da72_b8788762-b78d-4b26-946c-b9fb73602beb.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chicken/Veg",
-                  "price": 16.99,
-                  "description": "Crispy deep-fried momos with a crunchy outer layer.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f37c41c6-c192-43c6-844b-088c0c99da72_b8788762-b78d-4b26-946c-b9fb73602beb.jpg"
-                },
-                {
-                  "name": "Paneer",
-                  "price": 18.99,
-                  "description": "Paneer-filled momos coated in a crunchy batter and fried to perfection.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f37c41c6-c192-43c6-844b-088c0c99da72_b8788762-b78d-4b26-946c-b9fb73602beb.jpg"
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Platters",
-      "items": [
-        {
-          "itemName": "Momo-Licious Platter",
-          "quantity": 1,
-          "itemDescription": "A sampler platter of steamed, pan-fried, chili, tandoori, and crispy kurkure momos with soup.",
-          "itemPrice": "0.00",
-          "custPrice": "26.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7046d42b-15d5-450d-8d9b-7a2b67736ee8_Adobe%20Express%20-%20file%20%287%29.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 26.99
-                },
-                {
-                  "name": "Chicken",
-                  "price": 26.99
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Curry-Licious Platter",
-          "quantity": 1,
-          "itemDescription": "A mix of momos tossed in Afghani, butter masala, and chili curries, served with soup.",
-          "itemPrice": "0.00",
-          "custPrice": "26.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dde071b1-b64c-4097-b88e-0a6ada61d537_Adobe%20Express%20-%20file%20%281%29.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 26.99
-                },
-                {
-                  "name": "Chicken",
-                  "price": 26.99
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Premium momos",
-          "quantity": 1,
-          "itemDescription": "Experience the delight of our premium Momos. Handcrafted and generously filled, made fresh to order for ultimate flavor. Indulge in plump, handcrafted premium Momos! Almost double the filling, made fresh to order, and filled with flavors you fancy. 6 pcs served with 3 Dipping sauces and a Classic Clear soup,a soulful meal indeed.",
-          "itemPrice": "0.00",
-          "custPrice": "13.99 - 26.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8f8e46f0-36c7-45b0-baa1-d30eccec775b_31.png",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "(Veg/Chicken)",
-                  "price": 13.99,
-                  "description": "Handcrafted momos with double the filling, served with soup and three dipping sauces.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8f8e46f0-36c7-45b0-baa1-d30eccec775b_31.png"
-                },
-                {
-                  "name": "Paneer",
-                  "price": 26.99,
-                  "description": "Luxuriously stuffed paneer momos with rich flavors, served with soup and dips.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8f8e46f0-36c7-45b0-baa1-d30eccec775b_31.png"
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Family Platter",
-          "quantity": 1,
-          "itemDescription": "A grand feast featuring a selection of momos, curries, fried rice, and sides.",
-          "itemPrice": "0.00",
-          "custPrice": "47.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c00cb127-ca9b-48c4-91fa-abe59dafabbd_593c39be-7dd2-44e9-b43b-4fdb42f19c65.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 47.99
-                },
-                {
-                  "name": "Chicken",
-                  "price": 47.99
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Mains",
-      "items": [
-        {
-          "itemName": "Chilli Paneer (Dry/Gravy)",
-          "quantity": 1,
-          "itemDescription": "Paneer cubes sautéed in a bold, spicy chili sauce, available dry or with gravy.",
-          "itemPrice": "13.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e1f2acb6-d057-4ce9-97ae-244039431c6a_34.png",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Style",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Dry",
-                  "price": 0.00
-                },
-                {
-                  "name": "Gravy",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Chilli Chicken (Dry/Gravy)",
-          "quantity": 1,
-          "itemDescription": "Stir-fried chicken tossed in a spicy chili sauce, available dry or with gravy.",
-          "itemPrice": "13.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/76af39a6-9bd1-4674-8a26-e52fdf49480c_192427d0-5904-41c6-b925-81a3318234ee.jpg",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Style",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Dry",
-                  "price": 0.00
-                },
-                {
-                  "name": "Gravy",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Manchurian",
-          "quantity": 1,
-          "itemDescription": "Crispy vegetable balls coated in a tangy and spicy Manchurian sauce.",
-          "itemPrice": "0.00",
-          "custPrice": "13.99 - 15.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/803bdac1-e2c3-452b-87b5-e03bc5961031_4c8eed4d-b88f-48c6-bd64-0960bc97ccbf.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chicken",
-                  "price": 15.99,
-                  "description": "Deep-fried chicken bites smothered in a flavorful Indo-Chinese Manchurian sauce.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c22b46b5-4c9d-410c-8b39-0be95acfd67c_4c8eed4d-b88f-48c6-bd64-0960bc97ccbf%20%281%29.jpg"
-                },
-                {
-                  "name": "Veg",
-                  "price": 13.99,
-                  "description": "Crispy vegetable balls coated in a tangy and spicy Manchurian sauce.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/803bdac1-e2c3-452b-87b5-e03bc5961031_4c8eed4d-b88f-48c6-bd64-0960bc97ccbf.jpg"
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Desi Chowmein",
-          "quantity": 1,
-          "itemDescription": "Stir-fried noodles tossed with crunchy vegetables and Indian-Chinese flavors.",
-          "itemPrice": "0.00",
-          "custPrice": "12.99 - 14.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/437b2727-5317-4a10-a201-89a0f04ce5ef_a2cf85e4-4262-4074-b281-62f790b8f0ca.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chicken",
-                  "price": 14.99,
-                  "description": "Flavorful chowmein loaded with seasoned chicken and stir-fried vegetables.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/437b2727-5317-4a10-a201-89a0f04ce5ef_a2cf85e4-4262-4074-b281-62f790b8f0ca.jpg"
-                },
-                {
-                  "name": "Veg",
-                  "price": 12.99,
-                  "description": "Stir-fried noodles tossed with crunchy vegetables and Indian-Chinese flavors.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/437b2727-5317-4a10-a201-89a0f04ce5ef_a2cf85e4-4262-4074-b281-62f790b8f0ca.jpg"
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "itemName": "Fried Rice",
-          "quantity": 1,
-          "itemDescription": "Fragrant fried rice with fresh veggies and a hint of soy sauce.",
-          "itemPrice": "0.00",
-          "custPrice": "12.99 - 14.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a4e02334-05b2-430d-a1b4-c2718541c95d_1861a52d-0833-4dd1-9f2b-a708f3f6dc37.jpg",
-          "customization": [
-            {
-              "custName": "Select Option",
-              "custDescription": "Choose your option",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Chicken",
-                  "price": 14.99,
-                  "description": "Savory fried rice stir-fried with seasoned chicken and crunchy vegetables.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a4e02334-05b2-430d-a1b4-c2718541c95d_1861a52d-0833-4dd1-9f2b-a708f3f6dc37.jpg"
-                },
-                {
-                  "name": "Veg",
-                  "price": 12.99,
-                  "description": "Fragrant fried rice with fresh veggies and a hint of soy sauce.",
-                  "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a4e02334-05b2-430d-a1b4-c2718541c95d_1861a52d-0833-4dd1-9f2b-a708f3f6dc37.jpg"
-                }
-              ]
-            },
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Thali",
-      "categoryDescription": "8 Iteams (Chicken/Veg) Our Signature Desi Chinese Thali offers a diverse array of dishes showcasing the best of both cuisines.",
-      "items": [
-        {
-          "itemName": "Signature Thali Desi Chinese (Veg / Chicken)",
-          "quantity": 1,
-          "itemDescription": "A grand thali featuring chowmein, fried rice, Manchurian, spring roll, momos, and gulab jamun.",
-          "itemPrice": "13.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dcaa8505-10d3-4c6b-b89c-c448de406849_19f5e058-21f4-47c1-aa23-1c71f8df39a7.jpg",
-          "customization": [
-            {
-              "custName": "Spice levels",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Mild",
-                  "price": 0.00
-                },
-                {
-                  "name": "Medium",
-                  "price": 0.00
-                },
-                {
-                  "name": "Hot",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Choose a Preparation.",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Steam",
-                  "price": 0.00
-                },
-                {
-                  "name": "Pan fried",
-                  "price": 2.00
-                },
-                {
-                  "name": "Deep fried",
-                  "price": 1.00
-                }
-              ]
-            },
-            {
-              "custName": "Choose Protein",
-              "custDescription": "Choose 1",
-              "required": "true",
-              "cust": [
-                {
-                  "name": "Veg",
-                  "price": 0.00
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.00
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Kids Momo Meal",
-      "items": [
-        {
-          "itemName": "Kids Momo Meal",
-          "quantity": 1,
-          "itemDescription": "A kid-friendly combo featuring momos, fries, and a mild dipping sauce.",
-          "itemPrice": "10.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b530b90b-7a94-490d-be36-9c4251359296_40.png",
-          "customization": [
-            {
-              "custName": "Add a Chutney",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Creamy Peanut Chutney",
-                  "price": 0.50
-                }
-              ]
-            },
-            {
-              "custName": "Add a Beverage",
-              "custDescription": "Add-ons (choose any)",
-              "required": "false",
-              "cust": [
-                {
-                  "name": "Masala Chai",
-                  "price": 2.75
-                },
-                {
-                  "name": "Darjeeling Tea",
-                  "price": 2.75
-                },
-                {
-                  "name": "Red Bull",
-                  "price": 2.50
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "categoryName": "Dessert",
-      "items": [
-        {
-          "itemName": "Gulabo (Gulab Jamun)",
-          "quantity": 1,
-          "itemDescription": "Soft, syrup-soaked Indian dessert dumplings served warm.",
-          "itemPrice": "5.99",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fbe8c769-c235-4c94-9bbd-2ebadd404150_Gulab%20Jamun.jpg"
-        }
-      ]
-    },
-    {
-      "categoryName": "Beverage",
-      "items": [
-        {
-          "itemName": "Masala Chai",
-          "quantity": 1,
-          "itemDescription": "A spiced Indian tea brewed with milk, cardamom, and ginger.",
-          "itemPrice": "2.75",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/3f3c09bb-cef5-462a-9f85-0a73c4436833_874a8fda-e71c-45dd-a784-e2b3b3437ed9.jpg"
-        },
-        {
-          "itemName": "Darjeeling Tea",
-          "quantity": 1,
-          "itemDescription": "A fragrant and delicate tea sourced from the Darjeeling hills.",
-          "itemPrice": "2.75",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/25d19489-14f1-4e11-89ea-e2d27f9ce233_image-20250911-130811.png"
-        },
-        {
-          "itemName": "Pop",
-          "quantity": 1,
-          "itemDescription": "A refreshing fizzy drink to pair with your meal.",
-          "itemPrice": "1.50",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8f574f22-643e-459f-be74-7e3a5beffd8b_tins%20dd.jpg"
-        },
-        {
-          "itemName": "Water",
-          "quantity": 1,
-          "itemDescription": "Pure and refreshing drinking water.",
-          "itemPrice": "1.50",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7d6fafdf-2bc6-46b3-8582-385b0050058a_3e4839bf-7732-4938-9443-56fe810ff952%20%281%29.jpg"
-        },
-        {
-          "itemName": "Fiji Water",
-          "quantity": 1,
-          "itemDescription": "Premium artesian water with a smooth and crisp taste.",
-          "itemPrice": "2.50",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/4f888d34-e68e-41af-82e9-553cadd03673_image-20250911-130949.png"
-        },
-        {
-          "itemName": "Red Bull",
-          "quantity": 1,
-          "itemDescription": "A high-energy drink to keep you refreshed and alert.",
-          "itemPrice": "4.50",
-          "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/dab09145-0457-4c3f-a705-b492b2084873_image-20250911-130613.png"
-        }
-      ]
-    }
-  ],
-  "cateringMenu": [
-    {
-      "categoryName": "All",
-      "routeName": "all",
-      "searchTerm": "all",
-      "items": [
-        {
-          "itemName": "Thai Mango Salad (50 Pcs)",
-          "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
-          "quantity": 1,
-          "itemPrice": "35.00"
-        },
-        {
-          "itemName": "Veg Spring Rolls (50 Pcs)",
-          "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
-          "quantity": 1,
-          "itemPrice": "35.00"
-        },
-        {
-          "itemName": "Chicken/Tofu Satay Skewers (50 Pcs)",
-          "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
-          "quantity": 1,
-          "itemPrice": "65.00"
-        }
-      ]
-    },
-    {
-      "categoryName": "STARTER",
-      "items": [
-        {
-          "itemName": "Thai Mango Salad (50 Pcs)",
-          "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
-          "quantity": 1,
-          "itemPrice": "35.00"
-        },
-        {
-          "itemName": "Veg Spring Rolls (50 Pcs)",
-          "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
-          "quantity": 1,
-          "itemPrice": "35.00"
-        },
-        {
-          "itemName": "Chicken/Tofu Satay Skewers (50 Pcs)",
-          "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
-          "quantity": 1,
-          "itemPrice": "65.00"
-        }
-      ]
-    },
-    {
-      "categoryName": "MAINS",
-      "items": [
-        {
-          "itemName": "Chilli Chicken/ Paneer Dry/Gravy (Tilapia)",
-          "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
-          "quantity": 1,
-          "itemPrice": "65.00"
-        },
-        {
-          "itemName": "Chilli Chicken/ Paneer Dry/Gravy (Salmon)",
-          "itemDescription": "A bountiful platter of tender fish, stir-fried with a medley of colorful vegetables and coated in a fiery. flavorful Schezwan sauce. Perfect for feeding a crowd",
-          "quantity": 1,
-          "itemPrice": "75.00"
-        },
-        {
-          "itemName": "Gobi Manchurian",
-          "itemDescription": "Crispy fried cauliflower florets tossed in a tangy, sweet, and spicy Manchurian sauce. A vegetarian Indo-Chinese classic.",
-          "quantity": 1,
-          "itemPrice": "45.00"
-        },
-        {
-          "itemName": "Manchurian Dry/Gravy (Veg)",
-          "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
-          "quantity": 1,
-          "itemPrice": "45.00"
-        },
-        {
-          "itemName": "Manchurian Dry/Gravy (Chicken)",
-          "itemDescription": "Crispy fried vegetable/chicken balls tossed in a tangy, sweet, and spicy Manchurian sauce. A true Indo-Chinese classic.",
-          "quantity": 1,
-          "itemPrice": "55.00"
-        },
-        {
-          "itemName": "Fried Rice",
-          "itemDescription": "Fluffy rice stir-fried with a medley of fresh vegetables (and tender chicken/egg/shrimp if you choose), aromatic spices, and savory sauces. A true crosed-pleaser.",
-          "quantity": 1,
-          "itemPrice": "40.00"
-        },
-        {
-          "itemName": "Desi Chowmien",
-          "itemDescription": "Popular Indo-Chinese noodles stir-fried with a medley of vegetables (and chicken), aromatic spices, and a flavorful Desi-inspired sauce. A true comfort food classic.",
-          "quantity": 1,
-          "itemPrice": "45.00"
-        }
-      ]
-    },
-    {
-      "categoryName": "GRAB N GO MOMOS",
-      "items": [
-        {
-          "itemName": "Veg Momos",
-          "quantity": 1,
-          "itemPrice": "45.00",
-          "itemDescription": "50 PCS RETAIL BAGS"
-        },
-        {
-          "itemName": "Chicken Momos",
-          "quantity": 1,
-          "itemPrice": "50.00",
-          "itemDescription": "50 PCS RETAIL BAGS"
-        },
-        {
-          "itemName": "Paneer Momos",
-          "quantity": 1,
-          "itemPrice": "55.00",
-          "itemDescription": "50 PCS RETAIL BAGS"
-        },
-        {
-          "itemName": "Malai Paneer Momos",
-          "quantity": 1,
-          "itemPrice": "60.00",
-          "itemDescription": "50 PCS RETAIL BAGS"
-        },
-        {
-          "itemName": "Veg Momos",
-          "quantity": 1,
-          "itemPrice": "15.00",
-          "itemDescription": "15 PCS RETAIL BAGS"
-        },
-        {
-          "itemName": "Chicken Momos",
-          "quantity": 1,
-          "itemPrice": "15.00",
-          "itemDescription": "15 PCS RETAIL BAGS"
-        },
-        {
-          "itemName": "Paneer Momos",
-          "quantity": 1,
-          "itemPrice": "16.00",
-          "itemDescription": "15 PCS RETAIL BAGS"
-        },
-        {
-          "itemName": "Malai Paneer Momos",
-          "quantity": 1,
-          "itemPrice": "18.00",
-          "itemDescription": "15 PCS RETAIL BAGS"
-        }
-      ]
-    },
-    {
-      "categoryName": "MOMOS",
-      "items": [
-        {
-          "itemName": "Veg Momos",
-          "itemDescription": "Add 5 for Fried",
-          "quantity": 1,
-          "itemPrice": "40.00"
-        },
-        {
-          "itemName": "Chicken Momos",
-          "itemDescription": "Add 5 for Fried",
-          "quantity": 1,
-          "itemPrice": "45.00"
-        },
-        {
-          "itemName": "Paneer Momos",
-          "itemDescription": "Add 5 for Fried",
-          "quantity": 1,
-          "itemPrice": "50.00"
-        },
-        {
-          "itemName": "Malai Paneer Momos",
-          "itemDescription": "Add 5 for Fried",
-          "quantity": 1,
-          "itemPrice": "55.00"
-        },
-        {
-          "itemName": "Tandoori Momos",
-          "itemDescription": "A DELICIOUS ASSORTMENT OF YOUR FAVORITE MOMOS, PERFECT FOR SHARING WITH FRIENDS AND FAMILY. A CROWD-PLEASING APPETIZER OR MAIN COURSE. 50 ADD $10.00 TANDOORI MOMOS",
-          "quantity": 1,
-          "itemPrice": "60.00"
-        },
-        {
-          "itemName": "Curry Momos",
-          "itemDescription": "A DELICIOUS ASSORTMENT OF TENDER MOMOS TOSSED IN THREE FLAVORFUL CURRIES, CHILLI, AFGHANI, AND BUTTER MASALA, PERFECT FOR SHARING WITH FRIENDS ANDFAMILY. 50 PCS ADD $10.00",
-          "quantity": 1,
-          "itemPrice": "60.00"
-        }
-      ]
-    },
-    {
-      "categoryName": "Exotic Fruits Tray",
-      "items": [
-        {
-          "itemName": "Exotic Fruits Tray",
-          "itemDescription": "A VIBRANT DISPLAY OF NATURE'S FINEST FRUITS, INCLUDING PASSION FRUIT, MANGO, BANANA, DRAGON FRUIT, LYCHEE. STAR FRUIT, GRAPES, MELONS. WATERMELON, PINEAPPLE. AND FRESH COCONUT. A REFRESHING AND HEALTHY TREAT FOR ANY OCCASION.",
-          "quantity": 1,
-          "itemPrice": "60.00"
         }
       ]
     }

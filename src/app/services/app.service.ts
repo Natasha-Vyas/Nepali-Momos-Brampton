@@ -12,6 +12,7 @@ export class AppService {
     public formCode: any;
     public reservationFormCode: any;
     public favIcon: HTMLLinkElement | null = document.querySelector('#appIcon');
+    public apiUrl = 'https://gkc-backend.vercel.app';
 
     constructor(private http: HttpClient) {
         // Initialize with default data
@@ -66,6 +67,30 @@ export class AppService {
             requestBody
         );
     }
+
+    cartCheckout(data: any): Observable<any> {
+        let requestBody = {
+            user: data.user,
+            cart: data.cart,
+            restaurantName: data.restaurantName,
+            restaurantEmail: data.restaurantEmail,
+            restaurantPhone: data.restaurantPhone,
+            totalCartValue: data.totalCartValue
+        };
+        return this.http.post(`${this.apiUrl}/checkout/checkout`, requestBody);
+    }
+
+    newsletterSubmission(data: any): Observable<any> {
+        let requestBody = {
+            ...data,
+            type: 'Newsletter'
+        };
+        return this.http.post(
+            `https://submit-form.com/${this.formCode}`,
+            requestBody
+        );
+    }
+
     cateringInquiry(data: any): Observable<any> {
         let requestBody = {
             ...data,

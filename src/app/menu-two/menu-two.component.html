@@ -1,0 +1,199 @@
+<div class="cart-floater" (click)="cartPage()">
+    <div>
+        <i class="material-symbols-outlined"> shopping_cart </i>
+        <span>{{ cart.length }}</span>
+    </div>
+</div>
+
+<main>
+    <div class="banner">
+        <div>
+            <h1>Our Menu</h1>
+            <p>Bringing authentic taste to your table</p>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="options-tab">
+            <div *ngFor="let item of categories; let i = index">
+                <button class="abc"
+                    [ngClass]="{ highlight: (selectedCategory === 'all' && item.categoryName === 'All') || selectedCategory === i }"
+                    (click)="getDiv(i, item)">
+                    {{ item.categoryName }}
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <div class="options-tab">
+                <div *ngFor="let item of categories; let i = index">
+                    <button class="abc"
+                        [ngClass]="{ highlighted: (selectedCategory === 'all' && item.categoryName === 'All') || selectedCategory === i }"
+                        (click)="getDiv(i, item)">
+                        <h4 [style]="css.itemNameCss">{{ item.categoryName }}</h4>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="items-section">
+            <div class="exp" *ngFor="let item of categories; let i = index"
+                [hidden]="selectedCategory !== 'all' && selectedCategory !== i">
+                <div id="{{ item.routeName }}" *ngIf="!product && item.items?.length">
+                    <h3>{{ item.categoryName }}</h3>
+                    <div class="divisiondiv">
+                        <div class="inner-container" *ngFor="let p of item.items">
+                            <div class="items-main-div">
+                                <div class="product-content">
+                                    <div class="item-details">
+                                        <div class="item-content">
+                                            <h3>{{ p.itemName }}</h3>
+                                            <span>&#36;{{ p.itemPrice }}</span>
+                                            <p *ngIf="p.itemDescription">{{ p.itemDescription }}</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img [src]="findMenuItem(p.itemName) ? menuItemImage : logo"
+                                                [alt]="p.itemName" />
+                                        </div>
+                                    </div>
+                                    <div *ngIf="!p.customization" class="utility">
+                                        <button>
+                                            <span (click)="subQuantity(p)"> - </span>
+                                            <input disabled type="text" [value]="p.quantity" />
+                                            <span (click)="addQuantity(p)"> + </span>
+                                        </button>
+                                        <button [disabled]="p.quantity == 0" (click)="addToCart(p, item)">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <div *ngIf="p.customization" class="cartbtn">
+                                        <button (click)="addItemBombayGrill(p)">
+                                            Add Item
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp" *ngIf="product">
+                <div id="{{ product.routeName }}" *ngIf="product">
+                    <h3>{{ product.categoryName }}</h3>
+                    <div class="divisiondiv">
+                        <div class="inner-container" *ngFor="let p of product.items">
+                            <div class="items-main-div">
+                                <div class="product-content">
+                                    <div class="item-details">
+                                        <div class="item-content">
+                                            <h3>{{ p.itemName }}</h3>
+                                            <span>&#36;{{ p.itemPrice }}</span>
+                                            <p *ngIf="p.itemDescription">{{ p.itemDescription }}</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img [src]="findMenuItem(p.itemName) ? menuItemImage : logo"
+                                                [alt]="p.itemName" />
+                                        </div>
+                                    </div>
+                                    <div *ngIf="!p.customization" class="utility">
+                                        <button>
+                                            <span (click)="subQuantity(p)"> - </span>
+                                            <input disabled type="text" [value]="p.quantity" />
+                                            <span (click)="addQuantity(p)"> + </span>
+                                        </button>
+                                        <button [disabled]="p.quantity == 0" (click)="addToCart(p, product)">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <div *ngIf="p.customization" class="cartbtn">
+                                        <button (click)="addItemBombayGrill(p)">
+                                            Add Item
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-model-main model-open" *ngIf="display.itemName">
+        <div class="custom-model-inner">
+            <div class="close-btn" (click)="open()">×</div>
+            <div class="custom-model-wrap">
+                <div class="pop-up-content-wrap">
+                    <div class="img">
+                        <img [src]="display.icon || logo" [alt]="display.itemName" />
+                    </div>
+                    <div class="content">
+                        <h3>{{ display.itemName }}</h3>
+                        <p>{{ display.itemDescription }}</p>
+                    </div>
+                    <div class="customization">
+                        <div *ngFor="let customization of display.customization; let j = index">
+                            <div class="inner-content-div">
+                                <div class="title-div">
+                                    <h4>
+                                        {{ customization.custName }}
+                                        <span> ({{ customization.custDescription }})</span>
+                                    </h4>
+                                    <span class="Required" *ngIf="customization.required == 'true'">Required</span>
+                                    <span class="Optional" *ngIf="customization.required == 'false'">Optional</span>
+                                </div>
+                                <div class="sizes">
+                                    <img *ngIf="customization.left == 'true'"
+                                        src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e3238856-5aba-4d36-8d3d-0eb3ebaa06bb.png" />
+                                    <img *ngIf="customization.full == 'true'"
+                                        src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d9dfea31-6227-4484-9142-65cc3e285df6.png" />
+                                    <img *ngIf="customization.right == 'true'"
+                                        src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/08d390de-649d-47df-869c-cecdf9abb8f2.png" />
+                                </div>
+                                <div class="label-div"
+                                    *ngFor="let subCustomization of customization.cust; let k = index">
+                                    <label for="{{ subCustomization.name }}">{{ subCustomization.name }}
+                                        <span *ngIf="subCustomization.price">${{ subCustomization.price }}</span>
+                                    </label>
+                                    <input *ngIf="customization.required == 'true'" id="{{ subCustomization.name }}"
+                                        name="{{ customization.custName }}" [value]="subCustomization.name" type="radio"
+                                        (click)="setModifier(subCustomization, customization, display)" />
+                                    <input
+                                        *ngIf="customization.required == 'false' && customization.custName !== 'Size'"
+                                        id="{{ subCustomization.name }}" name="{{ customization.custName }}"
+                                        type="checkbox" (click)="addcustom2($event, customization, subCustomization)" />
+                                    <div class="input-div"
+                                        *ngIf="customization.required == 'false' && customization.custName == 'Size'">
+                                        <span *ngIf="subCustomization.fullPrice">${{ subCustomization.fullPrice
+                                            }}</span>
+                                        <div *ngFor="let full of subCustomization.fullness">
+                                            <input (click)="setSize($event, full, subCustomization, customization)"
+                                                type="radio" name="{{ subCustomization.name }}"
+                                                value="{{ full.name }}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-message">
+                        <label for="customMessage">Notes : </label>
+                        <input type="text" id="customMessage" [(ngModel)]="display.customMessage"
+                            placeholder="e.g., no onions" />
+                    </div>
+                </div>
+                <div class="utility">
+                    <p *ngIf="realPrice; else other_content">&#36;{{ realPrice }}</p>
+                    <ng-template #other_content>
+                        <p>Total Price: ${{ totalPrice }}</p>
+                    </ng-template>
+                    <button [disabled]="display.quantity == 0" (click)="addToCartBombayGrill(display, product)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-overlay"></div>
+    </div>
+</main>

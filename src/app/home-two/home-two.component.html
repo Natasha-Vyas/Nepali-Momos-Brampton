@@ -1,45 +1,163 @@
 <main>
-    <!-- Header Section -->
-    <div class="menu-header">
-      <h1>Savor the Steaming, <br />Spicy Momos (Dumplings) Santa Swears By<br />—Now in Year Two!</h1>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11160706948"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-11160706948');
+  </script>
+
+  <div class="overlay"></div>
+  <img id="popup" alt="home-popup" loading="lazy" src="{{hero.popup}}" />
+
+  <div class="background-video">
+    <div class="watermark">
+      <img src="{{logo}}" alt="">
+    </div>
+    <img
+      src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/884d2afb-47c3-4fee-8bde-8796aadb4622_a9729df1-b649-429e-b140-3cfae9c9d44b_video%20%281%29.gif" />
+  </div>
+  <div class="about-us">
+    <div class="container-box">
+      <div class="container">
+        <img src="{{hero.aboutUsImg2}}" alt="">
+        <img src="{{hero.aboutUsImg3}}" alt="">
+        <img src="{{hero.aboutUsImg4}}" alt="">
+        <img src="{{hero.aboutUsImg5}}" alt="">
+      </div>
+      <div class="para">
+        <h2>{{hero.aboutTitle}}</h2>
+        <p *ngFor="let p of hero.homeAboutContent">{{p}}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <app-testimonials></app-testimonials> -->
+  <!-- <div class="reviews">
+        <h2>Don't Just Take Our Word For It!</h2>
+
+        <h4>{{brandName}}</h4>
+
+        <div class="stars">
+          <span class="material-symbols-outlined">
+            star
+          </span>
+          <span class="material-symbols-outlined">
+            star
+          </span>
+          <span class="material-symbols-outlined">
+            star
+          </span>
+          <span class="material-symbols-outlined">
+            star
+          </span>
+          <span class="material-symbols-outlined">
+            star
+          </span>
+        </div>
+
+        <div class="main-container">
+          <div class="card" *ngFor="let r of hero.reviews">
+
+            <div class="stars">
+              <span class="material-symbols-outlined">
+                star
+              </span>
+              <span class="material-symbols-outlined">
+                star
+              </span>
+              <span class="material-symbols-outlined">
+                star
+              </span>
+              <span class="material-symbols-outlined">
+                star
+              </span>
+              <span class="material-symbols-outlined">
+                star
+              </span>
+            </div>
+
+            <p>{{r.text}}</p>
+            <p>{{r.name}}</p>
+
+            <a href="{{social.review}}">Read full review</a>
+          </div>
+        </div>
+      </div> -->
+
+  <div class="reviews-wrapper">
+    <h2>What people<br> say about me</h2>
+
+    <div class="reviews-container" (mouseenter)="pauseAutoSlide()" (mouseleave)="resumeAutoSlide()">
+      <div class="review-card" *ngFor="let review of visibleReviews">
+        <div class="imagetext">
+          <img class="avatar" [src]="review.profile_photo_url" alt="User Photo" (error)="onImgError($event)" />
+          <div class="textauthor">
+            <div class="author">- {{ review.author_name }}</div>
+            <div class="stars">
+              <span>★★★★★</span>
+            </div>
+          </div>
+        </div>
+        <p class="review-text">{{ review.text }}</p>
+      </div>
+
     </div>
 
-    <!-- About Us Section -->
-    <section class="about-us-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image-slider">
-                    <div class="slider-container">
-                        <div class="slider-wrapper" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
-                            <div class="slide" *ngFor="let image of images; let i = index">
-                                <img [src]="image" [alt]="'Slide ' + (i + 1)">
-                            </div>
-                        </div>
-                        
-                        <!-- Navigation arrows -->
-                        <button class="slider-nav prev" (click)="prevSlide()" *ngIf="images.length > 1">
-                            <span>‹</span>
-                        </button>
-                        <button class="slider-nav next" (click)="nextSlide()" *ngIf="images.length > 1">
-                            <span>›</span>
-                        </button>
-                        
-                        <!-- Dots indicator -->
-                        <div class="slider-dots" *ngIf="images.length > 1">
-                            <button
-                                class="dot"
-                                *ngFor="let image of images; let i = index"
-                                [class.active]="i === currentSlide"
-                                (click)="goToSlide(i)">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p class="about-description">The people have spoken, and we've answered the call! Following a blockbuster debut, the most talked-about snack is officially making its highly-anticipated return to The Distillery Winter Village. Prepare once again for a moment of pure culinary magic: authentic Nepali Momos (dumplings). Each one is a tender, savory bite, served piping hot to chase away the chill.</p>
-                    <p class="about-second-description">Doused in our bold, tangy Achar sauce, they offer a rich, exotic flavor that simply can't be beat. It’s an open secret that Santa has ditched his milk and cookies for a platter of these, and demand is only growing! Make a beeline for the legendary taste when the market opens on November 13, 2025, and find out why everyone is coming back for more!</p>
-                </div>
-            </div>
+
+    <a [href]="social.google" target="_blank" class="google-reviews">
+      View more reviews
+    </a>
+
+    <div *ngIf="visibleReviews.length === 0">
+      <p>No English reviews available at the moment.</p>
+    </div>
+  </div>
+
+  <div class="heading">
+    <h3>Subscribe To Our Newsletter</h3>
+  </div>
+  <div class="main-div">
+    <div class="section-div">
+      <div class="reservation">
+        <h3>~</h3>
+        <h3>A NOTE ON OUR NEWSLETTERS</h3>
+        <p>We'll email you from time to time to keep you informed of our goings-on.</p>
+        <p>Hopefully you will find the emails enjoyable, but if you'd like to stop hearing from us –
+          you're welcome to unsubscribe at any time from the link in the email (and any you receive in
+          future).</p>
+      </div>
+    </div>
+    <div class="contact">
+
+      <form [formGroup]="newsLetter" *ngIf="!success">
+
+        <div>
+          <label>NAME</label>
+          <input name="name" placeholder="Name" required formControlName="name" />
         </div>
-    </section>
+        <div>
+          <label>EMAIL</label>
+          <input type="email" name="email" placeholder="Email" required formControlName="email" />
+        </div>
+        <div>
+          <label>PHONE</label>
+          <input type="phone" name="phone" placeholder="Phone" required formControlName="phone" />
+        </div>
+        <div>
+          <label>ADDRESS</label>
+          <textarea name="address" cols="30" rows="10" formControlName="address" placeholder="Address"></textarea>
+        </div>
+        <button type="submit" [disabled]="!newsLetter.valid" (click)="submitNewsLetterForm()">Subscribe</button>
+      </form>
+
+      <div class="success" *ngIf="success">
+        <span class="material-symbols-outlined"> check_circle </span>
+        <h2 class="success-msg">
+          Your response submitted successfully !!
+        </h2>
+      </div>
+    </div>
+  </div>
 </main>

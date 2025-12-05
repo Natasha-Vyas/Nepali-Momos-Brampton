@@ -39,13 +39,16 @@ button {
 }
 
 // Remove default input styles
-input, textarea, select {
+input,
+textarea,
+select {
   font: inherit;
   margin: 0;
 }
 
 // Remove default list styles
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -95,4 +98,9 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background: get-color(gray-600);
+}
+
+
+html {
+  scroll-behavior: smooth;
 }

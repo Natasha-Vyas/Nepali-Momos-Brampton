@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppService } from '../services/app.service';
 import { SeoService } from '../services/seo.service';
-
 interface MenuImage {
   imageName: string;
   icon: string;
@@ -18,11 +17,11 @@ interface CartItem {
 }
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  selector: 'app-menu-two',
+  templateUrl: './menu-two.component.html',
+  styleUrls: ['./menu-two.component.scss']
 })
-export class MenuComponent implements OnInit {
+export class MenuTwoComponent implements OnInit {
   cart: CartItem[] = [];
   categories: any[] = [];
   selectedCategory: any = 'all';

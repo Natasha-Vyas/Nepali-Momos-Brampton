@@ -1,339 +1,175 @@
 main {
+    cursor: url('https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/949433e5-70c8-4b03-b5b5-2e13855d4ec3_Frame%2017.png'), auto !important;
+    background-color: #161616;
+    font-family: "League Spartan", arial, helvetica, sans-serif;
+    margin-top: 75px;
 
-    button {
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        padding: 8px 25px;
-        background-color: #e04652;
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        text-decoration: none;
-        display: inline-block;
-        letter-spacing: 1px;
-        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    .label {
+        background: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 38%)),
+            url("https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2b2965bf-f96c-46a1-ba5e-56d2f6784c82_Banner%20images%20for%20website.jpg");
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-position: center center;
+        padding: 14rem;
+        background-position: 60%;
+        align-items: center;
+        background-attachment: fixed;
 
-        &:hover {
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            h2 {
+                font-weight: 400;
+                line-height: 1.22;
+                letter-spacing: 0px;
+                font-size: 60px;
+                line-height: 1.4;
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+    }
+
+    .about-div {
+        padding: 5%;
+
+        h2 {
+            color: #fff;
+            font-size: 34px;
             font-weight: 600;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+            text-align: center;
         }
 
-        &:active {
-            transform: translateY(0);
-        }
-    }
-
-    h1 {
-        font-family: "Abril Fatface", serif;
-        font-size: 60px;
-        font-weight: 400;
-        line-height: 1.2;
-        color: #41433E;
-        margin: 0 0 30px;
-    }
-
-    h2 {
-        font-family: "Abril Fatface", serif;
-        font-size: 50px;
-        font-weight: 400;
-        text-align: center;
-        color: #41433E;
-        margin: 0 0 30px;
-    }
-
-    h3 {
-        font-family: "Abril Fatface", serif;
-        font-size: 24px;
-        font-weight: 400;
-        color: #41433E;
-        margin: 0 0 15px;
-    }
-
-    p {
-        font-family: "Poppins", sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        color: #41433E;
-        line-height: 1.6;
-    }
-
-    // About Us Section
-    .about-us-section {
-        padding: 80px 0;
-        background-color: #ffffff;
-        margin-top: 100px;
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .about-content {
+        .points {
             display: flex;
-            align-items: center;
-            gap: 80px;
-        }
+            justify-content: center;
+            padding: 20px 12em 0px;
 
-        .about-image {
-            flex: 0 0 400px;
-
-            img {
-                width: 400px;
-                height: 500px;
-                border-radius: 100px;
-                object-fit: cover;
-                object-position: top;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            }
-
-            p {
-                font-weight: 600;
-                margin-bottom: 0;
-                margin-top: 0;
+            h4 {
+                color: #fff;
                 font-size: 16px;
+                font-weight: 500;
             }
-        }
-
-        .about-text {
-            flex: 1;
-
-            .about-title {
-                text-align: left;
-            }
-
-            .about-description {}
-
-            .about-second-description {}
-
-            .learn-more-btn {}
-        }
-    }
-
-    // Culinary Offerings Section
-    .culinary-offerings-section {
-        background-color: #ffffff;
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .offerings-content {
-            display: flex;
-            align-items: center;
-            gap: 80px;
-            padding: 5rem 0 3rem;
-            border-top: 1px solid #000;
-        }
-
-        .offerings-text {
-            flex: 1;
-
-            .offerings-title {
-                text-align: left;
-            }
-
-            .offerings-subtitle {
-                font-family: 'Poppins', sans-serif;
-                font-size: 24px;
-                font-weight: 600;
-                margin-bottom: 20px;
-            }
-
-            .offerings-description {}
-
-            .view-all-btn {}
-        }
-
-        .offerings-image {
-            flex: 0 0 400px;
-
-            img {
-                width: 400px;
-                height: 300px;
-                border-radius: 15px;
-                object-fit: cover;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            }
-        }
-    }
-}
-
-// Responsive Design
-@media (max-width: 1024px) {
-    main {
-
-        .about-us-section {
-            .about-content {
-                gap: 50px;
-            }
-
-            .about-image {
-                flex: 0 0 300px;
-
-                img {
-                    width: 300px;
-                    height: 300px;
-                }
-            }
-
-            .about-text {
-                .about-title {
-                    font-size: 2.5rem;
-                }
-            }
-        }
-
-        .culinary-offerings-section {
-            .offerings-content {
-                gap: 50px;
-            }
-
-            .offerings-image {
-                flex: 0 0 300px;
-
-                img {
-                    width: 300px;
-                    height: 225px;
-                }
-            }
-
-            .offerings-text {
-                .offerings-title {
-                    font-size: 2.5rem;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    main {
-        .about-us-section {
-            padding: 60px 0;
-
-            .about-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 40px;
-            }
-
-            .about-image {
-                flex: none;
-                align-self: center;
-
-                img {
-                    width: 250px;
-                    height: 250px;
-                }
-            }
-
-            .about-text {
-                .about-title {
-                    font-size: 2rem;
-                }
-
-                .about-description,
-                .about-second-description {
-                    font-size: 1rem;
-                }
-            }
-        }
-
-        .culinary-offerings-section {
-            padding: 60px 0;
-
-            .offerings-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 40px;
-            }
-
-            .offerings-image {
-                flex: none;
-                align-self: center;
-
-                img {
-                    width: 300px;
-                    height: 225px;
-                }
-            }
-
-            .offerings-text {
-                .offerings-title {
-                    font-size: 2rem;
-                }
-
-                .offerings-subtitle {
-                    font-size: 1.3rem;
-                }
-
-                .offerings-description {
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    main {
-
-        .about-us-section {
-            padding: 40px 0;
 
             p {
-                font-size: 0.9rem;
-                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 200;
+                margin: 6px 12px;
+                text-align: start;
+            }
+        }
+
+        .partnering {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                color: #fff;
+                font-size: 34px;
+                font-weight: 600;
             }
 
-            .about-image img {
-                width: 200px;
-                height: 200px;
-            }
-
-            .about-text {
-                .about-title {
-                    font-size: 1.8rem;
-                    text-align: center;
-                }
-
-                .learn-more-btn {
-                    padding: 12px 28px;
-                    font-size: 0.9rem;
+            ul {
+                li {
+                    color: #ffffff;
+                    font-size: 16px;
                 }
             }
         }
 
-        .culinary-offerings-section {
-            padding: 40px 0;
+        p {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            width: 65%;
+            text-align: center;
+            margin: 20px auto;
+        }
 
-            .offerings-image img {
-                width: 100%;
-                height: 188px;
+        .sub-video {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            grid-gap: 20px;
+            gap: 20px;
+            justify-content: center;
+            margin: auto;
+
+            video {
+                height: 90vh;
+                flex: 0 0 60%;
+                max-width: 32%;
+            }
+        }
+    }
+}
+
+// Mobile
+@media only screen and (max-device-width: 480px) {
+    main {
+        .label {
+            padding: 10rem 1.5rem;
+
+            div {
+                h2 {
+                    font-weight: 600;
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .about-div {
+            padding: 10px;
+
+            .partnering {
+                h3 {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
             }
 
-            .offerings-text {
-                .offerings-title {
-                    font-size: 1.8rem;
+            .points {
+                padding: 1%;
+                flex-direction: column;
+
+                p {
+                    width: 90%;
                     text-align: center;
+                    margin: 0px auto;
                 }
 
-                .offerings-subtitle {
-                    font-size: 1.2rem;
+                h4 {
                     text-align: center;
                 }
+            }
 
-                .view-all-btn {
-                    padding: 12px 28px;
-                    font-size: 0.9rem;
-                    text-align: center;
+            h2 {
+                font-size: 24px;
+            }
+
+            ul {
+                li {
+                    width: 100%;
+                }
+            }
+
+            p {
+                width: 90%;
+                text-align: center;
+                margin: 0px auto;
+            }
+
+            .sub-video {
+                video {
+                    height: auto;
+                    flex: 0 0 100%;
+                    max-width: 100%;
                 }
             }
         }

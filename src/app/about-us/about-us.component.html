@@ -1,43 +1,34 @@
 <main>
-    <!-- About Us Section -->
-    <section class="about-us-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img [src]="hero.aboutus.image" [alt]="hero.aboutus.title">
-                    <p>Captain Sajeev's Great Great Grand Father</p>
-                    <p>Shri Dambar Singh Gazmer</p>
-                    <p>At work in early 1900's</p>
-                </div>
-                <div class="about-text">
-                    <h2 class="about-title">{{ hero.aboutus.title }}</h2>
-                    <p class="about-description">Welcome to a story you can taste—a legacy as rich as the finest gold. Our brand, Nepali Momos Aslee Momos Ki Dukan, is a heartfelt homage to our founder Sajeev's great-great-grandfather, a revered gold shop owner from the late 1800s in Darjeeling. </p>
-                    <p class="about-second-description">The name, which means 'The Authentic Gold and Silver Shop,' is our promise to you: a testament to authenticity, value, and unmatched quality that has been passed down through our family for generations.</p>
-                </div>
-            </div>
-
-            <div class="about-paragraph">
-                <p>This profound heritage was carried forward by Sajeev’s mother, Bhanu. After marrying an Indian army officer, she made her momos famous in the Indian army messes. Her recipe was so beloved it is now a staple, served as hors d'oeuvres in messes across the region.</p>
-                <p>From this incredible legacy, Sajeev, born and bred in Darjeeling, embarked on his own mission. With the same passion that a tea planter cultivates the perfect leaf, he nurtures every single momo. He spent more than a decade working as a tea planter for a British company before coming to Canada. What began as a humble operation has blossomed into a business that doesn't just sell food—it spreads a legacy of flavor and hospitality across a continent.</p>
-                <p>Today, we are thrilled to be Canada's largest wholesale supplier of handcrafted momos. Our authentic flavors grace the menus of highly-rated restaurants from Vancouver to Halifax, proving that our Darjeeling-style momos are not just a meal, but a national sensation. This is more than a story you can taste; it's a legacy you'll fall in love with and crave again and again.</p>
-            </div>
+    <div class="label">
+        <div>
+            <h2>Grab & Go Momos</h2>
         </div>
-    </section>
-
-    <!-- Culinary Offerings Section -->
-    <!-- <section class="culinary-offerings-section">
-        <div class="container">
-            <div class="offerings-content">
-                <div class="offerings-text">
-                    <h2 class="offerings-title">{{ hero.culinaryOfferings.title }}</h2>
-                    <h3 class="offerings-subtitle">{{ hero.culinaryOfferings.subtitle }}</h3>
-                    <p class="offerings-description">{{ hero.culinaryOfferings.description }}</p>
-                    <button class="view-all-btn" routerLink="/menu">View all</button>
-                </div>
-                <div class="offerings-image">
-                    <img [src]="hero.culinaryOfferings.image" [alt]="hero.culinaryOfferings.title">
-                </div>
-            </div>
+    </div>
+    <div class="about-div">
+        <h2>{{ hero.aboutHead }}</h2>
+        <p *ngFor="let i of hero.aboutContent">{{ i }}</p>
+        <h2>Here's what sets us apart:</h2>
+        <div class="points" *ngFor="let i of hero.aboutpoints">
+            <h4>{{ i.heading }}</h4>
+            <p>{{ i.para }}</p>
         </div>
-    </section> -->
+        <div class="partnering">`
+            <h3>Partnering with Nepali Momos Brampton means:</h3>
+            <ul>
+                <li *ngFor="let i of hero.partnering">{{ i }}</li>
+            </ul>
+        </div>
+        <h2>Ready to embark on a culinary journey with us?</h2>
+        <p>
+            Contact our wholesale team today to discuss your specific requirements
+            and discover how Nepali Momos Brampton can elevate your menu and
+            satisfy your customers' taste buds.
+        </p>
+
+        <div class="sub-video">
+            <video *ngFor="let i of hero.video" #myVideo autoplay [muted]="'muted'" loop>
+                <source [src]="i" type="video/mp4" />
+            </video>
+        </div>
+    </div>
 </main>

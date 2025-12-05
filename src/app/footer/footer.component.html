@@ -1,89 +1,56 @@
-<footer class="footer">
-  <div class="footer-container">
-    <!-- Quick Navigation Section -->
-    <div class="footer-section quick-navigation">
-      <h3 class="section-title">Quick Navigation</h3>
-      <ul class="nav-list">
-        <li><a href="#" class="nav-link">FAQ'S</a></li>
-        <li><a href="#" class="nav-link">Terms & Conditions</a></li>
-        <li><a href="#" class="nav-link">Shipping & Returns</a></li>
-        <li><a href="#" class="nav-link">Privacy Policy</a></li>
-      </ul>
+<main [ngStyle]="{
+        'background-image': 'url(' + hero.bgMainImage + ')',
+        'background-size': 'cover',
+        'background-position': 'center'
+      }" [style]="css.footerCss">
+  <div *ngIf="hero.scrollToTop" [style]="css.scrollToTopCss" (click)="scrollToTop()" class="scroller">
+    ^
+  </div>
+
+  <div class="footer" [style]="css.footerBg">
+    <div class="logo" [style]="css.logoDivScss" *ngIf="hero.footerLogo">
+    </div>
+    <h4 [style]="css.footerBrandQuoteCss" *ngIf="hero.footerTag">{{hero.footerTag}}</h4>
+
+
+
+    <div class="contact" [style]="css.contacDetailsScss" *ngIf="hero.contacDetails">
+      <a [style]="css.footerText" *ngIf="address" [href]="social.map">
+        {{ address }}
+      </a>
+      <a [style]="css.footerText" *ngIf="address2" [href]="social.map">
+        {{ address2 }}
+      </a>
+      <a [style]="css.footerText" *ngIf="address3" [href]="social.map">
+        {{ address3 }}
+      </a>
+      <a [style]="css.footerText" *ngIf="contact" [href]="social.hrefPhone">
+        {{ contact }}
+      </a>
+      <a [style]="css.footerText" *ngIf="contactNew" [href]="social.hrefPhone">
+        {{ contact.phone }}
+      </a>
+      <a [style]="css.footerText" *ngIf="emailid" [href]="social.hrefEmail">
+        {{ emailid }}
+      </a>
     </div>
 
-    <!-- Center Section with Logo and Social Media -->
-    <div class="footer-section center-section">
-      <div class="logo-container">
-        <img [src]="logo" alt="Nepali Momos Logo" class="footer-logo">
-      </div>
-      
-      <div class="social-media">
-        <a href="#" class="social-link" aria-label="Telegram">
-          <i class="fab fa-telegram-plane"></i>
-        </a>
-        <a href="#" class="social-link" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="social-link" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="#" class="social-link" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
+    <div class="social-icons" [style]="css.socialIcons" *ngIf="hero.socialIcons">
+      <a target="_blank" [href]="social.google" *ngIf="social.google">
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6e50da2a-1e6d-4136-bff9-8eb28c942a83_google-colorful.png" /></a>
+      <a target="_blank" [href]="social.yelp" *ngIf="social.yelp">
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/fb3fc731-ca27-4fad-ab9e-f6051f7ad517_Yelp-Logo.png" /></a>
 
-      <div class="newsletter-section">
-        <h3 class="newsletter-title">Subscribe to the Newsletter</h3>
-        <form class="newsletter-form" (ngSubmit)="onNewsletterSubmit()" #newsletterForm="ngForm">
-          <div class="input-group">
-            <input
-              type="email"
-              class="newsletter-input"
-              placeholder="Email"
-              [(ngModel)]="newsletterEmail"
-              name="email"
-              required
-              email
-              #emailInput="ngModel"
-            >
-            <button type="submit" class="newsletter-submit" [disabled]="!newsletterForm.valid || isSubmitting">
-              <i class="fas fa-arrow-right" *ngIf="!isSubmitting"></i>
-              <i class="fas fa-spinner fa-spin" *ngIf="isSubmitting"></i>
-            </button>
-          </div>
-          <div class="error-message" *ngIf="emailInput.invalid && emailInput.touched">
-            Please enter a valid email address
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- Quick Contact Section -->
-    <div class="footer-section quick-contact">
-      <h3 class="section-title">Quick Contact</h3>
-      <div class="contact-list">
-        <div class="contact-item">
-          <a target="_blank" [href]="social.hrefAddress" ><i class="fas fa-map-marker-alt contact-icon"></i></a>
-          <span class="contact-label">{{address}}</span>
-        </div>
-        <div class="contact-item">
-          <a target="_blank" [href]="social.hrefPhone" ><i class="fas fa-phone contact-icon"></i></a>
-          <span class="contact-label">{{phone}}</span>
-        </div>
-        <div class="contact-item">
-          <a target="_blank" [href]="social.hrefEmail" ><i class="fas fa-envelope contact-icon"></i></a>
-          <span class="contact-label">{{email}}</span>
-        </div>
-      </div>
     </div>
   </div>
 
-  <!-- Footer Bottom -->
-  <div class="footer-bottom">
-    <div class="footer-bottom-container">
-      <p class="copyright">
-        &copy; {{ currentYear }} {{brandName}}. All rights reserved.
-      </p>
-    </div>
+  <div class="closingLiner" [style]="css.footerClosingLiner">
+    <p [style]="css.closingFooterText">
+      © Copyright 2025 {{ brandName }} All rights reserved.
+    </p>
+    <a [style]="css.closingFooterText" target="_blank" href="https://tryantler.com/home">Powered by Antler
+      Technologies</a>
   </div>
-</footer>
+</main>

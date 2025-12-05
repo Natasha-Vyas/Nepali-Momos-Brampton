@@ -1,117 +1,53 @@
-<section class="checkout-full-page">
-  <main>
-    <div class="banner">
+<main>
+  <div class="label">
+    <div>
+      <h3>Checkout</h3>
+    </div>
+  </div>
+  <div class="checkout-section" *ngIf="!successMsg">
+    <h3>CONTACT INFORMATION</h3>
+    <form [formGroup]="checkOutDetails">
       <div>
-        <h1>Checkout</h1>
+        <input type="text" name="firstName" placeholder="FirstName" required formControlName="firstName" />
+        <input type="text" name="lastName" placeholder="LastName" required formControlName="lastName" />
       </div>
-    </div>
-
-    <div class="checkout-section">
-      <div class="checkout-container">
-        <h2>Contact Information</h2>
-
-        <form (ngSubmit)="onSubmit()" #checkoutForm="ngForm">
-          <div class="form-grid">
-            <div class="form-group">
-              <input type="text" id="firstName" name="firstName" placeholder="FirstName"
-                [(ngModel)]="formData.firstName" required>
-            </div>
-
-            <div class="form-group">
-              <input type="text" id="lastName" name="lastName" placeholder="LastName" [(ngModel)]="formData.lastName"
-                required>
-            </div>
-
-            <div class="form-group">
-              <input type="tel" id="phone" name="phone" placeholder="Phone" [(ngModel)]="formData.phone" required>
-            </div>
-
-            <div class="form-group">
-              <input type="email" id="email" name="email" placeholder="Email" [(ngModel)]="formData.email" required>
-            </div>
-
-            <div class="form-group">
-              <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" [(ngModel)]="formData.date" required>
-            </div>
-
-            <div class="form-group">
-              <input type="time" id="time" name="time" [(ngModel)]="formData.time" required>
-            </div>
-
-            <div class="form-group">
-              <input type="text" id="address" name="address" placeholder="Address" [(ngModel)]="formData.address"
-                required>
-            </div>
-
-            <div class="form-group">
-              <input type="text" id="city" name="city" placeholder="City" [(ngModel)]="formData.city" required>
-            </div>
-
-            <div class="form-group">
-              <input type="text" id="state" name="state" placeholder="State" [(ngModel)]="formData.state" required>
-            </div>
-
-            <div class="form-group">
-              <input type="text" id="country" name="country" placeholder="Country" [(ngModel)]="formData.country"
-                required>
-            </div>
-
-            <div class="form-group full-width">
-              <input type="text" id="pincode" name="pincode" placeholder="Pincode" [(ngModel)]="formData.pincode"
-                required>
-            </div>
-          </div>
-
-          <div class="mandatory-message">
-            *All fields are mandatory!
-          </div>
-
-          <button type="submit" class="checkout-btn" [disabled]="isSubmitting">
-            {{ isSubmitting ? 'Processing...' : 'Checkout!' }}
-          </button>
-        </form>
-
-        <!-- Order Summary Section -->
-        <div class="order-summary" *ngIf="cartItems.length > 0">
-          <h3>Order Summary</h3>
-          <div class="cart-items">
-            <div class="cart-item" *ngFor="let item of cartItems">
-              <div class="item-row">
-                <span class="item-name">{{ item.name }}</span>
-                <span class="item-quantity">x{{ item.quantity }}</span>
-                <span class="item-total">${{ item.total.toFixed(2) }}</span>
-              </div>
-              <div class="item-customization" *ngIf="item.customization"
-                style="color:#6b7280; font-size:0.92rem; margin-top:2px;">
-                {{ item.customization }}
-              </div>
-            </div>
-
-          </div>
-          <div class="order-totals">
-            <div class="total-row">
-              <span>Subtotal:</span>
-              <span>${{ subtotal.toFixed(2) }}</span>
-            </div>
-            <div class="total-row">
-              <span>Tax (5%):</span>
-              <span>${{ tax.toFixed(2) }}</span>
-            </div>
-            <div class="total-row final-total">
-              <span>Total:</span>
-              <span>${{ total.toFixed(2) }}</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Empty Cart Message -->
-        <div class="empty-cart" *ngIf="cartItems.length === 0">
-          <p>Your cart is empty. Please add items before checkout.</p>
-          <button class="back-btn" (click)="goToMenu()">
-            Explore Menu
-          </button>
-        </div>
+      <div>
+        <input type="number" name="phone" placeholder="Phone" required formControlName="phone" />
+        <input type="email" name="email" placeholder="Email" required formControlName="email" />
       </div>
-    </div>
-  </main>
-</section>
+      <div>
+        <input type="date" name="eventDate" formControlName="eventDate" placeholder="Date" required />
+        <input type="time" name="eventTime" formControlName="eventTime" required />
+      </div>
+      <div>
+        <input type="text" name="address" placeholder="Address" required formControlName="address" />
+        <input type="text" name="city" placeholder="City" required formControlName="city" />
+      </div>
+      <div>
+        <input type="text" name="state" placeholder="State" required formControlName="state" />
+        <input type="text" name="country" placeholder="Country" required formControlName="country" />
+      </div>
+      <div>
+        <input type="tel" name="pincode" placeholder="Pincode" required formControlName="pincode" />
+      </div>
+      <div class="checkout-btn">
+        <p>*All fields are mandatory!</p>
+        <button (click)="submitCheckOutDetailsForm()" [disabled]="!checkOutDetails.valid || isLoading">
+          Checkout!
+        </button>
+      </div>
+    </form>
+  </div>
+  <app-spinner *ngIf="isLoading" [isLoading]="isLoading"></app-spinner>
+
+  <div class="success-section" *ngIf="successMsg">
+    <h3>
+      THANKYOU! <br />
+      DO CHECK YOUR INBOX
+    </h3>
+    <p>Order Id: {{ cartresponse._id }}</p>
+    <!-- <p>We aim to respond to your inquiries within 24-48 hours.</p> -->
+    <span class="material-symbols-outlined"> check_circle </span>
+    <button routerLink="/">Home</button>
+  </div>
+</main>

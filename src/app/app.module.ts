@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,10 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { SuccessComponent } from './success/success.component';
 import { HomeTwoComponent } from './home-two/home-two.component';
+import { StoriesComponent } from './stories/stories.component';
+import { MenuTwoComponent } from './menu-two/menu-two.component';
+import { WholesaleComponent } from './wholesale/wholesale.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +37,18 @@ import { HomeTwoComponent } from './home-two/home-two.component';
     CartComponent,
     CheckoutComponent,
     SuccessComponent,
-    HomeTwoComponent
+    HomeTwoComponent,
+    StoriesComponent,
+    MenuTwoComponent,
+    WholesaleComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgImageSliderModule,
     AppRoutingModule
   ],
   providers: [],

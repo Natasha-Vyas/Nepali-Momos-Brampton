@@ -1,501 +1,250 @@
-// SCSS Variables for better maintainability
-$navbar-bg-color: #ffffff;
-$navbar-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-$navbar-z-index: 1000;
-$primary-color: #e04652;
-$text-color: #3F443E;
-$text-hover-color: #e04652;
-$transition-duration: 0.3s;
-$transition-easing: ease;
-
-// Font fallback stack for better performance and reliability
-$primary-font-stack: "Abril Fatface", "Georgia", "Times New Roman", serif;
-$secondary-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
-:focus {
-    outline: none;
+:host {
+  display: block;
+  cursor: url('https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/949433e5-70c8-4b03-b5b5-2e13855d4ec3_Frame%2017.png'), auto !important;
 }
 
-.navbar {
-    background-color: $navbar-bg-color;
-    box-shadow: $navbar-shadow;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: $navbar-z-index;
-    padding: 0;
+.heading {
 
-    // Performance optimization: Enable hardware acceleration
-    will-change: transform;
-    transform: translateZ(0);
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
 
-.navbar-container {
+  .logoMobile {
+    display: none;
+  }
+
+  .logoDesktop {
     display: flex;
+    justify-content: start;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    position: relative;
-    gap: 30px;
-}
+    gap: 20px;
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-    &.left-links {
-        flex: 1;
-        justify-content: flex-end;
-    }
-
-    &.right-links {
-        flex: 1;
-        justify-content: flex-start;
-    }
-}
-
-.nav-link {
-    // Typography
-    font-family: $primary-font-stack;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-
-    // Visuals
-    text-decoration: none;
-    color: $text-color;
-
-    // Positioning
-    position: relative;
-    display: inline-block;
-
-    // Transitions
-    transition:
-        color $transition-duration $transition-easing,
-        transform $transition-duration $transition-easing,
-        opacity $transition-duration $transition-easing;
-    will-change: color, transform, opacity;
-
-    outline-offset: 2px;
-
-    // Hidden icon/image
     img {
-        width: 20px;
-        opacity: 0;
-        transform: translateY(5px);
-        transition: opacity $transition-duration $transition-easing, transform $transition-duration $transition-easing;
+      width: 7rem;
     }
 
-    // Underline on hover
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -5px;
-        height: 2px;
-        background-color: $primary-color;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform $transition-duration $transition-easing;
+    p {
+      color: white;
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+
+  .navbar-inverse {
+    background-color: transparent !important;
+    border-color: transparent;
+    margin: 0px;
+    width: 100%;
+
+    .navbar-header {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 40px;
     }
 
-    &:hover {
-        color: $text-hover-color;
-        transform: translateY(-1px);
+    .navbar-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      padding: 0;
 
-        img {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        &::after {
-            transform: scaleX(1);
-        }
-    }
-
-    // &.active {
-    //     color: $primary-color;
-    //     font-weight: 700;
-
-    //     img {
-    //         opacity: 1;
-    //         transform: translateY(0);
-    //     }
-
-    //     &::after {
-    //         transform: scaleX(1);
-    //     }
-    // }
-
-    @supports not (font-family: $secondary-font-stack) {
-        font-family: Arial, sans-serif;
-    }
-}
-
-
-.navbar-logo {
-    // position: absolute;
-    // left: 50%;
-    // transform: translateX(-50%);
-    // z-index: 10;
-
-    a {
+      .icon-bar {
         display: block;
+        width: 26px;
+        height: 3px;
+        margin: 4px 0;
+        background-color: #000;
+        border-radius: 2px;
+      }
     }
 
-    .logo-image {
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
-        object-fit: cover;
+    .navbar-collapse {
+      .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        align-items: center;
 
-        // Performance optimization
-        transition: transform $transition-duration $transition-easing;
-        will-change: transform;
+        // 1) Keyframes for underline + text bounce
+        @keyframes underlineExpand {
+          from {
+            width: 0;
+            left: 50%;
+          }
 
-        &:hover {
-            transform: scale(1.05);
+          to {
+            width: 100%;
+            left: 0;
+          }
         }
 
-        // Handle image loading errors
-        &:not([src]),
-        &[src=""],
-        &[src="#"] {
-            &::before {
-                content: "LOGO";
-                display: flex;
-                align-items: center;
-                justify-content: center;
+        @keyframes textBounce {
+
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-4px);
+          }
+        }
+
+        li {
+          a {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            overflow: hidden;
+            font-size: 14px;
+            padding: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: inherit;
+
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              width: 0;
+              height: 2px;
+              background: #e61c18;
+            }
+
+            .icon-wrapper {
+              position: relative;
+              width: 24px;
+              height: 24px;
+              overflow: hidden;
+              flex-shrink: 0;
+
+              img.hover {
+                position: absolute;
+                top: 50%;
+                left: 0;
                 width: 100%;
                 height: 100%;
-                color: white;
-                font-weight: bold;
-                font-size: 12px;
+                transform: translate(-100%, -50%);
+                opacity: 0;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+              }
             }
+
+            .link-text {
+              display: inline-block;
+              transform: translateY(0);
+            }
+
+            &:hover {
+              cursor: url('https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/949433e5-70c8-4b03-b5b5-2e13855d4ec3_Frame%2017.png'), auto !important;
+
+              &::after {
+                animation: underlineExpand 0.4s ease-out forwards;
+              }
+
+              .icon-wrapper img.hover {
+                opacity: 1;
+                transform: translate(0, -50%);
+              }
+
+              .link-text {
+                animation: textBounce 0.4s ease-out forwards 0.1s;
+              }
+
+              font-weight: 700 !important;
+            }
+
+            // keep active bold
+            &.active {
+              font-weight: 800 !important;
+              color: #e04652 !important;
+            }
+          }
         }
-    }
-}
+      }
 
-.action-buttons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
 
-    .cart-icon-container {
-        position: relative;
-        cursor: pointer;
-        padding: 8px;
-        border-radius: 50%;
-        transition: background-color $transition-duration $transition-easing;
+
+      .icons {
         display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &:hover {
-            background-color: rgba(224, 70, 82, 0.1);
-        }
-
-        .cart-icon {
-            width: 28px;
-            height: 28px;
-            color: $text-color;
-            transition: color $transition-duration $transition-easing;
-        }
-
-        &:hover .cart-icon {
-            color: $primary-color;
-        }
-
-        .cart-count {
-            position: absolute;
-            top: -2px;
-            right: -2px;
-            background-color: $primary-color;
-            color: white;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 600;
-            font-family: $secondary-font-stack;
-            min-width: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-    }
-
-    .icons {
-        display: flex;
-        gap: 10px;
         align-items: center;
 
         img {
-            width: 40px;
-            object-fit: contain;
+          width: 40px;
+          object-fit: contain;
         }
+      }
     }
+  }
 }
 
-.skip-btn {
-    background-color: #ff6b35;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+// Tablet
+@media only screen and (max-device-width: 768px) {}
 
-    &:hover {
-        background-color: #e55a2b;
-    }
-}
+// Mobile
+@media only screen and (max-device-width: 480px) {
+  .heading {
+    display: block;
+    padding: 1rem 2rem;
 
-.uber-btn {
-    background-color: #000000;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: #333333;
+    .logoDesktop {
+      display: none;
     }
 
-    .uber-icon {
-        font-size: 18px;
-    }
-}
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-
-    span {
-        width: 25px;
-        height: 3px;
-        background-color: #666666;
-        margin: 3px 0;
-        transition: 0.3s;
-    }
-}
-
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-
-    &.active {
-        display: flex;
-    }
-}
-
-.mobile-nav-link {
-    text-decoration: none;
-    color: $text-color;
-    font-family: $primary-font-stack;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 15px 0;
-    border-bottom: 1px solid #f0f0f0;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: fit-content;
-
-    transition:
-        color 0.3s ease,
-        transform 0.3s ease,
-        opacity 0.3s ease;
-
-    // Icon or image (hidden by default)
-    img {
-        width: 20px;
-        opacity: 0;
-        transform: translateY(4px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
+    .logoMobile {
+      display: flex;
     }
 
-    // Hover effects
-    &:hover {
-        color: #e04652;
+    .halal {
+      display: none;
+    }
 
-        img {
-            opacity: 1;
-            transform: translateY(0);
+    .navbar-inverse {
+      .navbar-header {
+        gap: 0px;
+      }
+
+      .navbar-toggle {
+        border: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        display: block;
+
+        .material-symbols-outlined {
+          background: transparent !important;
         }
 
-        &::after {
-            transform: scaleX(1);
+        .icon-bar {
+          background-color: #000;
         }
-    }
+      }
 
-    // Active state
-    // &.active {
-    //     color: #e04652;
-    //     font-weight: 600;
-
-    //     img {
-    //         opacity: 1;
-    //         transform: translateY(0);
-    //     }
-
-    //     &::after {
-    //         transform: scaleX(1);
-    //     }
-    // }
-
-    // Underline effect (animated)
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     bottom: 5px;
-    //     left: 0;
-    //     right: 0;
-    //     height: 2px;
-    //     background-color: #e04652;
-    //     transform: scaleX(0);
-    //     transform-origin: left;
-    //     transition: transform 0.3s ease;
-    // }
-
-    // Remove border from last item
-    &:last-child {
-        border-bottom: none;
-    }
-}
-
-
-// Responsive Design with improved breakpoints
-@media (max-width: 768px) {
-    .navbar-container {
-        padding: 10px 15px;
-    }
-
-    .nav-links {
+      .navbar-collapse {
+        border: none;
+        box-shadow: none;
         display: none;
-    }
 
-    .navbar-logo {
-        position: static;
-        transform: none;
-
-        .logo-image {
-            height: 60px;
-            width: 60px;
+        &.show,
+        &.in {
+          display: block;
         }
-    }
 
-    .menu-toggle {
-        display: flex;
-    }
-
-    .action-buttons {
-        gap: 10px;
-
-        .cart-icon-container {
-            padding: 6px;
-
-            .cart-icon {
-                width: 24px;
-                height: 24px;
-            }
-
-            .cart-count {
-                width: 18px;
-                height: 18px;
-                font-size: 11px;
-                top: -1px;
-                right: -1px;
-            }
+        .navbar-nav {
+          display: grid;
+          justify-content: center;
         }
+      }
     }
-
-    .skip-btn {
-        padding: 6px 12px;
-        font-size: clamp(10px, 2vw, 12px); // Responsive font size
-    }
-
-    .uber-btn {
-        width: 35px;
-        height: 35px;
-
-        .uber-icon {
-            font-size: 16px;
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar-container {
-        padding: 8px 10px;
-    }
-
-    .navbar-logo .logo-image {
-        height: 60px;
-        width: 60px;
-    }
-
-    .skip-btn {
-        display: none;
-    }
-}
-
-// High contrast mode support for accessibility
-@media (prefers-contrast: high) {
-    .nav-link {
-        color: #000000;
-
-        &:hover,
-        &.active {
-            color: #000000;
-            background-color: #ffff00;
-            padding: 2px 4px;
-        }
-    }
-}
-
-// Reduced motion support for accessibility
-// @media (prefers-reduced-motion: reduce) {
-//     .nav-link,
-//     .navbar-logo .logo-image {
-//         transition: none;
-//     }
-
-//     .nav-link:hover {
-//         transform: none;
-//     }
-// }
-
-// Add space for fixed navbar
-:host {
-    margin-bottom: 100px;
+  }
 }

@@ -1,0 +1,140 @@
+  main {
+      margin-top: 10rem;
+
+      .banner {
+          background: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 38%)),
+              url("https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5f204969-5e7c-4c02-b84c-58f4f6e9b481_5.png");
+          display: flex;
+          padding: 10%;
+          background-size: cover;
+          background-position: center center;
+
+          div {
+              padding: 5px;
+
+              h1 {
+                  font-size: 50px;
+                  font-weight: 900;
+                  color: #fff;
+                  /* font-family: "krona one"; */
+                  text-transform: uppercase;
+                  font-family: "Fraunces", serif;
+              }
+
+              span {
+                  font-size: 50px;
+                  font-weight: 900;
+                  color: #fff;
+                  /* font-family: "krona one"; */
+                  text-transform: uppercase;
+                  font-family: "Fraunces", serif;
+              }
+
+              p {
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #fff;
+              }
+          }
+      }
+
+      .about-section {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: 5%;
+
+          .slider {
+              position: relative;
+              width: 50%;
+              height: 100%;
+              margin: auto;
+
+              ::ng-deep .ng-image-slider .ng-image-slider-container .main .main-inner .img-div img {
+                  object-fit: cover;
+                  border-radius: 50px !important;
+              }
+
+              .boldName {
+                  font-size: 16px;
+                  margin: auto;
+                  color: #000;
+                  font-weight: 600;
+                  font-family: "League Spartan", arial, helvetica, sans-serif;
+              }
+
+          }
+
+          .content {
+              width: 50%;
+              padding: 0px 50px;
+
+              h2 {
+                  font-size: 40px;
+                  font-weight: 600;
+                  text-align: start;
+                  color: #000;
+                  font-family: "Crimson Text", Georgia, serif;
+                  text-transform: capitalize;
+              }
+
+              p {
+                  font-size: 16px;
+                  color: #000;
+                  font-family: "League Spartan", arial, helvetica, sans-serif;
+              }
+
+              .boldName {
+                  font-size: 16px;
+                  color: #000;
+                  font-weight: 600;
+                  font-family: "League Spartan", arial, helvetica, sans-serif;
+              }
+
+          }
+      }
+  }
+
+  // Mobile
+  @media only screen and (max-device-width: 480px) {
+      main {
+          margin-top: 10rem;
+
+          .banner {
+              padding: 15% 10%;
+
+              div {
+                  text-align: center;
+
+                  h2 {
+                      font-size: 38px;
+                      text-align: center;
+                  }
+              }
+          }
+
+          .about-section {
+              background-size: 100% auto;
+              display: grid;
+              padding: 10px;
+
+              .slider {
+                  width: 100%;
+              }
+
+              .content {
+                  width: 100%;
+                  padding: 10px;
+
+                  h2 {
+                      text-align: center;
+                  }
+
+                  p {
+                      width: 100%;
+                      text-align: center;
+                  }
+              }
+          }
+      }
+  }
