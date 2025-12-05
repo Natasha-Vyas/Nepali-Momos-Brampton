@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   imagePopupOpen: boolean = false;
   popupImageUrl: string = '';
   signatureMomos: any[] = [];
+  public isVideoPopupOpen: boolean = false;
   aboutUs: any = {};
   culinaryOfferings: any = {};
   dreamSection: any = {};
@@ -43,6 +44,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   private autoSlideApiInterval: any;
   visibleStart: number = 0;
   isMobile: boolean = false;
+  heroBannerImage: string = '';
+  heroVideoUrl: string = '';
 
   constructor(
     private appService: AppService,
@@ -59,7 +62,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.loadData();
     this.seoService.updateSeoTags('home');
     this.checkScreenSize();
-    
+
     // Show image popup after a short delay
     setTimeout(() => {
       this.imagePopupOpen = true;
@@ -106,7 +109,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         ...review,
         image: review.image || 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a2a553a4-ba1f-4c01-89d7-f28df5c39293_person.jpg'
       }));
-      
+
       // Start auto slide after reviews are loaded
       setTimeout(() => {
         this.startAutoApiSlide();
@@ -133,6 +136,12 @@ export class HomeComponent implements OnInit, OnDestroy {
         }
       });
     }
+
+    // Banner media
+    this.heroBannerImage = this.hero.homeImages?.[0]
+      || 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0670782a-bbec-4e26-84c3-0ea082c54d6c_WhatsApp%20Image%202025-10-23%20at%2008.jpeg';
+    this.heroVideoUrl = this.hero.homeVideo
+      || 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/55173658-3206-4380-86f9-17c1f8504ddb_video.mp4';
   }
 
   private initializeForm(): void {
@@ -183,10 +192,22 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.imagePopupOpen = false;
   }
 
+  // Video popup methods
+  showVideoPopup(): void {
+    this.isVideoPopupOpen = true;
+    // Prevent body scrolling
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeVideoPopup(): void {
+    this.isVideoPopupOpen = false;
+    // Restore body scrolling
+    document.body.style.overflow = 'auto';
+  }
   startAutoApiSlide() {
     this.autoSlideApiInterval = setInterval(() => {
       if (!this.hero.StaticReviews || this.hero.StaticReviews.length === 0) return;
-      
+
       if (this.isMobile) {
         // Mobile: slide by 1
         this.visibleStart = (this.visibleStart + 1) % this.hero.StaticReviews.length;
@@ -212,7 +233,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     const total = this.hero.StaticReviews.length;
     const reviewsToShow: any[] = [];
-    
+
     if (this.isMobile) {
       // Mobile: show 1 review
       const index = this.visibleStart % total;

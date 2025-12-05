@@ -1,23 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SeoService } from '../services/seo.service';
+import { AppService } from '../services/app.service';
 
 interface CartItem {
   itemName: string;
-  itemPrice: string;
+  itemPrice: number;
   itemQuantity: number;
-  itemIcon: string;
-  customization?: string;
-  isCustomized?: boolean;
-}
-
-interface GroupedCartItem {
-  itemName: string;
-  itemPrice: string;
-  itemQuantity: number;
-  itemIcon: string;
-  customization?: string;
-  isCustomized?: boolean;
+  itemIcon?: string;
+  customization?: string | any[];
+  // legacy support for quantity field used in template when customization exists
+  quantity?: number;
 }
 
 @Component({
@@ -26,142 +18,90 @@ interface GroupedCartItem {
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-
   cart: CartItem[] = [];
-  groupedItems: GroupedCartItem[] = [];
-  subtotal: number = 0;
-  tax: number = 0;
-  total: number = 0;
-  
-  // Tax rate (5% for this example)
-  readonly TAX_RATE = 0.05;
+  totalPrice = 0;
 
-  constructor(private router: Router, private seoService: SeoService) { }
+  constructor(private appService: AppService, private router: Router) {
+    // Load CSS if needed elsewhere
+    this.appService.getContentData('css');
+  }
 
   ngOnInit(): void {
-    this.loadCart();
-    this.updateCartDisplay();
-    this.seoService.updateSeoTags('cart');
-    
-    // Listen for storage changes from other tabs/pages
-    window.addEventListener('storage', (e) => {
-      if (e.key === 'cart') {
-        this.cart = JSON.parse(e.newValue || '[]');
-        this.updateCartDisplay();
-      }
-    });
-
-    // Listen for cart updates from other pages
-    window.addEventListener('cartUpdated', () => {
-      this.cart = JSON.parse(localStorage.getItem('cart') || '[]');
-      this.updateCartDisplay();
-    });
+    this.cart = this.safeParseCart(localStorage.getItem('cart'));
+    this.syncQuantities();
+    this.generateTotalPrice();
   }
 
-  // Load cart from localStorage
-  loadCart(): void {
-    const savedCart = localStorage.getItem('cart');
-    if (savedCart) {
-      this.cart = JSON.parse(savedCart);
+  addQuantity(index: number): void {
+    this.cart[index].itemQuantity += 1;
+    this.cart[index].quantity = this.cart[index].itemQuantity;
+    this.generateTotalPrice();
+  }
+
+  subQuantity(item: CartItem, index: number): void {
+    if (item.itemQuantity > 1) {
+      this.cart[index].itemQuantity -= 1;
+      this.cart[index].quantity = this.cart[index].itemQuantity;
+      this.generateTotalPrice();
     }
   }
 
-  // Save cart to localStorage
-  saveCart(): void {
-    localStorage.setItem('cart', JSON.stringify(this.cart));
+  addVinoQuantity(index: number): void {
+    this.addQuantity(index);
   }
 
-  // Update cart display and calculations
-  updateCartDisplay(): void {
-    if (this.cart.length === 0) {
-      this.groupedItems = [];
-      this.subtotal = 0;
-      this.tax = 0;
-      this.total = 0;
-      return;
-    }
-
-    // Group items by name and sum quantities
-    const grouped = this.cart.reduce((acc: any, item: CartItem) => {
-      const key = item.itemName;
-      if (acc[key]) {
-        acc[key].itemQuantity += item.itemQuantity;
-      } else {
-        acc[key] = { ...item };
-      }
-      return acc;
-    }, {});
-
-    this.groupedItems = Object.values(grouped);
-    this.calculateTotals();
+  subVinoQuantity(item: CartItem, index: number): void {
+    this.subQuantity(item, index);
   }
 
-  // Calculate subtotal, tax, and total
-  calculateTotals(): void {
-    this.subtotal = this.groupedItems.reduce((sum, item) => {
-      return sum + (parseFloat(item.itemPrice) * item.itemQuantity);
+  removeItem(index: number): void {
+    this.cart.splice(index, 1);
+    this.generateTotalPrice();
+  }
+
+  generateTotalPrice(): void {
+    this.totalPrice = this.cart.reduce((sum, item) => {
+      const price = this.toNumber(item.itemPrice);
+      const qty = this.toNumber(item.itemQuantity, 1);
+      return sum + price * qty;
     }, 0);
-    
-    this.tax = this.subtotal * this.TAX_RATE;
-    this.total = this.subtotal + this.tax;
+
+    this.totalPrice = parseFloat(this.totalPrice.toFixed(2));
+    this.persistCart();
   }
 
-  // Update item quantity
-  updateItemQuantity(itemName: string, change: number): void {
-    const itemIndex = this.cart.findIndex(item => item.itemName === itemName);
-    if (itemIndex !== -1) {
-      this.cart[itemIndex].itemQuantity += change;
-      if (this.cart[itemIndex].itemQuantity <= 0) {
-        this.cart.splice(itemIndex, 1);
-      }
-      this.saveCart();
-      this.updateCartDisplay();
-      this.updateCartCount();
-    }
-  }
-
-  // Remove item from cart
-  removeItem(itemName: string): void {
-    this.cart = this.cart.filter(item => item.itemName !== itemName);
-    this.saveCart();
-    this.updateCartDisplay();
-    this.updateCartCount();
-  }
-
-  // Update cart count in header
-  updateCartCount(): void {
-    // Count unique items, not total quantity
-    const uniqueItemCount = this.cart.length;
-    
-    // Dispatch custom event for other components
-    window.dispatchEvent(new CustomEvent('cartUpdated', {
-      detail: { count: uniqueItemCount }
-    }));
-  }
-
-  // Get item total price
-  getItemTotal(item: GroupedCartItem): number {
-    return parseFloat(item.itemPrice) * item.itemQuantity;
-  }
-
-  // Check if cart is empty
-  isCartEmpty(): boolean {
-    return this.cart.length === 0;
-  }
-
-  // Proceed to checkout
-  proceedToCheckout(): void {
-    if (this.cart.length === 0) {
-      alert('Your cart is empty!');
-      return;
-    }
-    
-    // Navigate to checkout page
+  checkoutPage(): void {
     this.router.navigate(['/checkout']);
   }
 
-  // Navigate to menu
-  goToMenu(): void {
-    this.router.navigate(['/menu']);
+  private syncQuantities(): void {
+    this.cart = this.cart.map((item) => {
+      const qty = this.toNumber(item.itemQuantity ?? item.quantity, 1);
+      return {
+        ...item,
+        itemPrice: this.toNumber(item.itemPrice),
+        itemQuantity: qty,
+        quantity: qty
+      };
+    });
+  }
+
+  private safeParseCart(raw: string | null): CartItem[] {
+    try {
+      const parsed = raw ? JSON.parse(raw) : [];
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+
+  private persistCart(): void {
+    localStorage.setItem('cart', JSON.stringify(this.cart));
+    localStorage.setItem('totalPrice', JSON.stringify(this.totalPrice));
+  }
+
+  private toNumber(value: any, fallback: number = 0): number {
+    const num = parseFloat(value);
+    return Number.isNaN(num) ? fallback : num;
   }
 }

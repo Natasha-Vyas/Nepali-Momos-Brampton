@@ -1,119 +1,69 @@
 <main>
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Experience the Taste of Authentic Nepali Momos</h1>
-            <p>Delight in every bite amidst our new Japanese cherry blossom-inspired decor.</p>
-            <button routerLink="/menu" class="cta-button">Order Now</button>
+    <!-- Video Popup Modal -->
+    <div class="video-popup-modal" [class.show]="isVideoPopupOpen" *ngIf="isVideoPopupOpen">
+        <div class="popup-overlay" (click)="closeVideoPopup()"></div>
+        <div class="popup-content">
+            <button class="close-btn" (click)="closeVideoPopup()">&times;</button>
+            <div class="video-container">
+                <video autoplay muted loop playsinline controls>
+                    <source
+                        src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/55173658-3206-4380-86f9-17c1f8504ddb_video.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
-    </section>
-
-    <!-- Signature Momos Section -->
-    <section class="signature-momos-section">
-        <div class="container">
-            <h2 class="section-title">{{ hero.signatureMomos.title }}</h2>
-            <div class="momos-grid">
-                <div class="momo-card" *ngFor="let item of hero.signatureMomos.items">
-                    <div class="momo-image">
-                        <img [src]="item.image" [alt]="item.name">
-                    </div>
-                    <div class="momo-content">
-                        <h3 class="momo-name">{{ item.name }}</h3>
-                        <p class="momo-description">{{ item.description }}</p>
-                        <button class="order-btn" routerLink="/menu">Order Now</button>
-                    </div>
+    </div>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD89S7RX" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <main>
+        <div class="video-container" (click)="showVideoPopup()" style="cursor: pointer; position: relative;">
+            <img
+                src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/0670782a-bbec-4e26-84c3-0ea082c54d6c_WhatsApp%20Image%202025-10-23%20at%2008.jpeg" />
+            <!-- Play button overlay -->
+            <div class="play-button-overlay">
+                <div class="play-button">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="30" fill="rgba(0,0,0,0.7)" />
+                        <polygon points="22,18 22,42 42,30" fill="white" />
+                    </svg>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- About Us Section -->
-    <!-- <section class="about-us-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img [src]="hero.aboutus.image" [alt]="hero.aboutus.title">
-                </div>
-                <div class="about-text">
-                    <h2 class="about-title">{{ hero.aboutus.title }}</h2>
-                    <p class="about-description">{{ hero.aboutus.description }}</p>
-                    <p class="about-second-description">{{ hero.aboutus.secondDescription }}</p>
-                    <button class="learn-more-btn" routerLink="/about-us">{{ hero.aboutus.buttonText }}</button>
-                </div>
-            </div>
+        <div class="menu-header">
+            <h1>Savor the Steaming, <br />Spicy Momos (Dumplings) Santa Swears By<br />—Now in Year Two!</h1>
         </div>
-    </section> -->
 
-    <!-- Culinary Offerings Section -->
-    <section class="culinary-offerings-section">
-        <div class="container">
-            <div class="offerings-content">
-                <div class="offerings-text">
-                    <h2 class="offerings-title">{{ hero.culinaryOfferings.title }}</h2>
-                    <h3 class="offerings-subtitle">{{ hero.culinaryOfferings.subtitle }}</h3>
-                    <p class="offerings-description">{{ hero.culinaryOfferings.description }}</p>
-                    <button class="view-all-btn" routerLink="/catering">View all</button>
-                </div>
-                <div class="offerings-image">
-                    <img [src]="hero.culinaryOfferings.image" [alt]="hero.culinaryOfferings.title">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dream Section -->
-    <section class="dream-section">
-        <div class="container">
-            <div class="dream-header">
-                <h2 class="dream-title">{{ hero.dreamSection.title }}</h2>
-                <p class="dream-subtitle">{{ hero.dreamSection.subtitle }}</p>
-            </div>
-            <div class="dream-grid">
-                <div class="dream-card" *ngFor="let category of hero.dreamSection.categories">
-                    <div class="dream-card-image">
-                        <img [src]="category.image" [alt]="category.name">
-                        <div class="dream-card-overlay">
-                            <h3 class="dream-card-title">{{ category.name }}</h3>
+        <!-- About Us Section -->
+        <section class="about-us-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image-slider">
+                        <div class="slider-container">
+                            <img
+                                src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/581925da-6d3b-4bdd-a18c-03502ded3824_WhatsApp%20Image%202025-10-23%20at%2008.jpeg" />
                         </div>
                     </div>
-                    <div class="dream-card-content">
-                        <p class="dream-card-description">{{ category.description }}</p>
+                    <div class="about-text">
+                        <p class="about-description">The people have spoken, and we've answered the call! Following a
+                            blockbuster
+                            debut, the most talked-about snack is officially making its highly-anticipated return to The
+                            Distillery
+                            Winter Village. Prepare once again for a moment of pure culinary magic: authentic Nepali
+                            Momos
+                            (dumplings). Each one is a tender, savory bite, served piping hot to chase away the chill.
+                        </p>
+                        <p class="about-second-description">Doused in our bold, tangy Achar sauce, they offer a rich,
+                            exotic
+                            flavor that simply can't be beat. It’s an open secret that Santa has ditched his milk and
+                            cookies for a
+                            platter of these, and demand is only growing! Make a beeline for the legendary taste when
+                            the market
+                            opens on November 13, 2025, and find out why everyone is coming back for more!</p>
                     </div>
                 </div>
             </div>
-            <div class="dream-footer">
-                <button class="see-more-btn" routerLink="/menu">{{ hero.dreamSection.buttonText }}</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonial Section -->
-    <section class="reviews-wrapper">
-        <div class="container">
-            <h2 class="reviews-title">What people<br>say about us</h2>
-
-            <div class="reviews-container" (mouseenter)="pauseAutoSlide()" (mouseleave)="resumeAutoSlide()">
-                <div class="review-card" *ngFor="let review of visibleReviews">
-                    <div class="review-header">
-                        <img class="avatar" [src]="review.image" alt="User Photo"
-                            (error)="onImgError($event)" />
-                        <div class="reviewer-info">
-                            <div class="author">{{ review.name }}</div>
-                            <div class="stars">
-                                <span>★★★★★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text">{{ review.text }}</p>
-                </div>
-            </div>
-
-            <!-- <a [href]="social.google" target="_blank" class="google-reviews">
-                View more reviews
-            </a> -->
-
-            <div *ngIf="visibleReviews.length === 0" class="no-reviews">
-                <p>No English reviews available at the moment.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 </main>

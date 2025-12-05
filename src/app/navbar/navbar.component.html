@@ -1,59 +1,54 @@
-<nav class="navbar">
-    <div class="navbar-container">
-        <!-- Left Navigation Links -->
-        <div class="nav-links left-links">
-            <a routerLink="/home-two" style="font-weight: 700; color: #e04652;" routerLinkActive="active" class="nav-link"><img style="opacity: 1;" src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/df735d94-82fd-4d87-8ae9-7fa48eb09264_Home.png"/> Home </a>
-            <a routerLink="/home-two" routerLinkActive="active" class="nav-link"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/382daf6a-d301-432c-8912-8544e20cbf9c_Menu.png" /> Menu </a>
-            <a routerLink="/home-two" routerLinkActive="active" class="nav-link"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/840528fc-dc7f-456f-baf7-6a7ab756ca71_Catering.png" /> Catering </a>
-        </div>
+<div class="heading" [style]="css.navbar">
+  <div class="logoDesktop" [style]="css.logoDesktop">
+    <img *ngIf="logo" routerLink="/" [src]="logo" [style]="css.logo" />
+  </div>
 
-        <!-- Center Logo -->
-        <div class="navbar-logo">
-            <a routerLink="/home-two">
-                <img [src]="logo" alt="Nepali Momos" class="logo-image">
-            </a>
-        </div>
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="navbar-header">
+      <img *ngIf="logo" class="logoMobile" routerLink="/" [src]="logo" [style]="css.logo" />
 
-        <!-- Right Navigation Links -->
-        <div class="nav-links right-links">
-            <a routerLink="/home-two" routerLinkActive="active" class="nav-link"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/521d96be-c3a7-4e36-81c6-63dc95114ccd_Whole%20sale.png" /> Our Story </a>
-            <a routerLink="/home-two" routerLinkActive="active" class="nav-link"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/df735d94-82fd-4d87-8ae9-7fa48eb09264_Home.png" /> Gallery </a>
-            <a routerLink="/home-two" routerLinkActive="active" class="nav-link"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/382daf6a-d301-432c-8912-8544e20cbf9c_Menu.png" /> Contact Us </a>
-        </div>
+      <button *ngIf="close" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1" (click)="change()">
+        <span [style]="css.icon" class="sr-only">Toggle navigation</span>
+        <span [style]="css.icon" class="icon-bar"></span>
+        <span [style]="css.icon" class="icon-bar"></span>
+        <span [style]="css.icon" class="icon-bar"></span>
+      </button>
 
-        <!-- Action Buttons -->
-        <div class="action-buttons">
-            <!-- Cart Icon - Only show on cart and catering pages -->
-            <div class="cart-icon-container" *ngIf="showCartIcon" (click)="goToCart()">
-                <svg class="cart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V16.5M9 19.5C9.8 19.5 10.5 20.2 10.5 21S9.8 22.5 9 22.5 7.5 21.8 7.5 21 8.2 19.5 9 19.5ZM20 19.5C20.8 19.5 21.5 20.2 21.5 21S20.8 22.5 20 22.5 18.5 21.8 18.5 21 19.2 19.5 20 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span class="cart-count" *ngIf="cartItemCount > 0">{{ cartItemCount }}</span>
-            </div>
-            
-            <div class="icons">
-                <a target="_blank" *ngFor="let link of hero.onlineOrdering" [href]="link[1]">
-                    <img [src]="link[0]">
-                </a>
-            </div>
-            <button class="menu-toggle" (click)="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+      <button *ngIf="!close" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1" (click)="change()">
+        <span class="sr-only">Toggle navigation</span>
+        <span [style]="css.icon" class="material-symbols-outlined">close</span>
+      </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" [class.active]="isMobileMenuOpen">
-        <a routerLink="/home-two" routerLinkActive="active" class="mobile-nav-link" (click)="closeMobileMenu()"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/df735d94-82fd-4d87-8ae9-7fa48eb09264_Home.png"/> Home </a>
-        <a routerLink="/home-two" routerLinkActive="active" class="mobile-nav-link" (click)="closeMobileMenu()"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/382daf6a-d301-432c-8912-8544e20cbf9c_Menu.png" /> Menu </a>
-        <a routerLink="/home-two" routerLinkActive="active" class="mobile-nav-link"
-            (click)="closeMobileMenu()"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/840528fc-dc7f-456f-baf7-6a7ab756ca71_Catering.png" /> Catering </a>
-        <a routerLink="/home-two" routerLinkActive="active" class="mobile-nav-link" (click)="closeMobileMenu()"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/521d96be-c3a7-4e36-81c6-63dc95114ccd_Whole%20sale.png" /> Our Story </a>
-        <a routerLink="/home-two" routerLinkActive="active" class="mobile-nav-link"
-            (click)="closeMobileMenu()"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/df735d94-82fd-4d87-8ae9-7fa48eb09264_Home.png" /> Gallery </a>
-        <a routerLink="/home-two" routerLinkActive="active" class="mobile-nav-link"
-            (click)="closeMobileMenu()"><img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/382daf6a-d301-432c-8912-8544e20cbf9c_Menu.png" /> Contact Us </a>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" [class.in]="!close" [class.show]="!close">
+      <ul class="nav navbar-nav">
+        <li *ngFor="let link of links">
+          <a [style]="css.navbarTextColor" *ngIf="link.type === 'internal'" queryParamsHandling="merge"
+            routerLinkActive="active" class="nav-link" [routerLink]="link.link" (click)="closeMenu()">
+            <span class="icon-wrapper">
+              <img class="icon hover" [src]="link.hoverIcon" alt="" />
+            </span>
+            <span class="link-text">{{ link.text }}</span>
+          </a>
+
+          <a [style]="css.navbarTextColor" *ngIf="link.type === 'external' && !(link.options?.length)"
+            [href]="link.link" (click)="closeMenu()">
+            <span class="icon-wrapper">
+              <img class="icon hover" [src]="link.hoverIcon" alt="" />
+            </span>
+            <span class="link-text">{{ link.text }}</span>
+          </a>
+        </li>
+
+        <li class="icons" *ngIf="hero?.onlineOrdering?.length">
+          <a target="_blank" *ngFor="let link of hero.onlineOrdering" [href]="link[1]">
+            <img [src]="link[0]" alt="online ordering link">
+          </a>
+        </li>
+      </ul>
     </div>
-</nav>
+
+  </nav>
+</div>

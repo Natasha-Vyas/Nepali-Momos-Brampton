@@ -7,56 +7,50 @@ import { AppService } from '../services/app.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  newsletterEmail: string = '';
-  currentYear: number = new Date().getFullYear();
-  hero: any = {};
-  social: any = {};
-  brandName: any = '';
-  logo: any = '';
-  address: any = '';
-  phone: any = '';
-  email: any = '';
-  isSubmitting: boolean = false;
+  public template: any;
+  public footerlogo: any;
+  public footerText: any;
+  public css: any;
+  public links: any;
+  public social: any;
+  public openingHours: any;
+  public deliveryTimes: any;
+  public openingTimes: any;
+  public brandName: any;
+  public footerQuote: any;
+  public address: any;
+  public address2: any;
+  public address3: any;
+  public contact: any;
+  public contactNew: any;
+  public emailid: any;
+  public hero: any;
 
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService) {
+    this.template = this.appService.getContentData('template');
+    this.footerlogo = this.appService.getContentData('footerlogo');
+    this.footerText = this.appService.getContentData('footerText');
+    this.emailid = this.appService.getContentData('email');
+    this.css = this.appService.getContentData('css');
+    this.openingTimes = this.appService.getContentData('openingTimes');
+    this.deliveryTimes = this.appService.getContentData('deliveryTimes');
+    this.openingHours = this.appService.getContentData('openingHours');
+    this.social = this.appService.getContentData('social');
+    this.links = this.appService.getContentData('navbar').links;
+    this.footerQuote = this.appService.getContentData('footerQuote');
+    this.brandName = this.appService.getContentData('brandName');
+    this.address = this.appService.getContentData('address');
+    this.address2 = this.appService.getContentData('address2');
+    this.address3 = this.appService.getContentData('address3');
+    this.contact = this.appService.getContentData('contact');
+    this.contactNew = this.appService.getContentData('contactNew');
+    this.hero = this.appService.getContentData('hero');
+  }
 
   ngOnInit(): void {
-    this.loadData();
   }
 
-  private loadData(): void {
-    // Load all required data from AppService
-    this.hero = this.appService.getContentData('hero') || {};
-    this.social = this.appService.getContentData('social') || {};
-    this.brandName = this.appService.getContentData('brandName') || '';
-    this.address = this.appService.getContentData('address') || '';
-    this.phone = this.appService.getContentData('phone') || '';
-    this.email = this.appService.getContentData('email') || '';
-    this.logo = this.appService.getContentData('logo') || 'assets/images/logo.png';
-  }
-
-  onNewsletterSubmit(): void {
-    if (this.newsletterEmail && this.isValidEmail(this.newsletterEmail)) {
-      this.isSubmitting = true;
-
-      // Submit using AppService which handles Formspark integration
-      this.appService.newsletterSubscription(this.newsletterEmail).subscribe({
-        next: (response) => {
-          alert('Thank you for subscribing to our newsletter!');
-          this.newsletterEmail = '';
-          this.isSubmitting = false;
-        },
-        error: (error) => {
-          console.error('Error submitting newsletter subscription:', error);
-          alert('There was an error subscribing to the newsletter. Please try again.');
-          this.isSubmitting = false;
-        }
-      });
-    }
-  }
-
-  private isValidEmail(email: string): boolean {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
   }
 }

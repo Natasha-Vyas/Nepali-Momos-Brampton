@@ -1,0 +1,21 @@
+<main>
+    <div class="banner">
+        <div>
+            <h1>Our Story</h1>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="slider">
+            <ng-image-slider [images]="hero.ourStoryImages" [infinite]="true" [autoSlide]="3" [imagePopup]="false"
+                [imageSize]="{ width: '100%', height: '70%' }" slideImage="1" #nav [animationSpeed]="3">
+            </ng-image-slider>
+            <p class="boldName" style="margin-top: 10px;">Sajeev's Great Great Grand Father</p>
+            <p class="boldName">Shri Dambar Singh Gazmer</p>
+            <p class="boldName">At work in early 1900's</p>
+        </div>
+        <div class="content">
+            <h2>Our founders journey</h2>
+            <p *ngFor="let p of hero.ourStoryContent">{{ p }}</p>
+        </div>
+    </div>
+</main>
