@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AppService } from '../services/app.service';
 import { SeoService } from '../services/seo.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 interface Review {
   author_name: string;
   rating: number;
@@ -27,7 +28,8 @@ export class HomeTwoComponent implements OnInit, OnDestroy {
 
   constructor(
     private appService: AppService,
-    private seoService: SeoService
+    private seoService: SeoService,
+    private http: HttpClient,
   ) {
 
     this.social = this.appService.getContentData('social');
@@ -45,6 +47,22 @@ export class HomeTwoComponent implements OnInit, OnDestroy {
     this.loadData();
     this.seoService.updateSeoTags('about');
     this.initializeSlider();
+    const placeId = 'ChIJk16VNUOlUQ0RN9deX3Lcna8';
+    const apiKey = 'AIzaSyBcI_i3wUp85_Y5A1crS-I3z4gNzsnvIpc';
+    const url = 'https://caterzhub-backend.vercel.app/places/google-places/reviews';
+    this.http.get<any>(url).subscribe({
+      next: (res) => {
+        this.reviews = (res.result?.reviews || []).filter(
+          (review: any) => review.language === 'en'
+        );
+        if (this.reviews.length > 0) {
+          this.startAutoApiSlide();
+        }
+      },
+      error: (err) => {
+        console.error('Error fetching reviews:', err);
+      }
+    });
   }
 
   ngOnDestroy(): void {
