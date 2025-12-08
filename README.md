@@ -38,8 +38,8 @@ src/
 │   │   ├── navbar/           # Navigation component
 │   │   ├── footer/           # Footer with branding
 │   │   ├── home/             # Homepage with hero section
-│   │   ├── menu/             # Main menu component
-│   │   ├── menu-two/         # Alternative menu layout
+│   │   ├── menu/             # Main catering page
+│   │   ├── menu-two/         # Main menu component
 │   │   ├── cart/             # Shopping cart functionality
 │   │   ├── checkout/         # Order checkout process
 │   │   ├── gallery/          # Image gallery
@@ -159,9 +159,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For support and inquiries:
 - **Restaurant**: Nepali Momos Brampton
-- **Email**: info@nepalimomos.ca
-- **Phone**: (905) XXX-XXXX
-- **Address**: Brampton, Ontario, Canada
+- **Email**: Nepalimomos@outlook.com
+- **Phone**: +1 905-874-4141
+- **Address**: 90 Eastern Ave #28, Brampton, ON L6W 1X9
 
 ## 🙏 Acknowledgments
 
