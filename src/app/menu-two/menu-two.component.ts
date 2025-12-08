@@ -214,12 +214,17 @@ export class MenuTwoComponent implements OnInit {
   }
 
   private recalculateTotal(baseItem: any): void {
-    const basePrice = this.getBasePrice(baseItem);
-    const extras = Object.values(this.modifierSelectionsPrices)
+    const selectedOptionsPrices = Object.values(this.modifierSelectionsPrices)
       .map(val => parseFloat(String(val)) || 0)
       .reduce((sum, value) => sum + value, 0);
 
-    this.totalPrice = basePrice + extras;
+    // If options are selected, show only the selected options' total price
+    // If no options are selected, show the base price
+    if (selectedOptionsPrices > 0) {
+      this.totalPrice = selectedOptionsPrices;
+    } else {
+      this.totalPrice = this.getBasePrice(baseItem);
+    }
   }
 
   private getBasePrice(item: any): number {
