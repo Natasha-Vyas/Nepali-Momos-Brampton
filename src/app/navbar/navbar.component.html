@@ -1,11 +1,15 @@
 <div class="heading" [style]="css.navbar">
   <div class="logoDesktop" [style]="css.logoDesktop">
-    <img *ngIf="logo" routerLink="/" [src]="logo" [style]="css.logo" />
+    <a *ngIf="logo" routerLink="/">
+      <img [src]="logo" [style]="css.logo" />
+    </a>
   </div>
 
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
     <div class="navbar-header">
-      <img *ngIf="logo" class="logoMobile" routerLink="/" [src]="logo" [style]="css.logo" />
+      <a *ngIf="logo" routerLink="/">
+        <img class="logoMobile" [src]="logo" [style]="css.logo" />
+      </a>
 
       <button *ngIf="close" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
         data-target="#bs-example-navbar-collapse-1" (click)="change()">
