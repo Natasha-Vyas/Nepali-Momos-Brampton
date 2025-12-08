@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppService } from '../services/app.service';
 import { SeoService } from '../services/seo.service';
@@ -22,6 +22,8 @@ interface Review {
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  @ViewChild('popupVideo', { static: false }) popupVideo!: ElementRef<HTMLVideoElement>;
+  
   hero: any = {};
   social: any = {};
   brandName: any = '';
@@ -67,6 +69,11 @@ export class HomeComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.imagePopupOpen = true;
     }, 1000);
+
+    // Auto-show video popup after a delay
+    setTimeout(() => {
+      this.showVideoPopup();
+    }, 2000);
 
     // Listen for window resize events
     window.addEventListener('resize', () => {
@@ -197,12 +204,27 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.isVideoPopupOpen = true;
     // Prevent body scrolling
     document.body.style.overflow = 'hidden';
+    
+    // Ensure video plays when popup opens
+    setTimeout(() => {
+      if (this.popupVideo && this.popupVideo.nativeElement) {
+        this.popupVideo.nativeElement.play().catch(error => {
+          console.log('Video autoplay failed:', error);
+        });
+      }
+    }, 100);
   }
 
   closeVideoPopup(): void {
     this.isVideoPopupOpen = false;
     // Restore body scrolling
     document.body.style.overflow = 'auto';
+    
+    // Pause video when popup closes
+    if (this.popupVideo && this.popupVideo.nativeElement) {
+      this.popupVideo.nativeElement.pause();
+      this.popupVideo.nativeElement.currentTime = 0;
+    }
   }
   startAutoApiSlide() {
     this.autoSlideApiInterval = setInterval(() => {

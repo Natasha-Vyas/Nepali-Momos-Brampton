@@ -880,15 +880,15 @@
                           "cust": [
                             {
                               "name": "BEST VALUE Momo, Chill Paneer, Chowmein or Fried Rice and Soup",
-                              "price": 0.00
+                              "price": 9.99
                             },
                             {
                               "name": "Pop or Tea For",
-                              "price": 1.00
+                              "price": 10.99
                             },
                             {
                               "name": "Available in Veg or Chicken",
-                              "price": 0.00
+                              "price": 9.99
                             }
                           ]
                         }
@@ -907,15 +907,15 @@
                           "cust": [
                             {
                               "name": "Momo Veggi Spring Rolls Mango, Salad And Soup ",
-                              "price": 0.00
+                              "price": 9.99
                             },
                             {
                               "name": "Pop or Tea For",
-                              "price": 1.00
+                              "price": 10.99
                             },
                             {
                               "name": "Available in Veg or Chicken",
-                              "price": 0.00
+                              "price": 9.99
                             }
                           ]
                         }
@@ -1433,26 +1433,7 @@
                   "categoryName": "All",
                   "routeName": "all",
                   "searchTerm": "all",
-                  "items": [
-                    {
-                      "itemName": "THAI MANGO SALAD (50 pcs)",
-                      "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
-                      "quantity": 1,
-                      "itemPrice": "35.00"
-                    },
-                    {
-                      "itemName": "VEGGI SPRING ROLLS (50 pcs)",
-                      "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
-                      "quantity": 1,
-                      "itemPrice": "35.00"
-                    },
-                    {
-                      "itemName": "CHICKEN/TOFU SATAY SKEWERS (50 pcs)",
-                      "itemDescription": "Grilled to perfection with sweet pineapple, vibrant onions, and colorful peppers. A delicious balance of sweet, savory, and smoky flavors.",
-                      "quantity": 1,
-                      "itemPrice": "65.00"
-                    }
-                  ]
+                  "items": []
                 },
                 {
                   "categoryName": "STARTER",

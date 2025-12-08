@@ -37,7 +37,7 @@
     </div>
 
     <div class="items-section">
-      <div class="exp" *ngFor="let item of categories; let i = index"
+      <div class="exp" *ngFor="let item of categories2; let i = index"
         [hidden]="selectedCategory !== 'all' && selectedCategory !== i">
         <div id="{{ item.routeName }}" *ngIf="!product && item.items?.length">
           <h3>{{ item.categoryName }}</h3>
@@ -123,9 +123,6 @@
       <div class="close-btn" (click)="open()">×</div>
       <div class="custom-model-wrap">
         <div class="pop-up-content-wrap">
-          <div class="img">
-            <img [src]="display.icon || logo" [alt]="display.itemName" />
-          </div>
           <div class="content">
             <h3>{{ display.itemName }}</h3>
             <p>{{ display.itemDescription }}</p>

@@ -26,6 +26,18 @@
       justify-content: center;
       border-top: 1px solid #8080802e;
 
+      .brand-name {
+        color: #ffffff;
+        font-family: 'Crimson Text', Georgia, serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        margin: 0px;
+      }
+
       >div {
         flex: 1 1 250px;
         display: flex;
@@ -173,6 +185,11 @@
         display: grid;
         gap: 50px;
         justify-content: center;
+
+        .brand-name {
+          font-size: 24px;
+          letter-spacing: 1px;
+        }
 
         .logo {
           width: 100%;
