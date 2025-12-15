@@ -6,7 +6,8 @@
   <title>NepaliMomos</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6c72a030-88e9-4ff2-802a-706e3c8f1fde_45425848-16f5-4bf6-bd0a-774aae6582b0_nepali-momos-2%20-%20unscreen%20%281%29.gif">
+  <link rel="icon" type="image/x-icon"
+    href="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/6c72a030-88e9-4ff2-802a-706e3c8f1fde_45425848-16f5-4bf6-bd0a-774aae6582b0_nepali-momos-2%20-%20unscreen%20%281%29.gif">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,9 +54,38 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD89S7RX"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD89S7RX" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <script>
+    (function () {
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('a[href^="www.ubereats.com/"]')) {
+          gtag('event', 'conversion', { 'send_to': 'AW-11160706948/VseBCJyI7c8bEIS_68kp' });
+        }
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('a[href^="www.doordash.com/"]')) {
+          gtag('event', 'conversion', { 'send_to': 'AW-11160706948/bz10CNvD9s8bEIS_68kp' });
+        }
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('a[href^="www.skipthedishes.com/"]')) {
+          gtag('event', 'conversion', { 'send_to': 'AW-11160706948/UthKCKPa5s8bEIS_68kp' });
+        }
+      });
+    })();
+  </script>
   <app-root></app-root>
 </body>
 
