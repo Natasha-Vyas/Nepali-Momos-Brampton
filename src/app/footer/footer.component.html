@@ -3,26 +3,7 @@
         'background-size': 'cover',
         'background-position': 'center'
       }" [style]="css.footerCss">
-
-<!-- Google Tag for Checkout and Add to Cart Page -->
-  <script>
-    window.addEventListener('load', function () {
-      if (window.location.href.includes('checkout')) {
-        gtag('event', 'conversion', { 'send_to': 'AW-11160706948/Pu7VCJ-M89IbEIS_68kp' });
-      }
-    });
-
-  </script>
-
-  <script>
-    window.addEventListener('load', function () {
-      if (window.location.href.includes('cart')) {
-        gtag('event', 'conversion', { 'send_to': 'AW-11160706948/hmpYCISqgdMbEIS_68kp' });
-      }
-    });
-
-  </script>
-
+      
   <div *ngIf="hero.scrollToTop" [style]="css.scrollToTopCss" (click)="scrollToTop()" class="scroller">
     ^
   </div>
