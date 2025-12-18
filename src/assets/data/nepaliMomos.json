@@ -163,6 +163,12 @@
         "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e844c353-7aa1-4338-81ec-2679b89ba7ed_Whole%20sale.png",
         "link": "/about-us",
         "type": "internal"
+      },
+      {
+        "text": "Pickup",
+        "hoverIcon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e844c353-7aa1-4338-81ec-2679b89ba7ed_Whole%20sale.png",
+        "link": "https://www.clover.com/online-ordering/nepali-momos-brampton-brampton",
+        "type": "external"
       }
     ]
   },
@@ -198,10 +204,6 @@
     "homeEventImage4": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d7c84223-a451-4069-993b-1e03f1ab794b_4.png",
     "homeVideo": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/14b9a588-74f9-4684-8549-b4d520d3202b_nepali%20moms%20vidoe.mp4",
     "onlineOrdering": [
-      [
-        "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/1aa4c337-8b5c-4d0a-bc7b-c9685247cad5_skip.png",
-        "https://www.skipthedishes.com/nepali-momos-brampton-eastern-avenue"
-      ],
       [
         "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/b2933333-8bef-4201-8e66-f49d329a5dec_doordash.png",
         "https://www.doordash.com/store/nepali-momos-brampton-brampton-24977152/?srsltid=AfmBOopc5NL0JYoMi9qGYLvFD1Yx3PgYLn2tTIkATj7d32pSVrliiPc-"
