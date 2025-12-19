@@ -70,11 +70,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.imagePopupOpen = true;
     }, 1000);
 
-    // Auto-show video popup after a delay
-    setTimeout(() => {
-      this.showVideoPopup();
-    }, 2000);
-
     // Listen for window resize events
     window.addEventListener('resize', () => {
       this.checkScreenSize();
