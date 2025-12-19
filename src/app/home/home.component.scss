@@ -99,34 +99,6 @@ main {
     }
   }
 
-  .play-button-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    transition: opacity 0.3s ease;
-
-    .play-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-
-      svg {
-        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-      }
-    }
-  }
-
-  .video-container:hover .play-button-overlay {
-    opacity: 0.9;
-  }
-
   button {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
