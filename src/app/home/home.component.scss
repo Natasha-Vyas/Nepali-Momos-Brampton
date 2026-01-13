@@ -262,6 +262,174 @@ main {
       .learn-more-btn {}
     }
   }
+
+  // Location Section
+  .location-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .location-header {
+      text-align: center;
+      margin-bottom: 60px;
+
+      h2 {
+        font-family: "Abril Fatface", serif;
+        font-size: 50px;
+        font-weight: 400;
+        color: #41433E;
+        margin: 0 0 20px;
+      }
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+
+    .location-content {
+      display: flex;
+      gap: 60px;
+      align-items: stretch;
+    }
+
+    .location-info {
+      flex: 0 0 400px;
+
+      .address-card {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .contact-section {
+          flex: 1;
+
+          h3 {
+            font-family: "Abril Fatface", serif;
+            font-size: 28px;
+            color: #41433E;
+            margin: 0 0 30px;
+            text-align: center;
+          }
+
+          .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+            text-align: left;
+
+            .contact-icon {
+              font-size: 20px;
+              width: 30px;
+              flex-shrink: 0;
+            }
+
+            .contact-details {
+              flex: 1;
+
+              strong {
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #41433E;
+                display: block;
+                margin-bottom: 5px;
+              }
+
+              p {
+                font-family: "Poppins", sans-serif;
+                font-size: 15px;
+                color: #666;
+                line-height: 1.5;
+                margin: 0;
+
+                a {
+                  color: #e04652;
+                  text-decoration: none;
+                  transition: color 0.3s ease;
+
+                  &:hover {
+                    color: #c73e47;
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .action-buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          margin-top: 20px;
+
+          .directions-btn,
+          .call-btn {
+            display: inline-block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 12px 30px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+          }
+
+          .directions-btn {
+            background-color: #e04652;
+            box-shadow: 0 4px 15px rgba(224, 70, 82, 0.3);
+
+            &:hover {
+              background-color: #c73e47;
+              transform: translateY(-2px);
+              box-shadow: 0 6px 20px rgba(224, 70, 82, 0.4);
+            }
+          }
+
+          .call-btn {
+            background-color: #28a745;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+
+            &:hover {
+              background-color: #218838;
+              transform: translateY(-2px);
+              box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+            }
+          }
+        }
+      }
+    }
+
+    .map-container {
+      flex: 1;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -315,6 +483,69 @@ main {
       .about-text {
         .about-title {
           font-size: 2.5rem;
+        }
+      }
+    }
+
+    .location-section {
+      padding: 60px 0;
+
+      .location-header {
+        margin-bottom: 40px;
+
+        h2 {
+          font-size: 40px;
+        }
+      }
+
+      .location-content {
+        gap: 40px;
+      }
+
+      .location-info {
+        flex: 0 0 350px;
+
+        .address-card {
+          padding: 30px;
+
+          .contact-section {
+            h3 {
+              font-size: 24px;
+            }
+
+            .contact-item {
+              margin-bottom: 20px;
+
+              .contact-icon {
+                font-size: 18px;
+                width: 25px;
+              }
+
+              .contact-details {
+                strong {
+                  font-size: 15px;
+                }
+
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+          .action-buttons {
+            .directions-btn,
+            .call-btn {
+              font-size: 14px;
+              padding: 10px 25px;
+            }
+          }
+        }
+      }
+
+      .map-container {
+        iframe {
+          height: 400px;
         }
       }
     }
@@ -409,6 +640,82 @@ main {
         }
       }
     }
+
+    .location-section {
+      padding: 50px 0;
+
+      .location-header {
+        margin-bottom: 30px;
+
+        h2 {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .location-content {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .location-info {
+        flex: none;
+
+        .address-card {
+          padding: 25px;
+          height: auto;
+
+          .contact-section {
+            h3 {
+              font-size: 22px;
+              margin-bottom: 25px;
+            }
+
+            .contact-item {
+              margin-bottom: 20px;
+
+              .contact-icon {
+                font-size: 18px;
+                width: 25px;
+              }
+
+              .contact-details {
+                strong {
+                  font-size: 14px;
+                }
+
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+          .action-buttons {
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 25px;
+
+            .directions-btn,
+            .call-btn {
+              font-size: 14px;
+              padding: 10px 20px;
+              flex: 1;
+            }
+          }
+        }
+      }
+
+      .map-container {
+        iframe {
+          height: 350px;
+        }
+      }
+    }
+
   }
 }
 
@@ -474,6 +781,83 @@ main {
         .learn-more-btn {
           padding: 12px 28px;
           font-size: 0.9rem;
+        }
+      }
+    }
+
+    .location-section {
+      padding: 40px 0;
+
+      .location-header {
+        margin-bottom: 25px;
+
+        h2 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 14px;
+          padding: 0 10px;
+        }
+      }
+
+      .location-content {
+        flex-direction: column;
+        gap: 25px;
+        align-items: stretch;
+      }
+
+      .location-info {
+        .address-card {
+          padding: 20px;
+          margin: 0 10px;
+          height: auto;
+
+          .contact-section {
+            h3 {
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+
+            .contact-item {
+              margin-bottom: 18px;
+
+              .contact-icon {
+                font-size: 16px;
+                width: 22px;
+              }
+
+              .contact-details {
+                strong {
+                  font-size: 13px;
+                }
+
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+
+          .action-buttons {
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+
+            .directions-btn,
+            .call-btn {
+              font-size: 13px;
+              padding: 8px 18px;
+            }
+          }
+        }
+      }
+
+      .map-container {
+        margin: 0 10px;
+
+        iframe {
+          height: 300px;
         }
       }
     }
