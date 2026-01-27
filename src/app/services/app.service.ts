@@ -102,6 +102,17 @@ export class AppService {
         );
     }
 
+    wholesaleInquiry(data: any): Observable<any> {
+        let requestBody = {
+            ...data,
+            type: 'wholesale enquiry'
+        };
+        return this.http.post(
+            `https://submit-form.com/${this.formCode}`,
+            requestBody
+        );
+    }
+
     checkoutSubmission(data: any): Observable<any> {
         let requestBody = {
             ...data,
