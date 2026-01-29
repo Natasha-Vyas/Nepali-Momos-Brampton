@@ -1,177 +1,307 @@
-main {
-    cursor: url('https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/949433e5-70c8-4b03-b5b5-2e13855d4ec3_Frame%2017.png'), auto !important;
-    background-color: #161616;
-    font-family: "League Spartan", arial, helvetica, sans-serif;
-    margin-top: 75px;
+:host {
+    --bg: #f5f0e6;
+    --card: #ffffff;
+    --text: #222222;
+    --muted: #555555;
+    --accent: #c97c2b;
+    --accent2: #2e8b57;
+    --border: rgba(0, 0, 0, 0.12);
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+    --radius: 18px;
 
-    .label {
-        background: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 38%)),
-            url("https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2b2965bf-f96c-46a1-ba5e-56d2f6784c82_Banner%20images%20for%20website.jpg");
-        display: flex;
-        justify-content: center;
-        background-size: cover;
-        background-position: center center;
-        padding: 14rem;
-        background-position: 60%;
-        align-items: center;
-        background-attachment: fixed;
+    display: block;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, sans-serif;
+}
 
-        div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
+.container {
+    // max-width: 1100px;
+    margin: 0 auto;
+    // padding: 24px 16px 60px;
+    margin-top: 130px;
+}
 
-            h2 {
-                font-weight: 400;
-                line-height: 1.22;
-                letter-spacing: 0px;
-                font-size: 60px;
-                line-height: 1.4;
-                color: #ffffff;
-                text-align: center;
-            }
-        }
-    }
+.topHeader {
+    position: relative;
+    // border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    padding: 0;
+}
 
-    .about-div {
-        padding: 5%;
+.headerBanner {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 240px;
+}
 
-        h2 {
-            color: #fff;
-            font-size: 34px;
-            font-weight: 600;
-            text-align: center;
-        }
+.headerOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 28px;
+}
 
-        .points {
-            display: flex;
-            justify-content: center;
-            padding: 20px 12em 0px;
+.brandOverlay h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+}
 
-            h4 {
-                color: #fff;
-                font-size: 16px;
-                font-weight: 500;
-            }
+.brandOverlay p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+}
 
-            p {
-                color: #fff;
-                font-size: 16px;
-                font-weight: 200;
-                margin: 6px 12px;
-                text-align: start;
-            }
-        }
+.cartOverlayBtn {
+    border: 1px solid rgba(255, 176, 0, 0.55);
+    background: rgba(255, 176, 0, 0.20);
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-weight: 850;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-        .partnering {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+.badge {
+    background: rgba(46, 139, 87, 0.35);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 800;
+}
 
-            h3 {
-                color: #fff;
-                font-size: 34px;
-                font-weight: 600;
-            }
+.section-title {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 16px;
 
-            ul {
-                li {
-                    color: #ffffff;
-                    font-size: 16px;
-                }
-            }
-        }
-
-        p {
-            color: #fff;
-            font-size: 16px;
-            font-weight: 400;
-            width: 65%;
-            text-align: center;
-            margin: 20px auto;
-        }
-
-        .sub-video {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            grid-gap: 20px;
-            gap: 20px;
-            justify-content: center;
-            margin: auto;
-
-            video {
-                height: 90vh;
-                flex: 0 0 60%;
-                max-width: 32%;
-            }
-        }
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 50px;
     }
 }
 
-// Mobile
-@media only screen and (max-device-width: 480px) {
-    main {
-        .label {
-            padding: 10rem 1.5rem;
-
-            div {
-                h2 {
-                    font-weight: 600;
-                    font-size: 36px;
-                }
-            }
-        }
-
-        .about-div {
-            padding: 10px;
-
-            .partnering {
-                h3 {
-                    font-size: 17px;
-                    font-weight: 500;
-                }
-            }
-
-            .points {
-                padding: 1%;
-                flex-direction: column;
-
-                p {
-                    width: 90%;
-                    text-align: center;
-                    margin: 0px auto;
-                }
-
-                h4 {
-                    text-align: center;
-                }
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            ul {
-                li {
-                    width: 100%;
-                }
-            }
-
-            p {
-                width: 90%;
-                text-align: center;
-                margin: 0px auto;
-            }
-
-            .sub-video {
-                video {
-                    height: auto;
-                    flex: 0 0 100%;
-                    max-width: 100%;
-                }
-            }
-        }
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px;
 }
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 14px;
+}
+
+.card h4 {
+    margin: 0 0 6px;
+}
+
+.price {
+    font-weight: 900;
+    margin-top: 6px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 26px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+
+// main {
+//     cursor: url('https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/949433e5-70c8-4b03-b5b5-2e13855d4ec3_Frame%2017.png'), auto !important;
+//     background-color: #161616;
+//     font-family: "League Spartan", arial, helvetica, sans-serif;
+//     margin-top: 75px;
+
+//     .label {
+//         background: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 38%)),
+//             url("https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2b2965bf-f96c-46a1-ba5e-56d2f6784c82_Banner%20images%20for%20website.jpg");
+//         display: flex;
+//         justify-content: center;
+//         background-size: cover;
+//         background-position: center center;
+//         padding: 14rem;
+//         background-position: 60%;
+//         align-items: center;
+//         background-attachment: fixed;
+
+//         div {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             width: 100%;
+
+//             h2 {
+//                 font-weight: 400;
+//                 line-height: 1.22;
+//                 letter-spacing: 0px;
+//                 font-size: 60px;
+//                 line-height: 1.4;
+//                 color: #ffffff;
+//                 text-align: center;
+//             }
+//         }
+//     }
+
+//     .about-div {
+//         padding: 5%;
+
+//         h2 {
+//             color: #fff;
+//             font-size: 34px;
+//             font-weight: 600;
+//             text-align: center;
+//         }
+
+//         .points {
+//             display: flex;
+//             justify-content: center;
+//             padding: 20px 12em 0px;
+
+//             h4 {
+//                 color: #fff;
+//                 font-size: 16px;
+//                 font-weight: 500;
+//             }
+
+//             p {
+//                 color: #fff;
+//                 font-size: 16px;
+//                 font-weight: 200;
+//                 margin: 6px 12px;
+//                 text-align: start;
+//             }
+//         }
+
+//         .partnering {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+
+//             h3 {
+//                 color: #fff;
+//                 font-size: 34px;
+//                 font-weight: 600;
+//             }
+
+//             ul {
+//                 li {
+//                     color: #ffffff;
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+
+//         p {
+//             color: #fff;
+//             font-size: 16px;
+//             font-weight: 400;
+//             width: 65%;
+//             text-align: center;
+//             margin: 20px auto;
+//         }
+
+//         .sub-video {
+//             display: flex;
+//             flex-wrap: wrap;
+//             width: 100%;
+//             grid-gap: 20px;
+//             gap: 20px;
+//             justify-content: center;
+//             margin: auto;
+
+//             video {
+//                 height: 90vh;
+//                 flex: 0 0 60%;
+//                 max-width: 32%;
+//             }
+//         }
+//     }
+// }
+
+// // Mobile
+// @media only screen and (max-device-width: 480px) {
+//     main {
+//         .label {
+//             padding: 10rem 1.5rem;
+
+//             div {
+//                 h2 {
+//                     font-weight: 600;
+//                     font-size: 36px;
+//                 }
+//             }
+//         }
+
+//         .about-div {
+//             padding: 10px;
+
+//             .partnering {
+//                 h3 {
+//                     font-size: 17px;
+//                     font-weight: 500;
+//                 }
+//             }
+
+//             .points {
+//                 padding: 1%;
+//                 flex-direction: column;
+
+//                 p {
+//                     width: 90%;
+//                     text-align: center;
+//                     margin: 0px auto;
+//                 }
+
+//                 h4 {
+//                     text-align: center;
+//                 }
+//             }
+
+//             h2 {
+//                 font-size: 24px;
+//             }
+
+//             ul {
+//                 li {
+//                     width: 100%;
+//                 }
+//             }
+
+//             p {
+//                 width: 90%;
+//                 text-align: center;
+//                 margin: 0px auto;
+//             }
+
+//             .sub-video {
+//                 video {
+//                     height: auto;
+//                     flex: 0 0 100%;
+//                     max-width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }

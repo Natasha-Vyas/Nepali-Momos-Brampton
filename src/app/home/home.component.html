@@ -1,6 +1,7 @@
+
 <main>
     <!-- Video Popup Modal -->
-    <div class="video-popup-modal" [class.show]="isVideoPopupOpen" *ngIf="isVideoPopupOpen">
+    <!-- <div class="video-popup-modal" [class.show]="isVideoPopupOpen" *ngIf="isVideoPopupOpen">
         <div class="popup-overlay" (click)="closeVideoPopup()"></div>
         <div class="popup-content">
             <button class="close-btn" (click)="closeVideoPopup()">&times;</button>
@@ -13,41 +14,121 @@
                 </video>
             </div>
         </div>
-    </div>
+    </div> -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD89S7RX" height="0" width="0"
             style="display: none; visibility: hidden"></iframe></noscript>
     <main>
-        <div class="video-container">
+        <!-- <div class="video-container">
             <img
                 src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f9e0f661-1b5b-49c1-86a2-da2e9dd5c67d_seasonal-hero-alt-triangle.jpg" />
-        </div>
+        </div> -->
 
-        <div class="menu-header">
+        <!-- <div class="menu-header">
             <h1>Savor the Steaming, <br />Spicy Momos (Dumplings) Santa Swears By<br />—Now in Year Two!</h1>
-        </div>
+        </div> -->
 
         <!-- Gallery Section -->
-        <section class="gallery-section">
+        <!-- <section class="gallery-section">
             <div class="container">
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a0d6fd2b-6ef7-46fd-a797-344cbd15b876_seasonal-gallery-1-bar-stools.jpg" alt="Nepali Momos Gallery Image 1" loading="lazy">
+                        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a0d6fd2b-6ef7-46fd-a797-344cbd15b876_seasonal-gallery-1-bar-stools.jpg"
+                            alt="Nepali Momos Gallery Image 1" loading="lazy">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/150da542-b702-4cda-837c-999c42bca77c_seasonal-gallery-2-lantern-detail.jpg" alt="Nepali Momos Gallery Image 2" loading="lazy">
+                        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/150da542-b702-4cda-837c-999c42bca77c_seasonal-gallery-2-lantern-detail.jpg"
+                            alt="Nepali Momos Gallery Image 2" loading="lazy">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5c25c153-79d6-47d8-8f3f-7531f62f92fb_seasonal-gallery-3-seating-window.jpg" alt="Nepali Momos Gallery Image 3" loading="lazy">
+                        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5c25c153-79d6-47d8-8f3f-7531f62f92fb_seasonal-gallery-3-seating-window.jpg"
+                            alt="Nepali Momos Gallery Image 3" loading="lazy">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/96b23b59-0f15-4ba6-a439-267850801b12_seasonal-gallery-4-counter.jpg" alt="Nepali Momos Gallery Image 4" loading="lazy">
+                        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/96b23b59-0f15-4ba6-a439-267850801b12_seasonal-gallery-4-counter.jpg"
+                            alt="Nepali Momos Gallery Image 4" loading="lazy">
                     </div>
                 </div>
+            </div>
+        </section> -->
+
+
+        <section class="seasonal-page">
+
+            <!-- HERO -->
+            <header class="seasonal-hero" [style.background-image]="'url(' + heroImage + ')'">
+                <div class="seasonal-hero__overlay">
+                    <p class="seasonal-eyebrow">Seasonal</p>
+                    <h1>{{ title }}</h1>
+                    <p class="seasonal-sub">{{ subtitle }}</p>
+
+                    <div class="seasonal-cta">
+                        <a class="seasonal-btn seasonal-btn--primary" href="#seasonal-gallery">See the Decor</a>
+                        <a class="seasonal-btn seasonal-btn--outline" target="_blank" href="/https://www.doordash.com/store/nepali-momos-brampton-brampton-24977152/?srsltid=AfmBOopc5NL0JYoMi9qGYLvFD1Yx3PgYLn2tTIkATj7d32pSVrliiPc-">Order Now</a>
+                    </div>
+
+                    <p class="seasonal-fine">{{ fineText }}</p>
+                </div>
+            </header>
+
+            <div class="seasonal-wrap">
+
+                <!-- BLURB -->
+                <div class="seasonal-grid seasonal-grid--two">
+                    <div>
+                        <h2>Welcome the energy of the Fire Horse</h2>
+                        <p>
+                            2026 brings the bold spirit of the <strong>Fire Horse</strong> — a symbol of confidence,
+                            movement,
+                            and new beginnings.
+                            It’s a year for momentum, celebration, and sharing great food with great people.
+                        </p>
+                    </div>
+
+                    <aside class="seasonal-card">
+                        <h3>Seasonal Highlights</h3>
+                        <ul>
+                            <li *ngFor="let item of highlights">{{ item }}</li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <!-- GALLERY -->
+                <h2 id="seasonal-gallery" class="seasonal-gallery-header">Seasonal décor at Nepali Momos Brampton</h2>
+
+                <div class="seasonal-gallery">
+                    <figure *ngFor="let img of gallery">
+                        <img [src]="img.src" [alt]="img.alt" />
+                    </figure>
+                </div>
+
+                <!-- CTA -->
+                <div class="seasonal-grid seasonal-grid--two seasonal-mt">
+                    <div>
+                        <h2>Celebrate with Momos</h2>
+                        <p>
+                            Make your New Year gathering delicious — dine in, take out, or grab momos for sharing.
+                            Great food, festive vibes, and a space made for celebration.
+                        </p>
+
+                        <div class="seasonal-cta">
+                            <a class="seasonal-btn seasonal-btn--primary" target="_blank" href="https://www.doordash.com/store/nepali-momos-brampton-brampton-24977152/?srsltid=AfmBOopc5NL0JYoMi9qGYLvFD1Yx3PgYLn2tTIkATj7d32pSVrliiPc-">Order Now</a>
+                            <a class="seasonal-btn seasonal-btn--dark" href="#visit-us">Visit Us</a>
+                        </div>
+                    </div>
+
+                    <div class="seasonal-quote">
+                        <p>
+                            <strong>Happy Lunar New Year!</strong><br />
+                            Wishing you prosperity, joy, and bold new beginnings in the Year of the Fire Horse.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- Location Section -->
-        <section class="location-section">
+        <section  id="visit-us" class="location-section">
             <div class="container">
                 <div class="location-header">
                     <h2>Visit Our Location</h2>
@@ -65,7 +146,7 @@
                                         <p>90 Eastern Ave #28<br>Brampton, ON L6W 1X9<br>Canada</p>
                                     </div>
                                 </div>
-                                
+
                                 <div class="contact-item">
                                     <div class="contact-icon">📞</div>
                                     <div class="contact-details">
@@ -73,7 +154,7 @@
                                         <p><a href="tel:+14375558888">(437) 555-8888</a></p>
                                     </div>
                                 </div>
-                                
+
                                 <div class="contact-item">
                                     <div class="contact-icon">✉️</div>
                                     <div class="contact-details">
@@ -82,9 +163,10 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="action-buttons">
-                                <a href="https://maps.app.goo.gl/PboSZjyU43MVEM7X6" target="_blank" class="directions-btn">
+                                <a href="https://maps.app.goo.gl/PboSZjyU43MVEM7X6" target="_blank"
+                                    class="directions-btn">
                                     Get Directions
                                 </a>
                             </div>
@@ -93,13 +175,8 @@
                     <div class="map-container">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.6600691742146!2d-79.7465949232979!3d43.696829971100136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1598b8898b17%3A0xa3dca7b710c9eb09!2sNepali%20Momos%20Brampton%20Aslee%20Momo's%20Ki%20Dukan%20GTA'S%20MOST%20LOVED%20HANDCRAFTED%20MOMO!5e0!3m2!1sen!2sin!4v1768301325440!5m2!1sen!2sin"
-                            width="100%"
-                            height="100%"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Nepali Momos Brampton Location">
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Nepali Momos Brampton Location">
                         </iframe>
                     </div>
                 </div>
