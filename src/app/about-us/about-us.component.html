@@ -1,4 +1,45 @@
-<main>
+<div class="container">
+    <header class="topHeader">
+        <img src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/ef8c9d05-98dc-425a-bf0f-d15540c0146b_grab-go-header.png" alt="Grab & Go Momos" class="headerBanner" />
+
+        <!-- <div class="headerOverlay">
+            <div class="brandOverlay">
+                <h1>Nepali Momos Brampton</h1>
+                <p>Grab & Go Momos • Ready in minutes • Includes our famed chutney</p>
+            </div>
+
+            <button class="cartOverlayBtn">
+                🛒 Cart <span class="badge">{{ cartCount }}</span>
+            </button>
+        </div> -->
+    </header>
+
+    <div class="section-title">
+        <h2>50 PCS Retail Bags</h2>
+    </div>
+
+    <section class="grid">
+        <div class="card" *ngFor="let item of retail50">
+            <h4>{{ item.name }}</h4>
+            <div *ngIf="item.desc">{{ item.desc }}</div>
+            <div class="price">{{ item.price }}</div>
+        </div>
+    </section>
+
+    <div class="section-title">
+        <h2>15 PCS Retail Bags</h2>
+    </div>
+
+    <section class="grid">
+        <div class="card" *ngFor="let item of retail15">
+            <h4>{{ item.name }}</h4>
+            <div class="price">{{ item.price }}</div>
+        </div>
+    </section>
+</div>
+
+
+<!-- <main>
     <div class="label">
         <div>
             <h2>Grab & Go Momos</h2>
@@ -31,4 +72,4 @@
             </video>
         </div>
     </div>
-</main>
+</main> -->

@@ -23,7 +23,7 @@ interface Review {
 })
 export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('popupVideo', { static: false }) popupVideo!: ElementRef<HTMLVideoElement>;
-  
+
   hero: any = {};
   social: any = {};
   brandName: any = '';
@@ -48,6 +48,38 @@ export class HomeComponent implements OnInit, OnDestroy {
   isMobile: boolean = false;
   heroBannerImage: string = '';
   heroVideoUrl: string = '';
+  heroImage = 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/53962755-3984-442b-8926-4e876a3a359f_seasonal-hero-cny-2026.jpg';
+
+  title = 'Chinese New Year 2026 – Year of the Fire Horse 🐎🔥';
+
+  subtitle = 'Step into a festive space filled with lanterns, lucky red décor, and the warmth of freshly made momos.';
+
+  fineText = 'Chinese New Year begins Feb 17, 2026.';
+
+  highlights = [
+    'Glowing red lanterns & lucky knots',
+    'Warm lighting + festive vibes',
+    'A perfect spot for friends & family'
+  ];
+
+  gallery = [
+    {
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/606eeeca-6156-4911-b888-5081042bb97c_seasonal-gallery-1-bar-stools.jpg',
+      alt: 'Chinese New Year lantern decor inside Nepali Momos Brampton'
+    },
+    {
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2cb7aacd-3b5e-44dc-b0a1-0ecd7c342931_seasonal-gallery-2-lantern-detail.jpg',
+      alt: 'Festive lantern close-up inside Nepali Momos Brampton'
+    },
+    {
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8ff0121b-5fde-4475-828b-868e4491614b_seasonal-gallery-3-seating-window.jpg',
+      alt: 'Festive seating area with red lanterns at Nepali Momos Brampton'
+    },
+    {
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8dbfa8d2-c231-4cc0-846a-a4b264f36e14_seasonal-gallery-4-counter.jpg',
+      alt: 'Counter area and MOMOS sign with festive decor'
+    }
+  ];
 
   constructor(
     private appService: AppService,
@@ -199,7 +231,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.isVideoPopupOpen = true;
     // Prevent body scrolling
     document.body.style.overflow = 'hidden';
-    
+
     // Ensure video plays when popup opens
     setTimeout(() => {
       if (this.popupVideo && this.popupVideo.nativeElement) {
@@ -214,7 +246,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.isVideoPopupOpen = false;
     // Restore body scrolling
     document.body.style.overflow = 'auto';
-    
+
     // Pause video when popup closes
     if (this.popupVideo && this.popupVideo.nativeElement) {
       this.popupVideo.nativeElement.pause();
