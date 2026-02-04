@@ -1,4 +1,3 @@
-
 <main>
     <!-- Video Popup Modal -->
     <!-- <div class="video-popup-modal" [class.show]="isVideoPopupOpen" *ngIf="isVideoPopupOpen">
@@ -62,8 +61,9 @@
                     <p class="seasonal-sub">{{ subtitle }}</p>
 
                     <div class="seasonal-cta">
-                        <a class="seasonal-btn seasonal-btn--primary" href="#seasonal-gallery">See the Decor</a>
-                        <a class="seasonal-btn seasonal-btn--outline" target="_blank" href="/https://www.doordash.com/store/nepali-momos-brampton-brampton-24977152/?srsltid=AfmBOopc5NL0JYoMi9qGYLvFD1Yx3PgYLn2tTIkATj7d32pSVrliiPc-">Order Now</a>
+                        <a class="seasonal-btn seasonal-btn--primary" href="#seasonal-gallery"
+                            (click)="scrollToSection('seasonal-gallery', $event)">See the Decor</a>
+                        <a class="seasonal-btn seasonal-btn--outline" target="_blank" [href]="cloverLink">Order Now</a>
                     </div>
 
                     <p class="seasonal-fine">{{ fineText }}</p>
@@ -111,8 +111,10 @@
                         </p>
 
                         <div class="seasonal-cta">
-                            <a class="seasonal-btn seasonal-btn--primary" target="_blank" href="https://www.doordash.com/store/nepali-momos-brampton-brampton-24977152/?srsltid=AfmBOopc5NL0JYoMi9qGYLvFD1Yx3PgYLn2tTIkATj7d32pSVrliiPc-">Order Now</a>
-                            <a class="seasonal-btn seasonal-btn--dark" href="#visit-us">Visit Us</a>
+                            <a class="seasonal-btn seasonal-btn--primary" target="_blank" [href]="cloverLink">Order
+                                Now</a>
+                            <a class="seasonal-btn seasonal-btn--dark" href="#visit-us"
+                                (click)="scrollToSection('visit-us', $event)">Visit Us</a>
                         </div>
                     </div>
 
@@ -128,7 +130,7 @@
         </section>
 
         <!-- Location Section -->
-        <section  id="visit-us" class="location-section">
+        <section id="visit-us" class="location-section">
             <div class="container">
                 <div class="location-header">
                     <h2>Visit Our Location</h2>
@@ -151,7 +153,7 @@
                                     <div class="contact-icon">📞</div>
                                     <div class="contact-details">
                                         <strong>Phone</strong>
-                                        <p><a href="tel:+14375558888">(437) 555-8888</a></p>
+                                        <p><a href="tel:+1 905-874-4141">+1 905-874-4141</a></p>
                                     </div>
                                 </div>
 
@@ -159,7 +161,7 @@
                                     <div class="contact-icon">✉️</div>
                                     <div class="contact-details">
                                         <strong>Email</strong>
-                                        <p><a href="mailto:info@nepalimomos.ca">info@nepalimomos.ca</a></p>
+                                        <p><a href="mailto:nepalimomos@outlook.com">nepalimomos@outlook.com</a></p>
                                     </div>
                                 </div>
                             </div>

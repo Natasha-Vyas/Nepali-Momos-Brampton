@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   title = 'Chinese New Year 2026 – Year of the Fire Horse 🐎🔥';
 
   subtitle = 'Step into a festive space filled with lanterns, lucky red décor, and the warmth of freshly made momos.';
-
+  cloverLink = 'https://www.clover.com/online-ordering/nepali-momos-brampton-brampton'
   fineText = 'Chinese New Year begins Feb 17, 2026.';
 
   highlights = [
@@ -306,5 +306,16 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   onImgError(event: any) {
     event.target.src = 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a2a553a4-ba1f-4c01-89d7-f28df5c39293_person.jpg';
+  }
+
+  scrollToSection(id: string, event?: MouseEvent): void {
+    if (event) {
+      event.preventDefault();
+    }
+
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }
