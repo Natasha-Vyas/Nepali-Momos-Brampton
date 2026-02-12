@@ -1,0 +1,17 @@
+<div class="popup" *ngIf="isOpen" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+  <div class="popup__backdrop" (click)="close()"></div>
+
+  <div class="popup__content">
+    <button class="popup__close" type="button" (click)="close()" aria-label="Close popup">&times;</button>
+
+    <h2 id="popup-title">{{ title }}</h2>
+    <p>{{ description }}</p>
+
+    <div class="popup__video">
+      <video #popupVideo controls muted playsinline>
+        <source [src]="videoUrl" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>

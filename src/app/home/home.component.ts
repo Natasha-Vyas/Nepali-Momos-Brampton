@@ -46,6 +46,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   private autoSlideApiInterval: any;
   visibleStart: number = 0;
   isMobile: boolean = false;
+  popupTitle = 'Meet Momos Dai - Our Momo Master';
+  popupDescription = 'He stands for everything we love: fresh ingredients, Nepali tradition, and momos made with love for our Brampton community.';
+  popupVideoUrl = 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/70088033-d7fe-46ec-b85a-b3f95af4aae0_Logo_and_Wink_Edit_Request%20%281%29.mp4';
   heroBannerImage: string = '';
   heroVideoUrl: string = '';
   heroImage = 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/53962755-3984-442b-8926-4e876a3a359f_seasonal-hero-cny-2026.jpg';
@@ -96,6 +99,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.loadData();
     this.seoService.updateSeoTags('home');
     this.checkScreenSize();
+
+    setTimeout(() => {
+      this.isPopupOpen = true;
+    }, 400);
 
     // Show image popup after a short delay
     setTimeout(() => {
