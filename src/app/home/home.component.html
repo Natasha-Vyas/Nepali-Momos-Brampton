@@ -129,6 +129,9 @@
             </div>
         </section>
 
+        <app-popup [isOpen]="isPopupOpen" [title]="popupTitle" [description]="popupDescription"
+            [videoUrl]="popupVideoUrl" (closed)="closePopup()"></app-popup>
+
         <!-- Location Section -->
         <section id="visit-us" class="location-section">
             <div class="container">

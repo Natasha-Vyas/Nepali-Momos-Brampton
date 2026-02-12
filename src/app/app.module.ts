@@ -22,6 +22,7 @@ import { StoriesComponent } from './stories/stories.component';
 import { MenuTwoComponent } from './menu-two/menu-two.component';
 import { WholesaleComponent } from './wholesale/wholesale.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
     StoriesComponent,
     MenuTwoComponent,
     WholesaleComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
