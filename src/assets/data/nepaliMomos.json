@@ -778,6 +778,30 @@
     {
       "imageName": "VEGGI SPRING ROLLS (50 pcs).png",
       "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/753a495f-33be-4f26-b572-3fdf3816144d_springroll.jpeg"
+    },
+    {
+      "imageName": "Chicken Satay Sticks Party Tray.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/c5c637a3-1a14-467e-a404-d86069048b16_chickensataystickspartytray.png"
+    },
+    {
+      "imageName": "Classic Momo Party Tray.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/a4dbf12a-3ed8-45d8-902d-346954aa01a8_classicmomopartytray.png"
+    },
+    {
+      "imageName": "Mahabali Thali Momo.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/cc66a8db-39d6-448d-9193-c919a3ff5b36_mahabalithali.png"
+    },
+    {
+      "imageName": "Tandoori Momo Party Tray (50 pcs).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2337eba6-e986-4542-ac12-2e8fee2de87e_tandoorimomoparty.png"
+    },
+    {
+      "imageName": "Thai Mango Salad Party Tray.png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/e34d1893-8aec-45da-8263-501291db310b_thaimangosaladtray.png"
+    },
+    {
+      "imageName": "Veggie Spring Rolls Party Tray (50 pcs).png",
+      "icon": "https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7d448f94-e86b-457d-bd07-e98bdb4b2feb_veggiespringrolls%20partyttray.png"
     }
   ],
   "reservation": {
@@ -1446,14 +1470,20 @@
                   "categoryName": "STARTER",
                   "items": [
                     {
+                      "itemName": "Chicken Satay Sticks Party Tray",
+                      "itemDescription": "Grilled chicken skewers marinated in aromatic spices served with creamy peanut satay sauce.",
+                      "quantity": 1,
+                      "itemPrice": "70.00"
+                    },
+                    {
                       "itemName": "Thai Mango Salad Party Tray",
-                      "itemDescription": "Made with fresh, ripe mangoes and crisp vegetables for a truly refreshing salad",
+                      "itemDescription": "A refreshing mix of ripe mango, crunchy vegetables, and tangy Thai dressing the perfect balance to rich party food.",
                       "quantity": 1,
                       "itemPrice": "40.00"
                     },
                     {
-                      "itemName": "Veggie Spring Rolls Party Tray",
-                      "itemDescription": "Tempura Veg Spring Rolls Crispy, hand-rolled perfection",
+                      "itemName": "Veggie Spring Rolls Party Tray (50 pcs)",
+                      "itemDescription": "Golden-crispy rolls packed with fresh vegetables, served with sweet chilli dip. Always a hit.",
                       "quantity": 1,
                       "itemPrice": "40.00"
                     },
@@ -1605,6 +1635,30 @@
                       "itemDescription": "A DELICIOUS ASSORTMENT OF TENDER MOMOS TOSSED IN THREE FLAVORFUL CURRIES, CHILLI, AFGHANI, AND BUTTER MASALA, PERFECT FOR SHARING WITH FRIENDS ANDFAMILY. 50 PCS ADD $10.00",
                       "quantity": 1,
                       "itemPrice": "60.00"
+                    }
+                  ]
+                },
+                {
+                  "categoryName": "PARTY TRAYS",
+                  "categoryDescription": "Thoughtfully curated catering and party trays featuring handcrafted momo, bold Indo-Chinese favourites, refined starters, and a selection of exotic fruits that enthrils your guests designed to impress and make hosting effortless.",
+                  "items": [
+                    {
+                      "itemName": "Classic Momo Party Tray",
+                      "itemDescription": "Light, juicy Darjeeling-style momo served with signature red chutney. Thin wrappers • Gentle seasoning • Easy to love. (50 pcs) — $50 Veg $55 Chicken $60 Paneer",
+                      "quantity": 1,
+                      "itemPrice": "50.00"
+                    },
+                    {
+                      "itemName": "Mahabali Thali Momo",
+                      "itemDescription": "Brampton's Favourite Party Stopper. A grand 50-piece momo thali featuring 10 pcs each Chilli Curry • Afghani Curry • Butter Masala Curry • Tandoori • Kurkure momos served with two signature chutneys. — $70",
+                      "quantity": 1,
+                      "itemPrice": "70.00"
+                    },
+                    {
+                      "itemName": "Tandoori Momo Party Tray (50 pcs)",
+                      "itemDescription": "Handcrafted momo marinated in bold tandoori spices and grilled to smoky perfection. (50 pcs) — $55",
+                      "quantity": 1,
+                      "itemPrice": "55.00"
                     }
                   ]
                 },
