@@ -15,7 +15,7 @@
         </div>
         <div class="content">
             <h2>Our founders journey</h2>
-            <p *ngFor="let p of hero.ourStoryContent">{{ p }}</p>
+            <p *ngFor="let p of hero.ourStoryContent" [innerHTML]="p"></p>
         </div>
     </div>
 </main>
