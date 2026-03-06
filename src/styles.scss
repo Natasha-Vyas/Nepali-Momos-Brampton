@@ -104,3 +104,28 @@ img {
 html {
   scroll-behavior: smooth;
 }
+
+/* SAKURA PETALS ANIMATION - Global styles for petals */
+.nm-petal {
+  position: absolute;
+  top: -40px;
+  width: 14px;
+  height: 14px;
+  background: #ff9bb3;
+  border-radius: 70% 40% 70% 40%;
+  opacity: .7;
+  pointer-events: none;
+  animation: nmfall linear infinite;
+}
+
+@keyframes nmfall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(40vh) translateX(40px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(110vh) translateX(100px) rotate(360deg);
+  }
+}

@@ -248,8 +248,8 @@ main {
   }
 
   .seasonal-btn--outline {
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #d81f26;
+    color: #d81f26;
   }
 
   .seasonal-btn--dark {
@@ -316,6 +316,29 @@ main {
       padding: 50px 16px;
     }
 
+    .nm-overlay {
+      padding: 50px 16px;
+
+      h1 {
+        font-size: clamp(24px, 6vw, 36px);
+      }
+
+      .seasonal-sub {
+        font-size: 16px;
+      }
+    }
+
+    .nm-sakura {
+      height: 500px;
+    }
+
+    .nm-music {
+      bottom: 15px;
+      right: 15px;
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+
     .seasonal-grid--two {
       grid-template-columns: 1fr;
     }
@@ -329,6 +352,90 @@ main {
     }
   }
 
+  /* SPRING SAKURA SECTION */
+  .nm-sakura {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffeef5 0%, #ffe0eb 50%, #ffd6e8 100%);
+  }
+
+  /* VIDEO */
+  .nm-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  /* OVERLAY */
+  .nm-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.65));
+    padding: 20px;
+
+    h1 {
+      font-size: clamp(28px, 3.5vw, 46px);
+      color: #e8436f;
+      margin-bottom: 12px;
+    }
+
+    .seasonal-sub {
+      max-width: 680px;
+      font-size: 18px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .seasonal-eyebrow {
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      opacity: .9;
+      margin-bottom: 10px;
+      color: #e8436f;
+    }
+
+    .seasonal-fine {
+      opacity: .85;
+      margin-top: 14px;
+      font-size: 13px;
+      color: #444;
+    }
+  }
+
+
+  /* MUSIC BUTTON */
+  .nm-music {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff7da6;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #e8436f;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
+    }
+  }
 
   .menu-header {
     text-align: center;

@@ -23,6 +23,7 @@ interface Review {
 })
 export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('popupVideo', { static: false }) popupVideo!: ElementRef<HTMLVideoElement>;
+  @ViewChild('nmAudio', { static: false }) nmAudio!: ElementRef<HTMLAudioElement>;
 
   hero: any = {};
   social: any = {};
@@ -99,6 +100,11 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.loadData();
     this.seoService.updateSeoTags('home');
     this.checkScreenSize();
+
+    // Create petals after DOM is ready
+    setTimeout(() => {
+      this.createPetals();
+    }, 100);
 
     setTimeout(() => {
       this.isPopupOpen = true;
@@ -309,6 +315,12 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (this.autoSlideApiInterval) {
       clearInterval(this.autoSlideApiInterval);
     }
+    // Clean up petals from hero section
+    const heroSection = document.querySelector('.nm-sakura');
+    if (heroSection) {
+      const petals = heroSection.querySelectorAll('.nm-petal');
+      petals.forEach(petal => petal.remove());
+    }
   }
 
   onImgError(event: any) {
@@ -323,6 +335,35 @@ export class HomeComponent implements OnInit, OnDestroy {
     const target = document.getElementById(id);
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  createPetals(): void {
+    const heroSection = document.querySelector('.nm-sakura');
+    if (heroSection) {
+      for (let i = 0; i < 35; i++) {
+        const petal = document.createElement('div');
+        petal.className = 'nm-petal';
+        petal.style.left = Math.random() * 100 + '%';
+        petal.style.animationDuration = (12 + Math.random() * 10) + 's';
+        petal.style.animationDelay = Math.random() * 5 + 's';
+        heroSection.appendChild(petal);
+      }
+    }
+  }
+
+  nmMusicToggle(): void {
+    if (this.nmAudio && this.nmAudio.nativeElement) {
+      const audio = this.nmAudio.nativeElement;
+      audio.volume = 0.25;
+      
+      if (audio.paused) {
+        audio.play().catch(error => {
+          console.log('Audio play failed:', error);
+        });
+      } else {
+        audio.pause();
+      }
     }
   }
 }
