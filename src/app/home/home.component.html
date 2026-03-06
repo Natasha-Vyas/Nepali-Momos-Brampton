@@ -54,11 +54,16 @@
         <section class="seasonal-page">
 
             <!-- HERO -->
-            <header class="seasonal-hero" [style.background-image]="'url(' + heroImage + ')'">
-                <div class="seasonal-hero__overlay">
+            <section class="nm-sakura">
+                <video autoplay muted loop playsinline class="nm-video">
+                    <source src="assets/videos/sakura-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="nm-overlay">
                     <p class="seasonal-eyebrow">Seasonal</p>
-                    <h1>{{ title }}</h1>
-                    <p class="seasonal-sub">{{ subtitle }}</p>
+                    <h1>🌸 Spring at Nepali Momos Brampton</h1>
+                    <p class="seasonal-sub">Nepali Momos Brampton is beautifully decorated with Sakura blossoms and Japanese umbrellas to welcome the spring season. Come enjoy authentic Himalayan momos and delicious dumplings in a warm and vibrant spring atmosphere.</p>
 
                     <div class="seasonal-cta">
                         <a class="seasonal-btn seasonal-btn--primary" href="#seasonal-gallery"
@@ -66,9 +71,17 @@
                         <a class="seasonal-btn seasonal-btn--outline" target="_blank" [href]="cloverLink">Order Now</a>
                     </div>
 
-                    <p class="seasonal-fine">{{ fineText }}</p>
+                    <p class="seasonal-fine">Spring season celebration at Nepali Momos Brampton.</p>
                 </div>
-            </header>
+            </section>
+
+            <!-- Music Button -->
+            <button class="nm-music" (click)="nmMusicToggle()">🎵 Music</button>
+
+            <!-- Audio Element -->
+            <audio #nmAudio loop>
+                <source src="assets/audio/japanese-spring-music.mp3" type="audio/mpeg">
+            </audio>
 
             <div class="seasonal-wrap">
 
