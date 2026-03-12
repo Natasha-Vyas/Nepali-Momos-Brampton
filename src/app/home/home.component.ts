@@ -54,9 +54,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   heroVideoUrl: string = '';
   heroImage = 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/53962755-3984-442b-8926-4e876a3a359f_seasonal-hero-cny-2026.jpg';
 
-  title = 'Chinese New Year 2026 – Year of the Fire Horse 🐎🔥';
+  title = 'Seasonal Décor at Nepali Momos Brampton';
 
-  subtitle = 'Step into a festive space filled with lanterns, lucky red décor, and the warmth of freshly made momos.';
+  subtitle = 'This season, Nepali Momos Brampton is beautifully decorated with Sakura cherry blossoms and vibrant spring accents. The soft pink blossoms create a warm and inviting atmosphere where guests can relax, take photos, and enjoy authentic Himalayan momos and delicious dumplings in a lively spring setting.';
   cloverLink = 'https://www.clover.com/online-ordering/nepali-momos-brampton-brampton'
   fineText = 'Chinese New Year begins Feb 17, 2026.';
 
@@ -68,20 +68,36 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   gallery = [
     {
-      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/606eeeca-6156-4911-b888-5081042bb97c_seasonal-gallery-1-bar-stools.jpg',
-      alt: 'Chinese New Year lantern decor inside Nepali Momos Brampton'
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/faa26866-7867-4f0a-ba74-c0ce1707a56e_42021ade-a6f9-4e10-a794-2089fc2947bc.jpg',
+      alt: 'Nepali Momos Brampton restaurant interior'
     },
     {
-      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/2cb7aacd-3b5e-44dc-b0a1-0ecd7c342931_seasonal-gallery-2-lantern-detail.jpg',
-      alt: 'Festive lantern close-up inside Nepali Momos Brampton'
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/69b47038-c1e3-4244-bb19-45dfccc1e733_533e1260-6975-46f8-912f-e9bbc95af848.jpg',
+      alt: 'Nepali Momos Brampton dining area'
     },
     {
-      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8ff0121b-5fde-4475-828b-868e4491614b_seasonal-gallery-3-seating-window.jpg',
-      alt: 'Festive seating area with red lanterns at Nepali Momos Brampton'
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7eeaf099-a87d-4344-9924-dc860bc30b60_6f75e26b-a6bd-407e-a658-0192182209ae.jpg',
+      alt: 'Nepali Momos Brampton restaurant view'
     },
     {
-      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/8dbfa8d2-c231-4cc0-846a-a4b264f36e14_seasonal-gallery-4-counter.jpg',
-      alt: 'Counter area and MOMOS sign with festive decor'
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/7cdf53af-4d9c-4c3d-bc65-3e2013b70d2c_9b360dcd-8b4f-4e1c-8623-d7d90ba73bce.jpg',
+      alt: 'Nepali Momos Brampton seating area'
+    },
+    {
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/d036d2ad-3797-42ab-a381-fc89d88cacf0_bf4f2615-9849-4c8b-8d90-6610f759d7d2.jpg',
+      alt: 'Nepali Momos Brampton kitchen view'
+    },
+    {
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/5ac212df-4ccb-4a0f-9899-8afc6794d655_c7c96c3f-6fe9-4929-9949-ac519772b343.jpg',
+      alt: 'Nepali Momos Brampton counter area'
+    },
+    {
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/206cca1b-c068-4033-b809-9539d205c2ef_cd966ad2-6c0e-4463-92bf-a31703c7755b.jpg',
+      alt: 'Nepali Momos Brampton restaurant atmosphere'
+    },
+    {
+      src: 'https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/f855371f-96f7-4891-8068-89a264f95510_def812d8-4ca2-4e44-94f3-a47f83ec6d85.jpg',
+      alt: 'Nepali Momos Brampton interior design'
     }
   ];
 
