@@ -24,6 +24,7 @@ interface Review {
 export class HomeComponent implements OnInit, OnDestroy {
   @ViewChild('popupVideo', { static: false }) popupVideo!: ElementRef<HTMLVideoElement>;
   @ViewChild('nmAudio', { static: false }) nmAudio!: ElementRef<HTMLAudioElement>;
+  @ViewChild('heroVideo', { static: false }) heroVideo!: ElementRef<HTMLVideoElement>;
 
   hero: any = {};
   social: any = {};
@@ -135,6 +136,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     window.addEventListener('resize', () => {
       this.checkScreenSize();
     });
+
+    // Initialize hero video
+    this.initHeroVideo();
   }
 
   private checkScreenSize(): void {
@@ -381,5 +385,47 @@ export class HomeComponent implements OnInit, OnDestroy {
         audio.pause();
       }
     }
+  }
+
+  onVideoLoaded(): void {
+    console.log('Video loaded event triggered');
+    if (this.heroVideo && this.heroVideo.nativeElement) {
+      const video = this.heroVideo.nativeElement;
+      console.log('Video element found, attempting to play');
+      
+      // Ensure video properties are set
+      video.loop = true;
+      video.autoplay = true;
+      
+      video.play().then(() => {
+        console.log('Video started playing successfully');
+      }).catch(error => {
+        console.log('Hero video autoplay failed:', error);
+        // Try again on user interaction
+        document.addEventListener('click', () => {
+          video.play().catch(e => console.log('Video play on click failed:', e));
+        }, { once: true });
+      });
+    } else {
+      console.log('Video element not found');
+    }
+  }
+
+  initHeroVideo(): void {
+    setTimeout(() => {
+      if (this.heroVideo && this.heroVideo.nativeElement) {
+        const video = this.heroVideo.nativeElement;
+        console.log('Initializing hero video manually');
+        
+        video.loop = true;
+        video.autoplay = true;
+        
+        video.play().then(() => {
+          console.log('Manual video play successful');
+        }).catch(error => {
+          console.log('Manual video play failed:', error);
+        });
+      }
+    }, 1000);
   }
 }

@@ -55,7 +55,7 @@
 
             <!-- HERO -->
             <section class="nm-sakura">
-                <video autoplay muted loop playsinline class="nm-video">
+                <video #heroVideo autoplay loop playsinline class="nm-video" (loadeddata)="onVideoLoaded()">
                     <source
                         src="https://s3.ap-south-1.amazonaws.com/cdn.ghc.health/21664240-8d01-49b2-aabe-e21fd646a06b_068aff36-6d00-42f5-b7ef-d8d68fc69dea.mp4"
                         type="video/mp4">
@@ -92,13 +92,11 @@
                 <!-- BLURB -->
                 <div class="seasonal-grid seasonal-grid--two">
                     <div>
-                        <h2>Welcome the energy of the Fire Horse</h2>
-                        <p>
-                            2026 brings the bold spirit of the <strong>Fire Horse</strong> — a symbol of confidence,
-                            movement,
-                            and new beginnings.
-                            It’s a year for momentum, celebration, and sharing great food with great people.
-                        </p>
+                        <h2> Seasonal Décor at Nepali Momos Brampton</h2>
+                        <p>Celebrate the season under a canopy of <strong>Sakura cherry blossoms at Nepali Momos
+                                Brampton.</strong> Our spring décor brings a touch of elegance and color to the
+                            restaurant, creating a cozy and photo-worthy setting while you enjoy fresh Himalayan momos
+                            and savory dumplings.</p>
                     </div>
 
                     <aside class="seasonal-card">
@@ -110,7 +108,7 @@
                 </div>
 
                 <!-- GALLERY -->
-                <h2 id="seasonal-gallery" class="seasonal-gallery-header">Seasonal Décor at Nepali Momos Brampton</h2>
+                <!-- <h2 id="seasonal-gallery" class="seasonal-gallery-header">Seasonal Décor at Nepali Momos Brampton</h2> -->
 
                 <div class="seasonal-gallery">
                     <figure *ngFor="let img of gallery">
